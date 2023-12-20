@@ -1,15 +1,17 @@
 // Specific CSS for your home-page
-
-.home-nav {
-  height: 8vh;
-  background-color: #ffffffa6;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+
 
 // video
 
 .hero-video {
   position: relative;
-  height: 92vh;
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -25,9 +27,30 @@
   z-index: -1;
 }
 
+// interieur de la video
+
+.home-fondu-haut {
+  position: absolute;
+  top: 0;
+  height: 15vh;
+  width: 100%;
+  content: "";
+  background: linear-gradient(0deg, rgba(32,33,36,0) 0%, rgba(0, 0, 0, 0.7) 100%);
+}
+
+
+.home-fondu-bas {
+  position: absolute;
+  bottom: 0;
+  height: 15vh;
+  width: 100%;
+  content: "";
+  background: linear-gradient(180deg, rgba(32,33,36,0) 0%, rgb(255, 255, 255) 100%);
+}
+
 // home-first-div
 
 .home-first-div {
   height: 200vh;
-  background-color: #b5b99b;
+  background-color: #ffffff;
 }
