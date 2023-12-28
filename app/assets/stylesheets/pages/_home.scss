@@ -10,7 +10,7 @@ a {
 }
 
 
-
+// Home Permiere Div
 // div container video
 
 .hero-video {
@@ -40,12 +40,20 @@ a {
 .home-nav {
   display: flex;
   justify-content: space-between;
-  margin: 20px;
+  margin: 10px 20px;
+  position: relative;
+  z-index: 2;
 }
 
 .home-nav a {
   font-family: 'Akaya Telivigala', cursive;
+  font-size: 2rem;
+  -webkit-text-stroke: 5px rgb(255, 255, 255); // contour du text
+  paint-order: stroke fill; // mettre le contour deriere le text
+  color: #005491;
 }
+
+
 
 .home-nav-left a {
 
@@ -73,7 +81,7 @@ a {
   height: 15vh;
   width: 100%;
   content: "";
-  background: linear-gradient(0deg, rgba(32,33,36,0) 0%, rgba(0, 0, 0, 0.7) 100%);
+  background: linear-gradient(0deg, rgba(32, 33, 36, 0) 0%, rgba(104, 164, 216, 0.72) 100%);
 }
 
 .home-fondu-bas {
@@ -86,7 +94,9 @@ a {
 }
 
 
+// Fin Home Permiere Div
 
+//
 // home-first-div
 
 .home-first-div {
