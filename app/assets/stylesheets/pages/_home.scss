@@ -148,17 +148,41 @@ a {
 
 .home-presentation-text-picture {
   display: flex;
-  height: 100%;
 }
 
 .home-presentation-text {
-  width: 60%;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
 }
 
 .home-presentation-text p {
   font-family: 'Akaya Telivigala', cursive;
-  font-size: 2.5rem;
-  padding: 2rem 8rem;
+  font-size: 3vw;
+  padding: 3rem 7rem 0rem 7rem;
   text-align: center;
   color: $sableHumide;
+  -webkit-text-stroke: 0.4rem $sableSemiHumide; /* contour du text */
+  paint-order: stroke fill; /* mettre le contour deriere le text */
+}
+
+.home-presentation-trace-trait {
+  display: flex;
+  justify-content: center;
+}
+
+.home-presentation-trace-trait img {
+  width: 50%;
+  height: auto;
+}
+
+.home-presentation-photo {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+
+.home-presentation-photo img {
+  width: 80%;
+  height: auto;
 }
