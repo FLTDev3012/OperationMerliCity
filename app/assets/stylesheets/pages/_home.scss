@@ -143,3 +143,22 @@ a {
   -webkit-text-stroke: 0.6rem rgb(255, 255, 255); /* contour du text */
   paint-order: stroke fill; /* mettre le contour deriere le text */
 }
+
+// presentation text et photo
+
+.home-presentation-text-picture {
+  display: flex;
+  height: 100%;
+}
+
+.home-presentation-text {
+  width: 60%;
+}
+
+.home-presentation-text p {
+  font-family: 'Akaya Telivigala', cursive;
+  font-size: 2.5rem;
+  padding: 2rem 8rem;
+  text-align: center;
+  color: $sableHumide;
+}
