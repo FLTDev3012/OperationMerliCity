@@ -1,11 +1,28 @@
 
 <div class="hero-video">
 
-  <div class="home-fondu-haut"></div>
+  <div class="home-nav">
+    <div class="home-nav-left">
+      <%= link_to "Merlimont", "#" %>
+    </div>
+    <div class="home-nav-right">
+      <%= link_to "Galerie", "#" %>
+      <%= link_to "Webcam", "#" %>
+      <%= link_to "Faune & Flore", "#" %>
+      <%= link_to "Il etait une fois", "#" %>
+      <%= link_to "A propos", "#" %>
+    </div>
+
+  </div>
+
+  <!-- <div class="home-fondu-haut"></div> -->
 
   <%= video_tag "mainvideo.mp4", type: "video/mp4", autoplay: true, loop: true, muted: true, id: "home-videoo", preload: "auto", playsinline: true %>
 
-  <div class="home-fondu-bas"></div>
+  <!-- <div class="home-fondu-bas"></div> -->
+  <div class="home-dunes">
+    <%= image_tag('home_dunes.svg') %>
+  </div>
 
 </div>
 

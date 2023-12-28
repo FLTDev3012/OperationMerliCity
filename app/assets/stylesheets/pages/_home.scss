@@ -5,16 +5,22 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
 
 
-// video
+
+// div container video
 
 .hero-video {
   position: relative;
   height: 100vh;
+  width: 100vw;
   overflow: hidden;
 }
 
+// video
 .hero-video video {
   position: absolute;
   top: 50%;
@@ -29,6 +35,38 @@
 
 // interieur de la video
 
+
+// nav
+.home-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.home-nav a {
+  font-family: 'Akaya Telivigala', cursive;
+}
+
+.home-nav-left a {
+
+}
+
+.home-nav-right a {
+  padding: 0 20px;
+}
+
+// img dunes
+.home-dunes {
+  position: absolute;
+  bottom: 0;
+}
+
+.home-dunes img {
+  width: 100%;
+  height: auto;
+}
+
+
 .home-fondu-haut {
   position: absolute;
   top: 0;
@@ -38,15 +76,16 @@
   background: linear-gradient(0deg, rgba(32,33,36,0) 0%, rgba(0, 0, 0, 0.7) 100%);
 }
 
-
 .home-fondu-bas {
   position: absolute;
   bottom: 0;
   height: 15vh;
   width: 100%;
   content: "";
-  background: linear-gradient(180deg, rgba(32,33,36,0) 0%, rgb(255, 255, 255) 100%);
+  background: linear-gradient(180deg, rgba(32,33,36,0) 0%, rgb(29, 230, 245) 100%);
 }
+
+
 
 // home-first-div
 
