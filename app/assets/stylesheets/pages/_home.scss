@@ -100,6 +100,46 @@ a {
 // home-presentaion-div
 
 .home-presentation-div {
-  height: 200vh;
+  position: relative;
+  height: 100vh;
+  /* background-color: $sable; */
   background-color: $sable;
+}
+
+.home-traces {
+  position: absolute;
+  top: 0;
+}
+
+.home-traces img {
+  width: 100%;
+  height: auto;
+}
+
+.home-presentation-title-shadow {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.25;
+}
+
+.home-presentation-title-shadow h1 {
+  color: $bleu;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 6rem;
+}
+
+.home-presentation-title {
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  position: relative;
+}
+
+.home-presentation-title h1 {
+  color: $bleu;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 5rem;
+  -webkit-text-stroke: 0.6rem rgb(255, 255, 255); /* contour du text */
+  paint-order: stroke fill; /* mettre le contour deriere le text */
 }
