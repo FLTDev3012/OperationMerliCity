@@ -1,4 +1,4 @@
-
+<!-- div video -->
 <div class="hero-video">
 
   <div class="home-fondu-haut"></div>
@@ -22,14 +22,65 @@
   <%= video_tag "mainvideo.mp4", type: "video/mp4", autoplay: true, loop: true, muted: true, id: "home-videoo", preload: "auto", playsinline: true %>
 
   <!-- <div class="home-fondu-bas"></div> -->
+
   <div class="home-dunes">
     <%= image_tag('home_dunes.svg') %>
   </div>
 
 </div>
 
+
+
+<!-- div presentation -->
+
 <div class="home-presentation-div">
 
+  <div class="home-traces">
+    <%= image_tag('home_trace.svg') %>
+  </div>
+
+  <div class="home-presentation-title-and-title-shadow">
+
+    <div class="home-presentation-title-shadow">
+      <h1>Merlimont</h1>
+    </div>
+
+    <div class="home-presentation-title">
+      <h1>Merlimont</h1>
+    </div>
+
+  </div>
+
+
+  <div class="home-presentation-text-picture">
+
+    <div class="home-presentation-text">
+      <p>Nichée entre dunes sauvages et plages de sable fin, Merlimont est une destination côtière idyllique où le charme authentique de la côte française rencontre la tranquillité et la beauté naturelle. </p>
+      <div class="home-presentation-trace-trait">
+        <%= image_tag('home_trace_trait.svg') %>
+      </div>
+    </div>
+
+    <div class="home-presentation-photo">
+      <%= image_tag('home_coeur.svg') %>
+    </div>
+
+  </div>
+
+  <script>
+
+    const elementTraceHome = document.querySelector('.home-traces');
+    const hauteurDesTracesHome = elementTraceHome.offsetHeight; // hauteur des traces
+
+    const elementPresentationTitle = document.querySelector('.home-presentation-title');
+    elementPresentationTitle.style.paddingTop = hauteurDesTracesHome + 'px';
+
+    const homePresentationTitleShadow = document.querySelector('.home-presentation-title-shadow');
+    homePresentationTitleShadow.style.paddingTop = hauteurDesTracesHome - 50 + 'px';
+
+
+
+  </script>
 </div>
 
 <!-- merlimont terre d exeption -->
