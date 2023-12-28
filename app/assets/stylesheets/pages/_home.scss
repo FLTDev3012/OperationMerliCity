@@ -35,6 +35,27 @@ a {
 
 // interieur de la video
 
+// avion
+
+.avion {
+  position: absolute;
+  right: 0;
+  animation: deplacement 10s linear infinite; /* Animation de déplacement */
+}
+
+.avion img {
+  height: 200px;
+  width: auto;
+}
+
+@keyframes deplacement {
+  from {
+    right: -50%; /* Départ à droite (0%) */
+  }
+  to {
+    right: 150%; /* Arrivée à gauche (100%) */
+  }
+}
 
 // nav
 .home-nav {
