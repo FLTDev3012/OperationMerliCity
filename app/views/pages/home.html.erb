@@ -98,6 +98,31 @@
     <%= image_tag('home_vague_haut.svg') %>
   </div>
 
+    <div class="home-activites-title-and-title-shadow">
+
+    <div class="home-activites-title-shadow">
+      <h1>Activités</h1>
+    </div>
+
+    <div class="home-activites-title">
+      <h1>Activités</h1>
+    </div>
+
+  </div>
+
+  <script>
+
+    const elementTraceHome = document.querySelector('.home-traces');
+    const hauteurDesTracesHome = elementTraceHome.offsetHeight; // hauteur des traces
+
+    const elementPresentationTitle = document.querySelector('.home-presentation-title');
+    elementPresentationTitle.style.paddingTop = hauteurDesTracesHome + 'px';
+
+    const homePresentationTitleShadow = document.querySelector('.home-presentation-title-shadow');
+    homePresentationTitleShadow.style.paddingTop = hauteurDesTracesHome - 50 + 'px';
+
+  </script>
+
 </div>
 
 <div class="home-logements-div">

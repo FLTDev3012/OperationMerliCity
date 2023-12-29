@@ -118,7 +118,7 @@ a {
 // Fin Home Permiere Div
 
 //
-// home-presentaion-div
+// ------------------home-presentaion-div
 
 .home-presentation-div {
   position: relative;
@@ -208,6 +208,8 @@ a {
   height: auto;
 }
 
+
+
 // activites
 
 .home-activites-div {
@@ -230,6 +232,36 @@ a {
   height: auto;
   position: absolute;
   top: 0;
+}
+
+// activites titre
+
+.home-activites-title-shadow {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.25;
+}
+
+.home-activites-title-shadow h1 {
+  color: #fff;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 6rem;
+}
+
+.home-activites-title {
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  position: relative;
+}
+
+.home-activites-title h1 {
+  color: #fff;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 5rem;
+  // -webkit-text-stroke: 0.6rem rgb(255, 255, 255); /* contour du text */
+  // paint-order: stroke fill; /* mettre le contour deriere le text */
 }
 
 // logement
