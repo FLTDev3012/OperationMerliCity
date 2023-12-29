@@ -207,3 +207,51 @@ a {
   width: 80%;
   height: auto;
 }
+
+// activites
+
+.home-activites-div {
+  background-color: blue;
+  height: 100vh;
+  position: relative;
+}
+
+.home-activites-trait-anti-bug {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  background-color: $sable;
+}
+
+.home-activites-vague-haut img {
+  width: 100vw;
+  height: auto;
+  position: absolute;
+  top: 0;
+}
+
+// logement
+
+.home-logements-div {
+  height: 100vh;
+  position: relative;
+  background-color: $sable;
+}
+
+.home-logements-trait-anti-bug {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  background-color: $bleu;
+}
+
+.home-logement-vague-haut img {
+  width: 100vw;
+  height: auto;
+  position: absolute;
+  top: 0;
+}
