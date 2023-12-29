@@ -75,7 +75,7 @@
 
     const elementTraceHome = document.querySelector('.home-traces');
     const hauteurDesTracesHome = elementTraceHome.offsetHeight; // hauteur des traces
-
+    console.log(hauteurDesTracesHome);
     const elementPresentationTitle = document.querySelector('.home-presentation-title');
     elementPresentationTitle.style.paddingTop = hauteurDesTracesHome + 'px';
 
@@ -97,6 +97,51 @@
   <div class="home-activites-vague-haut">
     <%= image_tag('home_vague_haut.svg') %>
   </div>
+
+  <div class="home-activites-title-and-title-shadow">
+
+    <div class="home-activites-title-shadow">
+      <h1>Activités</h1>
+    </div>
+
+    <div class="home-activites-title">
+      <h1>Activités</h1>
+    </div>
+
+    <div class="home-activites-top-five">
+
+      <div class="home-activites-top-five-little"></div>
+      <div class="home-activites-top-five-medium"></div>
+      <div class="home-activites-top-five-large"></div>
+      <div class="home-activites-top-five-medium"></div>
+      <div class="home-activites-top-five-little"></div>
+
+    </div>
+
+    <div class="home-activites-button">
+      <div class="home-activites-button-img-container">
+        <%= image_tag('boue_button.svg') %>
+      </div>
+    </div>
+
+
+
+  </div>
+
+  <script>
+
+    // Sélection de l'élément ".home-activites-vague-haut" pour obtenir sa hauteur
+    const vagueActivitesTop = document.querySelector('.home-activites-vague-haut img');
+    const vagueActivitesTopHeight = vagueActivitesTop.offsetHeight * 2;
+
+    // Sélection de l'élément ".home-activites-title" et modification du style paddingTop
+    const activitesTitle = document.querySelector('.home-activites-title');
+    activitesTitle.style.paddingTop = vagueActivitesTopHeight + 'px';
+
+    // Sélection de l'élément ".home-activites-title-shadow" et modification du style paddingTop
+    const homeActivitesTitleShadow = document.querySelector('.home-activites-title-shadow');
+    homeActivitesTitleShadow.style.paddingTop = (vagueActivitesTopHeight - 50) + 'px';
+  </script>
 
 </div>
 

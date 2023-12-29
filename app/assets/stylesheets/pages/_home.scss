@@ -118,7 +118,7 @@ a {
 // Fin Home Permiere Div
 
 //
-// home-presentaion-div
+// ------------------home-presentaion-div
 
 .home-presentation-div {
   position: relative;
@@ -208,10 +208,12 @@ a {
   height: auto;
 }
 
+
+
 // activites
 
 .home-activites-div {
-  background-color: blue;
+  background-color: $bleu;
   height: 100vh;
   position: relative;
 }
@@ -231,6 +233,92 @@ a {
   position: absolute;
   top: 0;
 }
+
+// activites titre
+
+.home-activites-title-shadow {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.25;
+}
+
+.home-activites-title-shadow h1 {
+  color: #fff;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 6rem;
+}
+
+.home-activites-title {
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  position: relative;
+}
+
+.home-activites-title h1 {
+  color: #fff;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 5rem;
+  // -webkit-text-stroke: 0.6rem rgb(255, 255, 255); /* contour du text */
+  // paint-order: stroke fill; /* mettre le contour deriere le text */
+}
+
+// top five
+
+.home-activites-top-five {
+  display: flex;
+  align-items: center;
+  padding: 2vh;
+}
+
+.home-activites-top-five-little {
+  height: 40vh;
+  width: 350px;
+  content: "";
+  background-color: $sable;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.home-activites-top-five-medium {
+  height: 45vh;
+  width: 350px;
+  content: "";
+  background-color: $sable;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.home-activites-top-five-large {
+  height: 50vh;
+  width: 350px;
+  content: "";
+  background-color: $sable;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+// boue button
+
+.home-activites-button {
+  position: absolute;
+  bottom: 2vh;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, 5vh);
+}
+
+.home-activites-button-img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.home-activites-button img {
+  width: 60%;
+}
+
+
 
 // logement
 
