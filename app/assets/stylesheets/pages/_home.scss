@@ -213,7 +213,7 @@ a {
 // activites
 
 .home-activites-div {
-  background-color: blue;
+  background-color: $bleu;
   height: 100vh;
   position: relative;
 }
@@ -263,6 +263,62 @@ a {
   // -webkit-text-stroke: 0.6rem rgb(255, 255, 255); /* contour du text */
   // paint-order: stroke fill; /* mettre le contour deriere le text */
 }
+
+// top five
+
+.home-activites-top-five {
+  display: flex;
+  align-items: center;
+  padding: 2vh;
+}
+
+.home-activites-top-five-little {
+  height: 40vh;
+  width: 350px;
+  content: "";
+  background-color: $sable;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.home-activites-top-five-medium {
+  height: 45vh;
+  width: 350px;
+  content: "";
+  background-color: $sable;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.home-activites-top-five-large {
+  height: 50vh;
+  width: 350px;
+  content: "";
+  background-color: $sable;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+// boue button
+
+.home-activites-button {
+  position: absolute;
+  bottom: 2vh;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, 5vh);
+}
+
+.home-activites-button-img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.home-activites-button img {
+  width: 60%;
+}
+
+
 
 // logement
 
