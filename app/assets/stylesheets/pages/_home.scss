@@ -341,3 +341,43 @@ a {
   position: absolute;
   top: 0;
 }
+
+// emplacement vague top
+
+.vague-emplacement-top {
+  background-color: $sable;
+  position: relative;
+}
+
+.vague-emplacement-top img {
+  width: 100vw;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+}
+
+// emplacement
+
+.home-emplacements-div {
+  height: 100vh;
+  position: relative;
+  background-color: $bleu;
+}
+
+// footer
+
+.footer {
+  height: 10vh;
+  background-color: #00223A;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+  color: #fff;
+}
+
+.footer p {
+  margin-bottom: 0;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 1.3rem;
+}
