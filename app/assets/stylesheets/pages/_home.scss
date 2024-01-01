@@ -342,7 +342,7 @@ a {
 // ======================= Logement =====================
 
 .home-logements-div {
-  height: 100vh;
+  height: 150vh;
   position: relative;
   background-color: $sable;
 }
@@ -363,6 +363,49 @@ a {
   top: 0;
 }
 
+.home-logement-title-shadow {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.25;
+}
+
+.home-logement-title-shadow h1 {
+  color: $bleu;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 6rem;
+}
+
+.home-logement-title {
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  position: relative;
+}
+
+.home-logement-title h1 {
+  color: $bleu;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 5rem;
+  -webkit-text-stroke: 0.6rem rgb(255, 255, 255); /* contour du text */
+  paint-order: stroke fill; /* mettre le contour deriere le text */
+}
+
+// les categories
+
+.home-logement-categories-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.home-logement-categories-owner-title {
+  font-family: 'Akaya Telivigala', cursive;
+  font-size: 3vw;
+  text-align: center;
+  color: $sableHumide;
+  -webkit-text-stroke: 0.4rem $sableSemiHumide; /* contour du text */
+  paint-order: stroke fill; /* mettre le contour deriere le text */
+}
 
 // ==================== Grosse vague (div unique) ================
 
@@ -388,7 +431,10 @@ a {
   background-color: $bleu;
 }
 
-// footer
+
+
+
+// ================ footer ==========================
 
 .footer {
   height: 10vh;

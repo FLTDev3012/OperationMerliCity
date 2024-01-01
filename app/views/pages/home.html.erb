@@ -161,14 +161,63 @@
 
 <div class="home-logements-div">
 
-    <div class="home-logements-trait-anti-bug">
+  <div class="home-logements-trait-anti-bug">
+  </div>
+
+  <div class="home-logement-vague-haut">
+    <%= image_tag('activites_vague_bas.svg') %>
+  </div>
+
+  <div class="home-logement-title-and-title-shadow">
+    <div class="home-logement-title-shadow">
+      <h1>Nos logements</h1>
     </div>
 
-    <div class="home-logement-vague-haut">
-      <%= image_tag('activites_vague_bas.svg') %>
+    <div class="home-logement-title">
+      <h1>Nos logements</h1>
     </div>
+  </div>
+
+  <div class="home-logement-categories-container">
+
+    <div class="home-logement-categories-owner">
+      <div class="home-logement-categories-owner-title">Camping</div>
+      <div class="home-logement-categories-owner-picture"></div>
+    </div>
+
+    <div class="home-logement-categories-owner">
+      <div class="home-logement-categories-owner-title">Location</div>
+      <div class="home-logement-categories-owner-picture"></div>
+    </div>
+
+    <div class="home-logement-categories-owner">
+      <div class="home-logement-categories-owner-title">Chambre d’hôte</div>
+      <div class="home-logement-categories-owner-picture"></div>
+    </div>
+
+    <div class="home-logement-categories-owner">
+      <div class="home-logement-categories-owner-title">Camping-car</div>
+      <div class="home-logement-categories-owner-picture"></div>
+    </div>
+
+  </div>
 
 </div>
+
+  <script>
+
+
+    const vagueLogementTop = document.querySelector('.home-logement-vague-haut img');
+    const vagueLogementTopHeight = vagueLogementTop.offsetHeight * 2;
+
+
+    const logementTitle = document.querySelector('.home-logement-title');
+    logementTitle.style.paddingTop = vagueLogementTopHeight + 'px';
+
+    const homeLogementTitleShadow = document.querySelector('.home-logement-title-shadow');
+    homeLogementTitleShadow.style.paddingTop = (vagueLogementTopHeight - 50) + 'px';
+
+  </script>
 
 <div class="vague-emplacement-top">
   <%= image_tag('emplacement_vague.svg') %>
