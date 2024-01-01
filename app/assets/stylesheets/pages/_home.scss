@@ -120,7 +120,7 @@ a {
 
 .home-presentation-div {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   /* background-color: $sable; */
   background-color: $sable;
 }
@@ -133,6 +133,10 @@ a {
 .home-traces img {
   width: 100%;
   height: auto;
+}
+
+.home-presentation-title-and-title-shadow {
+  padding: 5vh 0;
 }
 
 .home-presentation-title-shadow {
@@ -161,6 +165,8 @@ a {
   font-size: 5rem;
   -webkit-text-stroke: 0.6rem rgb(255, 255, 255); /* contour du text */
   paint-order: stroke fill; /* mettre le contour deriere le text */
+  transform: translateY(50px);
+
 }
 
 // presentation text et photo
@@ -212,7 +218,7 @@ a {
 
 .home-activites-div {
   background-color: $bleu;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
 }
 
@@ -233,6 +239,11 @@ a {
 }
 
 // activites titre
+
+.home-activites-title-and-title-shadow {
+  padding-top: 15vh;
+  padding-bottom: 10vh;
+}
 
 .home-activites-title-shadow {
   position: absolute;
@@ -258,6 +269,8 @@ a {
   color: #fff;
   font-family: 'Gloria Hallelujah', cursive;
   font-size: 5rem;
+  transform: translateY(50px);
+
   // -webkit-text-stroke: 0.6rem rgb(255, 255, 255); /* contour du text */
   // paint-order: stroke fill; /* mettre le contour deriere le text */
 }
@@ -267,7 +280,7 @@ a {
 .home-activites-top-five {
   display: flex;
   align-items: center;
-  padding: 2vh;
+  padding: 3vh;
 }
 
 .home-activites-top-five-little {
@@ -278,6 +291,7 @@ a {
   margin: 10px;
   border-radius: 10px;
   overflow: hidden;
+  box-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
 }
 
 .home-activites-top-five-little img {
@@ -294,6 +308,7 @@ a {
   margin: 10px;
   border-radius: 10px;
   overflow: hidden;
+  box-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
 }
 
 .home-activites-top-five-medium img {
@@ -310,6 +325,7 @@ a {
   margin: 10px;
   border-radius: 10px;
   overflow: hidden;
+  box-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
 }
 
 .home-activites-top-five-large img {
@@ -321,11 +337,11 @@ a {
 // boue button
 
 .home-activites-button {
-  position: absolute;
-  bottom: 2vh;
-  left: 50%;
+  // position: absolute;
+  // bottom: 2vh;
+  // left: 50%;
   z-index: 2;
-  transform: translate(-50%, 5vh);
+  // transform: translate(-50%, 5vh);
 }
 
 .home-activites-button-img-container {
@@ -334,7 +350,7 @@ a {
 }
 
 .home-activites-button img {
-  width: 60%;
+  width: 20vh;
 }
 
 
@@ -342,7 +358,7 @@ a {
 // ======================= Logement =====================
 
 .home-logements-div {
-  height: 150vh;
+  min-height: 100vh;
   position: relative;
   background-color: $sable;
 }
@@ -361,6 +377,11 @@ a {
   height: auto;
   position: absolute;
   top: 0;
+}
+
+.home-logement-title-and-title-shadow {
+  padding-top: 15vh;
+  padding-bottom: 1vh;
 }
 
 .home-logement-title-shadow {
@@ -389,6 +410,8 @@ a {
   font-size: 5rem;
   -webkit-text-stroke: 0.6rem rgb(255, 255, 255); /* contour du text */
   paint-order: stroke fill; /* mettre le contour deriere le text */
+  transform: translateY(50px);
+
 }
 
 // les categories
@@ -397,6 +420,8 @@ a {
   display: flex;
   justify-content: space-around;
   margin-top: 7rem;
+  position: relative;
+  z-index: 2;
 }
 
 .home-logement-categories-owner-title {
@@ -420,6 +445,13 @@ a {
   justify-content: center;
   align-items: center;
   border-radius: 150px 25px 150px 75px;
+  box-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
+}
+
+.home-logement-categories-owner-picture:hover {
+  cursor: pointer;
+  transition: 0.3s;
+  border: #ACA885 solid 5px;
 }
 
 .home-logement-categories-owner-picture img {
@@ -428,6 +460,7 @@ a {
   object-fit: cover; /* Redimensionne l'image pour remplir le conteneur sans déformation */
 }
 
+
 // ==================== Grosse vague (div unique) ================
 
 // emplacement vague top
@@ -435,21 +468,51 @@ a {
 .vague-emplacement-top {
   background-color: $sable;
   position: relative;
+  padding-top: 5vh;
 }
 
 .vague-emplacement-top img {
   width: 100vw;
   height: auto;
-  position: absolute;
-  bottom: 0;
 }
 
 // ======================== Emplacement div =================
 
-.home-emplacements-div {
-  height: 100vh;
+.home-emplacement-div {
+  min-height: 100vh;
   position: relative;
   background-color: $bleu;
+}
+
+// emplacement titre
+
+.home-emplacement-title-shadow {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.25;
+}
+
+.home-emplacement-title-shadow h1 {
+  color: #fff;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 6rem;
+}
+
+.home-emplacement-title {
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  position: relative;
+}
+
+.home-emplacement-title h1 {
+  color: #fff;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 5rem;
+  transform: translateY(50px);
+  // -webkit-text-stroke: 0.6rem rgb(255, 255, 255); /* contour du text */
+  // paint-order: stroke fill; /* mettre le contour deriere le text */
 }
 
 

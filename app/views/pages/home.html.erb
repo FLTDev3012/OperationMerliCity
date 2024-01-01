@@ -1,3 +1,45 @@
+<script>
+  // document.addEventListener("DOMContentLoaded", function() {
+  //   // presentation
+  //   const elementTraceHome = document.querySelector('.home-traces');
+  //   const hauteurDesTracesHome = elementTraceHome.offsetHeight; // hauteur des traces
+  //   console.log("presentation " + hauteurDesTracesHome);
+
+  //   const elementPresentationTitle = document.querySelector('.home-presentation-title');
+  //   elementPresentationTitle.style.paddingTop = hauteurDesTracesHome + 'px';
+
+  //   const homePresentationTitleShadow = document.querySelector('.home-presentation-title-shadow');
+  //   homePresentationTitleShadow.style.paddingTop = hauteurDesTracesHome - 50 + 'px';
+
+
+  //   // activites
+  //   // Sélection de l'élément ".home-activites-vague-haut" pour obtenir sa hauteur
+  //   const vagueActivitesTop = document.querySelector('.home-activites-vague-haut img');
+  //   const vagueActivitesTopHeight = vagueActivitesTop.offsetHeight * 2;
+  //   console.log("activites " + vagueActivitesTopHeight);
+  //   // Sélection de l'élément ".home-activites-title" et modification du style paddingTop
+  //   const activitesTitle = document.querySelector('.home-activites-title');
+  //   activitesTitle.style.paddingTop = vagueActivitesTopHeight + 'px';
+
+  //   // Sélection de l'élément ".home-activites-title-shadow" et modification du style paddingTop
+  //   const homeActivitesTitleShadow = document.querySelector('.home-activites-title-shadow');
+  //   homeActivitesTitleShadow.style.paddingTop = (vagueActivitesTopHeight - 50) + 'px';
+
+
+  //   // logement
+  //   const vagueLogementTop = document.querySelector('.home-logement-vague-haut img');
+  //   const vagueLogementTopHeight = vagueLogementTop.offsetHeight * 2;
+  //   console.log("logement " + vagueLogementTopHeight);
+
+  //   const logementTitle = document.querySelector('.home-logement-title');
+  //   logementTitle.style.paddingTop = vagueLogementTopHeight + 'px';
+
+  //   const homeLogementTitleShadow = document.querySelector('.home-logement-title-shadow');
+  //   homeLogementTitleShadow.style.paddingTop = (vagueLogementTopHeight - 50) + 'px';
+
+  // });
+</script>
+
 <!-- div video -->
 <div class="hero-video">
 
@@ -73,14 +115,14 @@
 
   <script>
 
-    const elementTraceHome = document.querySelector('.home-traces');
-    const hauteurDesTracesHome = elementTraceHome.offsetHeight; // hauteur des traces
-    console.log(hauteurDesTracesHome);
-    const elementPresentationTitle = document.querySelector('.home-presentation-title');
-    elementPresentationTitle.style.paddingTop = hauteurDesTracesHome + 'px';
+    // const elementTraceHome = document.querySelector('.home-traces');
+    // const hauteurDesTracesHome = elementTraceHome.offsetHeight; // hauteur des traces
+    // console.log(hauteurDesTracesHome);
+    // const elementPresentationTitle = document.querySelector('.home-presentation-title');
+    // elementPresentationTitle.style.paddingTop = hauteurDesTracesHome + 'px';
 
-    const homePresentationTitleShadow = document.querySelector('.home-presentation-title-shadow');
-    homePresentationTitleShadow.style.paddingTop = hauteurDesTracesHome - 50 + 'px';
+    // const homePresentationTitleShadow = document.querySelector('.home-presentation-title-shadow');
+    // homePresentationTitleShadow.style.paddingTop = hauteurDesTracesHome - 50 + 'px';
 
 
 
@@ -108,29 +150,31 @@
       <h1>Activités</h1>
     </div>
 
-    <div class="home-activites-top-five">
+  </div>
 
-      <div class="home-activites-top-five-little">
-        <%= image_tag('activites/activite_une.jpg') %>
-      </div>
+  <div class="home-activites-top-five">
 
-      <div class="home-activites-top-five-medium">
-        <%= image_tag('activites/activite_deux.jpg') %>
-      </div>
-
-      <div class="home-activites-top-five-large">
-        <%= image_tag('activites/activite_trois.jpg') %>
-      </div>
-
-      <div class="home-activites-top-five-medium">
-        <%= image_tag('activites/activite_quatre.jpg') %>
-      </div>
-
-      <div class="home-activites-top-five-little">
-        <%= image_tag('activites/activite_cinq.png') %>
-      </div>
-
+    <div class="home-activites-top-five-little">
+      <%= image_tag('activites/activite_une.jpg') %>
     </div>
+
+    <div class="home-activites-top-five-medium">
+      <%= image_tag('activites/activite_deux.jpg') %>
+    </div>
+
+    <div class="home-activites-top-five-large">
+      <%= image_tag('activites/activite_trois.jpg') %>
+    </div>
+
+    <div class="home-activites-top-five-medium">
+      <%= image_tag('activites/activite_quatre.jpg') %>
+    </div>
+
+    <div class="home-activites-top-five-little">
+      <%= image_tag('activites/activite_cinq.png') %>
+    </div>
+
+  </div>
 
     <div class="home-activites-button">
       <div class="home-activites-button-img-container">
@@ -140,21 +184,22 @@
 
 
 
-  </div>
+
 
   <script>
 
     // Sélection de l'élément ".home-activites-vague-haut" pour obtenir sa hauteur
-    const vagueActivitesTop = document.querySelector('.home-activites-vague-haut img');
-    const vagueActivitesTopHeight = vagueActivitesTop.offsetHeight * 2;
+    // const vagueActivitesTop = document.querySelector('.home-activites-vague-haut img');
+    // const vagueActivitesTopHeight = vagueActivitesTop.offsetHeight * 2;
 
     // Sélection de l'élément ".home-activites-title" et modification du style paddingTop
-    const activitesTitle = document.querySelector('.home-activites-title');
-    activitesTitle.style.paddingTop = vagueActivitesTopHeight + 'px';
+    // const activitesTitle = document.querySelector('.home-activites-title');
+    // activitesTitle.style.paddingTop = vagueActivitesTopHeight + 'px';
 
     // Sélection de l'élément ".home-activites-title-shadow" et modification du style paddingTop
-    const homeActivitesTitleShadow = document.querySelector('.home-activites-title-shadow');
-    homeActivitesTitleShadow.style.paddingTop = (vagueActivitesTopHeight - 50) + 'px';
+    // const homeActivitesTitleShadow = document.querySelector('.home-activites-title-shadow');
+    // homeActivitesTitleShadow.style.paddingTop = (vagueActivitesTopHeight - 50) + 'px';
+
   </script>
 
 </div>
@@ -182,48 +227,64 @@
 
     <div class="home-logement-categories-owner">
       <div class="home-logement-categories-owner-title">Camping</div>
-      <div class="home-logement-categories-owner-picture"></div>
+      <div class="home-logement-categories-owner-picture">
+        <%= image_tag('logements/camping.jpg') %>
+      </div>
     </div>
 
     <div class="home-logement-categories-owner">
       <div class="home-logement-categories-owner-title">Location</div>
-      <div class="home-logement-categories-owner-picture"></div>
+      <div class="home-logement-categories-owner-picture">
+        <%= image_tag('logements/location.jpg') %>
+      </div>
     </div>
 
     <div class="home-logement-categories-owner">
       <div class="home-logement-categories-owner-title">Chambre d’hôte</div>
-      <div class="home-logement-categories-owner-picture"></div>
+      <div class="home-logement-categories-owner-picture">
+        <%= image_tag('logements/hote.jpg') %>
+      </div>
     </div>
 
     <div class="home-logement-categories-owner">
       <div class="home-logement-categories-owner-title">Camping-car</div>
-      <div class="home-logement-categories-owner-picture"></div>
+      <div class="home-logement-categories-owner-picture">
+        <%= image_tag('logements/car.jpg') %>
+      </div>
     </div>
 
   </div>
 
 </div>
 
-  <script>
+<script>
 
+  // const vagueLogementTop = document.querySelector('.home-logement-vague-haut img');
+  // const vagueLogementTopHeight = vagueLogementTop.offsetHeight * 2;
 
-    const vagueLogementTop = document.querySelector('.home-logement-vague-haut img');
-    const vagueLogementTopHeight = vagueLogementTop.offsetHeight * 2;
+  // const logementTitle = document.querySelector('.home-logement-title');
+  // logementTitle.style.paddingTop = vagueLogementTopHeight + 'px';
 
+  // const homeLogementTitleShadow = document.querySelector('.home-logement-title-shadow');
+  // homeLogementTitleShadow.style.paddingTop = (vagueLogementTopHeight - 50) + 'px';
 
-    const logementTitle = document.querySelector('.home-logement-title');
-    logementTitle.style.paddingTop = vagueLogementTopHeight + 'px';
-
-    const homeLogementTitleShadow = document.querySelector('.home-logement-title-shadow');
-    homeLogementTitleShadow.style.paddingTop = (vagueLogementTopHeight - 50) + 'px';
-
-  </script>
+</script>
 
 <div class="vague-emplacement-top">
   <%= image_tag('emplacement_vague.svg') %>
 </div>
 
-<div class="home-emplacements-div">
+<div class="home-emplacement-div">
+
+  <div class="home-emplacement-title-and-title-shadow">
+    <div class="home-emplacement-title-shadow">
+      <h1>Emplacements</h1>
+    </div>
+
+    <div class="home-emplacement-title">
+      <h1>Emplacements</h1>
+    </div>
+  </div>
 
 </div>
 
