@@ -396,6 +396,7 @@ a {
 .home-logement-categories-container {
   display: flex;
   justify-content: space-around;
+  margin-top: 7rem;
 }
 
 .home-logement-categories-owner-title {
@@ -405,6 +406,26 @@ a {
   color: $sableHumide;
   -webkit-text-stroke: 0.4rem $sableSemiHumide; /* contour du text */
   paint-order: stroke fill; /* mettre le contour deriere le text */
+  margin-bottom: 2rem;
+}
+
+.home-logement-categories-owner-picture {
+  content: "";
+  background-color: red;
+  height: 300px;
+  width: 300px;
+  object-fit: cover; /* Redimensionne l'image pour remplir le conteneur sans déformation */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 150px 25px 150px 75px;
+}
+
+.home-logement-categories-owner-picture img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /* Redimensionne l'image pour remplir le conteneur sans déformation */
 }
 
 // ==================== Grosse vague (div unique) ================
