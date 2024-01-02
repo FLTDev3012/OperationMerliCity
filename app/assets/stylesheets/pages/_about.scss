@@ -4,10 +4,35 @@
 
 .about-dunes-mer {
   // background-color: #fff;
+  position: relative;
 }
 
 .about-dunes-mer img{
   width: 100vw;
+}
+
+.about-retour {
+  position: absolute;
+  top: 1rem;
+  left: 3rem;
+}
+
+.about-retour a {
+  font-family: 'Amatic SC', sans-serif;
+  color: #fff;
+  font-size: 1.3rem;
+  letter-spacing: .1rem;
+}
+
+.about-moon-container {
+  position: absolute;
+  top: 10%;
+  right: 40%;
+}
+
+.about-moon-container img{
+  height: 30px;
+  width: auto;
 }
 
 .about-text-sable {
@@ -39,4 +64,30 @@
 .about-mer-container img {
   width: 100vw;
   height: auto;
+}
+
+.about-collab {
+  text-align: center;
+  background-color: $bleu;
+}
+
+.about-collab p {
+  margin-bottom: 0;
+  font-family: 'Akaya Telivigala', cursive;
+  font-size: 3rem;
+  padding: 4rem 7rem 7rem 7rem;
+  color: #fff;
+}
+
+.about-contact {
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  background-color: $bleu;
+  font-family: 'Akaya Telivigala', cursive;
+}
+
+.about-contact p {
+  color: #fff;
+  padding: 1rem 3rem;
 }

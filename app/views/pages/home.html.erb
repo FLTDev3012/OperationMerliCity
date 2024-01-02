@@ -54,10 +54,10 @@
     </div>
     <div class="home-nav-right">
       <%= link_to "Galerie", "#" %>
-      <%= link_to "Webcam", "#" %>
+      <%= link_to "Webcam", "https://www.viewsurf.com/univers/surf/vue/16762-france-nord-pas-de-calais-merlimont-live", target: "_blank" %>
       <%= link_to "Faune & Flore", "#" %>
-      <%= link_to "Il etait une fois", "#" %>
-      <%= link_to "A propos", "#" %>
+      <%= link_to "Il etait une fois", merlimontdavant_path %>
+      <%= link_to "A propos", about_path %>
     </div>
 
   </div>
@@ -82,6 +82,12 @@
 
   <div class="home-dunes">
     <%= image_tag('home_dunes.svg') %>
+  </div>
+
+  <div class="home-bas-dunes">
+    <div class="home-petite-trace-container">
+      <%= image_tag('home_petite_trace.svg') %>
+    </div>
   </div>
 
 </div>
