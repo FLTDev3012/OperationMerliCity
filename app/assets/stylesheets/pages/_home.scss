@@ -42,7 +42,7 @@ a {
   width: 150vh;
   // border-radius: 50%;
   // background-color: $bleu;
-  animation: rotateCircle 20s linear infinite; /* Animation de rotation infinie */
+  animation: rotateCircle 20s linear forwards; /* Animation de rotation infinie */
 }
 
 @keyframes rotateCircle {
@@ -79,9 +79,10 @@ a {
 
 .avion {
   position: absolute;
-  right: 0;
+  right: -400px;
   top: 20%;
-  animation: deplacement 10s linear infinite; /* Animation de déplacement */
+  animation: deplacement 10s linear forwards; /* Animation de déplacement */
+  animation-delay: 15s;
 }
 
 .avion img {
@@ -91,22 +92,10 @@ a {
 
 @keyframes deplacement {
   0% {
-    transform: translate(0, 0) rotate(0deg); /* Point de départ */
-  }
-  20% {
-    transform: translate(-20vw, -5vw) rotate(0deg); /* Premier point intermédiaire */
-  }
-  40% {
-    transform: translate(-40vw, -10vw) rotate(0deg); /* Deuxième point intermédiaire */
-  }
-  60% {
-    transform: translate(-60vw, -10vw) rotate(0deg); /* Troisième point intermédiaire */
-  }
-  80% {
-    transform: translate(-80vw, -5vw) rotate(0deg); /* Avant le point d'arrivée */
+    transform: translate(10vw, 0vw) rotate(0deg); /* Point de départ */
   }
   100% {
-    transform: translate(-100vw, 0vw) rotate(0deg); /* Point d'arrivée */
+    transform: translate(-150vw, 0vw) rotate(0deg); /* Point d'arrivée */
   }
 }
 
