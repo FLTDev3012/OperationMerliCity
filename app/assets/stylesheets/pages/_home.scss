@@ -71,7 +71,7 @@ a {
 }
 
 .kite img{
-  height: 100px;
+  height: 70px;
   width: auto;
   transform: rotate(100deg);
 }
@@ -576,8 +576,9 @@ a {
 
 .home-emplacement-surfer {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 40%;
+  z-index: 2;
 }
 
 .home-emplacement-surfer p {
@@ -630,6 +631,7 @@ a {
 .home-emplacement-map img{
   width: 60%;
   height: auto;
+  z-index: 3;
 }
 
 .home-emplacement-btn {
