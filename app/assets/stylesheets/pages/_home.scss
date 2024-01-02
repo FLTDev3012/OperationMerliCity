@@ -37,19 +37,20 @@ a {
   top: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
+  // transform: rotate(-45deg) translate(-50%, -50%);
   height: 150vh;
   width: 150vh;
   // border-radius: 50%;
   // background-color: $bleu;
-  animation: rotateCircle 10s linear infinite; /* Animation de rotation infinie */
+  animation: rotateCircle 20s linear infinite; /* Animation de rotation infinie */
 }
 
 @keyframes rotateCircle {
   from {
-    transform: translate(-50%, -50%) rotate(0deg); /* Rotation de départ */
+    transform: translate(-50%, -50%) rotate(-180deg); /* Rotation de départ */
   }
   to {
-    transform: translate(-50%, -50%) rotate(360deg); /* Rotation complète (360 degrés) */
+    transform: translate(-50%, -50%) rotate(180deg); /* Rotation complète (360 degrés) */
   }
 }
 
@@ -64,10 +65,15 @@ a {
   top: 0;
   left: 50%;
   transform: translate(-50%, 0%);
-  content: "";
   height: 100px;
-  width: 200px;
-  background-color: red;
+  width: auto;
+  opacity: 0.9;
+}
+
+.kite img{
+  height: 100px;
+  width: auto;
+  transform: rotate(100deg);
 }
 
 
