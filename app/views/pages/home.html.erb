@@ -40,7 +40,10 @@
   // });
 </script>
 
-<!-- div video -->
+
+
+<!-- ================== div video ===================== -->
+
 <div class="hero-video">
 
   <div class="home-fondu-haut"></div>
@@ -77,7 +80,8 @@
 
 
 
-<!-- div presentation -->
+<!-- ================== div presentation ===================== -->
+
 
 <div class="home-presentation-div">
 
@@ -94,9 +98,7 @@
     <div class="home-presentation-title">
       <h1>Merlimont</h1>
     </div>
-
   </div>
-
 
   <div class="home-presentation-text-picture">
 
@@ -112,24 +114,13 @@
     </div>
 
   </div>
-
-  <script>
-
-    // const elementTraceHome = document.querySelector('.home-traces');
-    // const hauteurDesTracesHome = elementTraceHome.offsetHeight; // hauteur des traces
-    // console.log(hauteurDesTracesHome);
-    // const elementPresentationTitle = document.querySelector('.home-presentation-title');
-    // elementPresentationTitle.style.paddingTop = hauteurDesTracesHome + 'px';
-
-    // const homePresentationTitleShadow = document.querySelector('.home-presentation-title-shadow');
-    // homePresentationTitleShadow.style.paddingTop = hauteurDesTracesHome - 50 + 'px';
-
-
-
-  </script>
 </div>
 
-<!-- activites -->
+
+
+
+<!-- ================== div activites ===================== -->
+
 
 <div class="home-activites-div">
 
@@ -182,27 +173,13 @@
       </div>
     </div>
 
-
-
-
-
-  <script>
-
-    // Sélection de l'élément ".home-activites-vague-haut" pour obtenir sa hauteur
-    // const vagueActivitesTop = document.querySelector('.home-activites-vague-haut img');
-    // const vagueActivitesTopHeight = vagueActivitesTop.offsetHeight * 2;
-
-    // Sélection de l'élément ".home-activites-title" et modification du style paddingTop
-    // const activitesTitle = document.querySelector('.home-activites-title');
-    // activitesTitle.style.paddingTop = vagueActivitesTopHeight + 'px';
-
-    // Sélection de l'élément ".home-activites-title-shadow" et modification du style paddingTop
-    // const homeActivitesTitleShadow = document.querySelector('.home-activites-title-shadow');
-    // homeActivitesTitleShadow.style.paddingTop = (vagueActivitesTopHeight - 50) + 'px';
-
-  </script>
-
 </div>
+
+
+
+
+<!-- ================== div logements ===================== -->
+
 
 <div class="home-logements-div">
 
@@ -257,22 +234,15 @@
 
 </div>
 
-<script>
-
-  // const vagueLogementTop = document.querySelector('.home-logement-vague-haut img');
-  // const vagueLogementTopHeight = vagueLogementTop.offsetHeight * 2;
-
-  // const logementTitle = document.querySelector('.home-logement-title');
-  // logementTitle.style.paddingTop = vagueLogementTopHeight + 'px';
-
-  // const homeLogementTitleShadow = document.querySelector('.home-logement-title-shadow');
-  // homeLogementTitleShadow.style.paddingTop = (vagueLogementTopHeight - 50) + 'px';
-
-</script>
+<!-- ================== div vague au dessus de emplacement ===================== -->
 
 <div class="vague-emplacement-top">
   <%= image_tag('emplacement_vague.svg') %>
 </div>
+
+
+
+<!-- ================== div emplacements ===================== -->
 
 <div class="home-emplacement-div">
 
@@ -286,7 +256,19 @@
     </div>
   </div>
 
+  <div class="home-emplacement-map">
+    <%= image_tag('emplacements/emplacement_map.png') %>
+  </div>
+
+  <div class="home-emplacement-btn">
+    <%= link_to "Voir tout les commerces", "#" %>
+  </div>
+
 </div>
+
+
+
+<!-- ================== footer ===================== -->
 
 <div class="footer">
     <p>© copyright aucun droit rérvé | Une production Anonymous1 & Anonymous2</p>

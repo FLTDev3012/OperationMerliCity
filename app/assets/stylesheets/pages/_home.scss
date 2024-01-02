@@ -74,13 +74,16 @@ a {
   color: #005491;
 }
 
-
-
-
+.home-nav-left a {
+  padding: 0 20px;
+  color: $bleu;
+}
 
 .home-nav-right a {
   padding: 0 20px;
 }
+
+
 
 // img dunes
 .home-dunes {
@@ -515,7 +518,29 @@ a {
   // paint-order: stroke fill; /* mettre le contour deriere le text */
 }
 
+.home-emplacement-map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7rem;
+}
 
+.home-emplacement-map img{
+  width: 60%;
+  height: auto;
+}
+
+.home-emplacement-btn {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0 7rem 0;
+}
+
+.home-emplacement-btn a {
+  color: #fff;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 2rem;
+}
 
 
 // ================ footer ==========================
