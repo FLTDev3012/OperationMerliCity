@@ -32,6 +32,44 @@ a {
   z-index: -1;
 }
 
+.home-video-circle-container {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 150vh;
+  width: 150vh;
+  // border-radius: 50%;
+  // background-color: $bleu;
+  animation: rotateCircle 10s linear infinite; /* Animation de rotation infinie */
+}
+
+@keyframes rotateCircle {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg); /* Rotation de départ */
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg); /* Rotation complète (360 degrés) */
+  }
+}
+
+.home-video-circle {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.kite {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  content: "";
+  height: 100px;
+  width: 200px;
+  background-color: red;
+}
+
 
 .avion {
   position: absolute;
@@ -46,11 +84,23 @@ a {
 }
 
 @keyframes deplacement {
-  from {
-    right: -50%; /* Départ à droite (0%) */
+  0% {
+    transform: translate(0, 0) rotate(0deg); /* Point de départ */
   }
-  to {
-    right: 150%; /* Arrivée à gauche (100%) */
+  20% {
+    transform: translate(-20vw, -5vw) rotate(0deg); /* Premier point intermédiaire */
+  }
+  40% {
+    transform: translate(-40vw, -10vw) rotate(0deg); /* Deuxième point intermédiaire */
+  }
+  60% {
+    transform: translate(-60vw, -10vw) rotate(0deg); /* Troisième point intermédiaire */
+  }
+  80% {
+    transform: translate(-80vw, -5vw) rotate(0deg); /* Avant le point d'arrivée */
+  }
+  100% {
+    transform: translate(-100vw, 0vw) rotate(0deg); /* Point d'arrivée */
   }
 }
 
