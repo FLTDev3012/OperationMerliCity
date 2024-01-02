@@ -236,6 +236,30 @@ a {
   top: 0;
 }
 
+.home-activites-swim {
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  z-index: 2;
+}
+
+.home-activites-swim p {
+  font-size: 6rem;
+  text-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
+}
+
+.home-activites-surf {
+  position: absolute;
+  top: 10%;
+  right: 20%;
+  z-index: 2;
+}
+
+.home-activites-surf p {
+  font-size: 6rem;
+  text-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
+}
+
 // activites titre
 
 .home-activites-title-and-title-shadow {
