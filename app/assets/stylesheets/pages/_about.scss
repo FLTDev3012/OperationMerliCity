@@ -1,0 +1,27 @@
+.about-container {
+  background-color: $sable;
+}
+
+.about-dunes-mer {
+  // background-color: #fff;
+}
+
+.about-dunes-mer img{
+  width: 100vw;
+}
+
+.about-text-sable {
+  text-align: center;
+}
+
+.about-text-sable p {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-family: 'Akaya Telivigala', cursive;
+  font-size: 3rem;
+  padding: 0rem 7rem 0rem 7rem;
+  text-align: center;
+  color: $sableHumide;
+  -webkit-text-stroke: 0.4rem $sableSemiHumide;
+  paint-order: stroke fill;
+}
