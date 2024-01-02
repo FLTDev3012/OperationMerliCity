@@ -141,13 +141,13 @@ a {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  opacity: 0.25;
 }
 
 .home-presentation-title-shadow h1 {
   color: $bleu;
   font-family: 'Gloria Hallelujah', cursive;
   font-size: 6rem;
+  opacity: 0.25;
 }
 
 .home-presentation-title {
@@ -165,6 +165,22 @@ a {
   paint-order: stroke fill;
   transform: translateY(50px);
 
+}
+
+.home-presentation-parasol-container {
+  position: relative;
+}
+
+.home-presentation-parasol {
+  position: absolute;
+  top: 0%;
+  right: -1%;
+  z-index: 2;
+}
+
+.home-presentation-parasol p {
+  font-size: 3rem;
+  text-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
 }
 
 // presentation text et photo
