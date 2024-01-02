@@ -25,3 +25,18 @@
   -webkit-text-stroke: 0.4rem $sableSemiHumide;
   paint-order: stroke fill;
 }
+
+.about-trait-sable-container {
+  display: flex;
+  justify-content: center;
+}
+
+.about-trait-sable-container img {
+  width: 50%;
+  height: auto;
+}
+
+.about-mer-container img {
+  width: 100vw;
+  height: auto;
+}
