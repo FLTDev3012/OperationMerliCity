@@ -698,7 +698,7 @@ a {
   grid-template-columns: repeat(auto-fill, minmax(305px, 1fr)); /* Colonnes avec une largeur minimale de 100px */
   grid-gap: 10px; /* Espacement entre les éléments */
   width: 100%; /* Largeur de la grille */
-  margin-top: 7rem;
+  padding: 7rem 0;
   position: relative;
   z-index: 2;
 }
@@ -758,6 +758,15 @@ a {
 .vague-emplacement-top img {
   width: 100vw;
   height: auto;
+}
+
+.vague-emplacement-trait-anti-bug {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: $bleu;
 }
 
 .home-emplacement-surfer {
