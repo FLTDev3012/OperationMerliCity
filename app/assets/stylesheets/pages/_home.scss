@@ -42,7 +42,7 @@ a {
   width: 150vh;
   // border-radius: 50%;
   // background-color: $bleu;
-  animation: rotateCircle 20s linear forwards; /* Animation de rotation infinie */
+  animation: rotateCircle 15s linear forwards; /* Animation de rotation infinie */
 }
 
 @keyframes rotateCircle {
@@ -76,6 +76,53 @@ a {
   transform: rotate(100deg);
 }
 
+// kite deux
+
+.home-video-circle-container-deux {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  // transform: rotate(-45deg) translate(-50%, -50%);
+  height: 150vh;
+  width: 150vh;
+  // border-radius: 50%;
+  // background-color: $bleu;
+  animation: rotateCircleDeux 15s linear forwards; /* Animation de rotation infinie */
+  animation-delay: 15s;
+}
+
+@keyframes rotateCircleDeux {
+  from {
+    transform: translate(-50%, -50%) rotate(360deg); /* Rotation de départ */
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(0deg); /* Rotation complète (360 degrés) */
+  }
+}
+
+.home-video-circle-deux {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.kite-deux {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  height: 100px;
+  width: auto;
+  opacity: 0.9;
+}
+
+.kite-deux img{
+  height: 70px;
+  width: auto;
+  transform: rotate(100deg);
+}
+
 
 .avion {
   position: absolute;
@@ -92,10 +139,10 @@ a {
 
 @keyframes deplacement {
   0% {
-    transform: translate(10vw, 0vw) rotate(0deg); /* Point de départ */
+    transform: translate(0vw, 0vw) rotate(0deg); /* Point de départ */
   }
   100% {
-    transform: translate(-150vw, 0vw) rotate(0deg); /* Point d'arrivée */
+    transform: translate(-100vw , 0vw) rotate(0deg); /* Point d'arrivée */
   }
 }
 
@@ -103,7 +150,7 @@ a {
 .home-nav {
   display: flex;
   justify-content: space-between;
-  margin: 10px 20px;
+  margin: 30px 20px;
   position: relative;
   z-index: 2;
 }
@@ -121,8 +168,15 @@ a {
   color: $bleu;
 }
 
+.home-nav-left img {
+  height: 4rem;
+  width: auto;
+}
+
 .home-nav-right a {
   padding: 0 20px;
+  font-family: 'Amatic SC', sans-serif;
+  letter-spacing: .1rem;
 }
 
 
