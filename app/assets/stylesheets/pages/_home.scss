@@ -659,8 +659,7 @@ a {
 }
 
 .home-logement-title-and-title-shadow {
-  padding-top: 15vh;
-  padding-bottom: 1vh;
+  padding-top: 10rem;
 }
 
 .home-logement-title-shadow {
@@ -698,7 +697,7 @@ a {
   grid-template-columns: repeat(auto-fill, minmax(305px, 1fr)); /* Colonnes avec une largeur minimale de 100px */
   grid-gap: 10px; /* Espacement entre les éléments */
   width: 100%; /* Largeur de la grille */
-  padding: 7rem 0;
+  padding: 10rem 0 7rem 0;
   position: relative;
   z-index: 2;
 }
@@ -723,8 +722,10 @@ a {
 .home-logement-categories-owner-picture {
   content: "";
   background-color: red;
-  height: 300px;
-  width: 300px;
+  // height: 300px;
+  // width: 300px;
+  height: 400px;
+  width: 250px;
   object-fit: cover;
   overflow: hidden;
   display: flex;
@@ -840,6 +841,12 @@ a {
   font-family: 'Gloria Hallelujah', cursive;
   font-size: 2rem;
   text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 3;
+  transition: color 0.3s;
+}
+
+.home-emplacement-btn a:hover {
+  color: #33f2c6;
 }
 
 .home-emplacement-bulle {
