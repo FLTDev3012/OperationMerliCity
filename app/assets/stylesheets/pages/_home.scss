@@ -425,6 +425,7 @@ a {
   color: $sableHumide;
   -webkit-text-stroke: 0.4rem $sableSemiHumide;
   paint-order: stroke fill;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .home-presentation-trace-trait {
@@ -693,11 +694,19 @@ a {
 }
 
 .home-logement-categories-container {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(305px, 1fr)); /* Colonnes avec une largeur minimale de 100px */
+  grid-gap: 10px; /* Espacement entre les éléments */
+  width: 100%; /* Largeur de la grille */
   margin-top: 7rem;
   position: relative;
   z-index: 2;
+}
+
+.home-logement-categories-owner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .home-logement-categories-owner-title {
@@ -708,6 +717,7 @@ a {
   -webkit-text-stroke: 0.4rem $sableSemiHumide; /* contour du text */
   paint-order: stroke fill; /* mettre le contour deriere le text */
   margin-bottom: 2rem;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .home-logement-categories-owner-picture {
