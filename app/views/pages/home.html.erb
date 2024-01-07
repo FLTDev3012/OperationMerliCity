@@ -13,15 +13,85 @@
       <% end %>
 
     </div>
-    <div class="home-nav-right">
-      <%= link_to "Galerie", "#" %>
-      <%= link_to "Webcam", "https://www.viewsurf.com/univers/surf/vue/16762-france-nord-pas-de-calais-merlimont-live", target: "_blank" %>
-      <%= link_to "Faune & Flore", "#" %>
-      <%= link_to "Il etait une fois", merlimontdavant_path %>
-      <%= link_to "A propos", about_path %>
-    </div>
+
+      <div class="home-nav-right">
+        <span>
+          <svg class="svg-pfff">
+            <g
+              fill="crimson"
+              stroke="white"
+              stroke-width="6"
+              stroke-linejoin="round"
+              text-anchor="middle">
+              <text x="50%" y="50%" paint-order="stroke" id="stroke-under">
+                <%= link_to "Galerie", "#" %>
+              </text>
+            </g>
+          </svg>
+
+        </span>
+          <svg class="svg-pfff">
+            <g
+              fill="crimson"
+              stroke="white"
+              stroke-width="6"
+              stroke-linejoin="round"
+              text-anchor="middle">
+              <text x="50%" y="50%" paint-order="stroke" id="stroke-under">
+                <%= link_to "Webcam", "https://www.viewsurf.com/univers/surf/vue/16762-france-nord-pas-de-calais-merlimont-live", target: "_blank" %>
+              </text>
+            </g>
+          </svg>
+        </span>
+
+        </span>
+          <svg class="svg-pfff">
+            <g
+              fill="crimson"
+              stroke="white"
+              stroke-width="6"
+              stroke-linejoin="round"
+              text-anchor="middle">
+              <text x="50%" y="50%" paint-order="stroke" id="stroke-under">
+                <%= link_to "Faune & Flore", "#" %>
+              </text>
+            </g>
+          </svg>
+        </span>
+
+        </span>
+          <svg class="svg-pfff">
+            <g
+              fill="crimson"
+              stroke="white"
+              stroke-width="6"
+              stroke-linejoin="round"
+              text-anchor="middle">
+              <text x="50%" y="50%" paint-order="stroke" id="stroke-under">
+                <%= link_to "Il etait une fois", merlimontdavant_path %>
+              </text>
+            </g>
+          </svg>
+        </span>
+
+
+
+
+        <%= link_to "A propos", about_path %>
+
+      </div>
 
   </div>
+
+  <script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    const lesLiens = document.querySelector('.home-nav-right');
+    const hauteurDesLiens = lesLiens.clientHeight;
+    console.log(hauteurDesLiens)
+    const leSvg = document.querySelector('.svg-pfff');
+    leSvg.setAttribute('height', `${hauteurDesLiens}px`);
+  });
+  </script>
 
   <!-- <div class="avion">
     <%= image_tag('aviond.png') %>
