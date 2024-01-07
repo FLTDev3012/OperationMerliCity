@@ -15,29 +15,37 @@
     </div>
 
       <div class="home-nav-right">
+
+        <%= link_to "Galerie", "#", class:"gal" %>
+        <%= link_to "Webcam", "https://www.viewsurf.com/univers/surf/vue/16762-france-nord-pas-de-calais-merlimont-live", target: "_blank", class:"web" %>
+        <%= link_to "Faune & Flore", "#", class:"faune" %>
+        <%= link_to "Il etait une fois", merlimontdavant_path, class:"fois" %>
+        <%= link_to "A propos", about_path, class:"about" %>
+
+
         <span>
-          <svg class="svg-pfff">
+          <svg class="svg-pfff galn">
             <g
               fill="crimson"
               stroke="white"
               stroke-width="6"
               stroke-linejoin="round"
               text-anchor="middle">
-              <text x="50%" y="50%" paint-order="stroke" id="stroke-under">
+              <text x="50%" y="90%" paint-order="stroke" id="stroke-under">
                 <%= link_to "Galerie", "#" %>
               </text>
             </g>
           </svg>
 
         </span>
-          <svg class="svg-pfff">
+          <svg class="svg-pfff webn">
             <g
               fill="crimson"
               stroke="white"
               stroke-width="6"
               stroke-linejoin="round"
               text-anchor="middle">
-              <text x="50%" y="50%" paint-order="stroke" id="stroke-under">
+              <text x="50%" y="90%" paint-order="stroke" id="stroke-under">
                 <%= link_to "Webcam", "https://www.viewsurf.com/univers/surf/vue/16762-france-nord-pas-de-calais-merlimont-live", target: "_blank" %>
               </text>
             </g>
@@ -45,14 +53,14 @@
         </span>
 
         </span>
-          <svg class="svg-pfff">
+          <svg class="svg-pfff faunen">
             <g
               fill="crimson"
               stroke="white"
               stroke-width="6"
               stroke-linejoin="round"
               text-anchor="middle">
-              <text x="50%" y="50%" paint-order="stroke" id="stroke-under">
+              <text x="50%" y="90%" paint-order="stroke" id="stroke-under">
                 <%= link_to "Faune & Flore", "#" %>
               </text>
             </g>
@@ -60,37 +68,76 @@
         </span>
 
         </span>
-          <svg class="svg-pfff">
+          <svg class="svg-pfff foisn">
             <g
               fill="crimson"
               stroke="white"
               stroke-width="6"
               stroke-linejoin="round"
               text-anchor="middle">
-              <text x="50%" y="50%" paint-order="stroke" id="stroke-under">
+              <text x="50%" y="90%" paint-order="stroke" id="stroke-under">
                 <%= link_to "Il etait une fois", merlimontdavant_path %>
               </text>
             </g>
           </svg>
         </span>
 
-
-
-
-        <%= link_to "A propos", about_path %>
+        </span>
+          <svg class="svg-pfff aboutn">
+            <g
+              fill="crimson"
+              stroke="white"
+              stroke-width="6"
+              stroke-linejoin="round"
+              text-anchor="middle">
+              <text x="50%" y="90%" paint-order="stroke" id="stroke-under">
+                <%= link_to "A propos", about_path %>
+              </text>
+            </g>
+          </svg>
+        </span>
 
       </div>
 
   </div>
 
   <script>
-  window.addEventListener('DOMContentLoaded', (event) => {
-    const lesLiens = document.querySelector('.home-nav-right');
-    const hauteurDesLiens = lesLiens.clientHeight;
-    console.log(hauteurDesLiens)
-    const leSvg = document.querySelector('.svg-pfff');
-    leSvg.setAttribute('height', `${hauteurDesLiens}px`);
-  });
+    window.addEventListener('DOMContentLoaded', (event) => {
+      const leLienGal = document.querySelector('.gal');
+      const hauteurDeGal = leLienGal.offsetHeight;
+      const lesSvg = document.querySelectorAll('.svg-pfff');
+      lesSvg.forEach((leSvg) => {
+        leSvg.setAttribute('height', `${hauteurDeGal}px`);
+      });
+
+      const leLienWeb = document.querySelector('.web');
+      const leLienFaune = document.querySelector('.faune');
+      const leLienFois = document.querySelector('.fois');
+      const leLienAbout = document.querySelector('.about');
+
+      const largeurDeGal = leLienGal.offsetWidth;
+      const cibleNewGal = document.querySelector('.galn');
+      cibleNewGal.setAttribute('width', `${largeurDeGal}px`);
+
+      const largeurDeWeb = leLienWeb.offsetWidth;
+      const largeurnWeb = document.querySelector('.webn');
+      largeurnWeb.setAttribute('width', `${largeurDeWeb}px`);
+
+      const largeurDeFaune = leLienFaune.offsetWidth;
+      const largeurnFaune = document.querySelector('.faunen');
+      largeurnFaune.setAttribute('width', `${largeurDeFaune}px`);
+
+      const largeurDeFois = leLienFois.offsetWidth;
+      const largeurnFoois = document.querySelector('.foisn');
+      largeurnFoois.setAttribute('width', `${largeurDeFois}px`);
+      console.log(largeurDeFois);
+      console.log(largeurnFoois);
+
+      const largeurDeAbout = leLienAbout.offsetWidth;
+      const largeurnAbout = document.querySelector('.aboutn');
+      largeurnAbout.setAttribute('width', `${largeurDeAbout}px`);
+
+    });
   </script>
 
   <!-- <div class="avion">
