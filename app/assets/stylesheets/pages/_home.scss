@@ -260,14 +260,17 @@ a {
   z-index: 2;
 }
 
-// test
-
-.home-nav-right svg {
-  // width: 300px;
-}
-
 .home-nav a {
   font-family: 'Akaya Telivigala', cursive;
+  font-size: 2rem;
+  -webkit-text-stroke: 5px rgb(255, 255, 255);
+  paint-order: stroke fill;
+  color: #005491;
+}
+
+svg a {
+  font-family: 'Amatic SC', sans-serif;
+  letter-spacing: .1rem;
   font-size: 2rem;
   -webkit-text-stroke: 5px rgb(255, 255, 255);
   paint-order: stroke fill;
@@ -285,7 +288,7 @@ a {
 }
 
 .home-nav-right a {
-  padding: 0 20px;
+  // padding: 0 20px;
   font-family: 'Amatic SC', sans-serif;
   letter-spacing: .1rem;
 }
