@@ -13,15 +13,131 @@
       <% end %>
 
     </div>
-    <div class="home-nav-right">
-      <%= link_to "Galerie", "#" %>
-      <%= link_to "Webcam", "https://www.viewsurf.com/univers/surf/vue/16762-france-nord-pas-de-calais-merlimont-live", target: "_blank" %>
-      <%= link_to "Faune & Flore", "#" %>
-      <%= link_to "Il etait une fois", merlimontdavant_path %>
-      <%= link_to "A propos", about_path %>
+
+    <!-- <div class="home-nav-right">
+      <%= link_to "Galerie", "#", class:"gal" %>
+      <%= link_to "Webcam", "https://www.viewsurf.com/univers/surf/vue/16762-france-nord-pas-de-calais-merlimont-live", target: "_blank", class:"web" %>
+      <%= link_to "Faune & Flore", "#", class:"faune" %>
+      <%= link_to "Il etait une fois", merlimontdavant_path, class:"fois" %>
+      <%= link_to "A propos", about_path, class:"about" %>
+    </div> -->
+
+    <div class="home-nav-right-new">
+      <span>
+        <svg class="svg-pfff galn">
+          <g
+            fill="black"
+            stroke="white"
+            stroke-width="6"
+            stroke-linejoin="round"
+            text-anchor="middle">
+            <text x="50%" y="70%" paint-order="stroke" id="stroke-under">
+              <a href="#">Galerie</a>
+            </text>
+          </g>
+        </svg>
+
+      </span>
+        <svg class="svg-pfff webn">
+          <g
+            fill="black"
+            stroke="white"
+            stroke-width="6"
+            stroke-linejoin="round"
+            text-anchor="middle">
+            <text x="50%" y="70%" paint-order="stroke" id="stroke-under">
+              <%= link_to "Webcam", "https://www.viewsurf.com/univers/surf/vue/16762-france-nord-pas-de-calais-merlimont-live", target: "_blank" %>
+            </text>
+          </g>
+        </svg>
+      </span>
+
+      </span>
+        <svg class="svg-pfff faunen">
+          <g
+            fill="black"
+            stroke="white"
+            stroke-width="6"
+            stroke-linejoin="round"
+            text-anchor="middle">
+            <text x="50%" y="70%" paint-order="stroke" id="stroke-under">
+              <%= link_to "Faune & Flore", "#" %>
+            </text>
+          </g>
+        </svg>
+      </span>
+
+      </span>
+        <svg class="svg-pfff foisn">
+          <g
+            fill="black"
+            stroke="white"
+            stroke-width="6"
+            stroke-linejoin="round"
+            text-anchor="middle">
+            <text x="50%" y="70%" paint-order="stroke" id="stroke-under">
+              <%= link_to "Il etait une fois", '#' %>
+            </text>
+          </g>
+        </svg>
+      </span>
+
+      </span>
+        <svg class="svg-pfff aboutn">
+          <g
+            fill="black"
+            stroke="white"
+            stroke-width="6"
+            stroke-linejoin="round"
+            text-anchor="middle">
+            <text x="50%" y="70%" paint-order="stroke" id="stroke-under">
+              <%= link_to "A propos", '#' %>
+            </text>
+          </g>
+        </svg>
+      </span>
     </div>
 
   </div>
+
+
+
+
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    const leLienGal = document.querySelector('.gal');
+    const leLienWeb = document.querySelector('.web');
+    const leLienFaune = document.querySelector('.faune');
+    const leLienFois = document.querySelector('.fois');
+    const leLienAbout = document.querySelector('.about');
+
+    const largeurDeGal = leLienGal.offsetWidth;
+    const cibleNewGal = document.querySelector('.galn');
+    cibleNewGal.setAttribute('width', `${largeurDeGal}px`);
+
+    const largeurDeWeb = leLienWeb.offsetWidth;
+    const cibleNewWeb = document.querySelector('.webn');
+    cibleNewWeb.setAttribute('width', `${largeurDeWeb}px`);
+
+    const largeurDeFaune = leLienFaune.offsetWidth;
+    const cibleNewFaune = document.querySelector('.faunen');
+    cibleNewFaune.setAttribute('width', `${largeurDeFaune}px`);
+
+    const largeurDeFois = leLienFois.offsetWidth;
+    const cibleNewFois = document.querySelector('.foisn');
+    cibleNewFois.setAttribute('width', `${largeurDeFois}px`);
+
+    const largeurDeAbout = leLienAbout.offsetWidth;
+    const cibleNewAbout = document.querySelector('.aboutn');
+    cibleNewAbout.setAttribute('width', `${largeurDeAbout}px`);
+
+    const hauteurPourTous = leLienGal.offsetHeight;
+    const lesSvg = document.querySelectorAll('.svg-pfff');
+    lesSvg.forEach((leSvg) => {
+      leSvg.setAttribute('height', `${hauteurPourTous}px`);
+    });
+  });
+</script>
 
   <!-- <div class="avion">
     <%= image_tag('aviond.png') %>
