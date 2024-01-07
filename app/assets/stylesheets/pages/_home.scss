@@ -263,19 +263,56 @@ a {
 .home-nav a {
   font-family: 'Akaya Telivigala', cursive;
   font-size: 2rem;
-  -webkit-text-stroke: 5px rgb(255, 255, 255);
+  -webkit-text-stroke: 5px rgba(255, 255, 255, 0);
   paint-order: stroke fill;
-  color: #005491;
+  color: #00559100;
 }
 
-svg a {
-  font-family: 'Amatic SC', sans-serif;
-  letter-spacing: .1rem;
-  font-size: 2rem;
-  -webkit-text-stroke: 5px rgb(255, 255, 255);
-  paint-order: stroke fill;
-  color: #005491;
+.home-nav-right-new {
+  display: flex;
+  align-items: center;
 }
+
+.home-nav-right-new svg {
+  margin: 0 20px;
+  fill: #33f2c6;
+}
+
+
+.home-nav-right-new svg a{
+  font-family: 'Amatic SC', sans-serif !important;
+  letter-spacing: .1rem !important;
+  font-size: 2rem !important;
+  -webkit-text-stroke: 5px rgb(255, 255, 255) !important;
+  paint-order: stroke fill !important;
+  color: #005491 !important;
+}
+
+
+svg {
+  height: 39px;
+}
+.galn {
+  width: 80px;
+}
+
+.webn {
+  width: 84px;
+}
+
+.faunen {
+  width: 152px;
+}
+
+.foisn {
+  width: 180px;
+}
+
+.aboutn {
+  width: 93px;
+}
+
+
 
 .home-nav-left a {
   padding: 0 20px;
@@ -287,6 +324,10 @@ svg a {
   width: auto;
 }
 
+.home-nav-right {
+  position: absolute;
+  z-index: -2;
+}
 .home-nav-right a {
   // padding: 0 20px;
   font-family: 'Amatic SC', sans-serif;
