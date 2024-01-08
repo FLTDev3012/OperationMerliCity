@@ -459,16 +459,18 @@ svg {
 
 .home-presentation-text-picture {
   display: flex;
+  height: 100%;
+  padding-top: 3rem;
 }
 
 .home-presentation-text {
-  width: 60vw;
+  width: 60%;
   display: flex;
   flex-direction: column;
 }
 
 .text-presentation {
-  width: 90%;
+  width: 80%;
   height: auto;
 }
 
@@ -481,6 +483,11 @@ svg {
   -webkit-text-stroke: 0.4rem $sableSemiHumide;
   paint-order: stroke fill;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.home-presentaion-text-text {
+  display: flex;
+  justify-content: center;
 }
 
 .home-presentation-trace-trait {
