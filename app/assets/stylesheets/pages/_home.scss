@@ -765,9 +765,8 @@ svg {
 }
 
 .home-logement-categories-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(305px, 1fr)); /* Colonnes avec une largeur minimale de 100px */
-  grid-gap: 10px; /* Espacement entre les éléments */
+  display: flex;
+  justify-content: space-around;
   width: 100%; /* Largeur de la grille */
   padding: 7rem 0 7rem 0;
   position: relative;
@@ -778,6 +777,7 @@ svg {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 20%;
 }
 
 .home-logement-categories-owner-title {
@@ -797,7 +797,7 @@ svg {
   // height: 300px;
   // width: 300px;
   height: 400px;
-  width: 250px;
+  width: 100%;
   object-fit: cover;
   overflow: hidden;
   display: flex;
