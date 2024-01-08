@@ -223,14 +223,27 @@
     </div>
 
     <div class="home-presentation-title">
-      <h1>Merlimont</h1>
+        <svg class="">
+          <g
+            fill="#007CD7"
+            stroke="white"
+            stroke-width="10"
+            stroke-linejoin="round"
+            text-anchor="middle">
+            <text x="50%" y="50%" paint-order="stroke" id="stroke-under">
+              Merlimont
+            </text>
+          </g>
+        </svg>
     </div>
   </div>
 
   <div class="home-presentation-text-picture">
 
     <div class="home-presentation-text">
-      <p>Nichée entre dunes sauvages et plages de sable fin, Merlimont est une destination côtière idyllique où le charme authentique de la côte française rencontre la tranquillité et la beauté naturelle. </p>
+      <div class="home-presentaion-text-text">
+        <%= image_tag('text-presentation.svg', class: 'text-presentation') %>
+      </div>
       <div class="home-presentation-trace-trait">
         <%= image_tag('home_trace_trait.svg') %>
       </div>
@@ -339,35 +352,46 @@
     </div>
 
     <div class="home-logement-title">
-      <h1>Nos logements</h1>
+      <svg class="">
+        <g
+          fill="#007CD7"
+          stroke="white"
+          stroke-width="10"
+          stroke-linejoin="round"
+          text-anchor="middle">
+          <text x="50%" y="50%" paint-order="stroke" id="stroke-under">
+            Nos logements
+          </text>
+        </g>
+      </svg>
     </div>
   </div>
 
   <div class="home-logement-categories-container">
 
     <div class="home-logement-categories-owner">
-      <div class="home-logement-categories-owner-title">Camping</div>
+      <div class="home-logement-categories-owner-title"><%= image_tag('logements/Camping.svg') %></div>
       <div class="home-logement-categories-owner-picture">
         <%= image_tag('logements/camping.jpg') %>
       </div>
     </div>
 
     <div class="home-logement-categories-owner">
-      <div class="home-logement-categories-owner-title">Location</div>
+      <div class="home-logement-categories-owner-title"><%= image_tag('logements/Location.svg') %></div>
       <div class="home-logement-categories-owner-picture">
         <%= image_tag('logements/location.jpg') %>
       </div>
     </div>
 
     <div class="home-logement-categories-owner">
-      <div class="home-logement-categories-owner-title">Chambre d’hôte</div>
+      <div class="home-logement-categories-owner-title"><%= image_tag('logements/hote.svg') %></div>
       <div class="home-logement-categories-owner-picture">
         <%= image_tag('logements/hote.jpg') %>
       </div>
     </div>
 
     <div class="home-logement-categories-owner">
-      <div class="home-logement-categories-owner-title">Camping-car</div>
+      <div class="home-logement-categories-owner-title"><%= image_tag('logements/Camping_car.svg') %></div>
       <div class="home-logement-categories-owner-picture">
         <%= image_tag('logements/car.jpg') %>
       </div>
