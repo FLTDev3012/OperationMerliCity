@@ -429,7 +429,12 @@ svg {
   position: relative;
 }
 
-.home-presentation-title h1 {
+.home-presentation-title svg {
+  width: 400px;
+  height: auto;
+}
+
+.home-presentation-title text {
   color: $bleu;
   font-family: 'Gloria Hallelujah', cursive;
   font-size: 5rem;
