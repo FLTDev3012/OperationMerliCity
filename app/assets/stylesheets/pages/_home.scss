@@ -605,11 +605,11 @@ svg {
 .home-activites-top-five {
   display: flex;
   align-items: center;
-  padding: 3vh;
+  padding: 2rem;
 }
 
 .home-activites-top-five-little {
-  height: 40vh;
+  height: 300px;
   width: 350px;
   content: "";
   background-color: $sable;
@@ -626,7 +626,7 @@ svg {
 }
 
 .home-activites-top-five-medium {
-  height: 45vh;
+  height: 400px;
   width: 350px;
   content: "";
   background-color: $sable;
@@ -643,7 +643,7 @@ svg {
 }
 
 .home-activites-top-five-large {
-  height: 50vh;
+  height: 500px;
   width: 350px;
   content: "";
   background-color: $sable;
