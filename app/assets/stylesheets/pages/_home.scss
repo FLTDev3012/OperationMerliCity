@@ -12,6 +12,8 @@ a {
 
 // ================= Home Permiere Div video =========================
 
+
+
 .hero-video {
   position: relative;
   height: 100vh;
@@ -455,6 +457,11 @@ svg {
   z-index: 2;
 }
 
+.home-presentation-parasol img {
+  width: 48px;
+  height: 48px;
+}
+
 .home-presentation-parasol p {
   font-size: 3rem;
   text-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
@@ -682,6 +689,7 @@ svg {
   min-height: 100vh;
   position: relative;
   background-color: $sable;
+  overflow: hidden;
 }
 
 .home-emplacement-para {
@@ -691,6 +699,14 @@ svg {
   z-index: 2;
 }
 
+.home-emplacement-para img {
+  width: 89px;
+  height: auto;
+
+}
+
+
+
 .home-emplacement-para p {
   font-size: 6rem;
   text-shadow: 40px 90px 30px rgba(0, 0, 0, 0.35);
@@ -698,8 +714,8 @@ svg {
 
 .home-emplacement-chateau {
   position: absolute;
-  top: 25%;
-  right: 5rem;
+  top: 30%;
+  right: -5%;
 }
 
 .home-emplacement-chateau img {
