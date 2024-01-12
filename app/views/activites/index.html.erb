@@ -1,9 +1,9 @@
   <h1>Pages des Activités</h1>
 
-    <% @activites.each do |activite| %>
-        <strong><%= activite.title %></strong>
-        <p><%= activite.description %></p>
-        <% if activite.photo.attached? %>
-          <%= cl_image_tag activite.photo.key, height: 300, width: 400, crop: :fill %>
-        <% end %>
-    <% end %>
+  <% @activites.each do |activite| %>
+      <strong><%= activite.title %></strong>
+      <p><%= activite.description %></p>
+      <% if activite.photo.attached? %>
+        <%= cl_image_tag activite.photo.key, height: 300, width: 400, crop: :fill %>
+      <% end %>
+  <% end %>
