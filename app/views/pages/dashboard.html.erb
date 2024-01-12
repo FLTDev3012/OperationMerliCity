@@ -14,24 +14,26 @@
   </div>
 
 
-  <% @activites.each do |activite| %>
+  <div class="dash-all-activities">
+    <% @activites.each do |activite| %>
 
-    <div class="dash-one-activitie">
-      <%= activite.title %>
-      <p><%= activite.description %></p>
-      <% if activite.photo.attached? %>
-        <p>Avec image</p>
-      <% else %>
-        <p>sans image</p>
-      <% end %>
-      <%= link_to "voir l activite", activite_path(activite) %>
-      <%= link_to "modifer l activite", edit_activite_path(activite) %>
-      <%= link_to activite_path(activite), data: { turbo_method: :delete, turbo_confirm: "Êtes-vous sûr de vouloir supprimer ?" }, class: "deco-none dash-corbeille" do %>
-        <i class="fa-solid fa-trash" style="color: #111;"></i>
-      <% end %>
-    </div>
+      <div class="dash-one-activitie">
+        <%= activite.title %>
+        <p><%= activite.description %></p>
+        <% if activite.photo.attached? %>
+          <p>Avec image</p>
+        <% else %>
+          <p>sans image</p>
+        <% end %>
+        <%= link_to "voir l activite", activite_path(activite) %>
+        <%= link_to "modifer l activite", edit_activite_path(activite) %>
+        <%= link_to activite_path(activite), data: { turbo_method: :delete, turbo_confirm: "Êtes-vous sûr de vouloir supprimer ?" }, class: "deco-none dash-corbeille" do %>
+          <i class="fa-solid fa-trash" style="color: #fff;"></i>
+        <% end %>
+      </div>
 
-  <% end %>
+    <% end %>
+  </div>
 
 
 </div>
