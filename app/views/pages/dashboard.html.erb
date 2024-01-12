@@ -4,4 +4,12 @@
     <h3>Dashboard</h3>
   </div>
 
+  <h1>Liste des Activités</h1>
+
+    <% @activites.each do |activite| %>
+        <strong><%= activite.title %></strong>
+        <p><%= activite.description %></p>
+    <% end %>
+
+
 </div>
