@@ -1,0 +1,6 @@
+  <h1>Pages des Activités</h1>
+
+    <% @activites.each do |activite| %>
+        <strong><%= activite.title %></strong>
+        <p><%= activite.description %></p>
+    <% end %>
