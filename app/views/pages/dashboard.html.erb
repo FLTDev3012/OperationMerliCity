@@ -3,13 +3,30 @@
   <div class="dash-title-container">
     <h3>Dashboard</h3>
   </div>
+  <br><br>
+
+
+
 
   <h1>Liste des Activités</h1>
+  <h3><%= link_to "Voir le page des activites", activites_path %></h3>
 
-    <% @activites.each do |activite| %>
-        <strong><%= activite.title %></strong>
-        <p><%= activite.description %></p>
-    <% end %>
+  <%= link_to "cree une activites", new_activite_path %>
+
+  <% @activites.each do |activite| %>
+      <br><br>
+      <strong><%= activite.title %></strong>
+      <p><%= activite.description %></p>
+      <%= link_to "voir l activite", activite_path(activite) %>
+      <br>
+      <%= link_to "modifer l activite", edit_activite_path(activite) %>
+      <br>
+      <%= link_to activite_path(activite), data: { turbo_method: :delete, turbo_confirm: "Êtes-vous sûr de vouloir supprimer ?" }, class: "deco-none dash-corbeille" do %>
+        <i class="fa-solid fa-trash" style="color: #111;"></i>
+      <% end %>
+      <br><br>
+
+  <% end %>
 
 
 </div>

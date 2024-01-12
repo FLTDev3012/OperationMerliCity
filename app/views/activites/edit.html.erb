@@ -1,0 +1,18 @@
+<div class="form-container">
+
+  <div class="form-titre">
+    <h1>Ajoutez votre activite</h1>
+  </div>
+
+  <div class="form-formulaire">
+    <%= simple_form_for @activite do |f| %>
+      <%= f.input :title, placeholder: 'titre' %>
+      <%= f.input :description, placeholder: 'Description' %>
+      <!-- <%= f.input :photo, as: :file %> -->
+      <div class="form-input">
+        <%= f.button :submit, value: 'Validation' %>
+      </div>
+    <% end %>
+  </div>
+
+</div>

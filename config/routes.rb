@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   get "about", to: "pages#about"
   get "dashboard", to: "pages#dashboard"
 
+  resources :activites
+
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")

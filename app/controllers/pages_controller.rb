@@ -12,7 +12,7 @@ class PagesController < ApplicationController
 
   # attention enlever le skip authenticate pour dashboard avant production
   def dashboard
-    @activites = Activite.all
+    @activites = Activite.order(created_at: :asc)
   end
 
 end
