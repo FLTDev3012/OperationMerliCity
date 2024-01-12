@@ -17,6 +17,9 @@
       <br><br>
       <strong><%= activite.title %></strong>
       <p><%= activite.description %></p>
+      <% if activite.photo.attached? %>
+        <%= cl_image_tag activite.photo.key, height: 300, width: 400, crop: :fill %>
+      <% end %>
       <%= link_to "voir l activite", activite_path(activite) %>
       <br>
       <%= link_to "modifer l activite", edit_activite_path(activite) %>

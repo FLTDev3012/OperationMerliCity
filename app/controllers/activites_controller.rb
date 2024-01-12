@@ -43,7 +43,7 @@ class ActivitesController < ApplicationController
   private
 
   def activite_params
-    params.require(:activite).permit(:title, :description)
+    params.require(:activite).permit(:title, :description, :photo)
   end
 
 end
