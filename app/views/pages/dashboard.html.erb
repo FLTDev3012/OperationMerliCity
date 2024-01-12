@@ -1,33 +1,35 @@
-<div class="dash-caintainer">
+<div class="dash-container">
 
   <div class="dash-title-container">
-    <h3>Dashboard</h3>
+    <h2>Dashboard</h2>
   </div>
   <br><br>
 
 
 
+  <div class="dash-activite-title">
+    <h1>Liste des Activités</h1>
+    <h3><%= link_to "Voir la page des activites", activites_path %></h3>
+    <%= link_to "cree une activites", new_activite_path %>
+  </div>
 
-  <h1>Liste des Activités</h1>
-  <h3><%= link_to "Voir le page des activites", activites_path %></h3>
-
-  <%= link_to "cree une activites", new_activite_path %>
 
   <% @activites.each do |activite| %>
-      <br><br>
-      <strong><%= activite.title %></strong>
+
+    <div class="dash-one-activitie">
+      <%= activite.title %>
       <p><%= activite.description %></p>
       <% if activite.photo.attached? %>
-        <%= cl_image_tag activite.photo.key, height: 100, width: 125, crop: :fill %>
+        <p>Avec image</p>
+      <% else %>
+        <p>sans image</p>
       <% end %>
       <%= link_to "voir l activite", activite_path(activite) %>
-      <br>
       <%= link_to "modifer l activite", edit_activite_path(activite) %>
-      <br>
       <%= link_to activite_path(activite), data: { turbo_method: :delete, turbo_confirm: "Êtes-vous sûr de vouloir supprimer ?" }, class: "deco-none dash-corbeille" do %>
         <i class="fa-solid fa-trash" style="color: #111;"></i>
       <% end %>
-      <br><br>
+    </div>
 
   <% end %>
 

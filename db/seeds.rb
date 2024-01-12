@@ -11,7 +11,48 @@ file = URI.open("https://a.cdn-hotels.com/gdcs/production186/d559/a82dee28-b6fd-
 activite1 = Activite.create(title: "surf", description: "au surfer merlimont plage")
 activite1.photo.attach(io: file, filename: "v1.png", content_type: "image/png")
 activite1.save
-Activite.create(title: "Activité 1", description: "Description de l'activité 1.")
-Activite.create(title: "Activité 2", description: "Description de l'activité 2.")
-Activite.create(title: "Activité 3", description: "Description de l'activité 3.")
 puts "#{Activite.count} activités have been created successfully!"
+
+file = URI.open("https://a.cdn-hotels.com/gdcs/production186/d559/a82dee28-b6fd-417c-b51b-a535ddeb2f85.jpg?impolicy=fcrop&w=800&h=533&q=medium")
+activite2 = Activite.create(title: "surf", description: "au surfer merlimont plage")
+activite2.photo.attach(io: file, filename: "v2.png", content_type: "image/png")
+activite2.save
+puts "#{Activite.count} activités have been created successfully!"
+
+file = URI.open("https://a.cdn-hotels.com/gdcs/production186/d559/a82dee28-b6fd-417c-b51b-a535ddeb2f85.jpg?impolicy=fcrop&w=800&h=533&q=medium")
+activite3 = Activite.create(title: "surf", description: "au surfer merlimont plage")
+activite3.photo.attach(io: file, filename: "v3.png", content_type: "image/png")
+activite3.save
+puts "#{Activite.count} activités have been created successfully!"
+
+file = URI.open("https://a.cdn-hotels.com/gdcs/production186/d559/a82dee28-b6fd-417c-b51b-a535ddeb2f85.jpg?impolicy=fcrop&w=800&h=533&q=medium")
+activite4 = Activite.create(title: "surf", description: "au surfer merlimont plage")
+activite4.photo.attach(io: file, filename: "v4.png", content_type: "image/png")
+activite4.save
+puts "#{Activite.count} activités have been created successfully!"
+
+file = URI.open("https://a.cdn-hotels.com/gdcs/production186/d559/a82dee28-b6fd-417c-b51b-a535ddeb2f85.jpg?impolicy=fcrop&w=800&h=533&q=medium")
+activite5 = Activite.create(title: "surf", description: "au surfer merlimont plage")
+activite5.photo.attach(io: file, filename: "v5.png", content_type: "image/png")
+activite5.save
+puts "#{Activite.count} activités have been created successfully!"
+
+file = URI.open("https://a.cdn-hotels.com/gdcs/production186/d559/a82dee28-b6fd-417c-b51b-a535ddeb2f85.jpg?impolicy=fcrop&w=800&h=533&q=medium")
+activite6 = Activite.create(title: "surf", description: "au surfer merlimont plage")
+activite6.photo.attach(io: file, filename: "v6.png", content_type: "image/png")
+activite6.save
+puts "#{Activite.count} activités have been created successfully!"
+
+file = URI.open("https://a.cdn-hotels.com/gdcs/production186/d559/a82dee28-b6fd-417c-b51b-a535ddeb2f85.jpg?impolicy=fcrop&w=800&h=533&q=medium")
+activite7 = Activite.create(title: "surf", description: "au surfer merlimont plage")
+activite7.photo.attach(io: file, filename: "v7.png", content_type: "image/png")
+activite7.save
+puts "#{Activite.count} activités have been created successfully!"
+
+file = URI.open("https://a.cdn-hotels.com/gdcs/production186/d559/a82dee28-b6fd-417c-b51b-a535ddeb2f85.jpg?impolicy=fcrop&w=800&h=533&q=medium")
+activite8 = Activite.create(title: "surf", description: "au surfer merlimont plage")
+activite8.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+activite8.save
+puts "#{Activite.count} All activités have been created successfully!!!!"
+
+puts "All the #{Activite.count} have been created successfully!"

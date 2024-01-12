@@ -1,5 +1,45 @@
+.dash-container {
+  background-color: $bleu;
+  color: #fff;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+.dash-container a {
+  color: #01e3fb;
+}
+
+
+.dash-container a:hover {
+  color: #fff;
+}
+
 .dash-title-container {
   display: flex;
   justify-content: center;
   padding-top: 3rem;
+}
+
+.dash-title-container h2 {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 4rem;
+}
+
+.dash-activite-title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dash-one-activitie {
+  display: flex;
+}
+
+.dash-one-activitie {
+  background-color: brown;
+  margin: 10px 0;
+  padding: 0.3rem 0;
+}
+
+.dash-one-activitie p {
+  margin: 0 30px;
 }
