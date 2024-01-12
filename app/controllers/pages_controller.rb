@@ -12,6 +12,7 @@ class PagesController < ApplicationController
 
   # attention enlever le skip authenticate pour dashboard avant production
   def dashboard
+    @activites = Activite.all
   end
 
 end
