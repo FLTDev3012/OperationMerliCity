@@ -1,7 +1,7 @@
 .dash-container {
   background-color: $bleu;
   color: #fff;
-  font-family: 'Gloria Hallelujah', cursive;
+  // font-family: 'Gloria Hallelujah', cursive;
 }
 
 .dash-container a {
@@ -52,4 +52,12 @@
 
 .dash-one-activitie > * {
   margin: 0 30px;
+}
+
+
+.dash-logement-title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem 0;
 }
