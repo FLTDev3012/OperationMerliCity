@@ -7,8 +7,8 @@
 #   Character.create(name: "Luke", movie: movies.first)
 Activite.destroy_all
 
-file = URI.open("https://lh3.googleusercontent.com/d9iOns4Q6RQl4ozES9D1hsaSfTad0b1LLYX64K1u9x9PuFcMa61uhw6K_IS8ukm6yKSZJOfC-nhnPuEAFCSmuRZQISzV3a1gm843UZWTrs6huQ=s750")
-activite1 = Activite.create(title: "Alfa Romeo", description: "350z")
+file = URI.open("https://a.cdn-hotels.com/gdcs/production186/d559/a82dee28-b6fd-417c-b51b-a535ddeb2f85.jpg?impolicy=fcrop&w=800&h=533&q=medium")
+activite1 = Activite.create(title: "surf", description: "au surfer merlimont plage")
 activite1.photo.attach(io: file, filename: "v1.png", content_type: "image/png")
 activite1.save
 Activite.create(title: "Activité 1", description: "Description de l'activité 1.")
