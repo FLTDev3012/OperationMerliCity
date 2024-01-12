@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :home, :merlimontdavant, :about ]
+  skip_before_action :authenticate_user!, only: [ :home, :merlimontdavant, :about, :dashboard ]
 
   def home
   end
@@ -8,6 +8,10 @@ class PagesController < ApplicationController
   end
 
   def about
+  end
+
+  # attention enlever le skip authenticate pour dashboard avant production
+  def dashboard
   end
 
 end

@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   get "merlimontdavant", to: "pages#merlimontdavant"
   get "about", to: "pages#about"
+  get "dashboard", to: "pages#dashboard"
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
