@@ -4,6 +4,8 @@
 
   <div class="home-fondu-haut"></div>
 
+
+  <!-- ============= NAVBAR ============== -->
   <div class="home-nav">
     <div class="home-nav-left">
       <!-- <%= link_to "Merlimont", "#" %> -->
@@ -13,14 +15,6 @@
       <% end %>
 
     </div>
-
-    <!-- <div class="home-nav-right">
-      <%= link_to "Galerie", "#", class:"gal" %>
-      <%= link_to "Webcam", "https://www.viewsurf.com/univers/surf/vue/16762-france-nord-pas-de-calais-merlimont-live", target: "_blank", class:"web" %>
-      <%= link_to "Faune & Flore", "#", class:"faune" %>
-      <%= link_to "Il etait une fois", merlimontdavant_path, class:"fois" %>
-      <%= link_to "A propos", about_path, class:"about" %>
-    </div> -->
 
     <div class="home-nav-right-new">
       <span>
@@ -100,45 +94,11 @@
 
   </div>
 
+  <!-- ============= FIN NAVBAR ============== -->
 
 
-<!--
-<script>
-  window.addEventListener('DOMContentLoaded', (event) => {
-    const leLienGal = document.querySelector('.gal');
-    const leLienWeb = document.querySelector('.web');
-    const leLienFaune = document.querySelector('.faune');
-    const leLienFois = document.querySelector('.fois');
-    const leLienAbout = document.querySelector('.about');
+  <!-- ============= AVION CERF-VOLANT ============== -->
 
-    const largeurDeGal = leLienGal.offsetWidth;
-    const cibleNewGal = document.querySelector('.galn');
-    cibleNewGal.setAttribute('width', `${largeurDeGal}px`);
-
-    const largeurDeWeb = leLienWeb.offsetWidth;
-    const cibleNewWeb = document.querySelector('.webn');
-    cibleNewWeb.setAttribute('width', `${largeurDeWeb}px`);
-
-    const largeurDeFaune = leLienFaune.offsetWidth;
-    const cibleNewFaune = document.querySelector('.faunen');
-    cibleNewFaune.setAttribute('width', `${largeurDeFaune}px`);
-
-    const largeurDeFois = leLienFois.offsetWidth;
-    const cibleNewFois = document.querySelector('.foisn');
-    cibleNewFois.setAttribute('width', `${largeurDeFois}px`);
-
-    const largeurDeAbout = leLienAbout.offsetWidth;
-    const cibleNewAbout = document.querySelector('.aboutn');
-    cibleNewAbout.setAttribute('width', `${largeurDeAbout}px`);
-
-    const hauteurPourTous = leLienGal.offsetHeight;
-    const lesSvg = document.querySelectorAll('.svg-pfff');
-    lesSvg.forEach((leSvg) => {
-      leSvg.setAttribute('height', `${hauteurPourTous}px`);
-    });
-  });
-</script>
--->
   <!-- <div class="avion">
     <%= image_tag('home/aviond.png') %>
   </div> -->
@@ -183,10 +143,12 @@
     </div>
   </div>
 
+  <!-- ============= AVION CERF-VOLANT ============== -->
+
+
+  <!-- ============= VIDEO et DUNES ============== -->
 
   <%= video_tag "home/mainvideo.mp4", type: "video/mp4", autoplay: true, loop: true, muted: true, id: "home-videoo", preload: "auto", playsinline: true %>
-
-  <!-- <div class="home-fondu-bas"></div> -->
 
   <div class="home-dunes">
     <%= image_tag('home/home_dunes.svg') %>
@@ -197,6 +159,9 @@
       <%= image_tag('home/home_petite_trace.svg') %>
     </div>
   </div>
+
+  <!-- ============= FIN VIDEO et DUNES ============== -->
+
 
 </div>
 
@@ -294,23 +259,24 @@
   <div class="home-activites-top-five">
 
     <div class="home-activites-top-five-little">
-      <%= image_tag('activites/activite_une.jpg') %>
+      <%= cl_image_tag @activites[3].photo.key, height: 300, width: 400, crop: :fill %>
+
     </div>
 
     <div class="home-activites-top-five-medium">
-      <%= image_tag('activites/activite_deux.jpg') %>
+      <%= cl_image_tag @activites[1].photo.key, height: 300, width: 400, crop: :fill %>
     </div>
 
     <div class="home-activites-top-five-large">
-      <%= image_tag('activites/activite_trois.jpg') %>
+      <%= cl_image_tag @activites[0].photo.key, height: 300, width: 400, crop: :fill %>
     </div>
 
     <div class="home-activites-top-five-medium">
-      <%= image_tag('activites/activite_quatre.jpg') %>
+      <%= cl_image_tag @activites[2].photo.key, height: 300, width: 400, crop: :fill %>
     </div>
 
     <div class="home-activites-top-five-little">
-      <%= image_tag('activites/activite_cinq.png') %>
+      <%= cl_image_tag @activites[4].photo.key, height: 300, width: 400, crop: :fill %>
     </div>
 
   </div>

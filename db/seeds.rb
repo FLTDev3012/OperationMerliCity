@@ -7,20 +7,20 @@
 #   Character.create(name: "Luke", movie: movies.first)
 Activite.destroy_all
 
-file = URI.open("https://a.cdn-hotels.com/gdcs/production186/d559/a82dee28-b6fd-417c-b51b-a535ddeb2f85.jpg?impolicy=fcrop&w=800&h=533&q=medium")
-activite1 = Activite.create(title: "activite 1", description: "au surfer merlimont plage")
+file = URI.open("https://www.bhf.org.uk/-/media/images/information-support/heart-matters/heart-matters/summer-2018/activity/tennis_racket_balls_ss_0618_noexp_620x400.jpg?rev=c18a71fbd05e4a91b4bbc40af01aafaa&hash=B6D9F53AC70899560495FC5D3205784D")
+activite1 = Activite.create(title: "Tennis", description: "Tennis merlimont plage")
 activite1.photo.attach(io: file, filename: "v1.png", content_type: "image/png")
 activite1.save
 puts "#{Activite.count} activités have been created successfully!"
 
-file = URI.open("https://a.cdn-hotels.com/gdcs/production186/d559/a82dee28-b6fd-417c-b51b-a535ddeb2f85.jpg?impolicy=fcrop&w=800&h=533&q=medium")
-activite2 = Activite.create(title: "activite 2", description: "au surfer merlimont plage")
+file = URI.open("https://www.hillstonestlucia.com.au/wp-content/uploads/2020/09/0S1A5968.jpg")
+activite2 = Activite.create(title: "mini golf", description: "mini golf merlimont plage")
 activite2.photo.attach(io: file, filename: "v2.png", content_type: "image/png")
 activite2.save
 puts "#{Activite.count} activités have been created successfully!"
 
-file = URI.open("https://a.cdn-hotels.com/gdcs/production186/d559/a82dee28-b6fd-417c-b51b-a535ddeb2f85.jpg?impolicy=fcrop&w=800&h=533&q=medium")
-activite3 = Activite.create(title: "activite 3", description: "au surfer merlimont plage")
+file = URI.open("https://cdt14.media.tourinsoft.eu/upload/135-3571-IMG.jpg")
+activite3 = Activite.create(title: "char a voile", description: "char a voile merlimont plage")
 activite3.photo.attach(io: file, filename: "v3.png", content_type: "image/png")
 activite3.save
 puts "#{Activite.count} activités have been created successfully!"

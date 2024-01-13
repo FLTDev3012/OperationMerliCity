@@ -2,6 +2,7 @@ class PagesController < ApplicationController
   skip_before_action :authenticate_user!, only: [ :home, :merlimontdavant, :about, :dashboard ]
 
   def home
+    @activites = Activite.first(5)
   end
 
   def merlimontdavant
