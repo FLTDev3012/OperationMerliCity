@@ -1,0 +1,139 @@
+// ==================== Grosse vague (div unique) ================
+
+.vague-emplacement-top {
+  background-color: $sable;
+  position: relative;
+  padding-top: 5vh;
+}
+
+.vague-emplacement-top img {
+  width: 100vw;
+  height: auto;
+}
+
+.vague-emplacement-trait-anti-bug {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: $bleu;
+}
+
+.home-emplacement-surfer {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  z-index: 2;
+}
+
+
+.home-emplacement-surfer img {
+  width: 56px;
+  height: auto;
+}
+
+// ======================== Emplacement div =================
+
+.home-emplacement-div {
+  min-height: 100vh;
+  position: relative;
+  background-color: $bleu;
+}
+
+.home-emplacement-title-shadow {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.25;
+}
+
+.home-emplacement-title-shadow h1 {
+  color: #fff;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 6rem;
+}
+
+.home-emplacement-title {
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  position: relative;
+}
+
+.home-emplacement-title h1 {
+  color: #fff;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 5rem;
+  transform: translateY(50px);
+}
+
+.home-emplacement-map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7rem;
+}
+
+.home-emplacement-map img{
+  width: 60%;
+  height: auto;
+  z-index: 3;
+}
+
+.home-emplacement-btn {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0 7rem 0;
+}
+
+.home-emplacement-btn a {
+  color: #fff;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 2rem;
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 3;
+  transition: color 0.3s;
+}
+
+.home-emplacement-btn a:hover {
+  color: #33f2c6;
+}
+
+.home-emplacement-bulle {
+  position: absolute;
+  top: 25%;
+  left: 4rem;
+}
+
+.home-emplacement-bulle img {
+  width: 80%;
+  height: auto;
+}
+
+.home-emplacement-algues {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.home-emplacement-algues img {
+  width: 100%;
+  height: auto;
+}
+
+.home-emplacement-boat {
+  position: absolute;
+  top: 0;
+  right: 5rem;
+}
+
+.home-emplacement-boat p {
+  font-size: 6rem;
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.home-emplacement-boat img {
+  width: 96px;
+  height: auto;
+}

@@ -8,6 +8,18 @@
 @import "font-awesome";
 
 // Your CSS partials
-@import "components/index";
+@import "home/index";
 @import "pages/index";
+@import "components/index";
 @import "old/index";
+@import "activite/index";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}

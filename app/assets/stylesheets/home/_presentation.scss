@@ -1,0 +1,134 @@
+// ====================== Home-presentaion-div =========================
+
+.home-presentation-div {
+  position: relative;
+  // min-height: 100vh;
+
+  background-color: $sable;
+}
+
+.home-traces {
+  position: absolute;
+  top: 0;
+}
+
+.home-traces img {
+  width: 100%;
+  height: auto;
+}
+
+.home-presentation-title-and-title-shadow {
+  padding: 5vh 0;
+}
+
+.home-presentation-title-shadow {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.home-presentation-title-shadow h1 {
+  color: $bleu;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 6rem;
+  opacity: 0.25;
+}
+
+.home-presentation-title {
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  position: relative;
+}
+
+.home-presentation-title svg {
+  width: 400px;
+  height: auto;
+}
+
+.home-presentation-title text {
+  color: $bleu;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 5rem;
+  -webkit-text-stroke: 0.6rem rgb(255, 255, 255);
+  paint-order: stroke fill;
+  transform: translateY(50px);
+
+}
+
+.home-presentation-parasol-container {
+  position: relative;
+}
+
+.home-presentation-parasol {
+  position: absolute;
+  top: 0%;
+  right: -1%;
+  z-index: 2;
+}
+
+.home-presentation-parasol img {
+  width: 48px;
+  height: 48px;
+}
+
+.home-presentation-parasol p {
+  font-size: 3rem;
+  text-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
+}
+
+// presentation text et photo
+
+.home-presentation-text-picture {
+  display: flex;
+  height: 100%;
+  padding: 3rem 0;
+}
+
+.home-presentation-text {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-presentation {
+  width: 80%;
+  height: auto;
+}
+
+.home-presentation-text p {
+  font-family: 'Akaya Telivigala', cursive;
+  font-size: 3vw;
+  padding: 3rem 7rem 0rem 7rem;
+  text-align: center;
+  color: $sableHumide;
+  -webkit-text-stroke: 0.4rem $sableSemiHumide;
+  paint-order: stroke fill;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.home-presentaion-text-text {
+  display: flex;
+  justify-content: center;
+}
+
+.home-presentation-trace-trait {
+  display: flex;
+  justify-content: center;
+}
+
+.home-presentation-trace-trait img {
+  width: 50%;
+  height: auto;
+}
+
+.home-presentation-photo {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+
+.home-presentation-photo img {
+  width: 80%;
+  height: auto;
+}
