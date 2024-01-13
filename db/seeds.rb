@@ -7,8 +7,8 @@
 #   Character.create(name: "Luke", movie: movies.first)
 Activite.destroy_all
 
-file = URI.open("https://www.bhf.org.uk/-/media/images/information-support/heart-matters/heart-matters/summer-2018/activity/tennis_racket_balls_ss_0618_noexp_620x400.jpg?rev=c18a71fbd05e4a91b4bbc40af01aafaa&hash=B6D9F53AC70899560495FC5D3205784D")
-activite1 = Activite.create(title: "Tennis", description: "Tennis merlimont plage")
+file = URI.open("https://www.parcbagatelle.com/fileadmin/_processed_/6/8/csm_Banniere-BaggyPass-Bagatelle_fb50144a68.jpg")
+activite1 = Activite.create(title: "Bagatelle", description: "Bagatelle merli village")
 activite1.photo.attach(io: file, filename: "v1.png", content_type: "image/png")
 activite1.save
 puts "#{Activite.count} activités have been created successfully!"
