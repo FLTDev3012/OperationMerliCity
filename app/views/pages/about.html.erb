@@ -2,9 +2,15 @@
 
   <div class="about-dunes-mer">
 
-    <div class="about-retour">
-      <%= link_to "< Retour a l'accueil", root_path %>
+    <div class="old-return-btn">
+      <%= link_to root_path do %>
+        <%= image_tag('home/MerlimontB.png') %>
+      <% end %>
     </div>
+
+    <!-- <div class="about-retour">
+      <%= link_to "< Retour a l'accueil", root_path %>
+    </div> -->
 
     <%= image_tag('about/dunesciel.svg') %>
 
