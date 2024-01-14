@@ -59,12 +59,17 @@
   background-color: rgb(255, 68, 0);
 }
 
+.carrev-container {
+  position: sticky;
+  top: 0px;
+}
+
 .carrev {
   content: '';
   height: 25vh;
   width: 200px;
   background-color: rgb(0, 255, 132);
-  position: fixed;
+  position: absolute;
   top: 50px;
   left: 50px;
 }
