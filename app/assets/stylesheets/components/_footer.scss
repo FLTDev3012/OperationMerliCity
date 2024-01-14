@@ -17,3 +17,21 @@
   font-family: 'Gloria Hallelujah', cursive;
   font-size: 1.3rem;
 }
+
+.footer-old {
+  position: relative;
+  height: 10vh;
+  background-color: #26231E;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+  color: #fff;
+  z-index: 10;
+}
+
+.footer-old p {
+  margin-bottom: 0;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 1.3rem;
+}

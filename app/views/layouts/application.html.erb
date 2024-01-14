@@ -17,11 +17,13 @@
     <%= yield %>
   </body>
 
-  <footer>
-    <div class="footer">
-      <p>© copyright aucun droit rérvé | Une production Anonymous1 & Anonymous2</p>
-      <p>Just for the love &lt;3</p>
-    </div>
-  </footer>
+  <% unless request.path == '/merlimontdavant' %>
+    <footer>
+      <div class="footer">
+        <p>© copyright aucun droit réservé | Une production Anonymous1 & Anonymous2</p>
+        <p>Just for the love &lt;3</p>
+      </div>
+    </footer>
+  <% end %>
 
 </html>
