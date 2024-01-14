@@ -1,0 +1,77 @@
+.old-picture-div {
+  position: relative;
+  background-color: #DAD1B4;
+}
+
+// les sticky
+
+.old-sticky-haut-gauche-container {
+  position: sticky;
+  top: 0px;
+}
+
+.old-sticky-haut-gauche {
+  content: '';
+  height: 200px;
+  width: 200px;
+  background-color: rgb(0, 255, 132);
+  position: absolute;
+  top: 20vh;
+  left: 50px;
+}
+
+.old-sticky-bas-droite-container {
+  position: sticky;
+  top: 0px;
+}
+
+.old-sticky-bas-droite {
+  content: '';
+  height: 200px;
+  width: 200px;
+  background-color: rgb(255, 0, 221);
+  position: absolute;
+  top: 50vh;
+  right: 110px;
+}
+
+// les photos
+
+.les-futur-photo {
+  position: relative;
+  z-index: 10;
+  padding: 0 40px 40px 40px;
+  z-index: 10;
+}
+
+
+.image-type-one-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.image-type-two-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.image-type-one {
+  height: 400px;
+  width: 600px;
+  background-color: blue;
+  border: 10px solid #ECE9DF;
+}
+
+.image-type-one img{
+  width: 100%;
+  height: 100%;
+}
+
+.image-type-two {
+  display: flex;
+  justify-content: flex-end;
+  height: 400px;
+  width: 600px;
+  background-color: rgb(255, 68, 0);
+  border: 10px solid #ECE9DF;
+}
