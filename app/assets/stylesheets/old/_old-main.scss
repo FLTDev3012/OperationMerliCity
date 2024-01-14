@@ -66,20 +66,25 @@
 
 .carrev {
   content: '';
-  height: 25vh;
+  height: 200px;
   width: 200px;
   background-color: rgb(0, 255, 132);
   position: absolute;
-  top: 50px;
+  top: 20vh;
   left: 50px;
+}
+
+.carrer-container {
+  position: sticky;
+  top: 0px;
 }
 
 .carrer {
   content: '';
-  height: 25vh;
+  height: 200px;
   width: 200px;
-  background-color: rgb(255, 0, 238);
-  position: fixed;
-  bottom: 50px;
-  right: 50px;
+  background-color: rgb(255, 0, 221);
+  position: absolute;
+  top: 50vh;
+  right: 110px;
 }
