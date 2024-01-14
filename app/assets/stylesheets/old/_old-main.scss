@@ -1,5 +1,66 @@
 .old-container {
   background-color: #DAD1B4;
+  position: relative;
+  overflow: hidden;
+}
+
+.old-nuage-haut-gauche-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  animation: nuageg 10s linear forwards; /* Animation de déplacement */
+}
+
+@keyframes nuageg {
+  0% {
+    transform: translate(0vw, 0vw) rotate(0deg); /* Point de départ */
+  }
+  100% {
+    transform: translate(-100vw , 0vw) rotate(0deg); /* Point d'arrivée */
+  }
+}
+
+@keyframes nuaged {
+  0% {
+    transform: translate(0vw, 0vw) rotate(0deg); /* Point de départ */
+  }
+  100% {
+    transform: translate(200vw , 0vw) rotate(0deg); /* Point d'arrivée */
+  }
+}
+
+.old-nuage-haut-gauche-container img {
+  width: auto;
+  height: 60vh;
+}
+
+.old-nuage-haut-droite-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  overflow: hidden;
+  animation: nuaged 14s linear forwards; /* Animation de déplacement */
+
+}
+
+.old-nuage-haut-droite-container img {
+  width: auto;
+  height: 80vh;
+}
+
+.old-nuage-bas-gauche-container {
+  position: absolute;
+  top: 30vh;
+  left: 0;
+  z-index: 100;
+  animation: nuageg 5s linear forwards; /* Animation de déplacement */
+}
+
+.old-nuage-bas-gauche-container img {
+  width: 80vw;
+  height: auto;
 }
 
 .old-main-div {
