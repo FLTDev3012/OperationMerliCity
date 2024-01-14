@@ -1,3 +1,7 @@
+.old-container {
+  background-color: #DAD1B4;
+}
+
 .old-main-div {
   height: 100vh;
   width: 100vw;
@@ -43,4 +47,33 @@
   font-size: 5rem;
   color: #26231e;
   text-shadow: 3px 2px 3px #fff;
+}
+
+.old-container footer {
+  background-color: #26231E !important;
+}
+
+.old-button-return-top-container {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: flex-end;
+  padding: 40px;
+}
+
+.old-button-return-top-container a {
+  background-color: #26231E;
+  height: 60px;
+  width: 60px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.old-button-return-top-container a img{
+  width: 70%;
+  height: 70%;
+  opacity: .8;
+
 }

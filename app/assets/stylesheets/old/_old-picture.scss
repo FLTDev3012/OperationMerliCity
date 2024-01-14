@@ -3,20 +3,26 @@
   background-color: #DAD1B4;
 }
 
+.old-text-et-photo {
+  position: relative;
+}
+
 // les sticky
 
 //gauche
 .old-sticky-haut-gauche-container {
   position: sticky;
   top: 0px;
+  z-index: 5;
+  opacity: 0.2;
 }
 
 .old-sticky-haut-gauche {
   height: auto;
   width: 40vw;
-  background-color: rgb(0, 255, 132);
+  // background-color: rgb(0, 255, 132);
   position: absolute;
-  top: 20vh;
+  top: 10vh;
   left: 50px;
 }
 
@@ -31,15 +37,16 @@
 .old-sticky-bas-droite-container {
   position: sticky;
   top: 0px;
+  z-index: 5;
+  opacity: 0.5;
 }
 
 .old-sticky-bas-droite {
-  height: 50vh;
-  width: auto;
-  background-color: rgb(255, 0, 221);
+  height: 100vh;
+  width: 100vw;
+  // background-color: rgb(255, 0, 221);
   position: absolute;
-  // moin sa taille
-  top: 100vh;
+  top: 0; // moin sa taille
   right: 0px;
 }
 
