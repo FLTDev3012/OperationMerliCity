@@ -6,6 +6,11 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 Activite.destroy_all
+puts "Toutes les activites ont etait supprimer..."
+Logement.destroy_all
+puts "Touts les logements ont etait supprimer..."
+
+
 
 file = URI.open("https://www.parcbagatelle.com/fileadmin/_processed_/6/8/csm_Banniere-BaggyPass-Bagatelle_fb50144a68.jpg")
 activite1 = Activite.create(title: "Bagatelle", description: "Bagatelle merli village")
