@@ -2,6 +2,7 @@
 
 <% @logements.each do |logement| %>
   <div>
+    <p><%= logement.categorie %></p>
     <strong><%= logement.title %></strong>
     <p><%= logement.description %></p>
     <p><%= logement.price %></p>
