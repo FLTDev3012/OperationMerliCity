@@ -1,0 +1,21 @@
+<div class="form-container">
+  <div class="form-titre">
+    <h1>Ajoutez votre logement</h1>
+  </div>
+
+  <div class="form-formulaire">
+    <%= simple_form_for @logement do |f| %>
+      <%= f.input :categorie, as: :select, collection: ["camping", "location", "hote", "camping-car"], prompt: 'Choisissez une catégorie' %>
+      <%= f.input :title, placeholder: 'Titre' %>
+      <%= f.input :description, placeholder: 'Description' %>
+      <%= f.input :price, placeholder: 'Prix' %>
+      <%= f.input :email, placeholder: 'Email' %>
+      <%= f.input :phone, placeholder: 'Téléphone' %>
+      <%= f.input :photo, as: :file %>
+
+      <div class="form-input">
+        <%= f.button :submit, value: 'Validation' %>
+      </div>
+    <% end %>
+  </div>
+</div>

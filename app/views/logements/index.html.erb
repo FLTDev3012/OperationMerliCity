@@ -1,0 +1,14 @@
+<h1>tout les logements</h1>
+
+<% @logements.each do |logement| %>
+  <div>
+    <strong><%= logement.title %></strong>
+    <p><%= logement.description %></p>
+    <p><%= logement.price %></p>
+    <p><%= logement.email %></p>
+    <p><%= logement.phone %></p>
+    <% if logement.photo.attached? %>
+      <%= cl_image_tag activite.photo.key, height: 300, width: 400, crop: :fill %>
+    <% end %>
+  </div>
+<% end %>
