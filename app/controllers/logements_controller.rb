@@ -2,7 +2,11 @@ class LogementsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show, :new, :create, :edit, :update, :destroy]
 
   def index
-    @logements = Logement.all
+    if params[:categorie].present?
+      @logements = Logement.where(categorie: params[:categorie])
+    else
+      @logements = Logement.all
+    end
   end
 
   def show
