@@ -1,1 +1,15 @@
 <h1>un logement</h1>
+<div>
+  <p><%= @logement.categorie %></p>
+  <strong><%= @logement.title %></strong>
+  <br>
+  <% if @logement.photo.attached? %>
+    <%= cl_image_tag @logement.photo.key, height: 300, width: 400, crop: :fill %>
+  <% end %>
+  <br>
+  <p><%= @logement.description %></p>
+  <p><%= @logement.price %></p>
+  <p><%= @logement.email %></p>
+  <p><%= @logement.phone %></p>
+  <br>
+  <br>

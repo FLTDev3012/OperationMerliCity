@@ -3,6 +3,7 @@ class LogementsController < ApplicationController
 
   def index
     if params[:categorie].present?
+      @categorie = params[:categorie]
       @logements = Logement.where(categorie: params[:categorie])
     else
       @logements = Logement.all

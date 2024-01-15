@@ -1,15 +1,22 @@
-<h1>tout les logements</h1>
+
+
+<h1><%= @categorie.present? ? "Nos logements en #{@categorie}" : 'Tous nos logements' %></h1>
 
 <% @logements.each do |logement| %>
   <div>
     <p><%= logement.categorie %></p>
     <strong><%= logement.title %></strong>
+    <br>
+    <% if logement.photo.attached? %>
+      <%= cl_image_tag logement.photo.key, height: 300, width: 400, crop: :fill %>
+    <% end %>
+    <br>
     <p><%= logement.description %></p>
     <p><%= logement.price %></p>
     <p><%= logement.email %></p>
     <p><%= logement.phone %></p>
-    <% if logement.photo.attached? %>
-      <%= cl_image_tag logement.photo.key, height: 300, width: 400, crop: :fill %>
-    <% end %>
+    <%= link_to "voir plus", logement_path(logement) %>
+    <br>
+    <br>
   </div>
 <% end %>
