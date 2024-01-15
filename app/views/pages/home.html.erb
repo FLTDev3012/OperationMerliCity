@@ -335,35 +335,37 @@
     </div>
   </div>
 
+
   <div class="home-logement-categories-container">
 
-    <div class="home-logement-categories-owner">
-      <div class="home-logement-categories-owner-title"><%= image_tag('logements/Camping.svg') %></div>
-      <div class="home-logement-categories-owner-picture">
-        <%= image_tag('logements/camping.jpg') %>
-      </div>
-    </div>
+    <%= link_to logements_path(categorie: 'camping'), class: 'home-logement-categories-owner' do %>
+        <div class="home-logement-categories-owner-title"><%= image_tag('logements/Camping.svg') %></div>
+        <div class="home-logement-categories-owner-picture">
+          <%= image_tag('logements/camping.jpg') %>
+        </div>
+    <% end %>
 
-    <div class="home-logement-categories-owner">
+    <%= link_to logements_path(categorie: 'location'), class: 'home-logement-categories-owner' do %>
       <div class="home-logement-categories-owner-title"><%= image_tag('logements/Location.svg') %></div>
       <div class="home-logement-categories-owner-picture">
         <%= image_tag('logements/location.jpg') %>
       </div>
-    </div>
+    <% end %>
 
-    <div class="home-logement-categories-owner">
+    <%= link_to logements_path(categorie: 'hote'), class: 'home-logement-categories-owner' do %>
       <div class="home-logement-categories-owner-title"><%= image_tag('logements/hote.svg') %></div>
       <div class="home-logement-categories-owner-picture">
         <%= image_tag('logements/hote.jpg') %>
       </div>
-    </div>
+    <% end %>
 
-    <div class="home-logement-categories-owner">
+
+    <%= link_to logements_path(categorie: 'camping-car'), class: 'home-logement-categories-owner' do %>
       <div class="home-logement-categories-owner-title"><%= image_tag('logements/Camping_car.svg') %></div>
       <div class="home-logement-categories-owner-picture">
         <%= image_tag('logements/car.jpg') %>
       </div>
-    </div>
+    <% end %>
 
   </div>
 
