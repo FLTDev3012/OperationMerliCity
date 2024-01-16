@@ -15,8 +15,41 @@
   object-fit: cover;
 }
 
-.faune-main-text-container {
+.faune-return-btn {
   position: absolute;
   top: 0;
-  left: 0;
+}
+
+.faune-return-btn img {
+  height: 4rem;
+  width: auto;
+  margin: 30px 40px;
+}
+
+.faune-main-text-container {
+  position: absolute;
+  top: 30vh;
+  left: 40px;
+}
+
+.faune-main-title h1 {
+  font-family: 'Amatic SC', cursive;
+  letter-spacing: .6rem;
+  margin-bottom: 0;
+  font-size: 6rem;
+}
+
+.faune-main-trait {
+  content: '';
+  background-color: #fff;
+  height: 3px;
+  width: 100px;
+  margin: 2rem 0 4rem 0;
+}
+
+.faune-main-subtitle p {
+  margin-bottom: 0;
+  font-size: 1.6rem;
+  font-family: 'ABeeZee', sans-serif;
+  margin: 1rem 0;
 }
