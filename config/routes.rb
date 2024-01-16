@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get "merlimontdavant", to: "pages#merlimontdavant"
   get "about", to: "pages#about"
   get "dashboard", to: "pages#dashboard"
+  get "faune", to: "pages#faune"
 
   resources :activites
   resources :logements
