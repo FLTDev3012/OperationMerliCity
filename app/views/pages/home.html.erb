@@ -369,6 +369,12 @@
 
   </div>
 
+  <div class="home-btn-logement-boue-container">
+    <%= link_to logements_path do%>
+      <%= image_tag('logements/tout_voir_button_vdeux.svg') %>
+    <% end %>
+  </div>
+
 </div>
 
 <!-- ================== div vague au dessus de emplacement ===================== -->
@@ -404,7 +410,9 @@
   </div>
 
   <div class="home-emplacement-btn">
-    <%= link_to "Voir tout les commerces", "#" %>
+    <%= link_to activites_path do%>
+      <%= image_tag('activites/boue_button.svg') %>
+    <% end %>
   </div>
 
   <div class="home-emplacement-bulle">
