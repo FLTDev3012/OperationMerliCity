@@ -134,7 +134,7 @@
   object-fit: cover;
 }
 
-// seconde div
+// onf div
 
 .faune-onf-container {
   min-height: 100vh;
@@ -175,6 +175,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  margin-right: 40px;
 }
 
 .patte-ours {
@@ -194,4 +195,65 @@
 
 .green-color {
   color: #669A2E;
+}
+
+// panorama
+
+
+.faune-panorama-container {
+  min-height: 100vh;
+  background-color: #0F2933;
+  display: flex;
+  // padding-top: 15rem;
+}
+
+.faune-panorama-left {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+.faune-panorama-left p {
+  width: 80%;
+}
+
+.patte-renard {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 100vh;
+  width: auto;
+  opacity: 0.13;
+}
+
+.faune-panorama-left p {
+  font-size: 1.6rem;
+  z-index: 2;
+}
+
+
+
+
+.faune-panorama-right {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.faune-panorama-right-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faune-panorama-right img {
+  height: auto;
+  width: 70%;
+  object-fit: fill;
+  border: 7px solid #fff;
 }
