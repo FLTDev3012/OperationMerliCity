@@ -140,6 +140,7 @@
   min-height: 100vh;
   background-color: #0F2933;
   display: flex;
+  padding-top: 15rem;
 }
 
 .faune-onf-left {
@@ -173,8 +174,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.patte-ours {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  width: 500px;
+  opacity: 0.13;
 }
 
 .faune-onf-right p {
   font-size: 1.6rem;
+  z-index: 2;
+}
+
+.green-color {
+  color: #669A2E;
 }
