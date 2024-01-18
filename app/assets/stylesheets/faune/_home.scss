@@ -2,6 +2,7 @@
 
 .faune-home-container {
   color: #fff;
+  font-family: 'ABeeZee', sans-serif;
 }
 
 // main container
@@ -133,9 +134,170 @@
   object-fit: cover;
 }
 
-// seconde div
+// onf div
 
-.faune-seconde-div-container {
+.faune-onf-container {
   min-height: 100vh;
   background-color: #0F2933;
+  display: flex;
+  padding-top: 15rem;
+}
+
+.faune-onf-left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.faune-onf-left-img-container {
+  width: 300px;
+  height: 400px;
+  border: 7px solid #fff;
+}
+
+.faune-onf-left img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.faune-onf-picture-imformation {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.faune-onf-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-right: 40px;
+}
+
+.patte-ours {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  width: 500px;
+  opacity: 0.13;
+}
+
+.faune-onf-right p {
+  font-size: 1.6rem;
+  z-index: 2;
+}
+
+.green-color {
+  color: #669A2E;
+}
+
+// panorama
+
+
+.faune-panorama-container {
+  min-height: 100vh;
+  background-color: #0F2933;
+  display: flex;
+  // padding-top: 15rem;
+}
+
+.faune-panorama-left {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+.faune-panorama-left p {
+  width: 80%;
+}
+
+.patte-renard {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 100vh;
+  width: auto;
+  opacity: 0.13;
+}
+
+.faune-panorama-left p {
+  font-size: 1.6rem;
+  z-index: 2;
+}
+
+
+
+
+.faune-panorama-right {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.faune-panorama-right-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faune-panorama-right img {
+  height: auto;
+  width: 70%;
+  object-fit: fill;
+  border: 7px solid #fff;
+}
+
+// que voulez vous decouvrir
+
+.faune-decouvrir-container {
+  min-height: 100vh;
+  background-color: #0F2933;
+}
+
+.faune-decouvrir-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.faune-decouvrir-jumelle-container {
+  position: relative;
+}
+
+
+.faune-decouvrir-jumelle-container img {
+  width: 100%;
+  height: auto;
+}
+
+.faune-decouvrir-jumelle-link {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+}
+
+.faune-link-left {
+  content: '';
+  background-color: rgba(165, 42, 42, 0);
+  width: 50%;
+}
+
+.faune-link-right {
+  content: '';
+  background-color: rgba(91, 165, 42, 0);
+  width: 50%;
 }
