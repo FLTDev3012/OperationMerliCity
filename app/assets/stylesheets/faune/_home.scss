@@ -2,6 +2,7 @@
 
 .faune-home-container {
   color: #fff;
+  font-family: 'ABeeZee', sans-serif;
 }
 
 // main container
@@ -135,7 +136,45 @@
 
 // seconde div
 
-.faune-seconde-div-container {
+.faune-onf-container {
   min-height: 100vh;
   background-color: #0F2933;
+  display: flex;
+}
+
+.faune-onf-left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.faune-onf-left-img-container {
+  width: 300px;
+  height: 400px;
+  border: 7px solid #fff;
+}
+
+.faune-onf-left img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.faune-onf-picture-imformation {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.faune-onf-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.faune-onf-right p {
+  font-size: 1.6rem;
 }
