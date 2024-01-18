@@ -257,3 +257,47 @@
   object-fit: fill;
   border: 7px solid #fff;
 }
+
+// que voulez vous decouvrir
+
+.faune-decouvrir-container {
+  min-height: 100vh;
+  background-color: #0F2933;
+}
+
+.faune-decouvrir-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.faune-decouvrir-jumelle-container {
+  position: relative;
+}
+
+
+.faune-decouvrir-jumelle-container img {
+  width: 100%;
+  height: auto;
+}
+
+.faune-decouvrir-jumelle-link {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+}
+
+.faune-link-left {
+  content: '';
+  background-color: rgba(165, 42, 42, 0);
+  width: 50%;
+}
+
+.faune-link-right {
+  content: '';
+  background-color: rgba(91, 165, 42, 0);
+  width: 50%;
+}
