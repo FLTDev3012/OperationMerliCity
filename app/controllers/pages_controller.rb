@@ -19,6 +19,7 @@ class PagesController < ApplicationController
   def faune
     @resource = User.new
     @resource_name = :user
+    render 'pages/faune'
   end
 
 end
