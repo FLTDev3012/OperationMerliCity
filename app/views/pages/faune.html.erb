@@ -90,9 +90,48 @@
   </div>
 
   <div class="faune-maitre-container">
+
     <div class="faune-maitre-title">
       <h2>La quête du <span class="green-color">Maitre Chercheur</span></h2>
     </div>
+
+    <div class="faune-maitre-p-container">
+      <div class="faune-maitre-all-p">
+        <p>Chers jeunes explorateurs,</p>
+
+        <p>Malheureusement, <span class="green-color">notre précieux maître chercheur est parti pour un long voyage</span> à la découverte des merveilles du monde ! Et devinez quoi ? <span class="green-color">Personne d'autre ne peut mettre à jour notre grand index</span> des découvertes. C'est lui seul qui connaît tous les secrets pour le faire briller de mille feux...</p>
+
+        <p>Imaginez toutes les aventures qu'il vit en ce moment, explorant des terres lointaines et rencontrant des animaux exotiques. Mais pendant son absence, nos recherches sur <span class="green-color">nos mystérieuses découvertes sont en suspens</span>.</p>
+
+        <p>Mais voilà une lueur d'espoir : <span class="green-color">Vous</span> ! Oui, vous avez bien lu ! <span class="green-color">Si vous vous sentez prêts à relever le défi</span> et à découvrir le monde avec vos propres yeux de chercheurs, <span class="green-color">vous pouvez devenir un chercheur en herbe</span>. Vous pouvez ajouter vos propres découvertes, photos et textes pour enrichir notre index. Qui sait quelles incroyables aventures vous pourriez partager ?</p>
+
+        <p>Alors, si vous êtes prêts à explorer, à vous émerveiller et à partager vos découvertes avec le monde, <span class="green-color">créez votre compte</span> de chercheur en herbe. La grande aventure de la recherche commence dès que vous franchissez cette porte virtuelle vers le monde des découvertes !</p>
+
+        <p>À vos marques, prêts, <span class="green-color">partez à l'aventure</span> !</p>
+      </div>
+    </div>
+
+    <div class="faune-maitre-compte-container">
+      <div class="faune-maitre-form-container">
+        <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), data: { turbo: :false }) do |f| %>
+          <%= f.error_notification %>
+
+          <div class="form-inputs">
+            <%= f.input :email, required: true, autofocus: true, input_html: { autocomplete: "email" } %>
+            <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length), input_html: { autocomplete: "new-password" } %>
+            <%= f.input :password_confirmation, required: true, input_html: { autocomplete: "new-password" } %>
+          </div>
+
+          <div class="form-actions">
+            <%= f.button :submit, "Sign up" %>
+          </div>
+        <% end %>
+
+        <%= render "devise/shared/links" %>
+      </div>
+    </div>
+
+
   </div>
 
 
