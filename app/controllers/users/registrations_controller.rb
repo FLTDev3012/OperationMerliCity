@@ -9,6 +9,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
   #   super
   # end
 
+
   # POST /resource
   # def create
   #   super
@@ -59,4 +60,12 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # def after_inactive_sign_up_path_for(resource)
   #   super(resource)
   # end
+
+  protected
+
+  # The path used after sign up.
+  def after_sign_up_path_for(resource)
+    faune_path
+  end
+
 end
