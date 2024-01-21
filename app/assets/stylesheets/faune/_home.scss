@@ -361,6 +361,11 @@
 
 .faune-maitre-compte-form {
   width: 80%;
+  // border: 3px solid #669A2E;
+
+}
+
+.faune-maitre-form-container {
   border: 3px solid #669A2E;
   border-radius: 5px;
   padding: 30px 20px;
@@ -396,6 +401,27 @@
 //   background-color: #0f2933;
 //   color: #fff;
 // }
+
+.faune-maitre-compte-connecter {
+  border: 3px solid #669A2E;
+  border-radius: 5px;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 200px;
+  flex-direction: column;
+}
+
+.faune-maitre-compte-connecter p {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.faune-maitre-compte-connecter img {
+  height: 60px;
+  width: auto;
+}
 
 .faune-maitre-compte-lettre {
   width: 50%;

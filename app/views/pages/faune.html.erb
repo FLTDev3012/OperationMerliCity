@@ -1,5 +1,7 @@
+
+
 <div class="faune-home-container">
-  <div class="faune-main-div">
+  <div id="top-of-page" class="faune-main-div">
 
     <%= image_tag "faune/faune_main.jpg", class:"faune-main-background" %>
 
@@ -117,7 +119,7 @@
           <% unless user_signed_in? %>
             <div class="faune-maitre-form-container">
               <div class="faune-maitre-form-title">
-                <h2>Créer votre compte</h2>
+                <h2>Compte de Chercheur</h2>
               </div>
               <%= simple_form_for(@resource, url: registration_path(@resource_name), data: { turbo: :false }) do |f| %>
                 <%= f.error_notification %>
@@ -138,7 +140,9 @@
 
           <% if user_signed_in? %>
             <div class="faune-maitre-compte-connecter">
-              <p>vous etes connecter ✅</p>
+              <p>Vous êtes connecter</p>
+              <%= image_tag('faune/validate') %>
+
             </div>
           <% end %>
         </div>
