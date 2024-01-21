@@ -344,3 +344,67 @@
   padding: 3rem 0;
   margin: 0;
 }
+
+// compte
+
+.faune-maitre-compte-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.faune-maitre-compte-form-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.faune-maitre-compte-form {
+  width: 80%;
+  border: 3px solid #669A2E;
+  border-radius: 5px;
+  padding: 30px 20px;
+}
+
+.faune-maitre-form-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.faune-maitre-form-container abbr {
+  display: none;
+}
+
+.faune-maitre-form-container .form-actions  {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.faune-maitre-form-container .form-actions input {
+  color: #fff;
+  background-color: #669A2E;
+  font-weight: bold;
+}
+
+// form label input
+  // background-color: #0f2933;
+  // color: #fff;
+
+// .faune-maitre-form-container input {
+//   background-color: #0f2933;
+//   color: #fff;
+// }
+
+.faune-maitre-compte-lettre {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.faune-maitre-compte-lettre img {
+  height: 600px;
+  width: auto;
+}

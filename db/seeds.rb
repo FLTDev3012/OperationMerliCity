@@ -5,6 +5,8 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+User.destroy_all
+puts "Touts les Users ont etaient supprimer fu..."
 Activite.destroy_all
 puts "Toutes les activites ont etaient supprimer biloute..."
 Logement.destroy_all
