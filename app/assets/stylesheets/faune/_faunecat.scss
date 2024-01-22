@@ -2,13 +2,39 @@
   background-color: #0F2933;
   color: #fff;
   font-family: 'ABeeZee', sans-serif;
+  position: relative;
 }
 
 .faunecat-container a {
   color: #fff;
 }
 
+.faunecat-return-btn {
+  position: absolute;
+  top: 30px;
+  left: 100px;
+}
+
+.faunecat-return-btn a {
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.3rem;
+}
+
+.faunecat-title {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0 4rem 0;
+}
+
+.faunecat-title h1 {
+  color: #669A2E;
+  font-family: 'Amatic SC', cursive;
+  font-size: 7rem;
+}
+
 .faunecat-categories-container {
+  z-index: 2;
+  position: relative;
 }
 
 .faunecat-categories-grid-container {
@@ -24,10 +50,26 @@
   flex-direction: column;
   // justify-content: center;
   align-items: center;
-  margin-bottom: 3rem;
+  margin-bottom: 7rem;
+  font-size: 1.3rem;
+}
+
+.faunecat-categories-owner-title {
+  margin-bottom: 1rem;
 }
 
 .faunecat-categories-owner img {
   width: 300px;
   height: 400px;
+  border: 7px solid #fff;
+}
+
+.faunecat-herbe {
+  position: absolute;
+  bottom: -5px;
+}
+
+.faunecat-herbe img {
+  width: 100%;
+  height: auto;
 }
