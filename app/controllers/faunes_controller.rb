@@ -48,6 +48,6 @@ class FaunesController < ApplicationController
   private
 
   def faune_params
-    params.require(:faune).permit(:categorie, :title, :description, :price, :email, :phone, :photo)
+    params.require(:faune).permit(:categorie, :nom, :description, :photo)
   end
 end

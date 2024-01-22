@@ -217,49 +217,49 @@ puts "#{Logement.count} logements de toutes avec des categories differentes ont 
 puts "Les animaux sont en cours de creation ma grenouille 🐸..."
 
 file = URI.open("https://medias.pourlascience.fr/api/v1/images/view/5be9a07d8fe56f7b21242cf6/wide_1300/image.jpg")
-animal1 = Faune.create(categorie:"poisson1", nom: "raie manta", description: "Description de l'animal")
+animal1 = Faune.create(categorie:"Oiseaux", nom: "raie manta", description: "Description de l'animal")
 animal1.photo.attach(io: file, filename: "v1.png", content_type: "image/png")
 animal1.save
 puts "1 animal a etait cree 🐸!"
 
 file = URI.open("https://medias.pourlascience.fr/api/v1/images/view/5be9a07d8fe56f7b21242cf6/wide_1300/image.jpg")
-animal2 = Faune.create(categorie:"poisson2", nom: "raie manta", description: "Description de l'animal")
+animal2 = Faune.create(categorie:"Poissons", nom: "raie manta", description: "Description de l'animal")
 animal2.photo.attach(io: file, filename: "v2.png", content_type: "image/png")
 animal2.save
 puts "2 animal a etait cree 🐸!"
 
 file = URI.open("https://medias.pourlascience.fr/api/v1/images/view/5be9a07d8fe56f7b21242cf6/wide_1300/image.jpg")
-animal3 = Faune.create(categorie:"poisson3", nom: "raie manta", description: "Description de l'animal")
+animal3 = Faune.create(categorie:"Poissons", nom: "raie manta", description: "Description de l'animal")
 animal3.photo.attach(io: file, filename: "v3.png", content_type: "image/png")
 animal3.save
 puts "3 animal a etait cree 🐸!"
 
 file = URI.open("https://medias.pourlascience.fr/api/v1/images/view/5be9a07d8fe56f7b21242cf6/wide_1300/image.jpg")
-animal4 = Faune.create(categorie:"poisson4", nom: "raie manta", description: "Description de l'animal")
+animal4 = Faune.create(categorie:"Poissons", nom: "raie manta", description: "Description de l'animal")
 animal4.photo.attach(io: file, filename: "v4.png", content_type: "image/png")
 animal4.save
 puts "4 animal a etait cree 🐸!"
 
 file = URI.open("https://medias.pourlascience.fr/api/v1/images/view/5be9a07d8fe56f7b21242cf6/wide_1300/image.jpg")
-animal5 = Faune.create(categorie:"poisson5", nom: "raie manta", description: "Description de l'animal")
+animal5 = Faune.create(categorie:"Poissons", nom: "raie manta", description: "Description de l'animal")
 animal5.photo.attach(io: file, filename: "v5.png", content_type: "image/png")
 animal5.save
 puts "5 animal a etait cree 🐸!"
 
 file = URI.open("https://medias.pourlascience.fr/api/v1/images/view/5be9a07d8fe56f7b21242cf6/wide_1300/image.jpg")
-animal6 = Faune.create(categorie:"poisson6", nom: "raie manta", description: "Description de l'animal")
+animal6 = Faune.create(categorie:"Poissons", nom: "raie manta", description: "Description de l'animal")
 animal6.photo.attach(io: file, filename: "v6.png", content_type: "image/png")
 animal6.save
 puts "6 animal a etait cree 🐸!"
 
 file = URI.open("https://medias.pourlascience.fr/api/v1/images/view/5be9a07d8fe56f7b21242cf6/wide_1300/image.jpg")
-animal7 = Faune.create(categorie:"poisson7", nom: "raie manta", description: "Description de l'animal")
+animal7 = Faune.create(categorie:"Poissons", nom: "raie manta", description: "Description de l'animal")
 animal7.photo.attach(io: file, filename: "v7.png", content_type: "image/png")
 animal7.save
 puts "7 animal a etait cree 🐸!"
 
 file = URI.open("https://medias.pourlascience.fr/api/v1/images/view/5be9a07d8fe56f7b21242cf6/wide_1300/image.jpg")
-animal8 = Faune.create(categorie:"poisson8", nom: "raie manta", description: "Description de l'animal")
+animal8 = Faune.create(categorie:"Poissons", nom: "raie manta", description: "Description de l'animal")
 animal8.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
 animal8.save
 puts "8 animal a etait cree 🐸!"

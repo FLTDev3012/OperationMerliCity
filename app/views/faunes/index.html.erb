@@ -1,9 +1,11 @@
-  <h1>Pages des Animaux</h1>
+<h1><%= @categorie.present? ? "Les #{@categorie}" : 'Tous notre faune' %></h1>
 
   <% @faunes.each do |faune| %>
-      <strong><%= faune.title %></strong>
+    <%= link_to faune_path(faune) do %>
+      <strong><%= faune.nom %></strong>
       <p><%= faune.description %></p>
       <% if faune.photo.attached? %>
         <%= cl_image_tag faune.photo.key, height: 300, width: 400, crop: :fill %>
       <% end %>
+    <% end %>
   <% end %>

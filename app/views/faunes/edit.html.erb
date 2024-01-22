@@ -1,11 +1,12 @@
 <div class="form-container">
 
   <div class="form-titre">
-    <h1>Modifier votre aniaml</h1>
+    <h1>Ajoutez votre aniaml</h1>
   </div>
 
   <div class="form-formulaire">
     <%= simple_form_for @faune do |f| %>
+      <%= f.input :categorie, as: :select, collection: ["Oiseaux", "Mammifères terrestres", "Poissons", "Crustacés", "Mammifères marins", "Insectes & arthropodes", "Reptiles", "Amphibiens", "Petits mammifères"], prompt: 'Choisissez une catégorie' %>
       <%= f.input :title, placeholder: 'nom' %>
       <%= f.input :description, placeholder: 'Description' %>
       <%= f.input :photo, as: :file %>
