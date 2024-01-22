@@ -1,0 +1,9 @@
+  <h1>Pages des Animaux</h1>
+
+  <% @faunes.each do |faune| %>
+      <strong><%= faune.title %></strong>
+      <p><%= faune.description %></p>
+      <% if faune.photo.attached? %>
+        <%= cl_image_tag faune.photo.key, height: 300, width: 400, crop: :fill %>
+      <% end %>
+  <% end %>

@@ -1,0 +1,18 @@
+<div class="form-container">
+
+  <div class="form-titre">
+    <h1>Modifier votre aniaml</h1>
+  </div>
+
+  <div class="form-formulaire">
+    <%= simple_form_for @faune do |f| %>
+      <%= f.input :title, placeholder: 'nom' %>
+      <%= f.input :description, placeholder: 'Description' %>
+      <%= f.input :photo, as: :file %>
+      <div class="form-input">
+        <%= f.button :submit, value: 'Validation' %>
+      </div>
+    <% end %>
+  </div>
+
+</div>

@@ -17,4 +17,6 @@ Rails.application.routes.draw do
 
   resources :activites
   resources :logements
+  resources :faunes
+
 end
