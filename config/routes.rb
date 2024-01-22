@@ -10,11 +10,14 @@ Rails.application.routes.draw do
   get "merlimontdavant", to: "pages#merlimontdavant"
   get "about", to: "pages#about"
   get "dashboard", to: "pages#dashboard"
+  get "faunecat", to: "pages#faunecat"
 
   devise_scope :user do
-    get "/faune", to: "pages#faune"
+    get "/fauneflore", to: "pages#fauneflore"
   end
 
   resources :activites
   resources :logements
+  resources :faunes
+
 end

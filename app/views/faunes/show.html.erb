@@ -1,0 +1,4 @@
+<h1><%= @faune.nom %></h1>
+<% if faune.photo.attached? %>
+  <%= cl_image_tag @faune.photo.key, height: 300, width: 400, crop: :fill %>
+<% end %>

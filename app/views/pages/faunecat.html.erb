@@ -1,0 +1,85 @@
+<div class="faunecat-container">
+
+  <div class="faunecat-return-btn">
+    <%= link_to "< Faune & Flore", fauneflore_path %>
+  </div>
+
+  <div class="faunecat-title">
+    <h1>La Faune</h1>
+  </div>
+
+  <div class="faunecat-categories-container">
+    <div class="faunecat-categories-grid-container">
+
+      <%= link_to faunes_path(categorie: 'Oiseaux'), class: 'faunecat-categories-owner' do %>
+          <div class="faunecat-categories-owner-title">Oiseaux (<%= Faune.where(categorie: "Oiseaux").count %>)</div>
+          <div class="faunecat-categories-owner-picture">
+            <%= image_tag('faunecat/oiseaux.png') %>
+          </div>
+      <% end %>
+
+      <%= link_to faunes_path(categorie: 'Mammifères terrestres'), class: 'faunecat-categories-owner' do %>
+        <div class="faunecat-categories-owner-title">Mammifères terrestres (<%= Faune.where(categorie: "Mammifères terrestres").count %>)</div>
+        <div class="faunecat-categories-owner-picture">
+          <%= image_tag('faunecat/mamiterre.png') %>
+        </div>
+      <% end %>
+
+      <%= link_to faunes_path(categorie: 'Poissons'), class: 'faunecat-categories-owner' do %>
+        <div class="faunecat-categories-owner-title">Poissons (<%= Faune.where(categorie: "Poissons").count %>)</div>
+        <div class="faunecat-categories-owner-picture">
+          <%= image_tag('faunecat/poissons.png') %>
+        </div>
+      <% end %>
+
+
+      <%= link_to faunes_path(categorie: 'Crustacés'), class: 'faunecat-categories-owner' do %>
+        <div class="faunecat-categories-owner-title">Crustacés (<%= Faune.where(categorie: "Crustacés").count %>)</div>
+        <div class="faunecat-categories-owner-picture">
+          <%= image_tag('faunecat/crustace.png') %>
+        </div>
+      <% end %>
+
+      <%= link_to faunes_path(categorie: 'Mammifères marins'), class: 'faunecat-categories-owner' do %>
+        <div class="faunecat-categories-owner-title">Mammifères marins (<%= Faune.where(categorie: "Mammifères marins").count %>)</div>
+        <div class="faunecat-categories-owner-picture">
+          <%= image_tag('faunecat/mamimarin.png') %>
+        </div>
+      <% end %>
+
+      <%= link_to faunes_path(categorie: 'Insectes & arthropodes'), class: 'faunecat-categories-owner' do %>
+        <div class="faunecat-categories-owner-title">Insectes & arthropodes (<%= Faune.where(categorie: "Insectes & arthropodes").count %>)</div>
+        <div class="faunecat-categories-owner-picture">
+          <%= image_tag('faunecat/insectes.png') %>
+        </div>
+      <% end %>
+
+      <%= link_to faunes_path(categorie: 'Reptiles'), class: 'faunecat-categories-owner' do %>
+        <div class="faunecat-categories-owner-title">Reptiles (<%= Faune.where(categorie: "Reptiles").count %>)</div>
+        <div class="faunecat-categories-owner-picture">
+          <%= image_tag('faunecat/reptiles.png') %>
+        </div>
+      <% end %>
+
+      <%= link_to faunes_path(categorie: 'Amphibiens'), class: 'faunecat-categories-owner' do %>
+        <div class="faunecat-categories-owner-title">Amphibiens (<%= Faune.where(categorie: "Amphibiens").count %>)</div>
+        <div class="faunecat-categories-owner-picture">
+          <%= image_tag('faunecat/amphi.png') %>
+        </div>
+      <% end %>
+
+      <%= link_to faunes_path(categorie: 'Petits mammifères'), class: 'faunecat-categories-owner' do %>
+        <div class="faunecat-categories-owner-title">Petits mammifères (<%= Faune.where(categorie: "Petits mammifères").count %>)</div>
+        <div class="faunecat-categories-owner-picture">
+          <%= image_tag('faunecat/petitmam.png') %>
+        </div>
+      <% end %>
+
+    </div>
+  </div>
+
+  <div class="faunecat-herbe">
+    <%= image_tag('faunecat/faunecatherbe.png') %>
+  </div>
+
+</div>
