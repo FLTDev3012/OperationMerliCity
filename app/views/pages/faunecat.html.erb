@@ -1,81 +1,80 @@
-<div class="florecat-faune-div">
+<div class="faunecat-container">
+
+  <div class="faunecat-return-btn">
+    <%= link_to "retour a la page faune & flore", fauneflore_path %>
+  </div>
+
+  <div class="faunecat-title">
+    <h1>La Faune</h1>
+  </div>
 
 
+  <div class="faunecat-categories-container">
 
-
-  <div class="florecat-categories-container">
-
-    <%= link_to faunes_path(categorie: 'Oiseaux'), class: 'florecat-categories-owner' do %>
-        <div class="florecat-categories-owner-title">Oiseaux</div>
-        <div class="florecat-categories-owner-picture">
+    <%= link_to faunes_path(categorie: 'Oiseaux'), class: 'faunecat-categories-owner' do %>
+        <div class="faunecat-categories-owner-title">Oiseaux</div>
+        <div class="faunecat-categories-owner-picture">
           <%= image_tag('faune/flore_img_center.jpg') %>
         </div>
     <% end %>
 
-    <%= link_to faunes_path(categorie: 'Mammifères terrestres'), class: 'florecat-categories-owner' do %>
-      <div class="florecat-categories-owner-title">Mammifères terrestres</div>
-      <div class="florecat-categories-owner-picture">
+    <%= link_to faunes_path(categorie: 'Mammifères terrestres'), class: 'faunecat-categories-owner' do %>
+      <div class="faunecat-categories-owner-title">Mammifères terrestres</div>
+      <div class="faunecat-categories-owner-picture">
         <%= image_tag('faune/flore_img_center.jpg') %>
       </div>
     <% end %>
 
-    <%= link_to faunes_path(categorie: 'Poissons'), class: 'florecat-categories-owner' do %>
-      <div class="florecat-categories-owner-title">Poissons</div>
-      <div class="florecat-categories-owner-picture">
+    <%= link_to faunes_path(categorie: 'Poissons'), class: 'faunecat-categories-owner' do %>
+      <div class="faunecat-categories-owner-title">Poissons</div>
+      <div class="faunecat-categories-owner-picture">
         <%= image_tag('faune/flore_img_center.jpg') %>
       </div>
     <% end %>
 
 
-    <%= link_to faunes_path(categorie: 'Crustacés'), class: 'florecat-categories-owner' do %>
-      <div class="florecat-categories-owner-title">Crustacés</div>
-      <div class="florecat-categories-owner-picture">
+    <%= link_to faunes_path(categorie: 'Crustacés'), class: 'faunecat-categories-owner' do %>
+      <div class="faunecat-categories-owner-title">Crustacés</div>
+      <div class="faunecat-categories-owner-picture">
         <%= image_tag('faune/flore_img_center.jpg') %>
       </div>
     <% end %>
 
-    <%= link_to faunes_path(categorie: 'Mammifères marins'), class: 'florecat-categories-owner' do %>
-      <div class="florecat-categories-owner-title">Mammifères marins</div>
-      <div class="florecat-categories-owner-picture">
+    <%= link_to faunes_path(categorie: 'Mammifères marins'), class: 'faunecat-categories-owner' do %>
+      <div class="faunecat-categories-owner-title">Mammifères marins</div>
+      <div class="faunecat-categories-owner-picture">
         <%= image_tag('faune/flore_img_center.jpg') %>
       </div>
     <% end %>
 
-    <%= link_to faunes_path(categorie: 'Insectes & arthropodes'), class: 'florecat-categories-owner' do %>
-      <div class="florecat-categories-owner-title">Insectes & arthropodes</div>
-      <div class="florecat-categories-owner-picture">
+    <%= link_to faunes_path(categorie: 'Insectes & arthropodes'), class: 'faunecat-categories-owner' do %>
+      <div class="faunecat-categories-owner-title">Insectes & arthropodes</div>
+      <div class="faunecat-categories-owner-picture">
         <%= image_tag('faune/flore_img_center.jpg') %>
       </div>
     <% end %>
 
-    <%= link_to faunes_path(categorie: 'Reptiles'), class: 'florecat-categories-owner' do %>
-      <div class="florecat-categories-owner-title">Reptiles</div>
-      <div class="florecat-categories-owner-picture">
+    <%= link_to faunes_path(categorie: 'Reptiles'), class: 'faunecat-categories-owner' do %>
+      <div class="faunecat-categories-owner-title">Reptiles</div>
+      <div class="faunecat-categories-owner-picture">
         <%= image_tag('faune/flore_img_center.jpg') %>
       </div>
     <% end %>
 
-    <%= link_to faunes_path(categorie: 'Amphibiens'), class: 'florecat-categories-owner' do %>
-      <div class="florecat-categories-owner-title">Amphibiens</div>
-      <div class="florecat-categories-owner-picture">
+    <%= link_to faunes_path(categorie: 'Amphibiens'), class: 'faunecat-categories-owner' do %>
+      <div class="faunecat-categories-owner-title">Amphibiens</div>
+      <div class="faunecat-categories-owner-picture">
         <%= image_tag('faune/flore_img_center.jpg') %>
       </div>
     <% end %>
 
-    <%= link_to faunes_path(categorie: 'Petits mammifères'), class: 'florecat-categories-owner' do %>
-      <div class="florecat-categories-owner-title">Petits mammifères</div>
-      <div class="florecat-categories-owner-picture">
+    <%= link_to faunes_path(categorie: 'Petits mammifères'), class: 'faunecat-categories-owner' do %>
+      <div class="faunecat-categories-owner-title">Petits mammifères</div>
+      <div class="faunecat-categories-owner-picture">
         <%= image_tag('faune/flore_img_center.jpg') %>
       </div>
     <% end %>
 
   </div>
 
-  <!--
-  <div class="florecat-btn-container">
-    <%= link_to faune_path do%>
-      imagetag
-    <% end %>
-  </div>
-  -->
 </div>
