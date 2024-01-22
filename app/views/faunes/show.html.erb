@@ -1,4 +1,26 @@
-<h1><%= @faune.nom %></h1>
-<% if faune.photo.attached? %>
-  <%= cl_image_tag @faune.photo.key, height: 300, width: 400, crop: :fill %>
-<% end %>
+<div class="faune-show-container">
+
+  <div class="faune-show-back">
+    <%= link_to "< Retour", request.referer || faunecat_path %>
+  </div>
+
+  <div class="faune-show-title">
+    <h1><%= @faune.nom %></h1>
+  </div>
+
+  <div class="faune-show-desc-pic">
+
+    <div class="faune-show-desc">
+      <p><%= @faune.description %></p>
+    </div>
+
+    <div class="faune-show-pic">
+      <% if @faune.photo.attached? %>
+        <%= cl_image_tag @faune.photo.key %>
+      <% end %>
+    </div>
+
+  </div>
+
+
+</div>

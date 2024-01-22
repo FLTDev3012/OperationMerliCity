@@ -1,11 +1,36 @@
-<h1><%= @categorie.present? ? "Les #{@categorie}" : 'Tous notre faune' %></h1>
+<div class="faunecat-container">
 
-  <% @faunes.each do |faune| %>
-    <%= link_to faune_path(faune) do %>
-      <strong><%= faune.nom %></strong>
-      <p><%= faune.description %></p>
-      <% if faune.photo.attached? %>
-        <%= cl_image_tag faune.photo.key, height: 300, width: 400, crop: :fill %>
+  <div class="faunecat-return-btn">
+    <%= link_to "< Faune", faunecat_path %>
+  </div>
+
+  <div class="faunecat-title">
+    <h1><%= @categorie.present? ? "Les #{@categorie}" : 'Tous notre faune' %></h1>
+  </div>
+
+  <div class="faunecat-categories-container">
+    <div class="faunecat-categories-grid-container">
+
+      <% @faunes.each do |faune| %>
+        <%= link_to faune_path(faune), class: 'faunecat-categories-owner' do %>
+          <div class="faunecat-categories-owner-title"><%= faune.nom %></div>
+          <% if faune.photo.attached? %>
+            <div class="faunecat-categories-owner-picture">
+              <%= cl_image_tag faune.photo.key %>
+            </div>
+          <% end %>
+        <% end %>
       <% end %>
+
+    </div>
+  </div>
+
+  <div class="faunecat-herbe">
+    <% if ['Poissons', 'Crustacés', 'Mammifères marins'].include?(@categorie) %>
+      <%= image_tag('faunecat/faunecatalgue.png') %>
+    <% else %>
+      <%= image_tag('faunecat/faunecatherbe.png') %>
     <% end %>
-  <% end %>
+  </div>
+
+</div>

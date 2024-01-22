@@ -4,9 +4,9 @@ class FaunesController < ApplicationController
   def index
     if params[:categorie].present?
       @categorie = params[:categorie]
-      @faunes = Faune.where(categorie: params[:categorie])
+      @faunes = Faune.where(categorie: params[:categorie]).order(:nom)
     else
-      @faunes = Faune.all
+      @faunes = Faune.order(:nom)
     end
   end
 
