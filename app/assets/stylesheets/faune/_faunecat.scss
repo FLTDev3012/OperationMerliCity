@@ -1,11 +1,33 @@
 .faunecat-container {
   background-color: #0F2933;
+  color: #fff;
+  font-family: 'ABeeZee', sans-serif;
+}
+
+.faunecat-container a {
+  color: #fff;
 }
 
 .faunecat-categories-container {
+}
+
+.faunecat-categories-grid-container {
   padding: 1em;
   padding-bottom: 50px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 10px
+}
+
+.faunecat-categories-owner {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.faunecat-categories-owner img {
+  width: 300px;
+  height: 400px;
 }
