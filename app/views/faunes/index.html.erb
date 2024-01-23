@@ -12,7 +12,7 @@
     <div class="faunecat-categories-grid-container">
 
       <% @faunes.each do |faune| %>
-        <%= link_to faune_path(faune), class: 'faunecat-categories-owner' do %>
+        <%= link_to faune_path(faune), class: 'faunecat-categories-owner', data: { turbo: false } do %>
           <div class="faunecat-categories-owner-title"><%= faune.nom %></div>
           <% if faune.photo.attached? %>
             <div class="faunecat-categories-owner-picture">
