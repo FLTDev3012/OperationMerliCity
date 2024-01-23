@@ -222,8 +222,8 @@ animal1.photo.attach(io: file, filename: "v1.png", content_type: "image/png")
 animal1.save
 puts "1 animal a etait cree 🐸!"
 
-file = URI.open("https://medias.pourlascience.fr/api/v1/images/view/5be9a07d8fe56f7b21242cf6/wide_1300/image.jpg")
-animal2 = Faune.create(categorie:"Poissons", nom: "rraie manta", description: "Dans les eaux côtières de Merlimont, l'émissole tachetée se faufile, un poisson agile au corps élancé marqué de taches sombres. Avec son camouflage discret parmi les fonds sableux, elle chasse discrètement ses proies. Mesurant généralement entre 15 et 30 centimètres, elle se fond dans ce décor côtier, vigilante et prédatrice.\n\nToutefois, méfiez-vous de ses nageoires dorsales venimeuses, un rappel de sa défense naturelle pour ceux qui viendraient troubler sa quiétude marine.")
+file = URI.open("https://www.aquarium-larochelle.com/wp-content/uploads/2021/01/emissole-lisse-aquarium-la-rochelle-bloc-560X560.jpg")
+animal2 = Faune.create(categorie:"Poissons", nom: "l'émissole tachetée", description: "Dans les eaux côtières de Merlimont, l'émissole tachetée se faufile, un poisson agile au corps élancé marqué de taches sombres. Avec son camouflage discret parmi les fonds sableux, elle chasse discrètement ses proies. Mesurant généralement entre 15 et 30 centimètres, elle se fond dans ce décor côtier, vigilante et prédatrice.\n\nToutefois, méfiez-vous de ses nageoires dorsales venimeuses, un rappel de sa défense naturelle pour ceux qui viendraient troubler sa quiétude marine.")
 animal2.photo.attach(io: file, filename: "v2.png", content_type: "image/png")
 animal2.save
 puts "2 animal a etait cree 🐸!"

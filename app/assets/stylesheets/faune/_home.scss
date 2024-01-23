@@ -34,7 +34,7 @@
 .faune-main-text-container {
   position: absolute;
   top: 30vh;
-  left: 40px;
+  left: 7%;
 }
 
 .faune-main-title h1 {
@@ -137,7 +137,6 @@
 // onf div
 
 .faune-onf-container {
-  min-height: 100vh;
   background-color: #0F2933;
   display: flex;
   padding-top: 15rem;
@@ -201,10 +200,10 @@
 
 
 .faune-panorama-container {
-  min-height: 100vh;
   background-color: #0F2933;
   display: flex;
   // padding-top: 15rem;
+  padding: 15rem 0;
 }
 
 .faune-panorama-left {
