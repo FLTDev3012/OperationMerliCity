@@ -3,13 +3,18 @@
   color: #fff;
   font-family: 'ABeeZee', sans-serif;
   position: relative;
-  min-height: 100vh;
+  min-height: 90vh;
 }
 
 .faune-show-back {
   position: absolute;
   top: 30px;
   left: 100px;
+  z-index: 2;
+}
+
+.faune-show-back a {
+  font-size: 1.5rem;
 }
 
 .faune-show-container a {
@@ -37,9 +42,23 @@
 
 .faune-show-desc {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
   width: 60%;
+  height: fit-content;
+}
+
+.faune-show-desc-parag {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+.faune-show-desc p::before {
+  content: "";
+  display: block;
+  border-left: 2px solid #fff;
+  padding-left: 30px; /* Espacement de 30px à gauche */
 }
 
 .faune-show-pic {
@@ -51,7 +70,7 @@
 
 .faune-show-pic img {
   width: 300px;
-  height: 400px;
+  height: 350px;
   border: 7px solid #fff;
   object-fit: cover;
 }
