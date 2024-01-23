@@ -11,7 +11,7 @@
   <div class="faune-show-desc-pic">
 
     <div class="faune-show-desc">
-      <p><%= @faune.description %></p>
+      <p class="faune-show-desc-parag"><%= @faune.description %></p>
     </div>
 
     <div class="faune-show-pic">
@@ -20,6 +20,14 @@
       <% end %>
     </div>
 
+  </div>
+
+  <div class="faunecat-herbe">
+    <% if ['Poissons', 'Crustacés', 'Mammifères marins'].include?(@faune.categorie) %>
+      <%= image_tag('faunecat/faunecatalgue.png') %>
+    <% else %>
+      <%= image_tag('faunecat/faunecatherbe.png') %>
+    <% end %>
   </div>
 
 
