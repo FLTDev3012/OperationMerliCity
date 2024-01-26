@@ -1,0 +1,38 @@
+<div class="moncompte-container">
+  <div class="moncompte-content">
+
+    <div class="moncompte-title">
+      <h1>moncompte</h1>
+      <p><%= @user.email %></p>
+    </div>
+
+    <div class="moncompte-ajout">
+      <%= link_to "ajouter une nouvelle recherche", new_faune_path %>
+    </div>
+
+    <div class="moncompte-liste">
+      <h2>mes recherches en faune</h2>
+
+        <div class="userdash-all-faune">
+          <% @user_recherche.each do |animal| %>
+
+            <div class="userdash-one-activitie">
+              <%= animal.nom %>
+              <p><%= animal.description %></p>
+              <% if animal.photo.attached? %>
+                <p>Avec image</p>
+              <% else %>
+                <p>sans image</p>
+              <% end %>
+              <%= link_to "voir l animal", faune_path(animal) %>
+              <%= link_to "modifer l animal", edit_faune_path(animal) %>
+              <%= link_to faune_path(animal), data: { turbo_method: :delete, turbo_confirm: "Êtes-vous sûr de vouloir supprimer ?" }, class: "deco-nouserdash-corbeille" do %>
+                <i class="fa-solid fa-trash" style="color: #fff;"></i>
+              <% end %>
+            </div>
+
+          <% end %>
+        </div>
+
+  </div>
+</div>

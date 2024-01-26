@@ -25,4 +25,9 @@ class PagesController < ApplicationController
   def univers
   end
 
+  def moncompte
+    @user = current_user
+    @user_recherche = Faune.all
+  end
+
 end
