@@ -22,7 +22,7 @@ const signUp = (event) => {
         password: password,
         password_confirmation: password_confirmation
       }
-    })
+    }),
   };
 
   fetch("/users", requestDetails)
