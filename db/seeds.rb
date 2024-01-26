@@ -280,7 +280,7 @@ mamiterre2.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
 mamiterre2.save
 puts "2 mamiterre a etait cree 🐗!"
 
-file = URI.open("https://lh3.googleusercontent.com/proxy/376FhnN-l0L-geaCQYBsM45uqDbmGN-JtlYZUMevGtVZ72CpeAdGW8R1UOukVpJBDTArj9i02jdDm7HOhBtKtrjVzwzVocqdJdegX_NRVkUU3OWXG8wnB1mQgbhtEcriJXYLwOX1KgAB0iR-zrHjfrs")
+file = URI.open("https://www.vivarmor.fr/wp-content/uploads/2021/07/chevreuil.png")
 mamiterre3 = Faune.create(categorie:"Mammifères terrestres", nom: "Chevreuil", description: "Le Chevreuil, gracieux cervidé au pelage roux, parcourt les forêts et les zones boisées de Merlimont. Sa silhouette élancée et ses bois délicats font de lui un spectacle majestueux au sein de la faune locale.")
 mamiterre3.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
 mamiterre3.save
@@ -326,7 +326,7 @@ crustace1.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
 crustace1.save
 puts "1 crustacés a etait cree 🦀!"
 
-file = URI.open("https://lh3.googleusercontent.com/proxy/ApSgOYfMqzvosmtkBQFs8NtkPSp92ADH4SJrjMUw2Ok0x9CsXdhzB3qDjeowpqg0_j13E-iYxhosk7OVk19z4fTr7JD-__FlADSyENELJw-ivxs1RN54pqTo-ijfuOIZIyrExdqyP5wgEQJZFFHKL5WuiRLytleyjlpnhjJXvrBCM_a4ZNW0ZzqE8T2FNKKV7V40x5u8L4Op8EoWOEAxgCuYPVT6k8z_5sDufhwTuK4-BeFACcB1oExPh9Fcuw")
+file = URI.open("https://lh3.googleusercontent.com/proxy/tlZv1KT9VrmRTYpFLBLWhCBrZPcVxDtUTqB9kKVzE-Al_4t9AUSpS-ljPbbSs_xu5wZw4tGTjcDyt1ahmt-yvuwHgtMwgCIEuIE-jqKXwdq3JaiEGtXYU24bFUX44G9Jnve430I1n3JmAKr_B3f9sffKP1V4bBZH4Bb0IL1shY1NPy6BKjy0yuDfzaUjSoivT_QCo5QOy5i0i_XVWzEvtFatf0EISZLTASJBrC5jfQyeiKKC8Rwe4fs4PEq-dw")
 crustace2 = Faune.create(categorie:"Crustacés", nom: "Crabe vert", description: "Le Crabe vert, crustacé au corps aplati et aux pinces puissantes, se trouve dans les eaux côtières et les estuaires de Merlimont. Sa carapace vert olive et sa capacité à se camoufler en font un chasseur habile.")
 crustace2.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
 crustace2.save
@@ -444,7 +444,7 @@ puts "4 amphibiens a etait cree 🐸!"
 
 # Petits mammifères
 
-file = URI.open("https://lh3.googleusercontent.com/proxy/b2Z9JBc7qKdb0CNt-F8wiE5XWOY-mFw8WwHZdqYCOx7lK4729zjRfUr9PTexP2Y3eOa1fN94wdI3netjJNcA13HA3XZPmihz4UkBGuKnp9rWu_yUQaDR6as1B8m1r_TKApzQ5pLUWYIS0_p4np05Er9jVJkG27B8rDEzLd0bMjijuynonA")
+file = URI.open("https://www.instinct-animal.fr/wp-content/uploads/2019/10/musaraigne-commune-1.jpg")
 petitmam1 = Faune.create(categorie:"Petits mammifères", nom: "Musaraigne carrelet", description: "Petite et vive, la Musaraigne carrelet explore les zones herbeuses de Merlimont, se nourrissant voracement d'insectes. Sa petite taille cache une énergie débordante, participant à la diversité des petits mammifères locaux.")
 petitmam1.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
 petitmam1.save
