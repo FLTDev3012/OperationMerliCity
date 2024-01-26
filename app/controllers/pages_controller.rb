@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :home, :merlimontdavant, :about, :dashboard, :fauneflore, :faunecat ]
+  skip_before_action :authenticate_user!, only: [ :home, :merlimontdavant, :about, :dashboard, :fauneflore, :faunecat, :univers ]
 
   def home
     @activites = Activite.first(5)
@@ -20,6 +20,9 @@ class PagesController < ApplicationController
     @resource = User.new
     @resource_name = :user
     render 'pages/fauneflore'
+  end
+
+  def univers
   end
 
 end

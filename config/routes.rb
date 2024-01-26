@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   get "about", to: "pages#about"
   get "dashboard", to: "pages#dashboard"
   get "faunecat", to: "pages#faunecat"
+  get "univers", to: "pages#univers"
+
 
   devise_scope :user do
     get "/fauneflore", to: "pages#fauneflore"
