@@ -393,7 +393,29 @@
 }
 
 // form
+.faune-flore-form {
 
+}
+
+.faune-flore-form-label-et-input {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0;
+}
+
+.faune-flore-form input {
+  height: 2.3rem;
+}
+
+// test
+
+.password-weak {
+  color: red;
+}
+
+.password-strong {
+  color: green;
+}
 
 
 // form label input
