@@ -25,6 +25,7 @@ const signUp = (event) => {
     })
   };
 
+
   fetch("/users", requestDetails)
     .then((response) => {
       if (response.status === 200) {
