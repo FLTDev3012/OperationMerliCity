@@ -121,30 +121,55 @@
               <div class="faune-maitre-form-title">
                 <h2>Compte de Chercheur</h2>
               </div>
-              <%= simple_form_for(@resource, url: registration_path(@resource_name), data: { turbo: :false }) do |f| %>
-                <%= f.error_notification %>
 
-                <div class="form-inputs">
-                  <%= f.input :email, required: true, autofocus: true, input_html: { autocomplete: "email" }, label: "Courrier e-mail de l'explorateur :" %>
-                  <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length), input_html: { autocomplete: "new-password" }, label: "Mot de passe secret de l'explorateur :" %>
-                  <%= f.input :password_confirmation, required: true, input_html: { autocomplete: "new-password" }, label: "Confirmation du Mot de passe secret :" %>
+              <form action="" id="form" class="faune-flore-form">
+
+                <div class="faune-flore-form-label-et-input">
+                  <label for="user_email">Courrier e-mail de l'explorateur :</label>
+                  <input type="email" id="user_email" name="user[email]" required="required" autofocus="autofocus" autocomplete="email" oninput="checkEmailValidity()">
+                  <span id="email-indicator" class="email-validity"></span>
                 </div>
+
+
+
+                <div class="faune-flore-form-label-et-input">
+                  <label for="user_password">Mot de passe secret de l'explorateur :</label>
+                  <input type="password" id="user_password" name="user[password]" required="required" autocomplete="new-password" oninput="checkPasswordStrength(this)">
+                  <span id="password-strength-indicator" class="password-strength"></span>
+                </div>
+
+
+
+                <div class="faune-flore-form-label-et-input">
+                  <label for="user_password_confirmation">Confirmation du Mot de passe secret :</label>
+                  <input type="password" id="user_password_confirmation" name="user[password_confirmation]" required="required" autocomplete="new-password" oninput="checkPasswordConfirmation()">
+                  <span id="password-confirmation-indicator" class="password-strength"></span>
+                </div>
+
+
 
                 <div class="form-actions">
-                  <%= f.button :submit, "C'est parti !" %>
+                  <input type="submit" value="C'est parti !">
                 </div>
-              <% end %>
+              </form>
+
 
             </div>
           <% end %>
+
+          <div class="faune-maitre-compte-connecter-ajax">
+            <p>Vous êtes connecter</p>
+            <%= image_tag('faune/validate') %>
+          </div>
+
 
           <% if user_signed_in? %>
             <div class="faune-maitre-compte-connecter">
               <p>Vous êtes connecter</p>
               <%= image_tag('faune/validate') %>
-
             </div>
           <% end %>
+
         </div>
 
       </div>
@@ -161,3 +186,90 @@
 
 
 </div>
+
+<script>
+
+function checkEmailValidity() {
+  const emailInput = document.getElementById('user_email');
+  const emailValidityIndicator = document.getElementById('email-indicator');
+
+  const email = emailInput.value;
+
+  if (isValidEmail(email)) {
+    // E-mail valide
+    emailInput.classList.add('email-valid');
+    emailInput.classList.remove('email-invalid');
+    emailValidityIndicator.textContent = 'Email Valide';
+    emailValidityIndicator.classList.add('email-valid');
+    emailValidityIndicator.classList.remove('email-invalid');
+  } else {
+    // E-mail invalide
+    emailInput.classList.remove('email-valid');
+    emailInput.classList.add('email-invalid');
+    emailValidityIndicator.textContent = 'Email Invalide';
+    emailValidityIndicator.classList.remove('email-valid');
+    emailValidityIndicator.classList.add('email-invalid');
+  }
+}
+
+function isValidEmail(email) {
+  // Utilisez une expression régulière ou une autre logique de validation de l'e-mail ici
+  // Dans cet exemple, une validation simple avec une expression régulière
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+}
+
+
+function checkPasswordStrength(passwordInput) {
+  const password = passwordInput.value;
+  const passwordStrengthIndicator = document.getElementById('password-strength-indicator');
+
+  if (password.length < 8) {
+    // Mot de passe faible (moins de 8 caractères)
+    passwordInput.classList.add('password-weak');
+    passwordInput.classList.remove('password-strong');
+    passwordStrengthIndicator.textContent = 'Mot de passe trop Faible (min 8 caractères)';
+    passwordStrengthIndicator.classList.add('password-weak');
+    passwordStrengthIndicator.classList.remove('password-strong');
+  } else {
+    // Mot de passe fort (8 caractères ou plus)
+    passwordInput.classList.remove('password-weak');
+    passwordInput.classList.add('password-strong');
+    passwordStrengthIndicator.textContent = 'Mot de passe Fort';
+    passwordStrengthIndicator.classList.remove('password-weak');
+    passwordStrengthIndicator.classList.add('password-strong');
+  }
+}
+
+function checkPasswordConfirmation() {
+  const passwordInput = document.getElementById('user_password');
+  const confirmationInput = document.getElementById('user_password_confirmation');
+  const confirmationStrengthIndicator = document.getElementById('password-confirmation-indicator');
+
+  const password = passwordInput.value;
+  const confirmation = confirmationInput.value;
+
+  if (password.length > 0 && confirmation.length > 0) {
+    if (password === confirmation) {
+      // Mot de passe de confirmation correct
+      confirmationInput.classList.remove('password-weak');
+      confirmationInput.classList.add('password-strong');
+      confirmationStrengthIndicator.textContent = 'Correspond';
+      confirmationStrengthIndicator.classList.remove('password-weak');
+      confirmationStrengthIndicator.classList.add('password-strong');
+    } else {
+      // Mot de passe de confirmation incorrect
+      confirmationInput.classList.add('password-weak');
+      confirmationInput.classList.remove('password-strong');
+      confirmationStrengthIndicator.textContent = 'Ne correspond pas';
+      confirmationStrengthIndicator.classList.add('password-weak');
+      confirmationStrengthIndicator.classList.remove('password-strong');
+    }
+  } else {
+    // L'un des champs est vide, réinitialiser les indicateurs
+    confirmationInput.classList.remove('password-weak');
+    confirmationInput.classList.remove('password-strong');
+    confirmationStrengthIndicator.textContent = '';
+  }
+}
+</script>

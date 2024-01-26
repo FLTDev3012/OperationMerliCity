@@ -392,6 +392,49 @@
   font-weight: bold;
 }
 
+// form
+.faune-flore-form {
+
+}
+
+.faune-flore-form-label-et-input {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0;
+}
+
+.faune-flore-form input {
+  height: 2.3rem;
+}
+
+.faune-flore-form input:focus-visible {
+  outline: none;
+}
+
+.faune-flore-form .form-actions {
+  margin-top: 2rem;
+}
+
+.faune-flore-form .form-actions input {
+  border: none;
+  padding: 0px 10px;
+  border-radius: 3px;
+}
+
+
+
+
+// test
+
+.password-weak {
+  color: #c10f0f;
+}
+
+.password-strong {
+  color: #669a2e;
+}
+
+
 // form label input
   // background-color: #0f2933;
   // color: #fff;
@@ -412,12 +455,35 @@
   flex-direction: column;
 }
 
+
 .faune-maitre-compte-connecter p {
   margin: 0;
   font-size: 2rem;
 }
 
 .faune-maitre-compte-connecter img {
+  height: 60px;
+  width: auto;
+}
+
+.faune-maitre-compte-connecter-ajax {
+  border: 3px solid #669A2E;
+  border-radius: 5px;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 200px;
+  flex-direction: column;
+  display: none;
+}
+
+.faune-maitre-compte-connecter-ajax p {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.faune-maitre-compte-connecter-ajax img {
   height: 60px;
   width: auto;
 }
