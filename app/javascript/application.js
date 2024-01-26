@@ -29,7 +29,11 @@ const signUp = (event) => {
   fetch("/users", requestDetails)
     .then((response) => {
       if (response.status === 200) {
-        Swal.fire({title: 'Votre compte a été créé', icon: 'success'});
+        Swal.fire({ title: 'Votre compte a été créé', icon: 'success' });
+        // masquer la classe faune-maitre-form-container
+        document.querySelector('.faune-maitre-form-container').style.display = 'none';
+        // afficher la classe faune-maitre-compte-connecter
+        document.querySelector('.faune-maitre-compte-connecter-ajax').style.display = 'flex';
       } else {
         Swal.fire({title: 'Erreur!', html: "Oups! Quelque chose n'est pas correct.<br><br>Veuillez vérifier vos informations.<br><br>-email valide.<br>-mot de passe identique<br>-mot de passe de plus de 8 caracteres", icon: 'error'});
       }

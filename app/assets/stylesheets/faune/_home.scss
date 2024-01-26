@@ -392,6 +392,10 @@
   font-weight: bold;
 }
 
+// form
+
+
+
 // form label input
   // background-color: #0f2933;
   // color: #fff;
@@ -412,12 +416,35 @@
   flex-direction: column;
 }
 
+
 .faune-maitre-compte-connecter p {
   margin: 0;
   font-size: 2rem;
 }
 
 .faune-maitre-compte-connecter img {
+  height: 60px;
+  width: auto;
+}
+
+.faune-maitre-compte-connecter-ajax {
+  border: 3px solid #669A2E;
+  border-radius: 5px;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 200px;
+  flex-direction: column;
+  display: none;
+}
+
+.faune-maitre-compte-connecter-ajax p {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.faune-maitre-compte-connecter-ajax img {
   height: 60px;
   width: auto;
 }
