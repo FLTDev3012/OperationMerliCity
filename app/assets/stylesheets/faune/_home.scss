@@ -407,14 +407,31 @@
   height: 2.3rem;
 }
 
+.faune-flore-form input:focus-visible {
+  outline: none;
+}
+
+.faune-flore-form .form-actions {
+  margin-top: 2rem;
+}
+
+.faune-flore-form .form-actions input {
+  border: none;
+  padding: 0px 10px;
+  border-radius: 3px;
+}
+
+
+
+
 // test
 
 .password-weak {
-  color: red;
+  color: #c10f0f;
 }
 
 .password-strong {
-  color: green;
+  color: #669a2e;
 }
 
 
