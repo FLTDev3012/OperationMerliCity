@@ -8,4 +8,6 @@ class User < ApplicationRecord
     faune_path
   end
 
+  has_many :faunes, dependent: :destroy
+
 end
