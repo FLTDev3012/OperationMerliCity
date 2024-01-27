@@ -2,6 +2,9 @@
 
   <div class="faune-show-back">
     <%= link_to "< Retour", request.referer || faunecat_path %>
+    <br>
+    <%= link_to "Modifier", edit_faune_path(@faune), class: "btn-noir" if policy(@faune).update? || current_user&.admin? %>
+    <%= link_to "Supprimer", faune_path(@faune), class: "btn-noir", data: { turbo_method: :delete, turbo_confirm: "Êtes-vous sûr de vouloir supprimer ?" } if policy(@faune).destroy? || current_user&.admin? %>
   </div>
 
   <div class="faune-show-title">
