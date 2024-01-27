@@ -3,7 +3,10 @@
   <div class="faune-show-back">
     <%= link_to "< Retour", request.referer || faunecat_path %>
     <br>
+    <br>
+    <br>
     <%= link_to "Modifier", edit_faune_path(@faune), class: "btn-noir" if policy(@faune).update? || current_user&.admin? %>
+    <br>
     <%= link_to "Supprimer", faune_path(@faune), class: "btn-noir", data: { turbo_method: :delete, turbo_confirm: "Êtes-vous sûr de vouloir supprimer ?" } if policy(@faune).destroy? || current_user&.admin? %>
   </div>
 
@@ -25,11 +28,11 @@
 
   </div>
 
-  <div class="faunecat-herbe">
+  <div class="show-hauteherbe">
     <% if ['Poissons', 'Crustacés', 'Mammifères marins'].include?(@faune.categorie) %>
       <%= image_tag('emplacements/algues.svg') %>
     <% else %>
-      <%= image_tag('faunecat/faunecatherbe.png') %>
+      <%= image_tag('faune/hauteherbe.png') %>
     <% end %>
   </div>
 

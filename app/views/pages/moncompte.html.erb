@@ -20,7 +20,7 @@
 
 
     <div class="moncompte-all-faune-container">
-      <h2>Mes recherches en faune</h2>
+      <h2>Mes recherches en faune <span class="user-recherche-count"> ( <%= @user_recherche.count %> )</span></h2>
 
 
         <% if @user_recherche.present? %>
@@ -35,7 +35,7 @@
                       <p>sans image</p>
                     <% end %>
                     <div class="user-dash-name">
-                    <p><%= animal.nom %></p>
+                      <p><%= animal.nom %></p>
                     </div>
                   </div>
                 <% end %>
@@ -50,4 +50,9 @@
 
 
   </div>
+
+  <div class="faunecat-herbe">
+    <%= image_tag('faune/hauteherbe.png') %>
+  </div>
+
 </div>

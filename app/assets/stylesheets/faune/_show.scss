@@ -74,3 +74,14 @@
   border: 7px solid #fff;
   object-fit: cover;
 }
+
+.show-hauteherbe {
+  position: absolute;
+  bottom: 0;
+}
+
+.show-hauteherbe img {
+  width: 100vw;
+  height: auto;
+  opacity: .3;
+}
