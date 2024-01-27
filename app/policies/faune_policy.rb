@@ -23,7 +23,7 @@ class FaunePolicy < ApplicationPolicy
   end
 
   def destroy?
-    record.user == user
+    record.user == user || user&.admin?
   end
 
 end

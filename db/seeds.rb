@@ -15,9 +15,9 @@ Faune.destroy_all
 puts "Touts les animaux ont etaient supprimer aussi ma grenouille 🐸..."
 
 puts "User en cours de creation..."
-user1 = User.create(email: 'dorian@gmail.com', password: 'coucou')
+user1 = User.create(email: 'dorian@gmail.com', password: 'coucou', admin: true)
 user1.save
-user2 = User.create(email: 'dorian2@gmail.com', password: 'coucou')
+user2 = User.create(email: 'random@gmail.com', password: 'coucou')
 user2.save
 puts " #{User.count} User ont etaient cree..."
 

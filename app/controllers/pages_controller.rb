@@ -27,7 +27,12 @@ class PagesController < ApplicationController
 
   def moncompte
     @user = current_user
-    @user_recherche = Faune.where(user: current_user)
+
+    if @user.admin?
+      @user_recherche = Faune.all
+    else
+      @user_recherche = Faune.where(user: @user)
+    end
   end
 
 end
