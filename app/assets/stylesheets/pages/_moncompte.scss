@@ -67,11 +67,7 @@
   font-size: 4rem;
 }
 
-.userdash-all-faune {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+
 .userdash-all-faune-grid {
   padding: 1em;
   padding-bottom: 50px;
@@ -84,12 +80,23 @@
   display: flex;
   border: 3px solid $vertFaune;
   border-radius: 5px;
+  height: 150px;
+  align-items: center;
+  background-color: #669a2e14;
+  transition: 0.3s;
+}
+
+.user-dash-one-pic-name:hover {
+  background-color: #669a2e69;
 }
 
 .userdash-activitie-img {
   height: 100px;
   width: 100px;
   object-fit: cover;
+  border-radius: 50%;
+  margin-left: 10px;
+  border: 2px solid #fff;
 }
 
 .userdash-one-activitie {
@@ -97,14 +104,21 @@
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.user-dash-name {
+ display: flex;
+ justify-content: center;
 }
 
 .userdash-one-activitie p {
-  background-color: $bleuFaune;
   width: 200px;
   height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 0;
+  text-align: center;
+  font-size: 1rem;
 }

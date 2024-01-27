@@ -22,28 +22,30 @@
     <div class="moncompte-all-faune-container">
       <h2>Mes recherches en faune</h2>
 
-      <div class="userdash-all-faune">
-        <% if @user_recherche.present? %>
 
-          <% @user_recherche.each do |animal| %>
-            <div class="userdash-all-faune-grid">
-              <%= link_to faune_path(animal), class: "userdash-one-activitie" do %>
-                <div class="user-dash-one-pic-name">
-                  <% if animal.photo.attached? %>
-                    <%= image_tag animal.photo, class: "userdash-activitie-img" %>
-                  <% else %>
-                    <p>sans image</p>
-                  <% end %>
-                  <p><%= animal.nom %></p>
-                </div>
-              <% end %>
+        <% if @user_recherche.present? %>
+          <div class="userdash-all-faune-grid">
+            <% @user_recherche.each do |animal| %>
+
+                <%= link_to faune_path(animal), class: "userdash-one-activitie" do %>
+                  <div class="user-dash-one-pic-name">
+                    <% if animal.photo.attached? %>
+                      <%= image_tag animal.photo, class: "userdash-activitie-img" %>
+                    <% else %>
+                      <p>sans image</p>
+                    <% end %>
+                    <div class="user-dash-name">
+                    <p><%= animal.nom %></p>
+                    </div>
+                  </div>
+                <% end %>
+            <% end %>
             </div>
-          <% end %>
 
         <% else %>
           <p>Vous n'avez publié aucune recherche</p>
         <% end %>
-      </div>
+
     </div>
 
 
