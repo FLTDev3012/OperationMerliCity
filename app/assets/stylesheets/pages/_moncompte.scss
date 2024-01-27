@@ -72,10 +72,12 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-
-.userdash-one-activitie {
-  display: inline-flex;
-  margin: 3rem 2rem;
+.userdash-all-faune-grid {
+  padding: 1em;
+  padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px
 }
 
 .user-dash-one-pic-name {

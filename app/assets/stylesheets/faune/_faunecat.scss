@@ -67,11 +67,12 @@
 }
 
 .faunecat-herbe {
-  position: absolute;
-  bottom: -5px;
+  position: sticky;
+  bottom: 0;
 }
 
 .faunecat-herbe img {
+  opacity: .3;
   width: 100%;
   height: auto;
 }

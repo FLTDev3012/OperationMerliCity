@@ -26,16 +26,18 @@
         <% if @user_recherche.present? %>
 
           <% @user_recherche.each do |animal| %>
-            <%= link_to faune_path(animal), class: "userdash-one-activitie" do %>
-              <div class="user-dash-one-pic-name">
-                <% if animal.photo.attached? %>
-                  <%= image_tag animal.photo, class: "userdash-activitie-img" %>
-                <% else %>
-                  <p>sans image</p>
-                <% end %>
-                <p><%= animal.nom %></p>
-              </div>
-            <% end %>
+            <div class="userdash-all-faune-grid">
+              <%= link_to faune_path(animal), class: "userdash-one-activitie" do %>
+                <div class="user-dash-one-pic-name">
+                  <% if animal.photo.attached? %>
+                    <%= image_tag animal.photo, class: "userdash-activitie-img" %>
+                  <% else %>
+                    <p>sans image</p>
+                  <% end %>
+                  <p><%= animal.nom %></p>
+                </div>
+              <% end %>
+            </div>
           <% end %>
 
         <% else %>
