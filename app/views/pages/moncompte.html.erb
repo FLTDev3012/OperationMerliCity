@@ -1,42 +1,58 @@
 <div class="moncompte-container">
+  <%= link_to "< Retour", request.referer.presence || fauneflore_path, class: "moncompte-retour-btn" %>
+
   <div class="moncompte-content">
 
     <div class="moncompte-title">
-      <h1>moncompte</h1>
+      <h1>Mon Compte de Chercheur</h1>
+
+      <% if @user && @user.admin? %>
+        <p><%= @user.email %> <span class="user-status">|| Administrateur</span></p>
+      <% else %>
+        <p class="user-status">vous êtes claque</p>
+      <% end %>
+
     </div>
 
-    <% if @user && @user.admin? %>
-      <p>vous êtes admin</p>
-    <% else %>
-      vous êtes claque
-    <% end %>
+      <div class="moncompte-ajout-faune">
+        <%= link_to "Ajouter une découverte en Flore", new_faune_path %>
+      </div>
 
 
-    <div class="moncompte-ajout">
-      <%= link_to "ajouter une nouvelle recherche", new_faune_path %>
-    </div>
+    <div class="moncompte-all-faune-container">
+      <h2>Mes recherches en faune <span class="user-recherche-count"> ( <%= @user_recherche.count %> )</span></h2>
 
-    <div class="moncompte-liste">
-      <h2>mes recherches en faune</h2>
 
-        <div class="userdash-all-faune">
-          <% if @user_recherche.present? %>
+        <% if @user_recherche.present? %>
+          <div class="userdash-all-faune-grid">
             <% @user_recherche.each do |animal| %>
-              <div class="userdash-one-activitie">
-                <%= animal.nom %>
-                <p><%= animal.description %></p>
-                <% if animal.photo.attached? %>
-                  <p>Avec image</p>
-                <% else %>
-                  <p>sans image</p>
+
+                <%= link_to faune_path(animal), class: "userdash-one-activitie" do %>
+                  <div class="user-dash-one-pic-name">
+                    <% if animal.photo.attached? %>
+                      <%= image_tag animal.photo, class: "userdash-activitie-img" %>
+                    <% else %>
+                      <p>sans image</p>
+                    <% end %>
+                    <div class="user-dash-name">
+                      <p><%= animal.nom %></p>
+                    </div>
+                  </div>
                 <% end %>
-                <%= link_to "voir l'animal", faune_path(animal) %>
-              </div>
             <% end %>
-          <% else %>
-            <p>Aucun animal trouvé.</p>
-          <% end %>
-        </div>
+            </div>
+
+        <% else %>
+          <p>Vous n'avez publié aucune recherche</p>
+        <% end %>
+
+    </div>
+
 
   </div>
+
+  <div class="faunecat-herbe">
+    <%= image_tag('faune/hauteherbe.png') %>
+  </div>
+
 </div>

@@ -2,4 +2,128 @@
   min-height: 100vh;
   background-color: #0f2933;
   color: #fff;
+  font-family: 'ABeeZee', sans-serif;
+  position: relative;
+}
+
+.moncompte-retour-btn {
+  color: #fff;
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.3rem;
+  position: absolute;
+  top: 30px;
+  left: 100px;
+}
+
+.moncompte-content {
+  padding: 60px;
+}
+
+.moncompte-title {
+  display: flex;
+  flex-direction: column;;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.moncompte-title h1 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 6rem;
+  margin-bottom: 2rem;
+  color: $vertFaune;
+}
+
+.moncompte-title p {
+  font-size: 1.5rem;
+}
+
+.user-status {
+  color: $vertFaune;
+  font-size: 1.5rem;
+}
+
+.moncompte-ajout-faune {
+  margin-bottom: 3rem;
+}
+
+.moncompte-ajout-faune a {
+  color: #fff;
+  text-decoration: none;
+  background-color: $vertFaune;
+  padding: 6px 12px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.moncompte-all-faune-container h2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  font-family: 'Amatic SC', cursive;
+  color: $vertFaune;
+  font-size: 4rem;
+}
+
+.user-recherche-count {
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+
+.userdash-all-faune-grid {
+  padding: 1em;
+  padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px
+}
+
+.user-dash-one-pic-name {
+  display: flex;
+  border: 3px solid $vertFaune;
+  border-radius: 5px;
+  height: 150px;
+  align-items: center;
+  background-color: #669a2e14;
+  transition: 0.3s;
+}
+
+.user-dash-one-pic-name:hover {
+  background-color: #669a2e69;
+}
+
+.userdash-activitie-img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: 10px;
+  border: 2px solid #fff;
+}
+
+.userdash-one-activitie {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.user-dash-name {
+ display: flex;
+ justify-content: center;
+}
+
+.userdash-one-activitie p {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 1rem;
 }
