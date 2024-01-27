@@ -50,7 +50,7 @@ class FaunesController < ApplicationController
     @faune = Faune.find(params[:id])
     authorize @faune
     @faune.destroy
-    render 'pages/moncompte'
+    redirect_to moncompte_path, status: :see_other
   end
 
   private

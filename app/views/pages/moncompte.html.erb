@@ -3,7 +3,7 @@
 
     <div class="moncompte-title">
       <h1>moncompte</h1>
-      <p><%= @user.email %></p>
+
     </div>
 
     <div class="moncompte-ajout">
@@ -14,19 +14,21 @@
       <h2>mes recherches en faune</h2>
 
         <div class="userdash-all-faune">
-          <% @user_recherche.each do |animal| %>
-
-            <div class="userdash-one-activitie">
-              <%= animal.nom %>
-              <p><%= animal.description %></p>
-              <% if animal.photo.attached? %>
-                <p>Avec image</p>
-              <% else %>
-                <p>sans image</p>
-              <% end %>
-              <%= link_to "voir l animal", faune_path(animal) %>
-            </div>
-
+          <% if @user_recherche.present? %>
+            <% @user_recherche.each do |animal| %>
+              <div class="userdash-one-activitie">
+                <%= animal.nom %>
+                <p><%= animal.description %></p>
+                <% if animal.photo.attached? %>
+                  <p>Avec image</p>
+                <% else %>
+                  <p>sans image</p>
+                <% end %>
+                <%= link_to "voir l'animal", faune_path(animal) %>
+              </div>
+            <% end %>
+          <% else %>
+            <p>Aucun animal trouvé.</p>
           <% end %>
         </div>
 
