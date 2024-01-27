@@ -2,4 +2,107 @@
   min-height: 100vh;
   background-color: #0f2933;
   color: #fff;
+  font-family: 'ABeeZee', sans-serif;
+  position: relative;
+}
+
+.moncompte-retour-btn {
+  color: #fff;
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.3rem;
+  position: absolute;
+  top: 30px;
+  left: 100px;
+}
+
+.moncompte-content {
+  padding: 60px;
+}
+
+.moncompte-title {
+  display: flex;
+  flex-direction: column;;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.moncompte-title h1 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 6rem;
+  margin-bottom: 2rem;
+  color: $vertFaune;
+}
+
+.moncompte-title p {
+  font-size: 1.5rem;
+}
+
+.user-status {
+  color: $vertFaune;
+  font-size: 1.5rem;
+}
+
+.moncompte-ajout-faune {
+  margin-bottom: 3rem;
+}
+
+.moncompte-ajout-faune a {
+  color: #fff;
+  text-decoration: none;
+  background-color: $vertFaune;
+  padding: 6px 12px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.moncompte-all-faune-container h2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  font-family: 'Amatic SC', cursive;
+  color: $vertFaune;
+  font-size: 4rem;
+}
+
+.userdash-all-faune {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.userdash-one-activitie {
+  display: inline-flex;
+  margin: 3rem 2rem;
+}
+
+.user-dash-one-pic-name {
+  display: flex;
+  border: 3px solid $vertFaune;
+  border-radius: 5px;
+}
+
+.userdash-activitie-img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+}
+
+.userdash-one-activitie {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.userdash-one-activitie p {
+  background-color: $bleuFaune;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
 }
