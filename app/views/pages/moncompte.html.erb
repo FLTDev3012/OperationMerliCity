@@ -25,10 +25,6 @@
                 <p>sans image</p>
               <% end %>
               <%= link_to "voir l animal", faune_path(animal) %>
-              <%= link_to "modifer l animal", edit_faune_path(animal) %>
-              <%= link_to faune_path(animal), data: { turbo_method: :delete, turbo_confirm: "Êtes-vous sûr de vouloir supprimer ?" }, class: "deco-nouserdash-corbeille" do %>
-                <i class="fa-solid fa-trash" style="color: #fff;"></i>
-              <% end %>
             </div>
 
           <% end %>
