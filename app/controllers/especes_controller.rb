@@ -1,0 +1,2 @@
+class EspecesController < ApplicationController
+end

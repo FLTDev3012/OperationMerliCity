@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_01_27_045059) do
+ActiveRecord::Schema[7.0].define(version: 2024_01_28_130136) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -50,6 +50,37 @@ ActiveRecord::Schema[7.0].define(version: 2024_01_27_045059) do
     t.string "image_url"
   end
 
+  create_table "biotops", force: :cascade do |t|
+    t.string "categorie"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "user_id", null: false
+    t.index ["user_id"], name: "index_biotops_on_user_id"
+  end
+
+  create_table "espece_categories", force: :cascade do |t|
+    t.string "categorie"
+    t.string "photo"
+    t.bigint "type_espece_categorie_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "user_id", null: false
+    t.index ["type_espece_categorie_id"], name: "index_espece_categories_on_type_espece_categorie_id"
+    t.index ["user_id"], name: "index_espece_categories_on_user_id"
+  end
+
+  create_table "especes", force: :cascade do |t|
+    t.string "nom"
+    t.string "description"
+    t.string "photo"
+    t.bigint "espece_categorie_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "user_id", null: false
+    t.index ["espece_categorie_id"], name: "index_especes_on_espece_categorie_id"
+    t.index ["user_id"], name: "index_especes_on_user_id"
+  end
+
   create_table "faunes", force: :cascade do |t|
     t.string "categorie"
     t.string "nom"
@@ -73,6 +104,17 @@ ActiveRecord::Schema[7.0].define(version: 2024_01_27_045059) do
     t.string "image_url"
   end
 
+  create_table "type_espece_categories", force: :cascade do |t|
+    t.string "categorie"
+    t.string "photo"
+    t.bigint "biotop_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "user_id", null: false
+    t.index ["biotop_id"], name: "index_type_espece_categories_on_biotop_id"
+    t.index ["user_id"], name: "index_type_espece_categories_on_user_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -88,5 +130,12 @@ ActiveRecord::Schema[7.0].define(version: 2024_01_27_045059) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "biotops", "users"
+  add_foreign_key "espece_categories", "type_espece_categories", column: "type_espece_categorie_id"
+  add_foreign_key "espece_categories", "users"
+  add_foreign_key "especes", "espece_categories", column: "espece_categorie_id"
+  add_foreign_key "especes", "users"
   add_foreign_key "faunes", "users"
+  add_foreign_key "type_espece_categories", "biotops"
+  add_foreign_key "type_espece_categories", "users"
 end

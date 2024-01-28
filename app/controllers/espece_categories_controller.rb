@@ -1,0 +1,2 @@
+class EspeceCategoriesController < ApplicationController
+end
