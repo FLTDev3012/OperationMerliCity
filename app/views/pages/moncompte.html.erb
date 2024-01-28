@@ -8,6 +8,33 @@
 
       <% if @user && @user.admin? %>
         <p><%= @user.email %> <span class="user-status">|| Administrateur</span></p>
+        <br>
+        <p>--les biotops--</p>
+        <div>
+          <% @biotop.each do |x| %>
+            <p><%= x.categorie %></p>
+          <% end %>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div>
+          <p>--les typesEspeceCategorie--</p>
+          <% @typeEspeceCategories.each do |x| %>
+            <br>
+            <p><%= x.categorie %></p>
+            <% if x.biotop.present? %>
+              <p><%= x.biotop.categorie %></p>
+            <% else %>
+              <p>Biotope non disponible</p>
+            <% end %>
+            <br>
+          <% end %>
+        </div>
+        <br>
+
+
       <% else %>
         <p class="user-status">vous êtes claque</p>
       <% end %>
