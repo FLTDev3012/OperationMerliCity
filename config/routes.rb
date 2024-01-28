@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   root to: "pages#home"
 
+  get "galerie", to: "pages#galerie"
   get "merlimontdavant", to: "pages#merlimontdavant"
   get "about", to: "pages#about"
   get "dashboard", to: "pages#dashboard"
