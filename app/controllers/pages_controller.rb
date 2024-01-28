@@ -5,6 +5,9 @@ class PagesController < ApplicationController
     @activites = Activite.first(5)
   end
 
+  def galerie
+  end
+
   def merlimontdavant
   end
 
