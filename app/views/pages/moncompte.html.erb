@@ -33,6 +33,17 @@
           <% end %>
         </div>
         <br>
+        <div>
+          <p>--les typesEspeceCategorie--</p>
+          <% @especeCategories.each do |x| %>
+            <br>
+            <p><%= x.categorie %></p>
+            <p><%= x.type_espece_categorie.categorie %></p>
+            <p><%= x.type_espece_categorie.biotop.categorie %></p>
+            <br>
+          <% end %>
+        </div>
+
 
 
       <% else %>

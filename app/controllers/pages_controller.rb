@@ -39,6 +39,8 @@ class PagesController < ApplicationController
 
     @biotop = Biotop.all
     @typeEspeceCategories = TypeEspeceCategorie.all
+    @especeCategories = EspeceCategorie.all
+
   end
 
 end
