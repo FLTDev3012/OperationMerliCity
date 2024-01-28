@@ -1,6 +1,17 @@
 <div class="galerie-container">
-  <h1>Vitrine de Merlimont</h1>
+
+  <div class="galerie-background">
+    <%= image_tag("galerie/galerie_background", alt: "fond d ecran") %>
+  </div>
+
+  <div class="faune-return-btn">
+    <%= link_to root_path do %>
+      <%= image_tag('home/MerlimontB.png') %>
+    <% end %>
+  </div>
+
   <div class="container-de-container-grid">
+    <h1>Vitrine de Merlimont</h1>
     <div class="container-grid">
 
       <div class="galerie-one-pic">
