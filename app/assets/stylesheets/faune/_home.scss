@@ -368,7 +368,7 @@
 .faune-maitre-form-container {
   background-color: #669a2e26;
   border: 3px solid #669A2E;
-  border-radius: 5px;
+  border-radius: 16px;
   padding: 30px 20px;
 }
 
@@ -407,6 +407,7 @@
 
 .faune-flore-form input {
   height: 2.3rem;
+  border-radius: 5px;
 }
 
 .faune-flore-form input:focus-visible {
@@ -449,7 +450,7 @@
 .faune-maitre-compte-connecter {
   background-color: #669a2e26;
   border: 3px solid #669A2E;
-  border-radius: 5px;
+  border-radius: 16px;
   padding: 30px 20px;
   display: flex;
   justify-content: space-around;
@@ -478,7 +479,7 @@
 .faune-maitre-compte-connecter-ajax {
   background-color: #669a2e26;
   border: 3px solid #669A2E;
-  border-radius: 5px;
+  border-radius: 16px;
   padding: 30px 20px;
   display: flex;
   justify-content: space-around;
