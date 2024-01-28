@@ -14,37 +14,39 @@
 
     </div>
 
-      <div class="moncompte-ajout-faune">
-        <%= link_to "Ajouter une découverte en Flore", new_faune_path %>
-      </div>
+
 
 
     <div class="moncompte-all-faune-container">
       <h2>Mes recherches en faune <span class="user-recherche-count"> ( <%= @user_recherche.count %> )</span></h2>
 
+      <div class="moncompte-ajout-faune">
+        <%= link_to "Ajouter une découverte en Flore", new_faune_path %>
+      </div>
 
-        <% if @user_recherche.present? %>
-          <div class="userdash-all-faune-grid">
-            <% @user_recherche.each do |animal| %>
 
-                <%= link_to faune_path(animal), class: "userdash-one-activitie" do %>
-                  <div class="user-dash-one-pic-name">
-                    <% if animal.photo.attached? %>
-                      <%= image_tag animal.photo, class: "userdash-activitie-img" %>
-                    <% else %>
-                      <p>sans image</p>
-                    <% end %>
-                    <div class="user-dash-name">
-                      <p><%= animal.nom %></p>
-                    </div>
+      <% if @user_recherche.present? %>
+        <div class="userdash-all-faune-grid">
+          <% @user_recherche.each do |animal| %>
+
+              <%= link_to faune_path(animal) do %>
+                <div class="user-dash-one-pic-name">
+                  <% if animal.photo.attached? %>
+                    <%= image_tag animal.photo, class: "userdash-activitie-img" %>
+                  <% else %>
+                    <p>sans image</p>
+                  <% end %>
+                  <div class="user-dash-name">
+                    <p><%= animal.nom %></p>
                   </div>
-                <% end %>
-            <% end %>
-            </div>
+                </div>
+              <% end %>
+          <% end %>
+          </div>
 
-        <% else %>
-          <p>Vous n'avez publié aucune recherche</p>
-        <% end %>
+      <% else %>
+        <p>Vous n'avez publié aucune recherche</p>
+      <% end %>
 
     </div>
 

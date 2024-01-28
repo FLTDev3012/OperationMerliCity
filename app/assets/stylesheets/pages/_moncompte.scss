@@ -16,7 +16,7 @@
 }
 
 .moncompte-content {
-  padding: 60px;
+  padding: 60px 60px 0 60px;
 }
 
 .moncompte-title {
@@ -45,6 +45,8 @@
 
 .moncompte-ajout-faune {
   margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
 }
 
 .moncompte-ajout-faune a {
@@ -58,6 +60,8 @@
   font-size: 1.2rem;
 }
 
+
+// toutes les recherche
 .moncompte-all-faune-container h2 {
   display: flex;
   justify-content: center;
@@ -72,7 +76,6 @@
   margin-left: 1rem;
 }
 
-
 .userdash-all-faune-grid {
   padding: 1em;
   padding-bottom: 50px;
@@ -81,7 +84,14 @@
   gap: 10px
 }
 
+
+
+//une recherche photo et nom
 .user-dash-one-pic-name {
+  z-index: 10;
+  position: relative;
+  color: #ffffff;
+  margin-bottom: 2rem;
   display: flex;
   border: 3px solid $vertFaune;
   border-radius: 5px;
@@ -89,12 +99,31 @@
   align-items: center;
   background-color: #669a2e14;
   transition: 0.3s;
+  background: rgba( 255, 255, 255, 0.3 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 5px );-webkit-backdrop-filter: blur( 5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .user-dash-one-pic-name:hover {
-  background-color: #669a2e69;
+  background-color: rgba(102, 154, 46, 0.3);
 }
 
+.user-dash-circle-color {
+  content: "";
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: $vertFaune;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  z-index: 1;
+
+}
+
+//img
 .userdash-activitie-img {
   height: 100px;
   width: 100px;
@@ -104,20 +133,14 @@
   border: 2px solid #fff;
 }
 
-.userdash-one-activitie {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 2rem;
-}
 
+//nom
 .user-dash-name {
  display: flex;
  justify-content: center;
 }
 
-.userdash-one-activitie p {
+.user-dash-one-pic-name p {
   width: 200px;
   height: 100px;
   display: flex;
@@ -126,4 +149,6 @@
   margin-bottom: 0;
   text-align: center;
   font-size: 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
