@@ -1,0 +1,16 @@
+<div class="form-container">
+
+  <div class="form-titre">
+    <h1>Ajoutez votre biotope</h1>
+  </div>
+
+  <div class="form-formulaire">
+    <%= simple_form_for @biotop do |f| %>
+      <%= f.input :categorie, placeholder: 'nom' %>
+      <div class="form-input">
+        <%= f.button :submit, value: 'Validation' %>
+      </div>
+    <% end %>
+  </div>
+
+</div>

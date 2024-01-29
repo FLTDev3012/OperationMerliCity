@@ -36,6 +36,13 @@ class PagesController < ApplicationController
     else
       @user_recherche = Faune.where(user: @user)
     end
+
+    @biotop = Biotop.all
+    @typeEspeceCategories = TypeEspeceCategorie.all
+    @especeCategories = EspeceCategorie.all
+    @especes = Espece.all
+
+
   end
 
 end

@@ -1,0 +1,36 @@
+<div class="faunecat-container">
+
+  <div class="faunecat-return-btn">
+    <%= link_to "< Faune", type_espece_categories_path %>
+  </div>
+
+  <div class="faunecat-title">
+    <h1><%= @type_espece_categorie_categorie.present? ? "Les #{@type_espece_categorie_categorie}" : 'Tous notre faune' %></h1>
+  </div>
+
+  <div class="faunecat-categories-container">
+    <div class="faunecat-categories-grid-container">
+
+      <% @especeCategories.each do |x| %>
+        <%= link_to especes_path(espece_categorie_categorie: x.categorie), class: 'faunecat-categories-owner', data: { turbo: false } do %>
+          <div class="faunecat-categories-owner-title"><%= x.categorie %></div>
+          <% if x.photo.attached? %>
+            <div class="faunecat-categories-owner-picture">
+              <%= cl_image_tag x.photo.key %>
+            </div>
+          <% end %>
+        <% end %>
+      <% end %>
+
+    </div>
+  </div>
+
+  <div class="faunecat-herbe">
+    <% if ['Poissons', 'Crustacés', 'Mammifères marins'].include?(@categorie) %>
+      <%= image_tag('emplacements/algues.svg') %>
+    <% else %>
+      <%= image_tag('faune/hauteherbe.png') %>
+    <% end %>
+  </div>
+
+</div>

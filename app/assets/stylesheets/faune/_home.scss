@@ -1,11 +1,11 @@
-// container central
+// Container home -----------------------------
 
 .faune-home-container {
   color: #fff;
   font-family: 'ABeeZee', sans-serif;
 }
 
-// main container
+// Main container --------------------------------
 
 .faune-main-div {
   height: 100vh;
@@ -59,7 +59,7 @@
   margin: 1rem 0;
 }
 
-// three pic
+// --- three pic ----
 
 .faune-main-three-pic-container {
   height: 400px;
@@ -76,6 +76,7 @@
   height: 100%;
   position: relative;
 }
+
 
 .faune-main-pic-left  {
   height: 275px;
@@ -96,6 +97,7 @@
   object-fit: cover;
 }
 
+
 .faune-main-pic-center  {
   height: 400px;
   width: 300px;
@@ -114,6 +116,7 @@
   width: 100%;
   object-fit: cover;
 }
+
 
 .faune-main-pic-right  {
   height: 275px;
@@ -134,7 +137,9 @@
   object-fit: cover;
 }
 
-// onf div
+// End main container --------------------------------
+
+// ONF div -------------------------------------------
 
 .faune-onf-container {
   background-color: #0F2933;
@@ -184,7 +189,7 @@
   transform: translate(-50%, -50%);
   height: auto;
   width: 500px;
-  opacity: 0.13;
+  opacity: 0.25;
 }
 
 .faune-onf-right p {
@@ -196,7 +201,9 @@
   color: #669A2E;
 }
 
-// panorama
+// END ONF div -------------------------------------------
+
+// PANORAMA div ----------------------------------------------
 
 
 .faune-panorama-container {
@@ -225,7 +232,7 @@
   transform: translate(-50%, -50%);
   height: 100vh;
   width: auto;
-  opacity: 0.13;
+  opacity: 0.25;
 }
 
 .faune-panorama-left p {
@@ -256,8 +263,9 @@
   object-fit: fill;
   border: 7px solid #fff;
 }
+// PANORAMA div ----------------------------------------------
 
-// que voulez vous decouvrir
+// Decouvrir faune flore div ----------------------------------
 
 .faune-decouvrir-container {
   min-height: 100vh;
@@ -301,7 +309,10 @@
   width: 50%;
 }
 
-// maitre
+// END Decouvrir faune flore div ----------------------------------
+
+
+// Maitre chercheur div ---------------------------
 
 .faune-maitre-container {
   min-height: 100vh;
@@ -344,7 +355,9 @@
   margin: 0;
 }
 
-// compte
+// End Maitre chercheur div ---------------------------
+
+// Form et letter div -------------------------
 
 .faune-maitre-compte-container {
   display: flex;
@@ -356,18 +369,16 @@
   width: 50%;
   display: flex;
   justify-content: center;
-  // align-items: center;
 }
 
 .faune-maitre-compte-form {
   width: 80%;
-  // border: 3px solid #669A2E;
 
 }
 
 .faune-maitre-form-container {
   background-color: #669a2e26;
-  border: 3px solid #669A2E;
+  border: 2px solid #669A2E;
   border-radius: 16px;
   padding: 30px 20px;
 }
@@ -394,10 +405,6 @@
   font-weight: bold;
 }
 
-// form
-.faune-flore-form {
-
-}
 
 .faune-flore-form-label-et-input {
   display: flex;
@@ -424,10 +431,7 @@
   border-radius: 3px;
 }
 
-
-
-
-// test
+// couleur verif form
 
 .password-weak {
   color: #c10f0f;
@@ -437,48 +441,11 @@
   color: #669a2e;
 }
 
-
-// form label input
-  // background-color: #0f2933;
-  // color: #fff;
-
-// .faune-maitre-form-container input {
-//   background-color: #0f2933;
-//   color: #fff;
-// }
-
-.faune-maitre-compte-connecter {
-  background-color: #669a2e26;
-  border: 3px solid #669A2E;
-  border-radius: 16px;
-  padding: 30px 20px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 200px;
-  flex-direction: column;
-}
-
-
-.faune-maitre-compte-connecter p {
-  margin: 0;
-  font-size: 2rem;
-}
-
-.faune-maitre-compte-connecter img {
-  height: 60px;
-  width: auto;
-  margin: 3rem 0;
-}
-
-.faune-maitre-compte-connecter a {
-  color: $vertFaune;
-  font-size: 1.3rem;
-}
+// if user connected ajax promise
 
 .faune-maitre-compte-connecter-ajax {
   background-color: #669a2e26;
-  border: 3px solid #669A2E;
+  border: 2px solid #669A2E;
   border-radius: 16px;
   padding: 30px 20px;
   display: flex;
@@ -497,22 +464,71 @@
 .faune-maitre-compte-connecter-ajax img {
   height: 60px;
   width: auto;
-  margin: 3rem 0;
+  margin: 2rem 0;
 }
 
 .faune-maitre-compte-connecter-ajax a {
   color: $vertFaune;
   font-size: 1.3rem;
+  transition: 0.3s;
 }
+
+.faune-maitre-compte-connecter-ajax a:hover {
+  color: #fff;
+  transition: 0.3s;
+}
+
+// if user connected ajax promise end
+
+
+// if user connected
+
+.faune-maitre-compte-connecter {
+  background-color: #669a2e26;
+  border: 2px solid #669A2E;
+  border-radius: 16px;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 200px;
+  flex-direction: column;
+}
+
+
+.faune-maitre-compte-connecter p {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.faune-maitre-compte-connecter img {
+  height: 60px;
+  width: auto;
+  margin: 2rem 0;
+}
+
+.faune-maitre-compte-connecter a {
+  color: $vertFaune;
+  font-size: 1.3rem;
+  transition: 0.3s;
+}
+
+.faune-maitre-compte-connecter a:hover {
+  color: #fff;
+  transition: 0.3s;
+}
+
+// letter
 
 .faune-maitre-compte-lettre {
   width: 50%;
   display: flex;
   justify-content: center;
-  // align-items: center;
 }
 
 .faune-maitre-compte-lettre img {
   height: 600px;
   width: auto;
 }
+
+// END Form et letter div -------------------------

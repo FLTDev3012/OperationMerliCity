@@ -82,9 +82,9 @@
     <div class="faune-decouvrir-jumelle-container">
         <%= image_tag('faune/jumelle') %>
         <div class="faune-decouvrir-jumelle-link">
-          <%= link_to faunecat_path, class:"faune-link-left", data: { turbo: false } do %>
+          <%= link_to type_espece_categories_path(biotop_categorie: "Faune") , class:"faune-link-left", data: { turbo: false } do %>
           <% end %>
-          <%= link_to about_path, class:"faune-link-right", data: { turbo: false } do %>
+          <%= link_to type_espece_categories_path(biotop_categorie: "Flore") , class:"faune-link-right", data: { turbo: false } do %>
           <% end %>
         </div>
     </div>
@@ -158,7 +158,7 @@
           <% end %>
 
           <div class="faune-maitre-compte-connecter-ajax">
-            <p>Vous êtes connecter</p>
+            <p>Vous êtes connecter !</p>
             <%= image_tag('faune/validate') %>
             <%= link_to "Voir mon tableau de bord", moncompte_path %>
           </div>
@@ -166,7 +166,7 @@
 
           <% if user_signed_in? %>
             <div class="faune-maitre-compte-connecter">
-              <p>Vous êtes connecter</p>
+              <p>Vous êtes connecter !</p>
               <%= image_tag('faune/validate') %>
               <%= link_to "Voir mon tableau de bord", moncompte_path %>
             </div>
