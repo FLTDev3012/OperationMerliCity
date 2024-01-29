@@ -1,0 +1,19 @@
+<div class="form-container">
+
+  <div class="form-titre">
+    <h1>Ajoutez espece </h1>
+  </div>
+
+  <div class="form-formulaire">
+    <%= simple_form_for @espece do |f| %>
+      <%= f.collection_select :espece_categorie_id, EspeceCategorie.all, :id, :categorie, prompt: 'Sélectionnez une espece categorie' %>
+      <%= f.input :nom, placeholder: 'nom' %>
+      <%= f.input :description, placeholder: 'description' %>
+      <%= f.input :photo, as: :file %>
+      <div class="form-input">
+        <%= f.button :submit, value: 'Validation' %>
+      </div>
+    <% end %>
+  </div>
+
+</div>

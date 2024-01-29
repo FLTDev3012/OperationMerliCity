@@ -10,39 +10,44 @@
         <p><%= @user.email %> <span class="user-status">|| Administrateur</span></p>
         <br>
         <p>--les biotops--</p>
-        <div>
-          <% @biotop.each do |x| %>
-            <p><%= x.categorie %></p>
+        <% @biotop.each do |x| %>
+          <p><%= x.categorie %></p>
+        <% end %>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p>--les typesEspeceCategorie--</p>
+        <% @typeEspeceCategories.each do |x| %>
+          <br>
+          <p><%= x.categorie %></p>
+          <% if x.biotop.present? %>
+            <p><%= x.biotop.categorie %></p>
+          <% else %>
+            <p>Biotope non disponible</p>
           <% end %>
-        </div>
+          <br>
+        <% end %>
         <br>
+        <p>--les EspeceCategorie--</p>
+        <% @especeCategories.each do |x| %>
+          <br>
+          <p><%= x.categorie %></p>
+          <p><%= x.type_espece_categorie.categorie %></p>
+          <p><%= x.type_espece_categorie.biotop.categorie %></p>
+          <br>
+        <% end %>
         <br>
-        <br>
-        <br>
-        <div>
-          <p>--les typesEspeceCategorie--</p>
-          <% @typeEspeceCategories.each do |x| %>
-            <br>
-            <p><%= x.categorie %></p>
-            <% if x.biotop.present? %>
-              <p><%= x.biotop.categorie %></p>
-            <% else %>
-              <p>Biotope non disponible</p>
-            <% end %>
-            <br>
-          <% end %>
-        </div>
-        <br>
-        <div>
-          <p>--les typesEspeceCategorie--</p>
-          <% @especeCategories.each do |x| %>
-            <br>
-            <p><%= x.categorie %></p>
-            <p><%= x.type_espece_categorie.categorie %></p>
-            <p><%= x.type_espece_categorie.biotop.categorie %></p>
-            <br>
-          <% end %>
-        </div>
+        <p>--les EspeceCategorie--</p>
+        <% @especes.each do |x| %>
+          <br>
+          <p><%= x.nom %></p>
+          <p><%= x.description %></p>
+          <p><%= x.espece_categorie.categorie %></p>
+          <p><%= x.espece_categorie.type_espece_categorie.categorie %></p>
+          <p><%= x.espece_categorie.type_espece_categorie.biotop.categorie %></p>
+          <br>
+        <% end %>
 
 
 
