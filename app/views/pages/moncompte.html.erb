@@ -12,6 +12,8 @@
         <p>--les biotops--</p>
         <% @biotop.each do |x| %>
           <p><%= x.categorie %></p>
+          <p><%= x.user.email %></p>
+
         <% end %>
         <br>
         <br>
@@ -23,6 +25,7 @@
           <p><%= x.categorie %></p>
           <% if x.biotop.present? %>
             <p><%= x.biotop.categorie %></p>
+            <p><%= x.user.email %></p>
           <% else %>
             <p>Biotope non disponible</p>
           <% end %>

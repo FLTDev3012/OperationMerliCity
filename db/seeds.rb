@@ -5,14 +5,24 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
 User.destroy_all
 puts "Touts les Users ont etaient supprimer fu..."
+
+TypeEspeceCategorie.destroy_all
+puts "Touts les TypeEspeceCategorie ont etaient supprimer fu..."
+EspeceCategorie.destroy_all
+puts "Touts les EspeceCategorie ont etaient supprimer fu..."
+Espece.destroy_all
+puts "Touts les Espece ont etaient supprimer fu..."
+
+
 Activite.destroy_all
-puts "Toutes les activites ont etaient supprimer biloute..."
+puts "Toutes les Activites ont etaient supprimer ..."
 Logement.destroy_all
-puts "Touts les logements ont etaient supprimer aussi ma guelle..."
+puts "Touts les Logements ont etaient supprimer ..."
 Faune.destroy_all
-puts "Touts les animaux ont etaient supprimer aussi ma grenouille 🐸..."
+puts "Touts les Faune ont etaient supprimer ..."
 
 puts "User en cours de creation..."
 user1 = User.create(email: 'dorian@gmail.com', password: 'coucou', admin: true)
@@ -22,208 +32,218 @@ user2.save
 puts " #{User.count} User ont etaient cree..."
 
 
+puts "Biotop en cours de creation..."
+biotop1 = Biotop.create!(user: user1, categorie: "Faune")
+biotop2 = Biotop.create!(user: user2, categorie: "Flore")
 
-puts "Activite en cours de creation ma couille... 🏄"
-
-file = URI.open("https://www.parcbagatelle.com/fileadmin/_processed_/6/8/csm_Banniere-BaggyPass-Bagatelle_fb50144a68.jpg")
-activite1 = Activite.create(title: "Bagatelle", description: "Bagatelle merli village")
-activite1.photo.attach(io: file, filename: "v1.png", content_type: "image/png")
-activite1.save
-puts "#{Activite.count} activites crée!"
-
-file = URI.open("https://www.hillstonestlucia.com.au/wp-content/uploads/2020/09/0S1A5968.jpg")
-activite2 = Activite.create(title: "mini golf", description: "mini golf merlimont plage")
-activite2.photo.attach(io: file, filename: "v2.png", content_type: "image/png")
-activite2.save
-puts "#{Activite.count} activites crée!"
-
-file = URI.open("https://cdt14.media.tourinsoft.eu/upload/135-3571-IMG.jpg")
-activite3 = Activite.create(title: "char a voile", description: "char a voile merlimont plage")
-activite3.photo.attach(io: file, filename: "v3.png", content_type: "image/png")
-activite3.save
-puts "#{Activite.count} activites crée!"
-
-file = URI.open("https://a.cdn-hotels.com/gdcs/production186/d559/a82dee28-b6fd-417c-b51b-a535ddeb2f85.jpg?impolicy=fcrop&w=800&h=533&q=medium")
-activite4 = Activite.create(title: "activite 4", description: "au surfer merlimont plage")
-activite4.photo.attach(io: file, filename: "v4.png", content_type: "image/png")
-activite4.save
-puts "#{Activite.count} activites crée!"
-
-file = URI.open("https://a.cdn-hotels.com/gdcs/production186/d559/a82dee28-b6fd-417c-b51b-a535ddeb2f85.jpg?impolicy=fcrop&w=800&h=533&q=medium")
-activite5 = Activite.create(title: "activite 5", description: "au surfer merlimont plage")
-activite5.photo.attach(io: file, filename: "v5.png", content_type: "image/png")
-activite5.save
-puts "#{Activite.count} activites crée!"
-
-file = URI.open("https://a.cdn-hotels.com/gdcs/production186/d559/a82dee28-b6fd-417c-b51b-a535ddeb2f85.jpg?impolicy=fcrop&w=800&h=533&q=medium")
-activite6 = Activite.create(title: "activite 6", description: "au surfer merlimont plage")
-activite6.photo.attach(io: file, filename: "v6.png", content_type: "image/png")
-activite6.save
-puts "#{Activite.count} activites crée!"
-
-file = URI.open("https://a.cdn-hotels.com/gdcs/production186/d559/a82dee28-b6fd-417c-b51b-a535ddeb2f85.jpg?impolicy=fcrop&w=800&h=533&q=medium")
-activite7 = Activite.create(title: "activite 7", description: "au surfer merlimont plage")
-activite7.photo.attach(io: file, filename: "v7.png", content_type: "image/png")
-activite7.save
-puts "#{Activite.count} activites crée!"
-
-file = URI.open("https://a.cdn-hotels.com/gdcs/production186/d559/a82dee28-b6fd-417c-b51b-a535ddeb2f85.jpg?impolicy=fcrop&w=800&h=533&q=medium")
-activite8 = Activite.create(title: "activite 8", description: "au surfer merlimont plage")
-activite8.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
-activite8.save
-puts "#{Activite.count} All activites crée!!!!"
-
-puts "Toutes les #{Activite.count} activites ont etaient cree 🏆🏄!"
-
-
-puts "Les logements sont en cours de creation ma couille..."
-puts "Les locations sont en cours de creation ma couille..."
-
-
-file = URI.open("https://media.inmobalia.com/imgV1/B98Le8~d7M9k3DegigWkzHXQlgzMFGqGJJp6ZRUcpX033lqadFBp2i4GGW4X2J1jIJ9Pwc6GsJX5cPScJf~MQeTIWIvX1s_P0QuOdXad5Jpt0YFJ~Dqx8xEepk0k_hkiGic5lTybUHjlf1FhydqGnTGEBMwQJ0sU_jrXdUhAjuWm8YeOfPxrLANEzm2~hmlQmerMLpc1Q5YmGC4ypB0dINX86r85R3fRtbnQmJWbfkhx_FPiino_lxrCew_YcHQ~o0fdS6YGR_kQusaadf7h7zlESof744NH__vJ3mh6FeNuwGeoSNYyd8SWJg--.jpg")
-location1 = Logement.create(categorie:"location", title: "Belle location 1", description: "Description de la location 1", price: "80", email: "email@email.com", phone: "0321953423")
-location1.photo.attach(io: file, filename: "v1.png", content_type: "image/png")
-location1.save
-puts "#{Logement.count} location a etait cree 🏠!"
-
-file = URI.open("https://media.inmobalia.com/imgV1/B98Le8~d7M9k3DegigWkzHXQlgzMFGqGJJp6ZRUcpX033lqadFBp2i4GGW4X2J1jIJ9Pwc6GsJX5cPScJf~MQeTIWIvX1s_P0QuOdXad5Jpt0YFJ~Dqx8xEepk0k_hkiGic5lTybUHjlf1FhydqGnTGEBMwQJ0sU_jrXdUhAjuWm8YeOfPxrLANEzm2~hmlQmerMLpc1Q5YmGC4ypB0dINX86r85R3fRtbnQmJWbfkhx_FPiino_lxrCew_YcHQ~o0fdS6YGR_kQusaadf7h7zlESof744NH__vJ3mh6FeNuwGeoSNYyd8SWJg--.jpg")
-location2 = Logement.create(categorie:"location", title: "Belle location 2", description: "Description de la location 2", price: "80", email: "email@email.com", phone: "0322923423")
-location2.photo.attach(io: file, filename: "v2.png", content_type: "image/png")
-location2.save
-puts "#{Logement.count} location a etait cree 🏠!"
-
-file = URI.open("https://media.inmobalia.com/imgV1/B98Le8~d7M9k3DegigWkzHXQlgzMFGqGJJp6ZRUcpX033lqadFBp2i4GGW4X2J1jIJ9Pwc6GsJX5cPScJf~MQeTIWIvX1s_P0QuOdXad5Jpt0YFJ~Dqx8xEepk0k_hkiGic5lTybUHjlf1FhydqGnTGEBMwQJ0sU_jrXdUhAjuWm8YeOfPxrLANEzm2~hmlQmerMLpc1Q5YmGC4ypB0dINX86r85R3fRtbnQmJWbfkhx_FPiino_lxrCew_YcHQ~o0fdS6YGR_kQusaadf7h7zlESof744NH__vJ3mh6FeNuwGeoSNYyd8SWJg--.jpg")
-location3 = Logement.create(categorie:"location", title: "Belle location 3", description: "Description de la location 3", price: "80", email: "email@email.com", phone: "0323933423")
-location3.photo.attach(io: file, filename: "v3.png", content_type: "image/png")
-location3.save
-puts "#{Logement.count} location a etait cree 🏠!"
-
-file = URI.open("https://media.inmobalia.com/imgV1/B98Le8~d7M9k3DegigWkzHXQlgzMFGqGJJp6ZRUcpX033lqadFBp2i4GGW4X2J1jIJ9Pwc6GsJX5cPScJf~MQeTIWIvX1s_P0QuOdXad5Jpt0YFJ~Dqx8xEepk0k_hkiGic5lTybUHjlf1FhydqGnTGEBMwQJ0sU_jrXdUhAjuWm8YeOfPxrLANEzm2~hmlQmerMLpc1Q5YmGC4ypB0dINX86r85R3fRtbnQmJWbfkhx_FPiino_lxrCew_YcHQ~o0fdS6YGR_kQusaadf7h7zlESof744NH__vJ3mh6FeNuwGeoSNYyd8SWJg--.jpg")
-location4 = Logement.create(categorie:"location", title: "Belle location 4", description: "Description de la location 4", price: "80", email: "email@email.com", phone: "0324943423")
-location4.photo.attach(io: file, filename: "v4.png", content_type: "image/png")
-location4.save
-puts "#{Logement.count} location a etait cree 🏠!"
-
-file = URI.open("https://media.inmobalia.com/imgV1/B98Le8~d7M9k3DegigWkzHXQlgzMFGqGJJp6ZRUcpX033lqadFBp2i4GGW4X2J1jIJ9Pwc6GsJX5cPScJf~MQeTIWIvX1s_P0QuOdXad5Jpt0YFJ~Dqx8xEepk0k_hkiGic5lTybUHjlf1FhydqGnTGEBMwQJ0sU_jrXdUhAjuWm8YeOfPxrLANEzm2~hmlQmerMLpc1Q5YmGC4ypB0dINX86r85R3fRtbnQmJWbfkhx_FPiino_lxrCew_YcHQ~o0fdS6YGR_kQusaadf7h7zlESof744NH__vJ3mh6FeNuwGeoSNYyd8SWJg--.jpg")
-location5 = Logement.create(categorie:"location", title: "Belle location 5", description: "Description de la location 5", price: "80", email: "email@email.com", phone: "0325953423")
-location5.photo.attach(io: file, filename: "v5.png", content_type: "image/png")
-location5.save
-puts "#{Logement.count} location a etait cree 🏠!"
-
-file = URI.open("https://media.inmobalia.com/imgV1/B98Le8~d7M9k3DegigWkzHXQlgzMFGqGJJp6ZRUcpX033lqadFBp2i4GGW4X2J1jIJ9Pwc6GsJX5cPScJf~MQeTIWIvX1s_P0QuOdXad5Jpt0YFJ~Dqx8xEepk0k_hkiGic5lTybUHjlf1FhydqGnTGEBMwQJ0sU_jrXdUhAjuWm8YeOfPxrLANEzm2~hmlQmerMLpc1Q5YmGC4ypB0dINX86r85R3fRtbnQmJWbfkhx_FPiino_lxrCew_YcHQ~o0fdS6YGR_kQusaadf7h7zlESof744NH__vJ3mh6FeNuwGeoSNYyd8SWJg--.jpg")
-location6 = Logement.create(categorie:"location", title: "Belle location 6", description: "Description de la location 6", price: "80", email: "email@email.com", phone: "0326953423")
-location6.photo.attach(io: file, filename: "v6.png", content_type: "image/png")
-location6.save
-puts "#{Logement.count} location a etait cree 🏠!"
-
-file = URI.open("https://media.inmobalia.com/imgV1/B98Le8~d7M9k3DegigWkzHXQlgzMFGqGJJp6ZRUcpX033lqadFBp2i4GGW4X2J1jIJ9Pwc6GsJX5cPScJf~MQeTIWIvX1s_P0QuOdXad5Jpt0YFJ~Dqx8xEepk0k_hkiGic5lTybUHjlf1FhydqGnTGEBMwQJ0sU_jrXdUhAjuWm8YeOfPxrLANEzm2~hmlQmerMLpc1Q5YmGC4ypB0dINX86r85R3fRtbnQmJWbfkhx_FPiino_lxrCew_YcHQ~o0fdS6YGR_kQusaadf7h7zlESof744NH__vJ3mh6FeNuwGeoSNYyd8SWJg--.jpg")
-location7 = Logement.create(categorie:"location", title: "Belle location 7", description: "Description de la location 7", price: "80", email: "email@email.com", phone: "0327953423")
-location7.photo.attach(io: file, filename: "v7.png", content_type: "image/png")
-location7.save
-puts "#{Logement.count} location a etait cree 🏠!"
-
-file = URI.open("https://media.inmobalia.com/imgV1/B98Le8~d7M9k3DegigWkzHXQlgzMFGqGJJp6ZRUcpX033lqadFBp2i4GGW4X2J1jIJ9Pwc6GsJX5cPScJf~MQeTIWIvX1s_P0QuOdXad5Jpt0YFJ~Dqx8xEepk0k_hkiGic5lTybUHjlf1FhydqGnTGEBMwQJ0sU_jrXdUhAjuWm8YeOfPxrLANEzm2~hmlQmerMLpc1Q5YmGC4ypB0dINX86r85R3fRtbnQmJWbfkhx_FPiino_lxrCew_YcHQ~o0fdS6YGR_kQusaadf7h7zlESof744NH__vJ3mh6FeNuwGeoSNYyd8SWJg--.jpg")
-location8 = Logement.create(categorie:"location", title: "Belle location 8", description: "Description de la location 8", price: "80", email: "email@email.com", phone: "0328953423")
-location8.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
-location8.save
-
-puts "#{Logement.count} location a etait cree 🏠!"
-puts "Toutes les #{Logement.count} location ont etaient cree 🏠!"
+puts "TypeEspeceCategorie en cours de creation..."
+type_espece_categorie1 = TypeEspeceCategorie.create!(user: user1, biotop: biotop1, categorie: "Mammifères marins")
+type_espece_categorie2 = TypeEspeceCategorie.create!(user: user2, biotop: biotop2, categorie: "Oiseaux")
 
 
 
 
-puts "Les campings sont en cours de creation ma couille..."
+# puts "Activite en cours de creation ma couille... 🏄"
 
-file = URI.open("https://res.cloudinary.com/serdy-m-dia-inc/image/upload/w_800,c_limit/legacy_espaces//var/data/gallery/photo/86/84/45/92/16/97273.jpg")
-camping1 = Logement.create(categorie:"camping", title: "Belle camping 1", description: "Description de camping 1", price: "80", email: "email@email.com", phone: "0322953423")
-camping1.photo.attach(io: file, filename: "v2.png", content_type: "image/png")
-camping1.save
-puts "1 campings on etait cree ⛺️!"
+# file = URI.open("https://www.parcbagatelle.com/fileadmin/_processed_/6/8/csm_Banniere-BaggyPass-Bagatelle_fb50144a68.jpg")
+# activite1 = Activite.create(title: "Bagatelle", description: "Bagatelle merli village")
+# activite1.photo.attach(io: file, filename: "v1.png", content_type: "image/png")
+# activite1.save
+# puts "#{Activite.count} activites crée!"
 
-file = URI.open("https://res.cloudinary.com/serdy-m-dia-inc/image/upload/w_800,c_limit/legacy_espaces//var/data/gallery/photo/86/84/45/92/16/97273.jpg")
-camping2 = Logement.create(categorie:"camping", title: "Belle camping 1", description: "Description de camping 1", price: "80", email: "email@email.com", phone: "0322953423")
-camping2.photo.attach(io: file, filename: "v2.png", content_type: "image/png")
-camping2.save
-puts "2 campings on etait cree ⛺️!"
+# file = URI.open("https://www.hillstonestlucia.com.au/wp-content/uploads/2020/09/0S1A5968.jpg")
+# activite2 = Activite.create(title: "mini golf", description: "mini golf merlimont plage")
+# activite2.photo.attach(io: file, filename: "v2.png", content_type: "image/png")
+# activite2.save
+# puts "#{Activite.count} activites crée!"
 
-file = URI.open("https://res.cloudinary.com/serdy-m-dia-inc/image/upload/w_800,c_limit/legacy_espaces//var/data/gallery/photo/86/84/45/92/16/97273.jpg")
-camping3 = Logement.create(categorie:"camping", title: "Belle camping 1", description: "Description de camping 1", price: "80", email: "email@email.com", phone: "0322953423")
-camping3.photo.attach(io: file, filename: "v2.png", content_type: "image/png")
-camping3.save
-puts "3 campings on etait cree ⛺️!"
+# file = URI.open("https://cdt14.media.tourinsoft.eu/upload/135-3571-IMG.jpg")
+# activite3 = Activite.create(title: "char a voile", description: "char a voile merlimont plage")
+# activite3.photo.attach(io: file, filename: "v3.png", content_type: "image/png")
+# activite3.save
+# puts "#{Activite.count} activites crée!"
 
-file = URI.open("https://res.cloudinary.com/serdy-m-dia-inc/image/upload/w_800,c_limit/legacy_espaces//var/data/gallery/photo/86/84/45/92/16/97273.jpg")
-camping4 = Logement.create(categorie:"camping", title: "Belle camping 1", description: "Description de camping 1", price: "80", email: "email@email.com", phone: "0322953423")
-camping4.photo.attach(io: file, filename: "v2.png", content_type: "image/png")
-camping4.save
-puts "4 campings on etait cree !"
-puts "Toutes les campings ont etaient cree ⛺️!"
+# file = URI.open("https://a.cdn-hotels.com/gdcs/production186/d559/a82dee28-b6fd-417c-b51b-a535ddeb2f85.jpg?impolicy=fcrop&w=800&h=533&q=medium")
+# activite4 = Activite.create(title: "activite 4", description: "au surfer merlimont plage")
+# activite4.photo.attach(io: file, filename: "v4.png", content_type: "image/png")
+# activite4.save
+# puts "#{Activite.count} activites crée!"
 
+# file = URI.open("https://a.cdn-hotels.com/gdcs/production186/d559/a82dee28-b6fd-417c-b51b-a535ddeb2f85.jpg?impolicy=fcrop&w=800&h=533&q=medium")
+# activite5 = Activite.create(title: "activite 5", description: "au surfer merlimont plage")
+# activite5.photo.attach(io: file, filename: "v5.png", content_type: "image/png")
+# activite5.save
+# puts "#{Activite.count} activites crée!"
 
-puts "Les camping-car sont en cours de creation ma couille..."
+# file = URI.open("https://a.cdn-hotels.com/gdcs/production186/d559/a82dee28-b6fd-417c-b51b-a535ddeb2f85.jpg?impolicy=fcrop&w=800&h=533&q=medium")
+# activite6 = Activite.create(title: "activite 6", description: "au surfer merlimont plage")
+# activite6.photo.attach(io: file, filename: "v6.png", content_type: "image/png")
+# activite6.save
+# puts "#{Activite.count} activites crée!"
 
-file = URI.open("https://www.campingcarlesite.com/wp-content/uploads/2023/10/2024-Adria-Supersonic-890-LL-01-1280x720.jpg")
-car1 = Logement.create(categorie:"camping-car", title: "Belle camping-car 3", description: "Description de camping-car 3", price: "80", email: "email@email.com", phone: "0323953423")
-car1.photo.attach(io: file, filename: "v3.png", content_type: "image/png")
-car1.save
-puts "1 camping-car a etait cree 🚐!"
+# file = URI.open("https://a.cdn-hotels.com/gdcs/production186/d559/a82dee28-b6fd-417c-b51b-a535ddeb2f85.jpg?impolicy=fcrop&w=800&h=533&q=medium")
+# activite7 = Activite.create(title: "activite 7", description: "au surfer merlimont plage")
+# activite7.photo.attach(io: file, filename: "v7.png", content_type: "image/png")
+# activite7.save
+# puts "#{Activite.count} activites crée!"
 
-file = URI.open("https://www.campingcarlesite.com/wp-content/uploads/2023/10/2024-Adria-Supersonic-890-LL-01-1280x720.jpg")
-car2 = Logement.create(categorie:"camping-car", title: "Belle camping-car 3", description: "Description de camping-car 3", price: "80", email: "email@email.com", phone: "0323953423")
-car2.photo.attach(io: file, filename: "v3.png", content_type: "image/png")
-car2.save
-puts "2 camping-car a etait cree 🚐!"
+# file = URI.open("https://a.cdn-hotels.com/gdcs/production186/d559/a82dee28-b6fd-417c-b51b-a535ddeb2f85.jpg?impolicy=fcrop&w=800&h=533&q=medium")
+# activite8 = Activite.create(title: "activite 8", description: "au surfer merlimont plage")
+# activite8.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+# activite8.save
+# puts "#{Activite.count} All activites crée!!!!"
 
-file = URI.open("https://www.campingcarlesite.com/wp-content/uploads/2023/10/2024-Adria-Supersonic-890-LL-01-1280x720.jpg")
-car3 = Logement.create(categorie:"camping-car", title: "Belle camping-car 3", description: "Description de camping-car 3", price: "80", email: "email@email.com", phone: "0323953423")
-car3.photo.attach(io: file, filename: "v3.png", content_type: "image/png")
-car3.save
-puts "3 camping-car a etait cree 🚐!"
-
-file = URI.open("https://www.campingcarlesite.com/wp-content/uploads/2023/10/2024-Adria-Supersonic-890-LL-01-1280x720.jpg")
-car4 = Logement.create(categorie:"camping-car", title: "Belle camping-car 3", description: "Description de camping-car 3", price: "80", email: "email@email.com", phone: "0323953423")
-car4.photo.attach(io: file, filename: "v3.png", content_type: "image/png")
-car4.save
-puts "4 camping-car a etait cree! 🚐"
-
-puts "Les camping-car ont fini d etre cree ma couille... 🚐"
+# puts "Toutes les #{Activite.count} activites ont etaient cree 🏆🏄!"
 
 
+# puts "Les logements sont en cours de creation ma couille..."
+# puts "Les locations sont en cours de creation ma couille..."
 
-puts "Les chambre d hote sont en cours de creation ma couille..."
 
-file = URI.open("https://cdn.wbtourisme.be/sites/default/files/000016616-Julie%20Jacquemin-Les%20Chambres%20du%20Chat.jpg")
-hote1 = Logement.create(categorie:"hote", title: "Belle hote 1", description: "Description de l hote 1", price: "80", email: "email@email.com", phone: "0324953423")
-hote1.photo.attach(io: file, filename: "v4.png", content_type: "image/png")
-hote1.save
-puts "1 hote a etait cree 👩🏻‍🌾!"
+# file = URI.open("https://media.inmobalia.com/imgV1/B98Le8~d7M9k3DegigWkzHXQlgzMFGqGJJp6ZRUcpX033lqadFBp2i4GGW4X2J1jIJ9Pwc6GsJX5cPScJf~MQeTIWIvX1s_P0QuOdXad5Jpt0YFJ~Dqx8xEepk0k_hkiGic5lTybUHjlf1FhydqGnTGEBMwQJ0sU_jrXdUhAjuWm8YeOfPxrLANEzm2~hmlQmerMLpc1Q5YmGC4ypB0dINX86r85R3fRtbnQmJWbfkhx_FPiino_lxrCew_YcHQ~o0fdS6YGR_kQusaadf7h7zlESof744NH__vJ3mh6FeNuwGeoSNYyd8SWJg--.jpg")
+# location1 = Logement.create(categorie:"location", title: "Belle location 1", description: "Description de la location 1", price: "80", email: "email@email.com", phone: "0321953423")
+# location1.photo.attach(io: file, filename: "v1.png", content_type: "image/png")
+# location1.save
+# puts "#{Logement.count} location a etait cree 🏠!"
 
-file = URI.open("https://cdn.wbtourisme.be/sites/default/files/000016616-Julie%20Jacquemin-Les%20Chambres%20du%20Chat.jpg")
-hote2 = Logement.create(categorie:"hote", title: "Belle hote 1", description: "Description de l hote 1", price: "80", email: "email@email.com", phone: "0324953423")
-hote2.photo.attach(io: file, filename: "v4.png", content_type: "image/png")
-hote2.save
-puts "2 hote a etait cree 👩🏻‍🌾!"
+# file = URI.open("https://media.inmobalia.com/imgV1/B98Le8~d7M9k3DegigWkzHXQlgzMFGqGJJp6ZRUcpX033lqadFBp2i4GGW4X2J1jIJ9Pwc6GsJX5cPScJf~MQeTIWIvX1s_P0QuOdXad5Jpt0YFJ~Dqx8xEepk0k_hkiGic5lTybUHjlf1FhydqGnTGEBMwQJ0sU_jrXdUhAjuWm8YeOfPxrLANEzm2~hmlQmerMLpc1Q5YmGC4ypB0dINX86r85R3fRtbnQmJWbfkhx_FPiino_lxrCew_YcHQ~o0fdS6YGR_kQusaadf7h7zlESof744NH__vJ3mh6FeNuwGeoSNYyd8SWJg--.jpg")
+# location2 = Logement.create(categorie:"location", title: "Belle location 2", description: "Description de la location 2", price: "80", email: "email@email.com", phone: "0322923423")
+# location2.photo.attach(io: file, filename: "v2.png", content_type: "image/png")
+# location2.save
+# puts "#{Logement.count} location a etait cree 🏠!"
 
-file = URI.open("https://cdn.wbtourisme.be/sites/default/files/000016616-Julie%20Jacquemin-Les%20Chambres%20du%20Chat.jpg")
-hote3 = Logement.create(categorie:"hote", title: "Belle hote 1", description: "Description de l hote 1", price: "80", email: "email@email.com", phone: "0324953423")
-hote3.photo.attach(io: file, filename: "v4.png", content_type: "image/png")
-hote3.save
-puts "3 hote a etait cree 👩🏻‍🌾!"
+# file = URI.open("https://media.inmobalia.com/imgV1/B98Le8~d7M9k3DegigWkzHXQlgzMFGqGJJp6ZRUcpX033lqadFBp2i4GGW4X2J1jIJ9Pwc6GsJX5cPScJf~MQeTIWIvX1s_P0QuOdXad5Jpt0YFJ~Dqx8xEepk0k_hkiGic5lTybUHjlf1FhydqGnTGEBMwQJ0sU_jrXdUhAjuWm8YeOfPxrLANEzm2~hmlQmerMLpc1Q5YmGC4ypB0dINX86r85R3fRtbnQmJWbfkhx_FPiino_lxrCew_YcHQ~o0fdS6YGR_kQusaadf7h7zlESof744NH__vJ3mh6FeNuwGeoSNYyd8SWJg--.jpg")
+# location3 = Logement.create(categorie:"location", title: "Belle location 3", description: "Description de la location 3", price: "80", email: "email@email.com", phone: "0323933423")
+# location3.photo.attach(io: file, filename: "v3.png", content_type: "image/png")
+# location3.save
+# puts "#{Logement.count} location a etait cree 🏠!"
 
-file = URI.open("https://cdn.wbtourisme.be/sites/default/files/000016616-Julie%20Jacquemin-Les%20Chambres%20du%20Chat.jpg")
-hote4 = Logement.create(categorie:"hote", title: "Belle hote 1", description: "Description de l hote 1", price: "80", email: "email@email.com", phone: "0324953423")
-hote4.photo.attach(io: file, filename: "v4.png", content_type: "image/png")
-hote4.save
-puts "4 hote a etait cree 👩🏻‍🌾!"
+# file = URI.open("https://media.inmobalia.com/imgV1/B98Le8~d7M9k3DegigWkzHXQlgzMFGqGJJp6ZRUcpX033lqadFBp2i4GGW4X2J1jIJ9Pwc6GsJX5cPScJf~MQeTIWIvX1s_P0QuOdXad5Jpt0YFJ~Dqx8xEepk0k_hkiGic5lTybUHjlf1FhydqGnTGEBMwQJ0sU_jrXdUhAjuWm8YeOfPxrLANEzm2~hmlQmerMLpc1Q5YmGC4ypB0dINX86r85R3fRtbnQmJWbfkhx_FPiino_lxrCew_YcHQ~o0fdS6YGR_kQusaadf7h7zlESof744NH__vJ3mh6FeNuwGeoSNYyd8SWJg--.jpg")
+# location4 = Logement.create(categorie:"location", title: "Belle location 4", description: "Description de la location 4", price: "80", email: "email@email.com", phone: "0324943423")
+# location4.photo.attach(io: file, filename: "v4.png", content_type: "image/png")
+# location4.save
+# puts "#{Logement.count} location a etait cree 🏠!"
 
-puts "Les chambre d hote ont fini d etre cree ma couille... 👩🏻‍🌾"
+# file = URI.open("https://media.inmobalia.com/imgV1/B98Le8~d7M9k3DegigWkzHXQlgzMFGqGJJp6ZRUcpX033lqadFBp2i4GGW4X2J1jIJ9Pwc6GsJX5cPScJf~MQeTIWIvX1s_P0QuOdXad5Jpt0YFJ~Dqx8xEepk0k_hkiGic5lTybUHjlf1FhydqGnTGEBMwQJ0sU_jrXdUhAjuWm8YeOfPxrLANEzm2~hmlQmerMLpc1Q5YmGC4ypB0dINX86r85R3fRtbnQmJWbfkhx_FPiino_lxrCew_YcHQ~o0fdS6YGR_kQusaadf7h7zlESof744NH__vJ3mh6FeNuwGeoSNYyd8SWJg--.jpg")
+# location5 = Logement.create(categorie:"location", title: "Belle location 5", description: "Description de la location 5", price: "80", email: "email@email.com", phone: "0325953423")
+# location5.photo.attach(io: file, filename: "v5.png", content_type: "image/png")
+# location5.save
+# puts "#{Logement.count} location a etait cree 🏠!"
 
-puts "#{Logement.count} logements de toutes avec des categories differentes ont etaient cree! 🍻"
+# file = URI.open("https://media.inmobalia.com/imgV1/B98Le8~d7M9k3DegigWkzHXQlgzMFGqGJJp6ZRUcpX033lqadFBp2i4GGW4X2J1jIJ9Pwc6GsJX5cPScJf~MQeTIWIvX1s_P0QuOdXad5Jpt0YFJ~Dqx8xEepk0k_hkiGic5lTybUHjlf1FhydqGnTGEBMwQJ0sU_jrXdUhAjuWm8YeOfPxrLANEzm2~hmlQmerMLpc1Q5YmGC4ypB0dINX86r85R3fRtbnQmJWbfkhx_FPiino_lxrCew_YcHQ~o0fdS6YGR_kQusaadf7h7zlESof744NH__vJ3mh6FeNuwGeoSNYyd8SWJg--.jpg")
+# location6 = Logement.create(categorie:"location", title: "Belle location 6", description: "Description de la location 6", price: "80", email: "email@email.com", phone: "0326953423")
+# location6.photo.attach(io: file, filename: "v6.png", content_type: "image/png")
+# location6.save
+# puts "#{Logement.count} location a etait cree 🏠!"
+
+# file = URI.open("https://media.inmobalia.com/imgV1/B98Le8~d7M9k3DegigWkzHXQlgzMFGqGJJp6ZRUcpX033lqadFBp2i4GGW4X2J1jIJ9Pwc6GsJX5cPScJf~MQeTIWIvX1s_P0QuOdXad5Jpt0YFJ~Dqx8xEepk0k_hkiGic5lTybUHjlf1FhydqGnTGEBMwQJ0sU_jrXdUhAjuWm8YeOfPxrLANEzm2~hmlQmerMLpc1Q5YmGC4ypB0dINX86r85R3fRtbnQmJWbfkhx_FPiino_lxrCew_YcHQ~o0fdS6YGR_kQusaadf7h7zlESof744NH__vJ3mh6FeNuwGeoSNYyd8SWJg--.jpg")
+# location7 = Logement.create(categorie:"location", title: "Belle location 7", description: "Description de la location 7", price: "80", email: "email@email.com", phone: "0327953423")
+# location7.photo.attach(io: file, filename: "v7.png", content_type: "image/png")
+# location7.save
+# puts "#{Logement.count} location a etait cree 🏠!"
+
+# file = URI.open("https://media.inmobalia.com/imgV1/B98Le8~d7M9k3DegigWkzHXQlgzMFGqGJJp6ZRUcpX033lqadFBp2i4GGW4X2J1jIJ9Pwc6GsJX5cPScJf~MQeTIWIvX1s_P0QuOdXad5Jpt0YFJ~Dqx8xEepk0k_hkiGic5lTybUHjlf1FhydqGnTGEBMwQJ0sU_jrXdUhAjuWm8YeOfPxrLANEzm2~hmlQmerMLpc1Q5YmGC4ypB0dINX86r85R3fRtbnQmJWbfkhx_FPiino_lxrCew_YcHQ~o0fdS6YGR_kQusaadf7h7zlESof744NH__vJ3mh6FeNuwGeoSNYyd8SWJg--.jpg")
+# location8 = Logement.create(categorie:"location", title: "Belle location 8", description: "Description de la location 8", price: "80", email: "email@email.com", phone: "0328953423")
+# location8.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+# location8.save
+
+# puts "#{Logement.count} location a etait cree 🏠!"
+# puts "Toutes les #{Logement.count} location ont etaient cree 🏠!"
+
+
+
+
+# puts "Les campings sont en cours de creation ma couille..."
+
+# file = URI.open("https://res.cloudinary.com/serdy-m-dia-inc/image/upload/w_800,c_limit/legacy_espaces//var/data/gallery/photo/86/84/45/92/16/97273.jpg")
+# camping1 = Logement.create(categorie:"camping", title: "Belle camping 1", description: "Description de camping 1", price: "80", email: "email@email.com", phone: "0322953423")
+# camping1.photo.attach(io: file, filename: "v2.png", content_type: "image/png")
+# camping1.save
+# puts "1 campings on etait cree ⛺️!"
+
+# file = URI.open("https://res.cloudinary.com/serdy-m-dia-inc/image/upload/w_800,c_limit/legacy_espaces//var/data/gallery/photo/86/84/45/92/16/97273.jpg")
+# camping2 = Logement.create(categorie:"camping", title: "Belle camping 1", description: "Description de camping 1", price: "80", email: "email@email.com", phone: "0322953423")
+# camping2.photo.attach(io: file, filename: "v2.png", content_type: "image/png")
+# camping2.save
+# puts "2 campings on etait cree ⛺️!"
+
+# file = URI.open("https://res.cloudinary.com/serdy-m-dia-inc/image/upload/w_800,c_limit/legacy_espaces//var/data/gallery/photo/86/84/45/92/16/97273.jpg")
+# camping3 = Logement.create(categorie:"camping", title: "Belle camping 1", description: "Description de camping 1", price: "80", email: "email@email.com", phone: "0322953423")
+# camping3.photo.attach(io: file, filename: "v2.png", content_type: "image/png")
+# camping3.save
+# puts "3 campings on etait cree ⛺️!"
+
+# file = URI.open("https://res.cloudinary.com/serdy-m-dia-inc/image/upload/w_800,c_limit/legacy_espaces//var/data/gallery/photo/86/84/45/92/16/97273.jpg")
+# camping4 = Logement.create(categorie:"camping", title: "Belle camping 1", description: "Description de camping 1", price: "80", email: "email@email.com", phone: "0322953423")
+# camping4.photo.attach(io: file, filename: "v2.png", content_type: "image/png")
+# camping4.save
+# puts "4 campings on etait cree !"
+# puts "Toutes les campings ont etaient cree ⛺️!"
+
+
+# puts "Les camping-car sont en cours de creation ma couille..."
+
+# file = URI.open("https://www.campingcarlesite.com/wp-content/uploads/2023/10/2024-Adria-Supersonic-890-LL-01-1280x720.jpg")
+# car1 = Logement.create(categorie:"camping-car", title: "Belle camping-car 3", description: "Description de camping-car 3", price: "80", email: "email@email.com", phone: "0323953423")
+# car1.photo.attach(io: file, filename: "v3.png", content_type: "image/png")
+# car1.save
+# puts "1 camping-car a etait cree 🚐!"
+
+# file = URI.open("https://www.campingcarlesite.com/wp-content/uploads/2023/10/2024-Adria-Supersonic-890-LL-01-1280x720.jpg")
+# car2 = Logement.create(categorie:"camping-car", title: "Belle camping-car 3", description: "Description de camping-car 3", price: "80", email: "email@email.com", phone: "0323953423")
+# car2.photo.attach(io: file, filename: "v3.png", content_type: "image/png")
+# car2.save
+# puts "2 camping-car a etait cree 🚐!"
+
+# file = URI.open("https://www.campingcarlesite.com/wp-content/uploads/2023/10/2024-Adria-Supersonic-890-LL-01-1280x720.jpg")
+# car3 = Logement.create(categorie:"camping-car", title: "Belle camping-car 3", description: "Description de camping-car 3", price: "80", email: "email@email.com", phone: "0323953423")
+# car3.photo.attach(io: file, filename: "v3.png", content_type: "image/png")
+# car3.save
+# puts "3 camping-car a etait cree 🚐!"
+
+# file = URI.open("https://www.campingcarlesite.com/wp-content/uploads/2023/10/2024-Adria-Supersonic-890-LL-01-1280x720.jpg")
+# car4 = Logement.create(categorie:"camping-car", title: "Belle camping-car 3", description: "Description de camping-car 3", price: "80", email: "email@email.com", phone: "0323953423")
+# car4.photo.attach(io: file, filename: "v3.png", content_type: "image/png")
+# car4.save
+# puts "4 camping-car a etait cree! 🚐"
+
+# puts "Les camping-car ont fini d etre cree ma couille... 🚐"
+
+
+
+# puts "Les chambre d hote sont en cours de creation ma couille..."
+
+# file = URI.open("https://cdn.wbtourisme.be/sites/default/files/000016616-Julie%20Jacquemin-Les%20Chambres%20du%20Chat.jpg")
+# hote1 = Logement.create(categorie:"hote", title: "Belle hote 1", description: "Description de l hote 1", price: "80", email: "email@email.com", phone: "0324953423")
+# hote1.photo.attach(io: file, filename: "v4.png", content_type: "image/png")
+# hote1.save
+# puts "1 hote a etait cree 👩🏻‍🌾!"
+
+# file = URI.open("https://cdn.wbtourisme.be/sites/default/files/000016616-Julie%20Jacquemin-Les%20Chambres%20du%20Chat.jpg")
+# hote2 = Logement.create(categorie:"hote", title: "Belle hote 1", description: "Description de l hote 1", price: "80", email: "email@email.com", phone: "0324953423")
+# hote2.photo.attach(io: file, filename: "v4.png", content_type: "image/png")
+# hote2.save
+# puts "2 hote a etait cree 👩🏻‍🌾!"
+
+# file = URI.open("https://cdn.wbtourisme.be/sites/default/files/000016616-Julie%20Jacquemin-Les%20Chambres%20du%20Chat.jpg")
+# hote3 = Logement.create(categorie:"hote", title: "Belle hote 1", description: "Description de l hote 1", price: "80", email: "email@email.com", phone: "0324953423")
+# hote3.photo.attach(io: file, filename: "v4.png", content_type: "image/png")
+# hote3.save
+# puts "3 hote a etait cree 👩🏻‍🌾!"
+
+# file = URI.open("https://cdn.wbtourisme.be/sites/default/files/000016616-Julie%20Jacquemin-Les%20Chambres%20du%20Chat.jpg")
+# hote4 = Logement.create(categorie:"hote", title: "Belle hote 1", description: "Description de l hote 1", price: "80", email: "email@email.com", phone: "0324953423")
+# hote4.photo.attach(io: file, filename: "v4.png", content_type: "image/png")
+# hote4.save
+# puts "4 hote a etait cree 👩🏻‍🌾!"
+
+#puts "Les chambre d hote ont fini d etre cree ma couille... 👩🏻‍🌾"
+
+#puts "#{Logement.count} logements de toutes avec des categories differentes ont etaient cree! 🍻"
 
 
 # Faune
-puts "Les animaux sont en cours de creation ma grenouille 🐸..."
+#puts "Les animaux sont en cours de creation ma grenouille 🐸..."
 
 # Oiseaux
 
@@ -231,13 +251,13 @@ puts "Les animaux sont en cours de creation ma grenouille 🐸..."
 #oiseau1 = Faune.create(user: user1, categorie:"Oiseaux", nom: "Gravelot à collier interrompu", description: "Le Gravelot à collier interrompu, petit échassier des plages de Merlimont, se distingue par son plumage crème ponctué de nuances brunes et son collier noir caractéristique. Cette espèce délicate trouve refuge sur les plages sablonneuses, où elle patrouille à la recherche d'insectes, de petits crustacés, et de vers. En période de reproduction, observez ses danses nuptiales fascinantes, un spectacle emblématique des côtes de Pas-de-Calais.")
 #oiseau1.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
 #oiseau1.save
-puts "1 oiseaux a etait cree 🦜!"
+#puts "1 oiseaux a etait cree 🦜!"
 
 #file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Drosselrohrs%C3%A4nger_Great_reed_warbler.jpg/640px-Drosselrohrs%C3%A4nger_Great_reed_warbler.jpg")
 #oiseau2 = Faune.create(user: user1, categorie:"Oiseaux", nom: "Rousserolle effarvatte", description: "La Rousserolle effarvatte, oiseau chanteur discret des zones de roseaux et des marais de Merlimont, arbore un plumage brunâtre et terne. Son chant mélodieux, bien que discret, ajoute une symphonie naturelle aux douces brises des milieux humides. Également migratrice, elle traverse les cieux, ajoutant une touche de grâce à l'écosystème local.")
 #oiseau2.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
 #oiseau2.save
-puts "2 oiseaux a etait cree 🦜!"
+#puts "2 oiseaux a etait cree 🦜!"
 
 # file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/European_stonechat2.jpg/220px-European_stonechat2.jpg")
 # oiseau3 = Faune.create(user: user1, categorie:"Oiseaux", nom: "Tarier pâtre", description: "Oiseau migrateur aux couleurs vives, le Tarier pâtre s'épanouit dans les prairies et champs de Merlimont. Son plumage brun et orange offre une toile de fond contrastée lorsqu'il chasse insectes et larves sur le sol. Pendant la saison des amours, observez ces petits danseurs aériens exécuter des acrobaties pour conquérir un partenaire.")
@@ -471,22 +491,14 @@ puts "2 oiseaux a etait cree 🦜!"
 # petitmam3.save
 # puts "3 petitmams a etait cree 🐭!"
 
-# file = URI.open("https://www.vienne-nature.fr/wp-content/uploads/2020/02/1-le-masque-caract%C3%A9ristique-du-l%C3%A9rot-Photo-fabien-Zunino.jpg")
-# petitmam4 = Faune.create(user: user1, categorie:"Petits mammifères", nom: "Loir gris", description: "Le Loir gris, également connu sous le nom de 'lérots' ou 'dormeur', évolue dans les bois de Merlimont avec son pelage doux et dense aux teintes gris-brun. Arborant de grands yeux noirs et des oreilles arrondies, ce petit mammifère arboricole utilise sa queue touffue et préhensile pour naviguer habilement entre les branches. Actif principalement la nuit, le loir gris se nourrit d'un régime varié, comprenant fruits, noix, graines, insectes et bourgeons. Pendant l'hiver, il entre en dormance, ralentissant son métabolisme et utilisant ses réserves de graisse accumulées. Bien que discret, le loir gris joue un rôle crucial dans l'écosystème forestier de Merlimont, contribuant à la dispersion des graines et à la santé globale de la biodiversité locale.")
-# petitmam4.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
-# petitmam4.save
-# puts "4 petitmams a etait cree 🐭!"
+#  file = URI.open("https://www.vienne-nature.fr/wp-content/uploads/2020/02/1-le-masque-caract%C3%A9ristique-du-l%C3%A9rot-Photo-fabien-Zunino.jpg")
+#  petitmam4 = Faune.create(user: user1, categorie:"Petits mammifères", nom: "Loir gris", description: "Le Loir gris, également connu sous le nom de 'lérots' ou 'dormeur', évolue dans les bois de Merlimont avec son pelage doux et dense aux teintes gris-brun. Arborant de grands yeux noirs et des oreilles arrondies, ce petit mammifère arboricole utilise sa queue touffue et préhensile pour naviguer habilement entre les branches. Actif principalement la nuit, le loir gris se nourrit d'un régime varié, comprenant fruits, noix, graines, insectes et bourgeons. Pendant l'hiver, il entre en dormance, ralentissant son métabolisme et utilisant ses réserves de graisse accumulées. Bien que discret, le loir gris joue un rôle crucial dans l'écosystème forestier de Merlimont, contribuant à la dispersion des graines et à la santé globale de la biodiversité locale.")
+#  petitmam4.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+#  petitmam4.save
+#  puts "4 petitmams a etait cree 🐭!"
 
 
 # puts "Les animaux ont fini d etre cree mon crapeau... 🐸"
 # puts "#{Faune.count} animaux de toutes avec des categories differentes ont etaient cree! 🐸 🦁 🦊"
 
 # vrai de vrai
-
-# Créer les biotopes
-biotop1 = Biotop.create!(user: user1, categorie: "Faune")
-biotop2 = Biotop.create!(user: user2, categorie: "Flore")
-
-# Créer les types d'espèces catégories
-type_espece_categorie1 = TypeEspeceCategorie.create!(user: user1, biotop: biotop1, categorie: "Mammifères marins")
-type_espece_categorie2 = TypeEspeceCategorie.create!(user: user2, biotop: biotop2, categorie: "Oiseaux")

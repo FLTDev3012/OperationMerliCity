@@ -9,8 +9,8 @@ class User < ApplicationRecord
   end
 
   has_many :biotops, dependent: :destroy
-  has_many :type_espece_categories, dependent: :destroy
-  has_many :espece_categories, dependent: :destroy
+  has_many :type_espece_categories, class_name: 'TypeEspeceCategorie', dependent: :destroy
+  has_many :espece_categories, class_name: 'EspeceCategorie', dependent: :destroy
   has_many :especes, dependent: :destroy
 
   has_many :faunes, dependent: :destroy
