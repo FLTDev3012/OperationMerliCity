@@ -23,21 +23,20 @@ Logement.destroy_all
 puts "Touts les Logements ont etaient supprimer ..."
 Faune.destroy_all
 puts "Touts les Faune ont etaient supprimer ..."
-
+puts " "
 puts "User en cours de creation..."
 user1 = User.create(email: 'dorian@gmail.com', password: 'coucou', admin: true)
 user1.save
 user2 = User.create(email: 'random@gmail.com', password: 'coucou')
 user2.save
 puts " #{User.count} User ont etaient cree..."
-
-
+puts " "
 puts "Biotop en cours de creation..."
 biotop1 = Biotop.create!(user: user1, categorie: "Faune")
 puts "Biotop Faune a etait cree!"
 biotop2 = Biotop.create!(user: user2, categorie: "Flore")
 puts "Biotop Flore a etait cree!"
-
+puts " "
 puts "TypeEspeceCategorie en cours de creation 🦁 🐳 🐍 🐸..."
 
 file = Rails.root.join('app','assets', 'images', 'faunecat', 'oiseaux.png')
@@ -94,10 +93,10 @@ type_espece_categorie9.photo.attach(io: File.open(file), filename: "v3.jpg", con
 type_espece_categorie9.save
 puts "type_espece_categorie Petits mammifères a etait cree 🐭 !"
 puts "Tout les type_espece_categorie ont etaient crees 🦁 🐳 🐍 🐸 !"
-
+puts " "
 
 puts "EspeceCategorie en cours de creation 🦊 🐬..."
-
+puts " "
 puts "EspeceCategorie Oiseau 🕊️ en cours de creation 🦊 🐬..."
 
 file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Charadrius_alexandrinus_0711.jpg/640px-Charadrius_alexandrinus_0711.jpg")
@@ -141,7 +140,7 @@ espece_categorie_oiseau8.photo.attach(io: file, filename: "v8.png", content_type
 espece_categorie_oiseau8.save
 
 puts "Les Oiseaux EspeceCategorie Oiseau 🕊️ ont etaientt crees 🦊 🐬..."
-
+puts " "
 puts "EspeceCategorie Mammifères terrestres 🐗 en cours de creation 🦊 🐬..."
 
 file = URI.open("https://upload.wikimedia.org/wikipedia/commons/4/44/Lepus_europaeus_%28Causse_M%C3%A9jean%2C_Loz%C3%A8re%29-cropped.jpg")
@@ -165,7 +164,7 @@ espece_categorie_mamterre4.photo.attach(io: file, filename: "v8.png", content_ty
 espece_categorie_mamterre4.save
 
 puts "Les Mammifères terrestres EspeceCategorie Mammifères terrestres 🐗 ont etaientt crees 🦊 🐬..."
-
+puts " "
 puts "EspeceCategorie Poissons 🐠 en cours de creation 🦊 🐬..."
 
 file = URI.open("https://www.aquarium-larochelle.com/wp-content/uploads/2021/01/emissole-lisse-aquarium-la-rochelle-bloc2-560X560.jpg")
@@ -189,7 +188,7 @@ espece_categorie_poisson4.photo.attach(io: file, filename: "v8.png", content_typ
 espece_categorie_poisson4.save
 
 puts "Les Poissons EspeceCategorie Poissons 🐠 ont etaientt crees 🦊 🐬..."
-
+puts " "
 puts "EspeceCategorie Crustacés 🦀 en cours de creation 🦊 🐬..."
 
 file = URI.open("https://www.universaquatique.fr/53083-large_default/crevette-grise-caridina-japonica-l-4-5cm.jpg")
@@ -197,7 +196,7 @@ espece_categorie_crustace1 = EspeceCategorie.create(user: user1, type_espece_cat
 espece_categorie_crustace1.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
 espece_categorie_crustace1.save
 
-file = URI.open("https://lh3.googleusercontent.com/proxy/ZHnCqXtQm-xOwVU2ukjKR5SyKiIY556dhwfsxc64ZyRxorHf-BQjJ-BD2e6TQczndQvy9A3lEt0j8pa9Yhe5XxFne7O4wuun9dufgSAlG9uDcryxhFtbcAAv5hJLCs7D7vES3wNbrW0h_N7FiyCwyNFdHj0RQX4vVAQ")
+file = URI.open("https://presqu-ile-de-crozon.com/faune/ima-faune/etrille-001.jpg")
 espece_categorie_crustace2 = EspeceCategorie.create(user: user1, type_espece_categorie: type_espece_categorie4, categorie: "Crabe vert")
 espece_categorie_crustace2.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
 espece_categorie_crustace2.save
@@ -213,7 +212,7 @@ espece_categorie_crustace4.photo.attach(io: file, filename: "v8.png", content_ty
 espece_categorie_crustace4.save
 
 puts "Les Crustacés EspeceCategorie Crustacés 🦀 ont etaientt crees 🦊 🐬..."
-
+puts " "
 puts "EspeceCategorie Mammifères marins 🦭 en cours de creation 🦊 🐬..."
 
 file = URI.open("https://upload.wikimedia.org/wikipedia/commons/a/a0/Halichoerus_grypus_He3.jpg")
@@ -237,8 +236,7 @@ espece_categorie_mammarin4.photo.attach(io: file, filename: "v8.png", content_ty
 espece_categorie_mammarin4.save
 
 puts "Les Mammifères marins EspeceCategorie Mammifères marins 🦭 ont etaientt crees 🦊 🐬..."
-
-
+puts " "
 puts "EspeceCategorie Insectes & arthropodes 🪲 en cours de creation 🦊 🐬..."
 
 file = URI.open("https://upload.wikimedia.org/wikipedia/commons/6/6f/Polyommatus_icarus_-_Burgenland.jpg")
@@ -262,7 +260,7 @@ espece_categorie_insecte4.photo.attach(io: file, filename: "v8.png", content_typ
 espece_categorie_insecte4.save
 
 puts "Les Insectes & arthropodes EspeceCategorie Insectes & arthropodes 🪲 ont etaientt crees 🦊 🐬..."
-
+puts " "
 puts "EspeceCategorie Reptiles 🐍 en cours de creation 🦊 🐬..."
 
 file = URI.open("https://upload.wikimedia.org/wikipedia/commons/1/10/Natrix-natrix-089.jpg")
@@ -281,7 +279,7 @@ espece_categorie_reptile3.photo.attach(io: file, filename: "v8.png", content_typ
 espece_categorie_reptile3.save
 
 puts "Les Reptiles EspeceCategorie Reptiles 🐍 ont etaientt crees 🦊 🐬..."
-
+puts " "
 puts "EspeceCategorie Amphibiens 🐸 en cours de creation 🦊 🐬..."
 
 file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Rana_dalmatina_%28Grenouille_agile%29.JPG/800px-Rana_dalmatina_%28Grenouille_agile%29.JPG")
@@ -305,7 +303,7 @@ espece_categorie_amphibien4.photo.attach(io: file, filename: "v8.png", content_t
 espece_categorie_amphibien4.save
 
 puts "Les Amphibiens EspeceCategorie Amphibiens 🐸 ont etaientt crees 🦊 🐬..."
-
+puts " "
 puts "EspeceCategorie Petits mammifères 🐹 en cours de creation 🦊 🐬..."
 
 file = URI.open("https://www.instinct-animal.fr/wp-content/uploads/2019/10/musaraigne-commune-1.jpg")
