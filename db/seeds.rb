@@ -140,7 +140,7 @@ espece_categorie_oiseau8 = EspeceCategorie.create(user: user1, type_espece_categ
 espece_categorie_oiseau8.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
 espece_categorie_oiseau8.save
 
-puts "Les Oiseaux EspeceCategorie Oiseau 🕊️ a etait cree 🦊 🐬..."
+puts "Les Oiseaux EspeceCategorie Oiseau 🕊️ ont etaientt crees 🦊 🐬..."
 
 puts "EspeceCategorie Mammifères terrestres 🐗 en cours de creation 🦊 🐬..."
 
@@ -164,35 +164,32 @@ espece_categorie_mamterre4 = EspeceCategorie.create(user: user1, type_espece_cat
 espece_categorie_mamterre4.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
 espece_categorie_mamterre4.save
 
+puts "Les Mammifères terrestres EspeceCategorie Mammifères terrestres 🐗 ont etaientt crees 🦊 🐬..."
 
+puts "EspeceCategorie Poissons 🐠 en cours de creation 🦊 🐬..."
 
+file = URI.open("https://www.aquarium-larochelle.com/wp-content/uploads/2021/01/emissole-lisse-aquarium-la-rochelle-bloc2-560X560.jpg")
+espece_categorie_poisson1 = EspeceCategorie.create(user: user1, type_espece_categorie: type_espece_categorie3, categorie: "Émissole tachetée")
+espece_categorie_poisson1.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+espece_categorie_poisson1.save
 
+file = URI.open("https://www.federation-peche-allier.fr/wp-content/uploads/2017/11/truite-fario_Madelon-FNPF-3-800x516.jpg")
+espece_categorie_poisson2 = EspeceCategorie.create(user: user1, type_espece_categorie: type_espece_categorie3, categorie: "Truite fario")
+espece_categorie_poisson2.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+espece_categorie_poisson2.save
 
-# Poissons
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/5/58/Anguilla_anguilla.jpg")
+espece_categorie_poisson3 = EspeceCategorie.create(user: user1, type_espece_categorie: type_espece_categorie3, categorie: "Anguille d'Europe")
+espece_categorie_poisson3.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+espece_categorie_poisson3.save
 
-# file = URI.open("https://www.aquarium-larochelle.com/wp-content/uploads/2021/01/emissole-lisse-aquarium-la-rochelle-bloc2-560X560.jpg")
-# poisson1 = Faune.create(user: user1, categorie:"Poissons", nom: "Émissole tachetée", description: "Dans les eaux côtières de Merlimont, l'Émissole tachetée se faufile, un poisson agile au corps élancé marqué de taches sombres. Avec son camouflage discret parmi les fonds sableux, elle chasse discrètement ses proies. Mesurant généralement entre 15 et 30 centimètres, elle se fond dans ce décor côtier, vigilante et prédatrice. Toutefois, méfiez-vous de ses nageoires dorsales venimeuses, un rappel de sa défense naturelle pour ceux qui viendraient troubler sa quiétude marine.")
-# poisson1.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
-# poisson1.save
-# puts "1 poissons a etait cree 🐠!"
+file = URI.open("https://www.fishipedia.fr/wp-content/uploads/2020/10/BCH_5677_00002_01.jpg")
+espece_categorie_poisson4 = EspeceCategorie.create(user: user1, type_espece_categorie: type_espece_categorie3, categorie: "Bar moucheté")
+espece_categorie_poisson4.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+espece_categorie_poisson4.save
 
-# file = URI.open("https://www.federation-peche-allier.fr/wp-content/uploads/2017/11/truite-fario_Madelon-FNPF-3-800x516.jpg")
-# poisson2 = Faune.create(user: user1, categorie:"Poissons", nom: "Truite fario", description: "La Truite fario, habitante des cours d'eau frais et clairs de Merlimont, se distingue par ses taches noires et rouges sur un fond brun. Sa chair délicate en fait une cible prisée des pêcheurs locaux.")
-# poisson2.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
-# poisson2.save
-# puts "2 poissons a etait cree 🐠!"
+puts "Les Poissons EspeceCategorie Poissons 🐠 ont etaientt crees 🦊 🐬..."
 
-# file = URI.open("https://upload.wikimedia.org/wikipedia/commons/5/58/Anguilla_anguilla.jpg")
-# poisson3 = Faune.create(user: user1, categorie:"Poissons", nom: "Anguille d'Europe", description: "L'Anguille d'Europe, serpentiforme et glissante, navigue dans les eaux douces de Merlimont. Connue pour ses migrations extraordinaires, elle complète son cycle de vie entre les rivières et la mer.")
-# poisson3.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
-# poisson3.save
-# puts "3 poissons a etait cree 🐠!"
-
-# file = URI.open("https://www.fishipedia.fr/wp-content/uploads/2020/10/BCH_5677_00002_01.jpg")
-# poisson4 = Faune.create(user: user1, categorie:"Poissons", nom: "Bar moucheté", description: "Le Bar moucheté, poisson prédateur aux marques sombres caractéristiques, évolue dans les eaux salées près des côtes de Merlimont. Chasseur agile, il se nourrit de petits poissons et de crustacés, jouant un rôle clé dans la dynamique marine locale.")
-# poisson4.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
-# poisson4.save
-# puts "4 poissons a etait cree 🐠!"
 
 # Crustacés
 
