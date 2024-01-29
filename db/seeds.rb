@@ -282,59 +282,53 @@ espece_categorie_reptile3.save
 
 puts "Les Reptiles EspeceCategorie Reptiles 🐍 ont etaientt crees 🦊 🐬..."
 
+puts "EspeceCategorie Amphibiens 🐸 en cours de creation 🦊 🐬..."
 
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Rana_dalmatina_%28Grenouille_agile%29.JPG/800px-Rana_dalmatina_%28Grenouille_agile%29.JPG")
+espece_categorie_amphibien1 = EspeceCategorie.create(user: user1, type_espece_categorie: type_espece_categorie8, categorie: "Grenouille agile")
+espece_categorie_amphibien1.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+espece_categorie_amphibien1.save
 
-# Amphibiens
+file = URI.open("https://lemagdesanimaux.ouest-france.fr/images/dossiers/2020-08/mini/salamandre-tachetee-082024-650-400.jpg")
+espece_categorie_amphibien2 = EspeceCategorie.create(user: user1, type_espece_categorie: type_espece_categorie8, categorie: "Salamandre tachetée")
+espece_categorie_amphibien2.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+espece_categorie_amphibien2.save
 
-# file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Rana_dalmatina_%28Grenouille_agile%29.JPG/800px-Rana_dalmatina_%28Grenouille_agile%29.JPG")
-# amphibien1 = Faune.create(user: user1, categorie:"Amphibiens", nom: "Grenouille agile", description: "La Grenouille agile, de couleur vert vif, est souvent repérée autour des mares et des rivières de Merlimont. Ses sauts puissants et son chant mélodieux ajoutent une dimension vivante aux milieux humides.")
-# amphibien1.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
-# amphibien1.save
-# puts "1 amphibiens a etait cree 🐸!"
+file = URI.open("https://www.nature-isere.fr/sites/default/files/images/espece/principale/frederic_pinto-triton_alpestre.jpg_fileminimizer.jpg")
+espece_categorie_amphibien3 = EspeceCategorie.create(user: user1, type_espece_categorie: type_espece_categorie8, categorie: "Travertin alpestre")
+espece_categorie_amphibien3.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+espece_categorie_amphibien3.save
 
-# file = URI.open("https://lemagdesanimaux.ouest-france.fr/images/dossiers/2020-08/mini/salamandre-tachetee-082024-650-400.jpg")
-# amphibien2 = Faune.create(user: user1, categorie:"Amphibiens", nom: "Salamandre tachetée", description: "La Salamandre tachetée, aux couleurs vives et aux taches distinctives, se terre dans les endroits humides et boisés de Merlimont. Ses motifs avertisseurs signalent sa toxicité, faisant d'elle une créature fascinante.")
-# amphibien2.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
-# amphibien2.save
-# puts "2 amphibiens a etait cree 🐸!"
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Bufo_calamita_%28Marek_Szczepanek%29.jpg/640px-Bufo_calamita_%28Marek_Szczepanek%29.jpg")
+espece_categorie_amphibien4 = EspeceCategorie.create(user: user1, type_espece_categorie: type_espece_categorie8, categorie: "Crapaud calamite")
+espece_categorie_amphibien4.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+espece_categorie_amphibien4.save
 
-# file = URI.open("https://www.nature-isere.fr/sites/default/files/images/espece/principale/frederic_pinto-triton_alpestre.jpg_fileminimizer.jpg")
-# amphibien3 = Faune.create(user: user1, categorie:"Amphibiens", nom: "Travertin alpestre", description: "Le Triton alpestre, amphibien de petite taille, trouve refuge dans les zones humides et boisées de Merlimont. Son apparence élégante et ses motifs délicats en font un sujet d'étude passionnant pour les amateurs de nature.")
-# amphibien3.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
-# amphibien3.save
-# puts "3 amphibiens a etait cree 🐸!"
+puts "Les Amphibiens EspeceCategorie Amphibiens 🐸 ont etaientt crees 🦊 🐬..."
 
-# file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Bufo_calamita_%28Marek_Szczepanek%29.jpg/640px-Bufo_calamita_%28Marek_Szczepanek%29.jpg")
-# amphibien4 = Faune.create(user: user1, categorie:"Amphibiens", nom: "Crapaud calamite", description: "Le Crapaud calamite, au dos rugueux et à la couleur variable, est souvent présent dans les prairies et les zones humides de Merlimont. Il se nourrit d'insectes et émet un chant caractéristique pendant la période de reproduction.")
-# amphibien4.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
-# amphibien4.save
-# puts "4 amphibiens a etait cree 🐸!"
+puts "EspeceCategorie Petits mammifères 🐹 en cours de creation 🦊 🐬..."
 
-# Petits mammifères
+file = URI.open("https://www.instinct-animal.fr/wp-content/uploads/2019/10/musaraigne-commune-1.jpg")
+espece_categorie_petitmam1 = EspeceCategorie.create(user: user1, type_espece_categorie: type_espece_categorie9, categorie: "Musaraigne carrelet")
+espece_categorie_petitmam1.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+espece_categorie_petitmam1.save
 
-# file = URI.open("https://www.instinct-animal.fr/wp-content/uploads/2019/10/musaraigne-commune-1.jpg")
-# petitmam1 = Faune.create(user: user1, categorie:"Petits mammifères", nom: "Musaraigne carrelet", description: "Petite et vive, la Musaraigne carrelet explore les zones herbeuses de Merlimont, se nourrissant voracement d'insectes. Sa petite taille cache une énergie débordante, participant à la diversité des petits mammifères locaux.")
-# petitmam1.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
-# petitmam1.save
-# puts "1 petitmams a etait cree 🐭!"
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/9/9c/R%C3%B6telmaus.jpg")
+espece_categorie_petitmam2 = EspeceCategorie.create(user: user1, type_espece_categorie: type_espece_categorie9, categorie: "Campagnol des champs")
+espece_categorie_petitmam2.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+espece_categorie_petitmam2.save
 
-# file = URI.open("https://upload.wikimedia.org/wikipedia/commons/9/9c/R%C3%B6telmaus.jpg")
-# petitmam2 = Faune.create(user: user1, categorie:"Petits mammifères", nom: "Campagnol des champs", description: "Le Campagnol des champs, avec son pelage brun et sa queue courte, prospère dans les champs et les prairies de Merlimont. Cet herbivore joue un rôle essentiel dans la chaîne alimentaire locale.")
-# petitmam2.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
-# petitmam2.save
-# puts "2 petitmams a etait cree 🐭!"
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Erinaceus_europaeus_LC0119.jpg/1200px-Erinaceus_europaeus_LC0119.jpg")
+espece_categorie_petitmam3 = EspeceCategorie.create(user: user1, type_espece_categorie: type_espece_categorie9, categorie: "Hérisson d'Europe")
+espece_categorie_petitmam3.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+espece_categorie_petitmam3.save
 
-# file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Erinaceus_europaeus_LC0119.jpg/1200px-Erinaceus_europaeus_LC0119.jpg")
-# petitmam3 = Faune.create(user: user1, categorie:"Petits mammifères", nom: "Hérisson d'Europe", description: "Le Hérisson d'Europe, mammifère nocturne au dos couvert de piquants, sillonne les espaces herbeux de Merlimont en quête d'insectes et de petits invertébrés. Sa présence apporte une touche charmante à la biodiversité locale.")
-# petitmam3.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
-# petitmam3.save
-# puts "3 petitmams a etait cree 🐭!"
+file = URI.open("https://www.vienne-nature.fr/wp-content/uploads/2020/02/1-le-masque-caract%C3%A9ristique-du-l%C3%A9rot-Photo-fabien-Zunino.jpg")
+espece_categorie_petitmam4 = EspeceCategorie.create(user: user1, type_espece_categorie: type_espece_categorie9, categorie: "Loir gris")
+espece_categorie_petitmam4.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+espece_categorie_petitmam4.save
 
-#  file = URI.open("https://www.vienne-nature.fr/wp-content/uploads/2020/02/1-le-masque-caract%C3%A9ristique-du-l%C3%A9rot-Photo-fabien-Zunino.jpg")
-#  petitmam4 = Faune.create(user: user1, categorie:"Petits mammifères", nom: "Loir gris", description: "Le Loir gris, également connu sous le nom de 'lérots' ou 'dormeur', évolue dans les bois de Merlimont avec son pelage doux et dense aux teintes gris-brun. Arborant de grands yeux noirs et des oreilles arrondies, ce petit mammifère arboricole utilise sa queue touffue et préhensile pour naviguer habilement entre les branches. Actif principalement la nuit, le loir gris se nourrit d'un régime varié, comprenant fruits, noix, graines, insectes et bourgeons. Pendant l'hiver, il entre en dormance, ralentissant son métabolisme et utilisant ses réserves de graisse accumulées. Bien que discret, le loir gris joue un rôle crucial dans l'écosystème forestier de Merlimont, contribuant à la dispersion des graines et à la santé globale de la biodiversité locale.")
-#  petitmam4.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
-#  petitmam4.save
-#  puts "4 petitmams a etait cree 🐭!"
+puts "Les Petits mammifères EspeceCategorie Petits mammifères 🐹 ont etaientt crees 🦊 🐬..."
 
 
 
