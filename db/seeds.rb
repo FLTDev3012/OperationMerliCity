@@ -91,6 +91,11 @@ file = Rails.root.join('app','assets', 'images', 'faunecat', 'petitmam.png')
 type_espece_categorie9 = TypeEspeceCategorie.create(user: user1, biotop: biotop1, categorie: "Petits mammifères")
 type_espece_categorie9.photo.attach(io: File.open(file), filename: "v3.jpg", content_type: "image/jpeg")
 type_espece_categorie9.save
+
+file = Rails.root.join('app','assets', 'images', 'faunecat', 'petitmam.png')
+type_espece_categorie10 = TypeEspeceCategorie.create(user: user1, biotop: biotop2, categorie: "Champignon!")
+type_espece_categorie10.photo.attach(io: File.open(file), filename: "v3.jpg", content_type: "image/jpeg")
+type_espece_categorie10.save
 puts "type_espece_categorie Petits mammifères a etait cree 🐭 !"
 puts "Tout les type_espece_categorie ont etaient crees 🦁 🐳 🐍 🐸 !"
 puts " "

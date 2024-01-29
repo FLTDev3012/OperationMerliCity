@@ -3,13 +3,17 @@ class EspeceCategoriesController < ApplicationController
 
   def index
     @especeCategories = policy_scope(EspeceCategorie)
-    if params[:categorie].present?
-      @categorie = params[:categorie]
-      @especeCategories = EspeceCategorie.where(categorie: params[:categorie]).order(:nom)
+
+    if params[:type_espece_categorie_categorie].present?
+      @type_espece_categorie_categorie = params[:type_espece_categorie_categorie]
+      @especeCategories = EspeceCategorie.joins(:type_espece_categorie).where(type_espece_categories: { categorie: @type_espece_categorie_categorie }).all
     else
-      @especeCategories = EspeceCategorie.order(:nom)
+      @especeCategories = EspeceCategorie.all
     end
   end
+
+
+
 
   def show
     @especeCategorie = EspeceCategorie.find(params[:id])

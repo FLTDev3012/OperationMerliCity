@@ -1,20 +1,17 @@
 class TypeEspeceCategoriesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:index, :show, :new, :create, :edit, :update, :destroy]
+  skip_before_action :authenticate_user!, only: [:index, :new, :create, :edit, :update, :destroy]
 
   def index
     @typeEspeceCategories = policy_scope(TypeEspeceCategorie)
-    if params[:categorie].present?
-      @categorie = params[:categorie]
-      @typeEspeceCategories = TypeEspeceCategorie.where(categorie: params[:categorie]).order(:nom)
+
+    if params[:biotop_categorie].present?
+      @biotop_categorie = params[:biotop_categorie]
+      @typeEspeceCategories = TypeEspeceCategorie.joins(:biotop).where(biotops: { categorie: @biotop_categorie }).all
     else
-      @typeEspeceCategories = TypeEspeceCategorie.order(:nom)
+      @typeEspeceCategories = TypeEspeceCategorie.all
     end
   end
 
-  def show
-    @typeEspeceCategorie = TypeEspeceCategorie.find(params[:id])
-    authorize @typeEspeceCategorie
-  end
 
   def new
     @typeEspeceCategorie = TypeEspeceCategorie.new

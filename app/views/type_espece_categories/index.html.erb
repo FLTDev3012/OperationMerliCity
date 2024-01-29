@@ -1,0 +1,40 @@
+<div class="faunecat-container">
+
+  <div class="faunecat-return-btn">
+    <%= link_to "< Faune & Flore", fauneflore_path(anchor: 'top-of-page'), data: { turbo: false } %>
+  </div>
+
+  <div class="faunecat-title">
+    <% if @biotop_categorie.present? %>
+      <h1>La <%= @biotop_categorie %></h1>
+    <% else %>
+      <h1>La Faune et la Flore</h1>
+    <% end %>
+  </div>
+
+  <div class="faunecat-categories-container">
+    <div class="faunecat-categories-grid-container">
+
+      <% @typeEspeceCategories.each do |type_espece_categorie| %>
+        <%= link_to espece_categories_path(type_espece_categorie_categorie: type_espece_categorie.categorie), class: 'faunecat-categories-owner', data: { turbo: false } do %>
+          <div class="faunecat-categories-owner-title">
+            <%= type_espece_categorie.categorie %>
+          </div>
+          <div class="faunecat-categories-owner-picture">
+            <% if type_espece_categorie.photo.attached? %>
+              <%= image_tag(type_espece_categorie.photo.url, alt: "#{type_espece_categorie.categorie} Image") %>
+            <% else %>
+              <p>Image error</p>
+            <% end %>
+          </div>
+        <% end %>
+      <% end %>
+
+    </div>
+  </div>
+
+  <div class="faunecat-herbe">
+    <%= image_tag('faune/hauteherbe.png') %>
+  </div>
+
+</div>
