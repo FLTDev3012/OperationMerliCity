@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_01_28_130136) do
+ActiveRecord::Schema[7.0].define(version: 2024_01_29_093347) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -60,7 +60,6 @@ ActiveRecord::Schema[7.0].define(version: 2024_01_28_130136) do
 
   create_table "espece_categories", force: :cascade do |t|
     t.string "categorie"
-    t.string "photo"
     t.bigint "type_espece_categorie_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -72,7 +71,6 @@ ActiveRecord::Schema[7.0].define(version: 2024_01_28_130136) do
   create_table "especes", force: :cascade do |t|
     t.string "nom"
     t.string "description"
-    t.string "photo"
     t.bigint "espece_categorie_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -106,7 +104,6 @@ ActiveRecord::Schema[7.0].define(version: 2024_01_28_130136) do
 
   create_table "type_espece_categories", force: :cascade do |t|
     t.string "categorie"
-    t.string "photo"
     t.bigint "biotop_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

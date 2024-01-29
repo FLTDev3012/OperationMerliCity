@@ -56,6 +56,6 @@ class FaunesController < ApplicationController
   private
 
   def faune_params
-    params.require(:faune).permit(:user_id, :categorie, :nom, :description, :photo)
+    params.require(:faune).permit(:categorie, :nom, :description, :photo)
   end
 end

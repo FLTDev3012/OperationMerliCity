@@ -12,7 +12,6 @@
         <p>--les biotops--</p>
         <% @biotop.each do |x| %>
           <p><%= x.categorie %></p>
-          <p><%= x.user.email %></p>
 
         <% end %>
         <br>
@@ -25,7 +24,11 @@
           <p><%= x.categorie %></p>
           <% if x.biotop.present? %>
             <p><%= x.biotop.categorie %></p>
-            <p><%= x.user.email %></p>
+            <% if x.photo.attached? %>
+            <div class="faunecat-categories-owner-picture">
+              <%= cl_image_tag x.photo.key, width: 200, height: 300, crop: :fill %>
+            </div>
+          <% end %>
           <% else %>
             <p>Biotope non disponible</p>
           <% end %>
@@ -38,6 +41,11 @@
           <p><%= x.categorie %></p>
           <p><%= x.type_espece_categorie.categorie %></p>
           <p><%= x.type_espece_categorie.biotop.categorie %></p>
+          <% if x.photo.attached? %>
+            <div class="faunecat-categories-owner-picture">
+              <%= cl_image_tag x.photo.key, width: 200, height: 300, crop: :fill %>
+            </div>
+          <% end %>
           <br>
         <% end %>
         <br>
