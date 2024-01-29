@@ -190,32 +190,56 @@ espece_categorie_poisson4.save
 
 puts "Les Poissons EspeceCategorie Poissons 🐠 ont etaientt crees 🦊 🐬..."
 
+puts "EspeceCategorie Crustacés 🦀 en cours de creation 🦊 🐬..."
+
+file = URI.open("https://www.universaquatique.fr/53083-large_default/crevette-grise-caridina-japonica-l-4-5cm.jpg")
+espece_categorie_crustace1 = EspeceCategorie.create(user: user1, type_espece_categorie: type_espece_categorie3, categorie: "Crevette grise")
+espece_categorie_crustace1.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+espece_categorie_crustace1.save
+
+file = URI.open("https://lh3.googleusercontent.com/proxy/ZHnCqXtQm-xOwVU2ukjKR5SyKiIY556dhwfsxc64ZyRxorHf-BQjJ-BD2e6TQczndQvy9A3lEt0j8pa9Yhe5XxFne7O4wuun9dufgSAlG9uDcryxhFtbcAAv5hJLCs7D7vES3wNbrW0h_N7FiyCwyNFdHj0RQX4vVAQ")
+espece_categorie_crustace2 = EspeceCategorie.create(user: user1, type_espece_categorie: type_espece_categorie3, categorie: "Crabe vert")
+espece_categorie_crustace2.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+espece_categorie_crustace2.save
+
+file = URI.open("https://www.institut-paul-ricard.org/wp-content/uploads/2018/09/Grandecigale-780x490.jpg")
+espece_categorie_crustace3 = EspeceCategorie.create(user: user1, type_espece_categorie: type_espece_categorie3, categorie: "Cigale de mer")
+espece_categorie_crustace3.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+espece_categorie_crustace3.save
+
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Armadillidium_vulgare_001.jpg/640px-Armadillidium_vulgare_001.jpg")
+espece_categorie_crustace4 = EspeceCategorie.create(user: user1, type_espece_categorie: type_espece_categorie3, categorie: "Cloporte")
+espece_categorie_crustace4.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+espece_categorie_crustace4.save
+
+puts "Les Crustacés EspeceCategorie Crustacés 🦀 ont etaientt crees 🦊 🐬..."
+
 
 # Crustacés
 
-# file = URI.open("https://www.universaquatique.fr/53083-large_default/crevette-grise-caridina-japonica-l-4-5cm.jpg")
-# crustace1 = Faune.create(user: user1, categorie:"Crustacés", nom: "Crevette grise", description: "La Crevette grise, crustacé délicat aux nuances grises, évolue dans les eaux côtières de Merlimont. Avec ses yeux pédonculés et ses pattes finement dentelées, elle se déplace en fouillant le fond marin à la recherche de particules alimentaires.")
-# crustace1.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
-# crustace1.save
-# puts "1 crustacés a etait cree 🦀!"
+file = URI.open("https://www.universaquatique.fr/53083-large_default/crevette-grise-caridina-japonica-l-4-5cm.jpg")
+crustace1 = Faune.create(user: user1, categorie:"Crustacés", nom: "Crevette grise", description: "La Crevette grise, crustacé délicat aux nuances grises, évolue dans les eaux côtières de Merlimont. Avec ses yeux pédonculés et ses pattes finement dentelées, elle se déplace en fouillant le fond marin à la recherche de particules alimentaires.")
+crustace1.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+crustace1.save
+puts "1 crustacés a etait cree 🦀!"
 
-# file = URI.open("https://lh3.googleusercontent.com/proxy/ZHnCqXtQm-xOwVU2ukjKR5SyKiIY556dhwfsxc64ZyRxorHf-BQjJ-BD2e6TQczndQvy9A3lEt0j8pa9Yhe5XxFne7O4wuun9dufgSAlG9uDcryxhFtbcAAv5hJLCs7D7vES3wNbrW0h_N7FiyCwyNFdHj0RQX4vVAQ")
-# crustace2 = Faune.create(user: user1, categorie:"Crustacés", nom: "Crabe vert", description: "Le Crabe vert, crustacé au corps aplati et aux pinces puissantes, se trouve dans les eaux côtières et les estuaires de Merlimont. Sa carapace vert olive et sa capacité à se camoufler en font un chasseur habile.")
-# crustace2.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
-# crustace2.save
-# puts "2 crustacés a etait cree 🦀!"
+file = URI.open("https://lh3.googleusercontent.com/proxy/ZHnCqXtQm-xOwVU2ukjKR5SyKiIY556dhwfsxc64ZyRxorHf-BQjJ-BD2e6TQczndQvy9A3lEt0j8pa9Yhe5XxFne7O4wuun9dufgSAlG9uDcryxhFtbcAAv5hJLCs7D7vES3wNbrW0h_N7FiyCwyNFdHj0RQX4vVAQ")
+crustace2 = Faune.create(user: user1, categorie:"Crustacés", nom: "Crabe vert", description: "Le Crabe vert, crustacé au corps aplati et aux pinces puissantes, se trouve dans les eaux côtières et les estuaires de Merlimont. Sa carapace vert olive et sa capacité à se camoufler en font un chasseur habile.")
+crustace2.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+crustace2.save
+puts "2 crustacés a etait cree 🦀!"
 
-# file = URI.open("https://www.institut-paul-ricard.org/wp-content/uploads/2018/09/Grandecigale-780x490.jpg")
-# crustace3 = Faune.create(user: user1, categorie:"Crustacés", nom: "Cigale de mer", description: "La Cigale de mer, crustacé au corps plat et aux pattes étalées, se trouve dans les fonds sableux et les zones rocheuses de Merlimont. Sa carapace beige tachetée de rouge lui permet de se camoufler efficacement dans son habitat côtier.")
-# crustace3.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
-# crustace3.save
-# puts "3 crustacés a etait cree 🦀!"
+file = URI.open("https://www.institut-paul-ricard.org/wp-content/uploads/2018/09/Grandecigale-780x490.jpg")
+crustace3 = Faune.create(user: user1, categorie:"Crustacés", nom: "Cigale de mer", description: "La Cigale de mer, crustacé au corps plat et aux pattes étalées, se trouve dans les fonds sableux et les zones rocheuses de Merlimont. Sa carapace beige tachetée de rouge lui permet de se camoufler efficacement dans son habitat côtier.")
+crustace3.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+crustace3.save
+puts "3 crustacés a etait cree 🦀!"
 
-# file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Armadillidium_vulgare_001.jpg/640px-Armadillidium_vulgare_001.jpg")
-# crustace4 = Faune.create(user: user1, categorie:"Crustacés", nom: "Cloporte", description: "Le Cloporte, également appelé « bateau ivre », est un crustacé terrestre que l'on trouve dans les zones humides et les sous-bois de Merlimont. Bien que terrestre, il est étroitement lié à l'environnement aquatique.")
-# crustace4.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
-# crustace4.save
-# puts "4 crustacés a etait cree 🦀!"
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Armadillidium_vulgare_001.jpg/640px-Armadillidium_vulgare_001.jpg")
+crustace4 = Faune.create(user: user1, categorie:"Crustacés", nom: "Cloporte", description: "Le Cloporte, également appelé « bateau ivre », est un crustacé terrestre que l'on trouve dans les zones humides et les sous-bois de Merlimont. Bien que terrestre, il est étroitement lié à l'environnement aquatique.")
+crustace4.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+crustace4.save
+puts "4 crustacés a etait cree 🦀!"
 
 # Mammifères marins
 
