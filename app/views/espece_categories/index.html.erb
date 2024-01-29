@@ -1,7 +1,13 @@
 <div class="faunecat-container">
 
   <div class="faunecat-return-btn">
-    <%= link_to "< Faune", type_espece_categories_path %>
+
+    <% if @type_espece_categorie_categorie.biotop_categorie == "Faune" %>
+      <%= link_to "< Faune", type_espece_categories_path(type_espece_categorie_categorie: @type_espece_categorie_categorie.biotop.categorie) %>
+    <% else %>
+      <%= link_to "< Faune", type_espece_categories_path %>
+    <% end %>
+
   </div>
 
   <div class="faunecat-title">
