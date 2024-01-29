@@ -193,125 +193,96 @@ puts "Les Poissons EspeceCategorie Poissons 🐠 ont etaientt crees 🦊 🐬...
 puts "EspeceCategorie Crustacés 🦀 en cours de creation 🦊 🐬..."
 
 file = URI.open("https://www.universaquatique.fr/53083-large_default/crevette-grise-caridina-japonica-l-4-5cm.jpg")
-espece_categorie_crustace1 = EspeceCategorie.create(user: user1, type_espece_categorie: type_espece_categorie3, categorie: "Crevette grise")
+espece_categorie_crustace1 = EspeceCategorie.create(user: user1, type_espece_categorie: type_espece_categorie4, categorie: "Crevette grise")
 espece_categorie_crustace1.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
 espece_categorie_crustace1.save
 
 file = URI.open("https://lh3.googleusercontent.com/proxy/ZHnCqXtQm-xOwVU2ukjKR5SyKiIY556dhwfsxc64ZyRxorHf-BQjJ-BD2e6TQczndQvy9A3lEt0j8pa9Yhe5XxFne7O4wuun9dufgSAlG9uDcryxhFtbcAAv5hJLCs7D7vES3wNbrW0h_N7FiyCwyNFdHj0RQX4vVAQ")
-espece_categorie_crustace2 = EspeceCategorie.create(user: user1, type_espece_categorie: type_espece_categorie3, categorie: "Crabe vert")
+espece_categorie_crustace2 = EspeceCategorie.create(user: user1, type_espece_categorie: type_espece_categorie4, categorie: "Crabe vert")
 espece_categorie_crustace2.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
 espece_categorie_crustace2.save
 
 file = URI.open("https://www.institut-paul-ricard.org/wp-content/uploads/2018/09/Grandecigale-780x490.jpg")
-espece_categorie_crustace3 = EspeceCategorie.create(user: user1, type_espece_categorie: type_espece_categorie3, categorie: "Cigale de mer")
+espece_categorie_crustace3 = EspeceCategorie.create(user: user1, type_espece_categorie: type_espece_categorie4, categorie: "Cigale de mer")
 espece_categorie_crustace3.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
 espece_categorie_crustace3.save
 
 file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Armadillidium_vulgare_001.jpg/640px-Armadillidium_vulgare_001.jpg")
-espece_categorie_crustace4 = EspeceCategorie.create(user: user1, type_espece_categorie: type_espece_categorie3, categorie: "Cloporte")
+espece_categorie_crustace4 = EspeceCategorie.create(user: user1, type_espece_categorie: type_espece_categorie4, categorie: "Cloporte")
 espece_categorie_crustace4.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
 espece_categorie_crustace4.save
 
 puts "Les Crustacés EspeceCategorie Crustacés 🦀 ont etaientt crees 🦊 🐬..."
 
+puts "EspeceCategorie Mammifères marins 🦭 en cours de creation 🦊 🐬..."
 
-# Crustacés
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/a/a0/Halichoerus_grypus_He3.jpg")
+espece_categorie_mammarin1 = EspeceCategorie.create(user: user1, type_espece_categorie: type_espece_categorie5, categorie: "Phoque gris")
+espece_categorie_mammarin1.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+espece_categorie_mammarin1.save
 
-file = URI.open("https://www.universaquatique.fr/53083-large_default/crevette-grise-caridina-japonica-l-4-5cm.jpg")
-crustace1 = Faune.create(user: user1, categorie:"Crustacés", nom: "Crevette grise", description: "La Crevette grise, crustacé délicat aux nuances grises, évolue dans les eaux côtières de Merlimont. Avec ses yeux pédonculés et ses pattes finement dentelées, elle se déplace en fouillant le fond marin à la recherche de particules alimentaires.")
-crustace1.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
-crustace1.save
-puts "1 crustacés a etait cree 🦀!"
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/9/92/Fin_whale_from_air.jpg")
+espece_categorie_mammarin2 = EspeceCategorie.create(user: user1, type_espece_categorie: type_espece_categorie5, categorie: "Rorqual commun")
+espece_categorie_mammarin2.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+espece_categorie_mammarin2.save
 
-file = URI.open("https://lh3.googleusercontent.com/proxy/ZHnCqXtQm-xOwVU2ukjKR5SyKiIY556dhwfsxc64ZyRxorHf-BQjJ-BD2e6TQczndQvy9A3lEt0j8pa9Yhe5XxFne7O4wuun9dufgSAlG9uDcryxhFtbcAAv5hJLCs7D7vES3wNbrW0h_N7FiyCwyNFdHj0RQX4vVAQ")
-crustace2 = Faune.create(user: user1, categorie:"Crustacés", nom: "Crabe vert", description: "Le Crabe vert, crustacé au corps aplati et aux pinces puissantes, se trouve dans les eaux côtières et les estuaires de Merlimont. Sa carapace vert olive et sa capacité à se camoufler en font un chasseur habile.")
-crustace2.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
-crustace2.save
-puts "2 crustacés a etait cree 🦀!"
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Delphinus_delphis_03-cropped.jpg/259px-Delphinus_delphis_03-cropped.jpg")
+espece_categorie_mammarin3 = EspeceCategorie.create(user: user1, type_espece_categorie: type_espece_categorie5, categorie: "Dauphin commun")
+espece_categorie_mammarin3.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+espece_categorie_mammarin3.save
 
-file = URI.open("https://www.institut-paul-ricard.org/wp-content/uploads/2018/09/Grandecigale-780x490.jpg")
-crustace3 = Faune.create(user: user1, categorie:"Crustacés", nom: "Cigale de mer", description: "La Cigale de mer, crustacé au corps plat et aux pattes étalées, se trouve dans les fonds sableux et les zones rocheuses de Merlimont. Sa carapace beige tachetée de rouge lui permet de se camoufler efficacement dans son habitat côtier.")
-crustace3.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
-crustace3.save
-puts "3 crustacés a etait cree 🦀!"
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Ecomare_-_bruinvis_Berend_%28berend3%29.jpg/1200px-Ecomare_-_bruinvis_Berend_%28berend3%29.jpg")
+espece_categorie_mammarin4 = EspeceCategorie.create(user: user1, type_espece_categorie: type_espece_categorie5, categorie: "Marsouin commun")
+espece_categorie_mammarin4.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+espece_categorie_mammarin4.save
 
-file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Armadillidium_vulgare_001.jpg/640px-Armadillidium_vulgare_001.jpg")
-crustace4 = Faune.create(user: user1, categorie:"Crustacés", nom: "Cloporte", description: "Le Cloporte, également appelé « bateau ivre », est un crustacé terrestre que l'on trouve dans les zones humides et les sous-bois de Merlimont. Bien que terrestre, il est étroitement lié à l'environnement aquatique.")
-crustace4.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
-crustace4.save
-puts "4 crustacés a etait cree 🦀!"
+puts "Les Mammifères marins EspeceCategorie Mammifères marins 🦭 ont etaientt crees 🦊 🐬..."
 
-# Mammifères marins
 
-# file = URI.open("https://upload.wikimedia.org/wikipedia/commons/a/a0/Halichoerus_grypus_He3.jpg")
-# mamamarin1 = Faune.create(user: user1, categorie:"Mammifères marins", nom: "Phoque gris", description: "Le Phoque gris, mammifère marin emblématique de la mer du Nord, fréquente les côtes de Merlimont. Reconnaissable par sa fourrure grisâtre et ses grands yeux expressifs, il passe une partie de sa vie sur terre, se reposant sur les plages entre les périodes de chasse en mer.")
-# mamamarin1.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
-# mamamarin1.save
-# puts "1 mamamarins a etait cree 🐬!"
+puts "EspeceCategorie Insectes & arthropodes 🪲 en cours de creation 🦊 🐬..."
 
-# file = URI.open("https://upload.wikimedia.org/wikipedia/commons/9/92/Fin_whale_from_air.jpg")
-# mamamarin2 = Faune.create(user: user1, categorie:"Mammifères marins", nom: "Rorqual commun", description: "Le Rorqual commun, le deuxième plus grand animal de la planète, peut parfois être aperçu au large de Merlimont. Reconnaissable par sa taille imposante et sa gorge plissée, il se nourrit en filtrant de grandes quantités d'eau pour capturer le plancton.")
-# mamamarin2.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
-# mamamarin2.save
-# puts "2 mamamarins a etait cree 🐬!"
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/6/6f/Polyommatus_icarus_-_Burgenland.jpg")
+espece_categorie_insecte1 = EspeceCategorie.create(user: user1, type_espece_categorie: type_espece_categorie6, categorie: "Papillon azuré")
+espece_categorie_insecte1.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+espece_categorie_insecte1.save
 
-# file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Delphinus_delphis_03-cropped.jpg/259px-Delphinus_delphis_03-cropped.jpg")
-# mamamarin3 = Faune.create(user: user1, categorie:"Mammifères marins", nom: "Dauphin commun", description: "Le Dauphin commun, connu pour ses acrobaties en mer, peut être aperçu dans les eaux au large de Merlimont. Son corps fuselé, son bec distinctif et ses sauts gracieux en font un spectacle apprécié par les amateurs de nature.")
-# mamamarin3.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
-# mamamarin3.save
-# puts "3 mamamarins a etait cree 🐬!"
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/4/48/Coccinella_septempunctata_detail.jpg")
+espece_categorie_insecte2 = EspeceCategorie.create(user: user1, type_espece_categorie: type_espece_categorie6, categorie: "Coccinelle à sept points")
+espece_categorie_insecte2.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+espece_categorie_insecte2.save
 
-# file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Ecomare_-_bruinvis_Berend_%28berend3%29.jpg/1200px-Ecomare_-_bruinvis_Berend_%28berend3%29.jpg")
-# mamamarin4 = Faune.create(user: user1, categorie:"Mammifères marins", nom: "Marsouin commun", description: "Le Marsouin commun, petit cétacé présent dans les eaux côtières, est parfois observé au large de Merlimont. Reconnaissable par sa petite taille, sa dorsale triangulaire et son comportement joueur, il évolue en groupes le long des côtes.")
-# mamamarin4.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
-# mamamarin4.save
-# puts "4 mamamarins a etait cree 🐬!"
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Libellula_depressa.jpg/240px-Libellula_depressa.jpg")
+espece_categorie_insecte3 = EspeceCategorie.create(user: user1, type_espece_categorie: type_espece_categorie6, categorie: "Libellule déprimée")
+espece_categorie_insecte3.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+espece_categorie_insecte3.save
 
-# Insectes & arthropodes
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/3/31/Dungbeetle.jpg")
+espece_categorie_insecte4 = EspeceCategorie.create(user: user1, type_espece_categorie: type_espece_categorie6, categorie: "Scarabée sacré")
+espece_categorie_insecte4.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+espece_categorie_insecte4.save
 
-# file = URI.open("https://upload.wikimedia.org/wikipedia/commons/6/6f/Polyommatus_icarus_-_Burgenland.jpg")
-# insecte1 = Faune.create(user: user1, categorie:"Insectes & arthropodes", nom: "Papillon azuré", description: "Le Papillon azuré, avec ses ailes délicates d'un bleu éclatant, danse parmi les fleurs des prairies de Merlimont. Sa taille modeste dissimule une beauté exquise, attirant les regards des amateurs de nature et des passionnés d'entomologie.")
-# insecte1.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
-# insecte1.save
-# puts "1 insectes a etait cree 🪲!"
+puts "Les Insectes & arthropodes EspeceCategorie Insectes & arthropodes 🪲 ont etaientt crees 🦊 🐬..."
 
-# file = URI.open("https://upload.wikimedia.org/wikipedia/commons/4/48/Coccinella_septempunctata_detail.jpg")
-# insecte2 = Faune.create(user: user1, categorie:"Insectes & arthropodes", nom: "Coccinelle à sept points", description: "Symbole de chance et de protection, la Coccinelle à sept points égaye les jardins et les champs de Merlimont. Cette petite bête rouge vif ponctuée de points noirs est une alliée précieuse dans la lutte biologique contre les pucerons.")
-# insecte2.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
-# insecte2.save
-# puts "2 insectes a etait cree 🪲!"
+puts "EspeceCategorie Reptiles 🐍 en cours de creation 🦊 🐬..."
 
-# file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Libellula_depressa.jpg/240px-Libellula_depressa.jpg")
-# insecte3 = Faune.create(user: user1, categorie:"Insectes & arthropodes", nom: "Libellule déprimée", description: "La Libellule déprimée, avec ses ailes translucides et son abdomen allongé, patrouille gracieusement au-dessus des étangs et des rivières de Merlimont. Ses vols acrobatiques ajoutent une touche de magie à l'environnement aquatique.")
-# insecte3.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
-# insecte3.save
-# puts "3 insectes a etait cree 🪲!"
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/1/10/Natrix-natrix-089.jpg")
+espece_categorie_reptile1 = EspeceCategorie.create(user: user1, type_espece_categorie: type_espece_categorie7, categorie: "Couleuvre à collier")
+espece_categorie_reptile1.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+espece_categorie_reptile1.save
 
-# file = URI.open("https://upload.wikimedia.org/wikipedia/commons/3/31/Dungbeetle.jpg")
-# insecte4 = Faune.create(user: user1, categorie:"Insectes & arthropodes", nom: "Scarabée sacré", description: "Le Scarabée sacré, associé à des symboles religieux dans certaines cultures, se fraye un chemin à travers les sols de Merlimont. Sa carapace lustrée et sa propension à rouler des boules d'excréments en font un insecte fascinant à observer.")
-# insecte4.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
-# insecte4.save
-# puts "4 insectes a etait cree 🪲!"
+file = URI.open("https://vipera.fr/wp-content/uploads/2014/11/Vberusfiche.jpg")
+espece_categorie_reptile2 = EspeceCategorie.create(user: user1, type_espece_categorie: type_espece_categorie7, categorie: "Vipère péliade")
+espece_categorie_reptile2.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+espece_categorie_reptile2.save
 
-# Reptiles
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Anguidae.jpg/240px-Anguidae.jpg")
+espece_categorie_reptile3 = EspeceCategorie.create(user: user1, type_espece_categorie: type_espece_categorie7, categorie: "Orvet fragile")
+espece_categorie_reptile3.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+espece_categorie_reptile3.save
 
-# file = URI.open("https://upload.wikimedia.org/wikipedia/commons/1/10/Natrix-natrix-089.jpg")
-# reptile1 = Faune.create(user: user1, categorie:"Reptiles", nom: "Couleuvre à collier", description: "La Couleuvre à collier, serpent non-venimeux, glisse silencieusement le long des rivières et des étangs de Merlimont. Reconnaissable par son collier jaune vif, elle se nourrit de poissons, d'amphibiens et de petits rongeurs.")
-# reptile1.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
-# reptile1.save
-# puts "1 reptiles a etait cree 🐍!"
+puts "Les Reptiles EspeceCategorie Reptiles 🐍 ont etaientt crees 🦊 🐬..."
 
-# file = URI.open("https://vipera.fr/wp-content/uploads/2014/11/Vberusfiche.jpg")
-# reptile2 = Faune.create(user: user1, categorie:"Reptiles", nom: "Vipère péliade", description: " La Vipère péliade, serpent venimeux mais non mortel, se trouve dans les zones boisées de Merlimont. Son motif en zigzag sur le dos et sa couleur variable la rendent bien adaptée à la camouflage dans son environnement naturel.")
-# reptile2.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
-# reptile2.save
-# puts "2 reptiles a etait cree 🐍!"
 
-# file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Anguidae.jpg/240px-Anguidae.jpg")
-# reptile3 = Faune.create(user: user1, categorie:"Reptiles", nom: "Orvet fragile", description: "L'Orvet fragile, souvent confondu avec un serpent, est en réalité une espèce de lézard sans pattes. Il se faufile à travers l'herbe des prairies et des jardins de Merlimont, se nourrissant principalement d'insectes.")
-# reptile3.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
-# reptile3.save
-# puts "3 reptiles a etait cree 🐍!"
 
 # Amphibiens
 
