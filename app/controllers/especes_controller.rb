@@ -3,13 +3,17 @@ class EspecesController < ApplicationController
 
   def index
     @especes = policy_scope(Espece)
-    if params[:categorie].present?
-      @categorie = params[:categorie]
-      @especes = Espece.where(categorie: params[:categorie]).order(:nom)
+
+    if params[:espece_categorie_categorie].present?
+      @espece_categorie_categorie = params[:espece_categorie_categorie]
+      @especes = Espece.joins(:espece_categorie).where(espece_categories: { categorie: @espece_categorie_categorie }).all
     else
-      @especes = Espece.order(:nom)
+      @especes = Espece.all
     end
   end
+
+
+
 
   def show
     @espece = Espece.find(params[:id])
@@ -56,6 +60,6 @@ class EspecesController < ApplicationController
   private
 
   def espece_params
-    params.require(:espece).permit(:espece_categorie_id,:nom, :description, :photo)
+    params.require(:espece).permit(:espece_categorie_id, :nom, :description, :photo)
   end
 end

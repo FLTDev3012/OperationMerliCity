@@ -1,6 +1,24 @@
-<h1>l espece en question</h1>
+<h1><%= @espece_categorie_categorie %></h1>
+<h2>Nombre d'enregistrements : <%= @especes.size %></h2>
 
+<% if @especes.present? %>
+  <div class="userdash-all-faune-grid">
+    <% @especes.each do |x| %>
+      <%= link_to espece_path(x) do %>
+        <div class="user-dash-one-pic-name">
+          <% if x.photo.attached? %>
+            <%= image_tag x.photo, class: "userdash-activitie-img" %>
+          <% else %>
+            <p>sans image</p>
+          <% end %>
+          <div class="user-dash-name">
+            <p><%= x.nom %></p>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
 
-<% @especes.each do |x| %>
-  <p>x.nom</p>
+<% else %>
+  <p>Vous n'avez publié aucune recherche</p>
 <% end %>
