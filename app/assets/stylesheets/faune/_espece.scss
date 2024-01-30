@@ -1,0 +1,29 @@
+.espece-container {
+  min-height: 100vh;
+  background-color: $bleuFaune;
+  color: #fff;
+  font-family: 'ABeeZee', sans-serif;
+  position: relative;
+}
+
+.espece-content{
+  padding: 60px;
+}
+
+.espece-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.espece-title h1 {
+  font-family: "Amatic SC", cursive;
+  font-size: 7rem;
+  padding-bottom: 2rem;
+  color: $vertFaune;
+}
+.faune-herbe-espece {
+  position: absolute;
+  bottom: 0;
+}

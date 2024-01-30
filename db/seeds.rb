@@ -333,10 +333,7 @@ espece_categorie_petitmam4.save
 
 puts "Les Petits mammifères EspeceCategorie Petits mammifères 🐹 ont etaientt crees 🦊 🐬..."
 
-file = URI.open("https://www.federation-peche-allier.fr/wp-content/uploads/2017/11/truite-fario_Madelon-FNPF-3-800x516.jpg")
-espece_poisson2 = Espece.create(user: user1, espece_categorie: espece_categorie_poisson2, nom: "Truite fario", description: "description de la truite")
-espece_poisson2.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
-espece_poisson2.save
+
 
 file = URI.open("https://www.federation-peche-allier.fr/wp-content/uploads/2017/11/truite-fario_Madelon-FNPF-3-800x516.jpg")
 espece_poisson1 = Espece.create(user: user1, espece_categorie: espece_categorie_poisson2, nom: "Truite fario", description: "description de la truite")
@@ -362,6 +359,27 @@ file = URI.open("https://www.federation-peche-allier.fr/wp-content/uploads/2017/
 espece_poisson5 = Espece.create(user: user1, espece_categorie: espece_categorie_poisson2, nom: "Truite fario", description: "description de la truite")
 espece_poisson5.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
 espece_poisson5.save
+
+file = URI.open("https://www.federation-peche-allier.fr/wp-content/uploads/2017/11/truite-fario_Madelon-FNPF-3-800x516.jpg")
+espece_poisson6 = Espece.create(user: user1, espece_categorie: espece_categorie_poisson2, nom: "Truite fario", description: "description de la truite")
+espece_poisson6.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+espece_poisson6.save
+
+file = URI.open("https://www.federation-peche-allier.fr/wp-content/uploads/2017/11/truite-fario_Madelon-FNPF-3-800x516.jpg")
+espece_poisson7 = Espece.create(user: user1, espece_categorie: espece_categorie_poisson2, nom: "Truite fario", description: "description de la truite")
+espece_poisson7.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+espece_poisson7.save
+
+file = URI.open("https://www.federation-peche-allier.fr/wp-content/uploads/2017/11/truite-fario_Madelon-FNPF-3-800x516.jpg")
+espece_poisson8 = Espece.create(user: user1, espece_categorie: espece_categorie_poisson2, nom: "Truite fario", description: "description de la truite")
+espece_poisson8.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+espece_poisson8.save
+
+file = URI.open("https://www.federation-peche-allier.fr/wp-content/uploads/2017/11/truite-fario_Madelon-FNPF-3-800x516.jpg")
+espece_poisson9 = Espece.create(user: user1, espece_categorie: espece_categorie_poisson2, nom: "Truite fario", description: "description de la truite")
+espece_poisson9.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+espece_poisson9.save
+
 # puts "Activite en cours de creation ma couille... 🏄"
 
 # file = URI.open("https://www.parcbagatelle.com/fileadmin/_processed_/6/8/csm_Banniere-BaggyPass-Bagatelle_fb50144a68.jpg")

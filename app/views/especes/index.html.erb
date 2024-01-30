@@ -1,24 +1,53 @@
-<h1><%= @espece_categorie_categorie %></h1>
-<h2>Nombre d'enregistrements : <%= @especes.size %></h2>
+<div class="espece-container">
 
-<% if @especes.present? %>
-  <div class="userdash-all-faune-grid">
-    <% @especes.each do |x| %>
-      <%= link_to espece_path(x) do %>
-        <div class="user-dash-one-pic-name">
-          <% if x.photo.attached? %>
-            <%= image_tag x.photo, class: "userdash-activitie-img" %>
-          <% else %>
-            <p>sans image</p>
-          <% end %>
-          <div class="user-dash-name">
-            <p><%= x.nom %></p>
-          </div>
-        </div>
-      <% end %>
+  <div class="faunecat-return-btn">
+    <% if @espece_categorie_categorie.present? %>
+      <%= link_to "< #{@type_espece_categorie.categorie}", espece_categories_path(type_espece_categorie_categorie: @type_espece_categorie.categorie) %>
+    <% else %>
+      <%= link_to "Les espèces", espece_categories_path %>
     <% end %>
   </div>
 
-<% else %>
-  <p>Vous n'avez publié aucune recherche</p>
-<% end %>
+
+  <div class="espece-content">
+    <div class="espece-title">
+      <h1><%= @espece_categorie_categorie %></h1>
+      <h2>Nombre d'enregistrements : <%= @especes.size %></h2>
+    </div>
+
+
+  <% if @especes.present? %>
+    <div class="userdash-all-faune-grid">
+      <% @especes.each do |x| %>
+        <%= link_to espece_path(x) do %>
+          <div class="user-dash-one-pic-name">
+            <% if x.photo.attached? %>
+              <%= image_tag x.photo, class: "userdash-activitie-img" %>
+            <% else %>
+              <p>sans image</p>
+            <% end %>
+            <div class="user-dash-name">
+              <p><%= x.nom %></p>
+            </div>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+
+  <% else %>
+    <p>Vous n'avez publié aucune recherche</p>
+  <% end %>
+
+  </div>
+
+  <div class="faunecat-herbe">
+    <div class="faune-herbe-espece">
+      <% if ['Poissons', 'Crustacés', 'Mammifères marins'].include?(@type_espece_categorie.categorie) %>
+        <%= image_tag('emplacements/algues.svg') %>
+      <% else %>
+        <%= image_tag('faune/hauteherbe.png') %>
+      <% end %>
+    </div>
+  </div>
+
+</div>
