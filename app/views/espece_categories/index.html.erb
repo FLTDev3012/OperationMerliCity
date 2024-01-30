@@ -31,14 +31,24 @@
     </div>
   </div>
 
-  <div class="biotop-herbe">
-    <div class="biotop-herbe-espece">
-      <% if ['Poissons', 'Crustacés', 'Mammifères marins'].include?(@type_espece_categorie_categorie) %>
-        <%= image_tag('emplacements/algues.svg') %>
-      <% else %>
-        <%= image_tag('faune/hauteherbe.png') %>
-      <% end %>
-    </div>
-  </div>
 
+  <% if @especeCategories.present? %>
+    <div class="biotop-herbe">
+      <div class="biotop-herbe-espece">
+        <% if ['Poissons', 'Crustacés', 'Mammifères marins'].include?(@type_espece_categorie_categorie) %>
+          <%= image_tag('emplacements/algues.svg') %>
+        <% else %>
+          <%= image_tag('faune/hauteherbe.png') %>
+        <% end %>
+      </div>
+    </div>
+  <% else %>
+      <div class="biotop-herbe-espece">
+        <% if ['Poissons', 'Crustacés', 'Mammifères marins'].include?(@type_espece_categorie_categorie) %>
+          <%= image_tag('emplacements/algues.svg') %>
+        <% else %>
+          <%= image_tag('faune/hauteherbe.png') %>
+        <% end %>
+      </div>
+  <% end %>
 </div>
