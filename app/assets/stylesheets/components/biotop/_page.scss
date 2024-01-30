@@ -1,4 +1,4 @@
-.faunecat-container {
+.biotop-container {
   background-color: #0F2933;
   color: #fff;
   font-family: 'ABeeZee', sans-serif;
@@ -6,39 +6,40 @@
   min-height: 100vh;
 }
 
-.faunecat-container a {
+.biotop-container a {
   color: #fff;
 }
 
-.faunecat-return-btn {
+.biotop-return-btn {
   position: absolute;
   top: 30px;
   left: 100px;
 }
 
-.faunecat-return-btn a {
+.biotop-return-btn a {
   font-family: 'Amatic SC', cursive;
   font-size: 1.3rem;
+  color: #fff;
 }
 
-.faunecat-title {
+.biotop-title {
   display: flex;
   justify-content: center;
   padding: 4rem 0 4rem 0;
 }
 
-.faunecat-title h1 {
+.biotop-title h1 {
   color: #669A2E;
   font-family: 'Amatic SC', cursive;
   font-size: 7rem;
 }
 
-.faunecat-categories-container {
+.biotop-categories-container {
   z-index: 2;
   position: relative;
 }
 
-.faunecat-categories-grid-container {
+.biotop-categories-grid-container {
   padding: 1em;
   padding-bottom: 50px;
   display: grid;
@@ -46,7 +47,7 @@
   gap: 10px
 }
 
-.faunecat-categories-owner {
+.biotop-categories-owner {
   display: flex;
   flex-direction: column;
   // justify-content: center;
@@ -55,24 +56,13 @@
   font-size: 1.3rem;
 }
 
-.faunecat-categories-owner-title {
+.biotop-categories-owner-title {
   margin-bottom: 1rem;
 }
 
-.faunecat-categories-owner img {
+.biotop-categories-owner img {
   width: 300px;
   height: 400px;
   border: 7px solid #fff;
   object-fit: cover;
-}
-
-.faunecat-herbe {
-  position: sticky;
-  bottom: 0;
-}
-
-.faunecat-herbe img {
-  opacity: .3;
-  width: 100%;
-  height: auto;
 }

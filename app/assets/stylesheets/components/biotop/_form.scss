@@ -1,0 +1,105 @@
+.biotop-form-container {
+  min-height: 100vh;
+  background-color: $bleuFaune;
+  color: #fff;
+  font-family: 'ABeeZee', sans-serif;
+}
+
+.biotop-form-titre {
+  display: flex;
+  justify-content: center;
+}
+
+.biotop-form-titre h1 {
+  color: $vertFaune;
+  font-family: "Amatic SC", cursive;
+  font-size: 7rem;
+  padding: 2rem 0;
+}
+
+.biotop-form-formulaire-container {
+  display: flex;
+  justify-content: center;
+}
+
+.biotop-form-formulaire {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+
+
+.biotop-form-formulaire select {
+  background-color: #669a2e;
+  border: 2px solid #4f7525;
+  font-family: 'ABeeZee', sans-serif;
+  font-size: 1.5rem;
+  padding: 8px 16px;
+  color: #eaeaea;
+  border-radius: 5px;
+}
+
+.form-select-espece {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-select-espece p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.form-select-espece a {
+  color: #e87f33;
+}
+
+.biotop-form-input-input {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+.biotop-form-input-input .form-control {
+  border: 2px solid $vertFaune !important;
+}
+
+.biotop-form-input-input input[type="file"]::file-selector-button {
+  background-color: $vertFaune;
+  color: #fff;
+}
+
+.biotop-form-input-input ::placeholder {
+  color: rgba(0, 0, 0, 0.495);
+  font-family: 'ABeeZee', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 1;
+}
+
+.biotop-form-input-input label {
+  color: $vertFaune;
+  font-size: 1.2rem;
+}
+
+.biotop-form-input-input textarea {
+  margin: 0.5rem 0 1rem 0;
+}
+
+.biotop-form-input {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.biotop-form-formulaire .btn {
+  background-color: #669a2e;
+  border: 2px solid #4f7525;
+  font-family: 'ABeeZee', sans-serif;
+  font-size: 1.5rem;
+  padding: 8px 16px;
+  color: #eaeaea;
+  border-radius: 5px;
+}

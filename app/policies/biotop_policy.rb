@@ -1,18 +1,18 @@
 class BiotopPolicy < ApplicationPolicy
 
   def new?
-    true
+    user&.admin?
   end
 
   def create?
-    update?
+    user&.admin?
   end
 
   def update?
-    record.user == user
+    user&.admin?
   end
 
   def destroy?
-    record.user == user || user&.admin?
+    user&.admin?
   end
 end

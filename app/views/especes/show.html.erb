@@ -1,7 +1,7 @@
 <div class="espece-show-container">
 
   <div class="espece-show-back">
-    <%= link_to "< Retour", request.referer || espece_categories_path %>
+    <%= link_to "< Retour", request.referer || type_espece_categories_path %>
     <br>
     <br>
     <br>
@@ -28,13 +28,17 @@
 
   </div>
 
-  <div class="show-hauteherbe">
+
+
+
+  <div class="biotop-herbe-espece">
     <% if ['Poissons', 'Crustacés', 'Mammifères marins'].include?(@espece) %>
       <%= image_tag('emplacements/algues.svg') %>
     <% else %>
       <%= image_tag('faune/hauteherbe.png') %>
     <% end %>
   </div>
+
 
 
 </div>
