@@ -1,0 +1,55 @@
+.biotop-form-container {
+  min-height: 100vh;
+  background-color: $bleuFaune;
+  color: #fff;
+  font-family: 'ABeeZee', sans-serif;
+}
+
+.biotop-form-titre {
+  display: flex;
+  justify-content: center;
+}
+
+.biotop-form-titre h1 {
+  color: $vertFaune;
+  font-family: "Amatic SC", cursive;
+  font-size: 7rem;
+  padding: 2rem 0;
+}
+
+.biotop-form-formulaire-container {
+  display: flex;
+  justify-content: center;
+}
+
+.biotop-form-formulaire {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.biotop-form-formulaire select {
+  background-color: #669a2e;
+  border: 2px solid #4f7525;
+  font-family: 'ABeeZee', sans-serif;
+  font-size: 1.5rem;
+  padding: 8px 16px;
+  color: #eaeaea;
+  border-radius: 5px;
+}
+
+.form-select-espece {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-select-espece p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.form-select-espece a {
+  color: #e87f33;
+}
