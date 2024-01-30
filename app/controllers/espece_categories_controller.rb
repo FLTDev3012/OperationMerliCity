@@ -7,12 +7,13 @@ class EspeceCategoriesController < ApplicationController
     if params[:type_espece_categorie_categorie].present?
       @type_espece_categorie_categorie = params[:type_espece_categorie_categorie]
       @especeCategories = EspeceCategorie.joins(:type_espece_categorie).where(type_espece_categories: { categorie: @type_espece_categorie_categorie }).all
+
+      @type_espece_categorie = TypeEspeceCategorie.find_by(categorie: params[:type_espece_categorie_categorie])
+      @biotop = @type_espece_categorie.biotop if @type_espece_categorie
     else
       @especeCategories = EspeceCategorie.all
     end
   end
-
-
 
 
   def show

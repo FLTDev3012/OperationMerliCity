@@ -2,10 +2,10 @@
 
   <div class="faunecat-return-btn">
 
-    <% if @type_espece_categorie_categorie.biotop_categorie == "Faune" %>
-      <%= link_to "< Faune", type_espece_categories_path(type_espece_categorie_categorie: @type_espece_categorie_categorie.biotop.categorie) %>
+    <% if @type_espece_categorie_categorie.present? %>
+      <%= link_to "#{@biotop.categorie}", type_espece_categories_path(biotop_categorie: @biotop.categorie) %>
     <% else %>
-      <%= link_to "< Faune", type_espece_categories_path %>
+      <%= link_to "Faune & Flore", type_espece_categories_path %>
     <% end %>
 
   </div>
