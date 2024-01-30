@@ -1,6 +1,6 @@
 <div class="espece-container">
 
-  <div class="faunecat-return-btn">
+  <div class="biotop-return-btn">
     <% if @espece_categorie_categorie.present? %>
       <%= link_to "< #{@type_espece_categorie.categorie}", espece_categories_path(type_espece_categorie_categorie: @type_espece_categorie.categorie) %>
     <% else %>
@@ -40,8 +40,10 @@
 
   </div>
 
-  <div class="faunecat-herbe">
-    <div class="faune-herbe-espece">
+
+<% if @especes.present? %>
+  <div class="biotop-herbe">
+    <div class="biotop-herbe-espece">
       <% if ['Poissons', 'Crustacés', 'Mammifères marins'].include?(@type_espece_categorie.categorie) %>
         <%= image_tag('emplacements/algues.svg') %>
       <% else %>
@@ -49,5 +51,14 @@
       <% end %>
     </div>
   </div>
+<% else %>
+  <div class="biotop-herbe-espece">
+    <% if ['Poissons', 'Crustacés', 'Mammifères marins'].include?(@type_espece_categorie.categorie) %>
+      <%= image_tag('emplacements/algues.svg') %>
+    <% else %>
+      <%= image_tag('faune/hauteherbe.png') %>
+    <% end %>
+  </div>
+<% end %>
 
 </div>

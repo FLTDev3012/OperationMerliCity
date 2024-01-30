@@ -1,6 +1,6 @@
-<div class="faunecat-container">
+<div class="biotop-container">
 
-  <div class="faunecat-return-btn">
+  <div class="biotop-return-btn">
 
     <% if @type_espece_categorie_categorie.present? %>
       <%= link_to "< La #{@biotop.categorie}", type_espece_categories_path(biotop_categorie: @biotop.categorie) %>
@@ -10,18 +10,18 @@
 
   </div>
 
-  <div class="faunecat-title">
+  <div class="biotop-title">
     <h1><%= @type_espece_categorie_categorie.present? ? "Les #{@type_espece_categorie_categorie}" : 'Tous notre faune' %></h1>
   </div>
 
-  <div class="faunecat-categories-container">
-    <div class="faunecat-categories-grid-container">
+  <div class="biotop-categories-container">
+    <div class="biotop-categories-grid-container">
 
       <% @especeCategories.each do |x| %>
-        <%= link_to especes_path(espece_categorie_categorie: x.categorie), class: 'faunecat-categories-owner', data: { turbo: false } do %>
-          <div class="faunecat-categories-owner-title"><%= x.categorie %></div>
+        <%= link_to especes_path(espece_categorie_categorie: x.categorie), class: 'biotop-categories-owner', data: { turbo: false } do %>
+          <div class="biotop-categories-owner-title"><%= x.categorie %></div>
           <% if x.photo.attached? %>
-            <div class="faunecat-categories-owner-picture">
+            <div class="biotop-categories-owner-picture">
               <%= cl_image_tag x.photo.key %>
             </div>
           <% end %>
@@ -31,8 +31,8 @@
     </div>
   </div>
 
-  <div class="faunecat-herbe">
-    <div class="faune-herbe-espece">
+  <div class="biotop-herbe">
+    <div class="biotop-herbe-espece">
       <% if ['Poissons', 'Crustacés', 'Mammifères marins'].include?(@type_espece_categorie_categorie) %>
         <%= image_tag('emplacements/algues.svg') %>
       <% else %>

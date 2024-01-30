@@ -31,7 +31,7 @@ class EspecesController < ApplicationController
     authorize @espece
 
     if @espece.save
-      redirect_to moncompte_path, notice: 'Espece créé avec succès!'
+      redirect_to  espece_path(@espece), notice: 'Espece créé avec succès!'
     else
       render :new, status: :unprocessable_entity
     end
