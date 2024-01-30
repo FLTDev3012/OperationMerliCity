@@ -62,6 +62,14 @@
   margin: 1rem 0;
 }
 
+.biotop-form-input-input .form-control {
+  border: 2px solid $vertFaune !important;
+}
+
+.biotop-form-input-input input[type="file"]::file-selector-button {
+  background-color: $vertFaune;
+  color: #fff;
+}
 
 .biotop-form-input-input ::placeholder {
   color: rgba(0, 0, 0, 0.495);
