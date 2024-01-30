@@ -6,7 +6,9 @@
 
   <div class="form-formulaire">
     <%= simple_form_for @espece do |f| %>
-      <%= f.collection_select :espece_categorie_id, EspeceCategorie.all, :id, :categorie, prompt: 'Sélectionnez une espece categorie' %>
+      <%= f.collection_select :espece_categorie_id, EspeceCategorie.order(:categorie), :id, :categorie, prompt: 'Sélectionnez une espece categorie' %>
+      <p>l'espece n'as pas encore été repertorié ?</p>
+      <%= link_to "Ajoutez une espece", new_espece_category_path %>
       <%= f.input :nom, placeholder: 'nom' %>
       <%= f.input :description, placeholder: 'description' %>
       <%= f.input :photo, as: :file %>

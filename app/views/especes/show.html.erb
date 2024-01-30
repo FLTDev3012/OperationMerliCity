@@ -1,2 +1,40 @@
-<p><%= @espece.nom %></p>
-<p><%= @espece.description %></p>
+<div class="espece-show-container">
+
+  <div class="espece-show-back">
+    <%= link_to "< Retour", request.referer || espece_categories_path %>
+    <br>
+    <br>
+    <br>
+    <%= link_to "Modifier", edit_espece_path(@espece), class: "btn-noir" if policy(@espece).update? || current_user&.admin? %>
+    <br>
+    <%= link_to "Supprimer", espece_path(@espece), class: "btn-noir", data: { turbo_method: :delete, turbo_confirm: "Êtes-vous sûr de vouloir supprimer ?" } if policy(@espece).destroy? || current_user&.admin? %>
+  </div>
+
+  <div class="espece-show-title">
+    <h1><%= @espece.nom %></h1>
+  </div>
+
+  <div class="espece-show-desc-pic">
+
+    <div class="espece-show-desc">
+      <p class="espece-show-desc-parag"><%= @espece.description %></p>
+    </div>
+
+    <div class="espece-show-pic">
+      <% if @espece.photo.attached? %>
+        <%= cl_image_tag @espece.photo.key %>
+      <% end %>
+    </div>
+
+  </div>
+
+  <div class="show-hauteherbe">
+    <% if ['Poissons', 'Crustacés', 'Mammifères marins'].include?(@espece) %>
+      <%= image_tag('emplacements/algues.svg') %>
+    <% else %>
+      <%= image_tag('faune/hauteherbe.png') %>
+    <% end %>
+  </div>
+
+
+</div>

@@ -17,16 +17,16 @@
 
 
   <% if @especes.present? %>
-    <div class="userdash-all-faune-grid">
+    <div class="card-espece-all-faune-grid">
       <% @especes.each do |x| %>
         <%= link_to espece_path(x) do %>
-          <div class="user-dash-one-pic-name">
+          <div class="card-espece-one-pic-name">
             <% if x.photo.attached? %>
-              <%= image_tag x.photo, class: "userdash-activitie-img" %>
+              <%= image_tag x.photo, class: "card-espece-img" %>
             <% else %>
               <p>sans image</p>
             <% end %>
-            <div class="user-dash-name">
+            <div class="card-espece-name">
               <p><%= x.nom %></p>
             </div>
           </div>

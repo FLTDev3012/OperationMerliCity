@@ -6,7 +6,7 @@
 
   <div class="form-formulaire">
     <%= simple_form_for @especeCategorie do |f| %>
-      <%= f.collection_select :type_espece_categorie_id, TypeEspeceCategorie.all, :id, :categorie, prompt: 'Sélectionnez un Type espece categorie' %>
+      <%= f.collection_select :type_espece_categorie_id, TypeEspeceCategorie.order(:categorie), :id, :categorie, prompt: 'Sélectionnez un Type espece categorie' %>
       <%= f.input :categorie, placeholder: 'Nom' %>
       <%= f.input :photo, as: :file %>
       <div class="form-input">

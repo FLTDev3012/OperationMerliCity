@@ -32,16 +32,10 @@ class PagesController < ApplicationController
     @user = current_user
 
     if @user.admin?
-      @user_recherche = Faune.all
+      @user_recherche = Espece.all
     else
-      @user_recherche = Faune.where(user: @user)
+      @user_recherche = Espece.where(user: @user)
     end
-
-    @biotop = Biotop.all
-    @typeEspeceCategories = TypeEspeceCategorie.all
-    @especeCategories = EspeceCategorie.all
-    @especes = Espece.all
-
 
   end
 

@@ -5,92 +5,36 @@
 
     <div class="moncompte-title">
       <h1>Mon Compte de Chercheur</h1>
-
       <% if @user && @user.admin? %>
         <p><%= @user.email %> <span class="user-status">|| Administrateur</span></p>
-        <br>
-        <p>--les biotops--</p>
-        <% @biotop.each do |x| %>
-          <p><%= x.categorie %></p>
-
-        <% end %>
-        <br>
-        <br>
-        <br>
-        <br>
-        <p>--les typesEspeceCategorie--</p>
-        <% @typeEspeceCategories.each do |x| %>
-          <br>
-          <p><%= x.categorie %></p>
-          <% if x.biotop.present? %>
-            <p><%= x.biotop.categorie %></p>
-            <% if x.photo.attached? %>
-            <div class="faunecat-categories-owner-picture">
-              <%= cl_image_tag x.photo.key, width: 200, height: 300, crop: :fill %>
-            </div>
-          <% end %>
-          <% else %>
-            <p>Biotope non disponible</p>
-          <% end %>
-          <br>
-        <% end %>
-        <br>
-        <p>--les EspeceCategorie--</p>
-        <% @especeCategories.each do |x| %>
-          <br>
-          <p><%= x.categorie %></p>
-          <p><%= x.type_espece_categorie.categorie %></p>
-          <p><%= x.type_espece_categorie.biotop.categorie %></p>
-          <% if x.photo.attached? %>
-            <div class="faunecat-categories-owner-picture">
-              <%= cl_image_tag x.photo.key, width: 200, height: 300, crop: :fill %>
-            </div>
-          <% end %>
-          <br>
-        <% end %>
-        <br>
-        <p>--les EspeceCategorie--</p>
-        <% @especes.each do |x| %>
-          <br>
-          <p><%= x.nom %></p>
-          <p><%= x.description %></p>
-          <p><%= x.espece_categorie.categorie %></p>
-          <p><%= x.espece_categorie.type_espece_categorie.categorie %></p>
-          <p><%= x.espece_categorie.type_espece_categorie.biotop.categorie %></p>
-          <br>
-        <% end %>
-
-
-
       <% else %>
-        <p class="user-status">vous êtes claque</p>
+        <p class="user-status">Jeune Chercheur</p>
       <% end %>
-
     </div>
 
 
 
 
     <div class="moncompte-all-faune-container">
-      <h2>Mes recherches en faune <span class="user-recherche-count"> ( <%= @user_recherche.count %> )</span></h2>
+      <h2>Mes comptes rendus de recherches <span class="user-recherche-count"> ( <%= @user_recherche.count %> )</span></h2>
 
       <div class="moncompte-ajout-faune">
-        <%= link_to "Ajouter une découverte en Flore", new_faune_path %>
+        <%= link_to "Ajouter une découverte", new_espece_path %>
       </div>
 
 
       <% if @user_recherche.present? %>
-        <div class="userdash-all-faune-grid">
+        <div class="card-espece-all-faune-grid">
           <% @user_recherche.each do |animal| %>
 
-              <%= link_to faune_path(animal) do %>
-                <div class="user-dash-one-pic-name">
+              <%= link_to espece_path(animal) do %>
+                <div class="card-espece-one-pic-name">
                   <% if animal.photo.attached? %>
-                    <%= image_tag animal.photo, class: "userdash-activitie-img" %>
+                    <%= image_tag animal.photo, class: "card-espece-img" %>
                   <% else %>
                     <p>sans image</p>
                   <% end %>
-                  <div class="user-dash-name">
+                  <div class="card-espece-name">
                     <p><%= animal.nom %></p>
                   </div>
                 </div>

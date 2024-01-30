@@ -6,9 +6,9 @@ class TypeEspeceCategoriesController < ApplicationController
 
     if params[:biotop_categorie].present?
       @biotop_categorie = params[:biotop_categorie]
-      @typeEspeceCategories = TypeEspeceCategorie.joins(:biotop).where(biotops: { categorie: @biotop_categorie }).all
+      @typeEspeceCategories = TypeEspeceCategorie.joins(:biotop).where(biotops: { categorie: @biotop_categorie }).order(:id)
     else
-      @typeEspeceCategories = TypeEspeceCategorie.all
+      @typeEspeceCategories = TypeEspeceCategorie.order(:id)
     end
   end
 
