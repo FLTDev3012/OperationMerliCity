@@ -23,9 +23,11 @@
 }
 
 .biotop-form-formulaire {
-  width: 95%;
+  width: 80%;
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 2;
 }
 
 
@@ -52,4 +54,44 @@
 
 .form-select-espece a {
   color: #e87f33;
+}
+
+.biotop-form-input-input {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+
+.biotop-form-input-input ::placeholder {
+  color: rgba(0, 0, 0, 0.495);
+  font-family: 'ABeeZee', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 1;
+}
+
+.biotop-form-input-input label {
+  color: $vertFaune;
+  font-size: 1.2rem;
+}
+
+.biotop-form-input-input textarea {
+  margin: 0.5rem 0 1rem 0;
+}
+
+.biotop-form-input {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.biotop-form-formulaire .btn {
+  background-color: #669a2e;
+  border: 2px solid #4f7525;
+  font-family: 'ABeeZee', sans-serif;
+  font-size: 1.5rem;
+  padding: 8px 16px;
+  color: #eaeaea;
+  border-radius: 5px;
 }
