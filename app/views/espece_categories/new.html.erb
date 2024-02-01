@@ -1,18 +1,28 @@
-<div class="form-container">
+<div class="biotop-form-container">
 
-  <div class="form-titre">
-    <h1>Ajoutez espece categorie</h1>
+  <div class="biotop-form-titre">
+    <h1>Ajoutez une nouvelle espece</h1>
   </div>
 
-  <div class="form-formulaire">
-    <%= simple_form_for @especeCategorie do |f| %>
-      <%= f.collection_select :type_espece_categorie_id, TypeEspeceCategorie.order(:categorie), :id, :categorie, prompt: 'Sélectionnez un Type espece categorie' %>
-      <%= f.input :categorie, placeholder: 'Nom' %>
-      <%= f.input :photo, as: :file %>
-      <div class="form-input">
-        <%= f.button :submit, value: 'Validation' %>
-      </div>
-    <% end %>
+  <div class="biotop-form-formulaire-container">
+    <div class="biotop-form-formulaire">
+      <%= simple_form_for @especeCategorie do |f| %>
+        <div class="form-select-espece">
+          <%= f.collection_select :type_espece_categorie_id, TypeEspeceCategorie.order(:categorie), :id, :categorie, prompt: "Sélectionnez la categorie de l'espece" %>
+        </div>
+        <div class="biotop-form-input-input">
+          <%= f.input :categorie, placeholder: 'Nom', label: "Nom de l'éspéce *" %>
+          <%= f.input :photo, as: :file %>
+        </div>
+        <div class="biotop-form-input">
+          <%= f.button :submit, value: 'Validation' %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="biotop-herbe-espece">
+    <%= image_tag('faune/hauteherbe.png') %>
   </div>
 
 </div>
