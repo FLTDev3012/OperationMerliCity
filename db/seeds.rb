@@ -109,40 +109,80 @@ espece_categorie_oiseau1 = EspeceCategorie.create(user: user1, type_espece_categ
 espece_categorie_oiseau1.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
 espece_categorie_oiseau1.save
 
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Charadrius_alexandrinus_0711.jpg/640px-Charadrius_alexandrinus_0711.jpg")
+espece_oiseau1 = Espece.create(user: user1, espece_categorie: espece_categorie_oiseau1, nom: "Gravelot à collier interrompu", description: "Le Gravelot à collier interrompu, petit échassier des plages de Merlimont, se distingue par son plumage crème ponctué de nuances brunes et son collier noir caractéristique. Cette espèce délicate trouve refuge sur les plages sablonneuses, où elle patrouille à la recherche d'insectes, de petits crustacés, et de vers. En période de reproduction, observez ses danses nuptiales fascinantes, un spectacle emblématique des côtes de Pas-de-Calais.")
+espece_oiseau1.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+espece_oiseau1.save
+
 file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Drosselrohrs%C3%A4nger_Great_reed_warbler.jpg/640px-Drosselrohrs%C3%A4nger_Great_reed_warbler.jpg")
 espece_categorie_oiseau2 = EspeceCategorie.create(user: user1, type_espece_categorie: type_espece_categorie1, categorie: "Rousserolle effarvatte")
 espece_categorie_oiseau2.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
 espece_categorie_oiseau2.save
+
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Drosselrohrs%C3%A4nger_Great_reed_warbler.jpg/640px-Drosselrohrs%C3%A4nger_Great_reed_warbler.jpg")
+espece_oiseau2 = Espece.create(user: user1, espece_categorie: espece_categorie_oiseau2, nom: "Rousserolle effarvatte", description: "La Rousserolle effarvatte, oiseau chanteur discret des zones de roseaux et des marais de Merlimont, arbore un plumage brunâtre et terne. Son chant mélodieux, bien que discret, ajoute une symphonie naturelle aux douces brises des milieux humides. Également migratrice, elle traverse les cieux, ajoutant une touche de grâce à l'écosystème local.")
+espece_oiseau2.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+espece_oiseau2.save
 
 file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/European_stonechat2.jpg/220px-European_stonechat2.jpg")
 espece_categorie_oiseau3 = EspeceCategorie.create(user: user1, type_espece_categorie: type_espece_categorie1, categorie: "Tarier pâtre")
 espece_categorie_oiseau3.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
 espece_categorie_oiseau3.save
 
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/European_stonechat2.jpg/220px-European_stonechat2.jpg")
+espece_oiseau3 = Espece.create(user: user1, espece_categorie: espece_categorie_oiseau3, nom: "Tarier pâtre", description: "Oiseau migrateur aux couleurs vives, le Tarier pâtre s'épanouit dans les prairies et champs de Merlimont. Son plumage brun et orange offre une toile de fond contrastée lorsqu'il chasse insectes et larves sur le sol. Pendant la saison des amours, observez ces petits danseurs aériens exécuter des acrobaties pour conquérir un partenaire.")
+espece_oiseau3.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+espece_oiseau3.save
+
 file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Meadow_pipit_%28Anthus_pratensis%29_Oppdal.jpg/1200px-Meadow_pipit_%28Anthus_pratensis%29_Oppdal.jpg")
 espece_categorie_oiseau4 = EspeceCategorie.create(user: user1, type_espece_categorie: type_espece_categorie1, categorie: "Pipit farlouse")
 espece_categorie_oiseau4.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
 espece_categorie_oiseau4.save
+
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Meadow_pipit_%28Anthus_pratensis%29_Oppdal.jpg/1200px-Meadow_pipit_%28Anthus_pratensis%29_Oppdal.jpg")
+espece_oiseau4 = Espece.create(user: user1, espece_categorie: espece_categorie_oiseau4, nom: "Pipit farlouse", description: "Le Pipit farlouse, avec son plumage marron discret, est un habitant fréquent des prairies de Merlimont. Agile et rapide, il se déplace en sautillant, dénichant des insectes et des graines. Lorsqu'il prend son envol, ses trilles mélodieux ajoutent une symphonie naturelle à la campagne environnante.")
+espece_oiseau4.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+espece_oiseau4.save
 
 file = URI.open("https://upload.wikimedia.org/wikipedia/commons/f/fc/Larus_argentatus_1.JPG")
 espece_categorie_oiseau5 = EspeceCategorie.create(user: user1, type_espece_categorie: type_espece_categorie1, categorie: "Goéland argenté")
 espece_categorie_oiseau5.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
 espece_categorie_oiseau5.save
 
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/f/fc/Larus_argentatus_1.JPG")
+espece_oiseau5 = Espece.create(user: user1, espece_categorie: espece_categorie_oiseau5, nom: "Goéland argenté", description: "Majestueux et imposant, le Goéland argenté survole les plages de Merlimont, scrutant les eaux pour sa proie. Son plumage argenté et ses cris distinctifs en font un résident notable du littoral. Cet oiseau opportuniste joue un rôle crucial dans l'équilibre de l'écosystème côtier.")
+espece_oiseau5.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+espece_oiseau5.save
+
 file = URI.open("https://www.photos-neuch.net/Images/Faune/Oiseaux/bruant_r.jpg")
 espece_categorie_oiseau6 = EspeceCategorie.create(user: user1, type_espece_categorie: type_espece_categorie1, categorie: "Bruant des roseaux")
 espece_categorie_oiseau6.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
 espece_categorie_oiseau6.save
+
+file = URI.open("https://www.photos-neuch.net/Images/Faune/Oiseaux/bruant_r.jpg")
+espece_oiseau6 = Espece.create(user: user1, espece_categorie: espece_categorie_oiseau6, nom: "Bruant des roseaux", description: "Le Bruant des roseaux, avec son plumage rayé brun et beige, trouve son habitat parmi les roseaux des zones humides. Son chant mélodieux est une composition harmonieuse qui se mêle aux murmures des roseaux, créant une atmosphère unique dans les marais de Merlimont.")
+espece_oiseau6.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+espece_oiseau6.save
 
 file = URI.open("https://upload.wikimedia.org/wikipedia/commons/8/8c/Northern-Fulmar_2.jpg")
 espece_categorie_oiseau7 = EspeceCategorie.create(user: user1, type_espece_categorie: type_espece_categorie1, categorie: "Fulmar boréal")
 espece_categorie_oiseau7.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
 espece_categorie_oiseau7.save
 
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/8/8c/Northern-Fulmar_2.jpg")
+espece_oiseau7 = Espece.create(user: user1, espece_categorie: espece_categorie_oiseau7, nom: "Fulmar boréal", description: "Voguant majestueusement au-dessus des vagues, le Fulmar boréal, au plumage blanc et gris, niche sur les falaises côtières de Merlimont. Son vol gracieux et son cri distinctif ajoutent une dimension marine à l'écosystème côtier.")
+espece_oiseau7.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+espece_oiseau7.save
+
 file = URI.open("https://upload.wikimedia.org/wikipedia/commons/5/5a/Sturnus_vulgaris_2_%28Marek_Szczepanek%29.jpg")
 espece_categorie_oiseau8 = EspeceCategorie.create(user: user1, type_espece_categorie: type_espece_categorie1, categorie: "Étourneau sansonnet")
 espece_categorie_oiseau8.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
 espece_categorie_oiseau8.save
+
+file = URI.open("https://upload.wikimedia.org/wikipedia/commons/5/5a/Sturnus_vulgaris_2_%28Marek_Szczepanek%29.jpg")
+espece_oiseau8 = Espece.create(user: user1, espece_categorie: espece_categorie_oiseau8, nom: "Étourneau sansonnet", description: "L'Étourneau sansonnet, avec son plumage moucheté de noir et de blanc, forme d'impressionnantes murmurations dans le ciel de Merlimont. Ces ballets aériens, où des milliers d'oiseaux évoluent harmonieusement, offrent un spectacle saisissant, en particulier au crépuscule.")
+espece_oiseau8.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+espece_oiseau8.save
 
 puts "Les Oiseaux EspeceCategorie Oiseau 🕊️ ont etaientt crees 🦊 🐬..."
 puts " "
@@ -152,6 +192,10 @@ file = URI.open("https://upload.wikimedia.org/wikipedia/commons/4/44/Lepus_europ
 espece_categorie_mamterre1 = EspeceCategorie.create(user: user1, type_espece_categorie: type_espece_categorie2, categorie: "Lièvre d'Europe")
 espece_categorie_mamterre1.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
 espece_categorie_mamterre1.save
+
+# espece_oiseau1 = Espece.create(user: user1, espece_categorie: espece_categorie_oiseau1, nom: "Gravelot à collier interrompu", description: "")
+# espece_oiseau1.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
+# espece_oiseau1.save
 
 file = URI.open("https://upload.wikimedia.org/wikipedia/commons/9/9d/Fox_at_the_British_Wildlife_Centre%2C_Newchapel%2C_Surrey_-_geograph.org.uk_-_2221750.jpg")
 espece_categorie_mamterre2 = EspeceCategorie.create(user: user1, type_espece_categorie: type_espece_categorie2, categorie: "Renard roux")
@@ -379,6 +423,13 @@ file = URI.open("https://www.federation-peche-allier.fr/wp-content/uploads/2017/
 espece_poisson9 = Espece.create(user: user1, espece_categorie: espece_categorie_poisson2, nom: "Truite fario", description: "description de la truite")
 espece_poisson9.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
 espece_poisson9.save
+
+
+
+
+
+
+
 
 puts "Activite en cours de creation ma couille... 🏄"
 
