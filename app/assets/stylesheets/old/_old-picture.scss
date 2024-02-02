@@ -65,6 +65,19 @@
   z-index: 10;
 }
 
+.les-futur-photo-scroll {
+  position: relative;
+  z-index: 10;
+  padding: 0 40px 40px 40px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+}
+
+.scroll-cards__item img {
+  width: 100%;
+}
+
 
 .image-type-one-container {
   display: flex;
@@ -120,8 +133,6 @@
 
 .wrapper-ctn {
   padding: 2rem;
-  background: #003;
-  color: #fff;
 }
 
 .wrapper {
@@ -133,7 +144,7 @@
   counter-reset: card;
   position: relative;
   display: block;
-  padding-bottom: 120vh;
+  padding-bottom: 40vh;
 }
 
 .scroll-cards > .scroll-cards__item + .scroll-cards__item {
@@ -145,28 +156,28 @@
   color: #000;
   position: sticky;
   top: max(16vh, 10vh);
-  padding: 2rem 1.5rem;
-  min-height: 19rem;
-  background: #fff;
-  box-shadow: 0 2px 40px rgba(0, 0, 0, 0.1);
-  width: calc(100% - 5 * var(--offset));
   z-index: 10;
+  border: 10px solid #efecdb;
+}
+
+.scroll-cards__item img {
+  filter: saturate(40%) sepia(30%) hue-rotate(5deg);
 }
 
 
 
 .scroll-cards__item:nth-of-type(1) {
-  transform: rotate(-5deg);
+  transform: rotate(0deg);
 }
 .scroll-cards__item:nth-of-type(2) {
   transform: rotate(5deg);
 }
 .scroll-cards__item:nth-of-type(3) {
-  transform: rotate(10deg);
+  transform: rotate(-5deg);
 }
 .scroll-cards__item:nth-of-type(4) {
-  transform: rotate(15deg);
+  transform: rotate(3deg);
 }
 .scroll-cards__item:nth-of-type(5) {
-  transform: rotate(20deg);
+  transform: rotate(-3deg);
 }
