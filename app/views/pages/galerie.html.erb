@@ -38,7 +38,7 @@
         <%= image_tag("galerie/galerie6", alt: "Image de merlimont") %>
       </div>
 
-      <div class="galerie-one-pic" onclick="openImagePopup('/assets/galerie/galerie7.jpg')">
+      <div class="galerie-one-pic" onclick="openImagePopup('/assets/galerie/galerie7.png')">
         <%= image_tag("galerie/galerie7", alt: "Image de merlimont") %>
       </div>
 
@@ -89,9 +89,9 @@
 </div>
 
 <div id="image-popup" class="image-popup">
-  <span class="close-btn" onclick="closeImagePopup()">&times;</span>
-  <div class="div-img">
-    <img id="popup-image" src="" alt="Image en grand">
+  <img id="popup-image" src="" alt="Image en grand">
+  <div class="span-container">
+    <span class="close-btn" onclick="closeImagePopup()">&times;</span>
   </div>
 </div>
 

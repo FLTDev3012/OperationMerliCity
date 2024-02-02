@@ -106,13 +106,7 @@ body.modal-open {
   -webkit-backdrop-filter: blur(6px);
 }
 
-.div-img {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 
 #popup-image {
   max-width: 80%;
@@ -122,11 +116,21 @@ body.modal-open {
   border: 3px solid #e1e1e1;
 }
 
-.close-btn {
+.span-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 30px;
+  right: 60px;
+  border-radius: 50%;
+  border: 2px solid #ffffff36;
+}
+
+.close-btn {
   font-size: 30px;
-  color: #fff;
+  color: #ffffffb5;
   cursor: pointer;
 }
