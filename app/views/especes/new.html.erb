@@ -8,7 +8,7 @@
     <div class="biotop-form-formulaire">
       <%= simple_form_for @espece do |f| %>
         <div class="form-select-espece">
-          <%= f.collection_select :espece_categorie_id, EspeceCategorie.order(:categorie), :id, :categorie, prompt: "Sélectionnez l'espece découverte" %>
+          <%= f.collection_select :espece_categorie_id, EspeceCategorie.order(:categorie), :id, :categorie, prompt: "Sélectionnez l'éspéce découverte" %>
           <p>Si l'éspéce n'as pas encore été repertorié clic <%= link_to "ici", new_espece_category_path %> ?</p>
         </div>
         <div class="biotop-form-input-input">

@@ -14,75 +14,103 @@
     <h1>Vitrine de Merlimont</h1>
     <div class="container-grid">
 
-      <div class="galerie-one-pic">
+      <div class="galerie-one-pic" onclick="openImagePopup('/assets/galerie/galerie1.jpg')">
         <%= image_tag("galerie/galerie1", alt: "Image de merlimont") %>
       </div>
 
-      <div class="galerie-one-pic">
+      <div class="galerie-one-pic" onclick="openImagePopup('/assets/galerie/galerie2.jpg')">
         <%= image_tag("galerie/galerie2", alt: "Image de merlimont") %>
       </div>
 
-      <div class="galerie-one-pic">
+      <div class="galerie-one-pic" onclick="openImagePopup('/assets/galerie/galerie3.jpg')">
         <%= image_tag("galerie/galerie3", alt: "Image de merlimont") %>
       </div>
 
-      <div class="galerie-one-pic">
+      <div class="galerie-one-pic" onclick="openImagePopup('/assets/galerie/galerie4.jpg')">
         <%= image_tag("galerie/galerie4", alt: "Image de merlimont") %>
       </div>
 
-      <div class="galerie-one-pic">
+      <div class="galerie-one-pic" onclick="openImagePopup('/assets/galerie/galerie5.jpg')">
         <%= image_tag("galerie/galerie5", alt: "Image de merlimont") %>
       </div>
 
-      <div class="galerie-one-pic">
+      <div class="galerie-one-pic" onclick="openImagePopup('/assets/galerie/galerie6.jpg')">
         <%= image_tag("galerie/galerie6", alt: "Image de merlimont") %>
       </div>
 
-      <div class="galerie-one-pic">
+      <div class="galerie-one-pic" onclick="openImagePopup('/assets/galerie/galerie7.png')">
+        <%= image_tag("galerie/galerie7", alt: "Image de merlimont") %>
+      </div>
+
+      <div class="galerie-one-pic" onclick="openImagePopup('/assets/galerie/galerie8.jpg')">
         <%= image_tag("galerie/galerie8", alt: "Image de merlimont") %>
       </div>
 
-      <div class="galerie-one-pic">
+      <div class="galerie-one-pic" onclick="openImagePopup('/assets/galerie/galerie9.jpg')">
         <%= image_tag("galerie/galerie9", alt: "Image de merlimont") %>
       </div>
 
-      <div class="galerie-one-pic">
+      <div class="galerie-one-pic" onclick="openImagePopup('/assets/galerie/galerie10.jpg')">
         <%= image_tag("galerie/galerie10", alt: "Image de merlimont") %>
       </div>
 
-      <div class="galerie-one-pic">
+      <div class="galerie-one-pic" onclick="openImagePopup('/assets/galerie/galerie11.jpg')">
         <%= image_tag("galerie/galerie11", alt: "Image de merlimont") %>
       </div>
 
-      <div class="galerie-one-pic">
+      <div class="galerie-one-pic" onclick="openImagePopup('/assets/galerie/galerie12.jpg')">
         <%= image_tag("galerie/galerie12", alt: "Image de merlimont") %>
       </div>
 
-      <div class="galerie-one-pic">
+      <div class="galerie-one-pic" onclick="openImagePopup('/assets/galerie/galerie13.jpg')">
         <%= image_tag("galerie/galerie13", alt: "Image de merlimont") %>
       </div>
 
-      <div class="galerie-one-pic">
+      <div class="galerie-one-pic" onclick="openImagePopup('/assets/galerie/galerie14.jpg')">
         <%= image_tag("galerie/galerie14", alt: "Image de merlimont") %>
       </div>
 
-      <div class="galerie-one-pic">
+      <div class="galerie-one-pic" onclick="openImagePopup('/assets/galerie/galerie15.jpg')">
         <%= image_tag("galerie/galerie15", alt: "Image de merlimont") %>
       </div>
 
-      <div class="galerie-one-pic">
+      <div class="galerie-one-pic" onclick="openImagePopup('/assets/galerie/galerie16.jpg')">
         <%= image_tag("galerie/galerie16", alt: "Image de merlimont") %>
       </div>
 
-      <div class="galerie-one-pic">
+      <div class="galerie-one-pic" onclick="openImagePopup('/assets/galerie/galerie17.jpg')">
         <%= image_tag("galerie/galerie17", alt: "Image de merlimont") %>
       </div>
 
-      <div class="galerie-one-pic">
-        <%= image_tag("galerie/galerie18", alt: "Image de merlimont") %>
-      </div>
 
 
     </div>
   </div>
 </div>
+
+<div id="image-popup" class="image-popup">
+  <img id="popup-image" src="" alt="Image en grand">
+  <div class="span-container">
+    <span class="close-btn" onclick="closeImagePopup()">&times;</span>
+  </div>
+</div>
+
+<script>
+  function openImagePopup(imageSrc) {
+    var popup = document.getElementById('image-popup');
+    var popupImage = document.getElementById('popup-image');
+
+    popupImage.src = imageSrc;
+    popup.style.display = 'flex';
+
+    document.body.classList.add('modal-open');
+  }
+
+  function closeImagePopup() {
+    var popup = document.getElementById('image-popup');
+    popup.style.display = 'none';
+
+    document.body.classList.remove('modal-open');
+  }
+
+</script>
