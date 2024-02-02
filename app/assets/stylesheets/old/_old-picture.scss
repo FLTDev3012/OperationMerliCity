@@ -109,3 +109,64 @@
   object-fit: cover;
   filter: saturate(40%) sepia(30%) hue-rotate(5deg);
 }
+
+
+
+//
+
+.wrapper-ctn, .wrapper-ctn:before, .wrapper-ctn:after {
+  box-sizing: border-box;
+}
+
+.wrapper-ctn {
+  padding: 2rem;
+  background: #003;
+  color: #fff;
+}
+
+.wrapper {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.scroll-cards {
+  counter-reset: card;
+  position: relative;
+  display: block;
+  padding-bottom: 120vh;
+}
+
+.scroll-cards > .scroll-cards__item + .scroll-cards__item {
+  margin-top: 40vh;
+}
+
+
+.scroll-cards__item {
+  color: #000;
+  position: sticky;
+  top: max(16vh, 10vh);
+  padding: 2rem 1.5rem;
+  min-height: 19rem;
+  background: #fff;
+  box-shadow: 0 2px 40px rgba(0, 0, 0, 0.1);
+  width: calc(100% - 5 * var(--offset));
+  z-index: 10;
+}
+
+
+
+.scroll-cards__item:nth-of-type(1) {
+  transform: rotate(-5deg);
+}
+.scroll-cards__item:nth-of-type(2) {
+  transform: rotate(5deg);
+}
+.scroll-cards__item:nth-of-type(3) {
+  transform: rotate(10deg);
+}
+.scroll-cards__item:nth-of-type(4) {
+  transform: rotate(15deg);
+}
+.scroll-cards__item:nth-of-type(5) {
+  transform: rotate(20deg);
+}
