@@ -59,6 +59,16 @@
   margin: 1rem 0;
 }
 
+.faune-main-shadow-bottom {
+  content: "";
+  background: linear-gradient(180deg, rgba(38,35,30,0) 0%, #0f2933 100%);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 5;
+}
+
 // --- three pic ----
 
 .faune-main-three-pic-container {
@@ -69,6 +79,7 @@
   bottom: 0;
   right: 60px;
   transform: translateY(40%);
+  z-index: 10;
 }
 
 .faune-main-three-pic-content {
