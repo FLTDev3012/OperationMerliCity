@@ -1,7 +1,7 @@
 .old-text-container {
   position: relative;
   z-index: 10;
-  min-height: 100vh;
+  padding: 20vh 10vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,4 +15,5 @@
   text-align: center;
   padding: 3rem;
   margin: 0;
+  text-shadow: 2px 2px 3px #f9f9f9;
 }

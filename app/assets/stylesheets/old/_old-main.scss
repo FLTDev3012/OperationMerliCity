@@ -95,6 +95,7 @@
 
 .old-return-btn {
   position: absolute;
+  z-index: 800;
 }
 
 .old-return-btn img {
@@ -109,6 +110,7 @@
   position: absolute;
   bottom: 10px;
   right: 40px;
+  z-index: 800;
 }
 
 .old-main-title h1{
@@ -117,22 +119,39 @@
   font-size: 5rem;
   color: #26231e;
   text-shadow: 3px 2px 3px #fff;
+  text-align: center;
 }
 
 .old-container footer {
   background-color: #26231E !important;
 }
 
-.old-button-return-top-container {
+.old-all-text-all-picture-container {
   position: relative;
+}
+
+.old-all-text-all-picture-top-shadow {
+  content: "";
+  background: linear-gradient(180deg, rgba(38,35,30,0) 0%, rgba(218,209,180,1) 100%);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 90;
+}
+
+#oldButtonContainer {
+  position: sticky;
+  bottom: 0;
   z-index: 10;
   display: flex;
   justify-content: flex-end;
+  opacity: 0;
+  transition: opacity 2s ease;
   padding: 40px;
 }
 
-.old-button-return-top-container a {
-  background-color: #26231E;
+#oldButtonContainer a {
   height: 60px;
   width: 60px;
   border-radius: 10px;
@@ -141,9 +160,13 @@
   align-items: center;
 }
 
-.old-button-return-top-container a img{
+#oldButtonContainer a img {
   width: 70%;
   height: 70%;
-  opacity: .8;
+  opacity: 0.3;
+}
 
+#oldButtonContainer.show {
+  opacity: 1;
+  transition: opacity 2s ease;
 }
