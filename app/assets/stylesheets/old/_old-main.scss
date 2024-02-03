@@ -95,6 +95,7 @@
 
 .old-return-btn {
   position: absolute;
+  z-index: 800;
 }
 
 .old-return-btn img {
@@ -123,16 +124,22 @@
   background-color: #26231E !important;
 }
 
-.old-button-return-top-container {
+.old-all-text-all-picture-container {
   position: relative;
+}
+
+#oldButtonContainer {
+  position: sticky;
+  bottom: 0;
   z-index: 10;
   display: flex;
   justify-content: flex-end;
+  opacity: 0;
+  transition: opacity 2s ease;
   padding: 40px;
 }
 
-.old-button-return-top-container a {
-  background-color: #26231E;
+#oldButtonContainer a {
   height: 60px;
   width: 60px;
   border-radius: 10px;
@@ -141,9 +148,13 @@
   align-items: center;
 }
 
-.old-button-return-top-container a img{
+#oldButtonContainer a img {
   width: 70%;
   height: 70%;
-  opacity: .8;
+  opacity: 0.3;
+}
 
+#oldButtonContainer.show {
+  opacity: 1;
+  transition: opacity 2s ease;
 }
