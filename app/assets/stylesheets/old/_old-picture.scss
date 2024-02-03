@@ -142,7 +142,7 @@
   counter-reset: card;
   position: relative;
   display: block;
-  padding-bottom: 40vh;
+  // padding-bottom: 20vh;
 }
 
 .scroll-cards > .scroll-cards__item + .scroll-cards__item {
@@ -153,10 +153,11 @@
 .scroll-cards__item {
   color: #000;
   position: sticky;
-  top: max(10vh, 10vh);
+  top: max(15vh, 10vh);
   z-index: 10;
   border: 10px solid #efecdb;
-  height: 80vh;
+  height: 70vh;
+  box-shadow: 0 10px 50px #53301b82;
 }
 
 
@@ -183,5 +184,8 @@
   transform: rotate(0deg);
 }
 .scroll-cards__item:nth-of-type(5) {
+  transform: rotate(1deg);
+}
+.scroll-cards__item:nth-of-type(6) {
   transform: rotate(-1deg);
 }
