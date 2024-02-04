@@ -25,6 +25,16 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # def update
   #   super
   # end
+  def update
+    # Utilisez resource.update_without_password pour mettre à jour sans mot de passe
+    if resource.update_without_password(account_update_params.except(:current_password))
+      # Logique personnalisée de redirection après une mise à jour réussie
+      redirect_to moncompte_path, notice: 'Profil mis à jour avec succès!'
+    else
+      # Si la mise à jour échoue, appelez simplement la méthode super
+      super
+    end
+  end
 
   # DELETE /resource
   # def destroy
@@ -72,9 +82,13 @@ class Users::RegistrationsController < Devise::RegistrationsController
     devise_parameter_sanitizer.permit(:account_update, keys: [:first_name, :last_name, :photo])
   end
 
+  def account_update_params
+    params.require(:user).permit(:email, :password, :password_confirmation, :current_password, :first_name, :last_name, :photo)
+  end
+
   # The path used after sign up.
   def after_sign_up_path_for(resource)
-    fauneflore_path
+    moncompte_path
   end
 
 end

@@ -5,7 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   def after_sign_up_path_for(resource)
-    faune_path
+    moncompte_path
   end
 
   has_many :biotops, dependent: :destroy
