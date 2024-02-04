@@ -142,6 +142,18 @@
               <form action="" id="form" class="faune-flore-form">
 
                 <div class="faune-flore-form-label-et-input">
+                  <label for="user_nom">Nom de l'explorateur :</label>
+                  <input type="nom" id="user_nom" name="user[nom]" required="required" autofocus="autofocus" autocomplete="nom">
+                  <span id="nom-indicator" class="nom-validity"></span>
+                </div>
+
+                <div class="faune-flore-form-label-et-input">
+                  <label for="user_prenom">Prenom de l'explorateur :</label>
+                  <input type="prenom" id="user_prenom" name="user[prenom]" required="required" autofocus="autofocus" autocomplete="prenom">
+                  <span id="prenom-indicator" class="prenom-validity"></span>
+                </div>
+
+                <div class="faune-flore-form-label-et-input">
                   <label for="user_email">Courrier e-mail de l'explorateur :</label>
                   <input type="email" id="user_email" name="user[email]" required="required" autofocus="autofocus" autocomplete="email" oninput="checkEmailValidity()">
                   <span id="email-indicator" class="email-validity"></span>
