@@ -15,6 +15,9 @@ class User < ApplicationRecord
 
   has_many :faunes, dependent: :destroy
 
+  validates :first_name, presence: true
+  validates :last_name, presence: true
+
   def admin?
     # Ajoutez ici la logique pour déterminer si l'utilisateur est un admin
     # Par exemple, si vous avez un champ boolean admin dans votre table users :
