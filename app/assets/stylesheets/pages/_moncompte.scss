@@ -24,14 +24,45 @@
   flex-direction: column;;
   justify-content: center;
   align-items: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .moncompte-title h1 {
   font-family: 'Amatic SC', cursive;
   font-size: 6rem;
-  margin-bottom: 2rem;
   color: $vertFaune;
+}
+
+.moncompte-all-user-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.moncompte-all-user-info {
+  background: #ffffff4d;
+  box-shadow: 0 8px 20px 0px  #df28a98a;
+  backdrop-filter: blur( 5px );-webkit-backdrop-filter: blur( 5px );
+  border-radius: 10px;
+  border: 3px solid rgba(102, 154, 46, 0.7);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.moncompte-all-user-info img {
+  width: 100px;
+  height: 100px;
+  margin-right: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(102, 154, 46, 0.7);
+}
+
+.moncompte-user-info p {
+  display: flex;
+  flex-direction: column;
 }
 
 .moncompte-title p {
@@ -43,10 +74,15 @@
   font-size: 1.5rem;
 }
 
+.moncompte-mes-recherches {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
 .moncompte-ajout-faune {
   margin-bottom: 3rem;
-  display: flex;
-  justify-content: center;
 }
 
 .moncompte-ajout-faune a {
@@ -64,7 +100,7 @@
 // toutes les recherche
 .moncompte-all-faune-container h2 {
   display: flex;
-  justify-content: center;
+  align-items: center;
   margin-bottom: 3rem;
   font-family: 'Amatic SC', cursive;
   color: $vertFaune;
@@ -72,6 +108,13 @@
 }
 
 .user-recherche-count {
-  font-size: 2rem;
+  font-size: 3rem;
   margin-left: 1rem;
+  color: #fff;
+}
+
+.moncompte-aucune-recherche {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
