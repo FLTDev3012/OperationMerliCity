@@ -4,27 +4,45 @@
   <div class="moncompte-content">
 
     <div class="moncompte-title">
-      <h1>Mon Compte de Chercheur</h1>
-      <% if current_user.photo.attached? %>
-        <%= image_tag current_user.photo.url %>
-      <% else %>
-        <%= image_tag "default_user_photo.png", alt: "Default User Photo" %>
-      <% end %>
-      <% if @user && @user.admin? %>
-        <p><%= @user.email %> <%= @user.first_name %> <%= @user.last_name %> <span class="user-status">|| Administrateur</span></p>
-      <% else %>
-        <p><%= @user.email %> <%= @user.first_name %> <%= @user.last_name %> <span class="user-status">|| Jeune pousse</span></p>
-      <% end %>
+      <h1>Mon Compte</h1>
+    </div>
+
+    <div class="moncompte-all-user-info-container">
+
+      <div class="moncompte-all-user-info">
+
+        <div class="moncompte-user-picture">
+          <% if current_user.photo.attached? %>
+            <%= image_tag current_user.photo.url %>
+          <% else %>
+            <%= image_tag "default_user_photo.png", alt: "Default User Photo" %>
+          <% end %>
+        </div>
+
+
+        <div class="moncompte-user-info">
+          <% if @user && @user.admin? %>
+          <div><%= @user.last_name %> <%= @user.first_name %></div>
+          <div><span class="user-status">Administrateur</span></div>
+          <% else %>
+          <div><%= @user.last_name %> <%= @user.first_name %></div>
+          <div><span class="user-status">Jeune pousse</span></div>
+          <% end %>
+        </div>
+
+      </div>
     </div>
 
 
 
-
     <div class="moncompte-all-faune-container">
-      <h2>Mes comptes rendus de recherches <span class="user-recherche-count"> ( <%= @user_recherche.count %> )</span></h2>
 
-      <div class="moncompte-ajout-faune">
-        <%= link_to "Ajouter une découverte", new_espece_path %>
+      <div class="moncompte-mes-recherches">
+        <h2>Mes recherches <span class="user-recherche-count"> ( <%= @user_recherche.count %> )</span></h2>
+
+        <div class="moncompte-ajout-faune">
+          <%= link_to "Ajouter une découverte", new_espece_path %>
+        </div>
       </div>
 
 
