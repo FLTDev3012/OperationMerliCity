@@ -6,9 +6,9 @@
     <div class="moncompte-title">
       <h1>Mon Compte de Chercheur</h1>
       <% if @user && @user.admin? %>
-        <p><%= @user.email %> <span class="user-status">|| Administrateur</span></p>
+        <p><%= @user.email %> <%= @user.first_name %> <%= @user.last_name %> <span class="user-status">|| Administrateur</span></p>
       <% else %>
-        <p class="user-status">Jeune Chercheur</p>
+        <p><%= @user.email %> <%= @user.first_name %> <%= @user.last_name %> <span class="user-status">|| Jeune pousse</span></p>
       <% end %>
     </div>
 
