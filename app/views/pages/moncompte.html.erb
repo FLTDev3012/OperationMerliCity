@@ -11,13 +11,15 @@
 
       <div class="moncompte-all-user-info">
 
-        <div class="moncompte-user-picture">
-          <% if current_user.photo.attached? %>
-            <%= image_tag current_user.photo.url %>
-          <% else %>
-            <%= image_tag "default_user_photo.png", alt: "Default User Photo" %>
-          <% end %>
-        </div>
+        <%= link_to edit_user_registration_path do  %>
+          <div class="moncompte-user-picture">
+            <% if current_user.photo.attached? %>
+              <%= image_tag current_user.photo.url %>
+            <% else %>
+              <%= image_tag "default_user_photo.png", alt: "Default User Photo" %>
+            <% end %>
+          </div>
+        <% end %>
 
 
         <div class="moncompte-user-info">
