@@ -5,6 +5,8 @@ import "bootstrap"
 
 const signUp = (event) => {
   event.preventDefault();
+  const nom = document.getElementById("user_nom").value;
+  const prenom = document.getElementById("user_prenom").value;
   const email = document.getElementById("user_email").value;
   const password = document.getElementById("user_password").value;
   const password_confirmation = document.getElementById("user_password_confirmation").value;
@@ -18,6 +20,8 @@ const signUp = (event) => {
     },
     body: JSON.stringify({
       "user": {
+        "last_name": nom,
+        "first_name": prenom,
         "email": email,
         "password": password,
         "password_confirmation": password_confirmation
