@@ -5,6 +5,11 @@
 
     <div class="moncompte-title">
       <h1>Mon Compte de Chercheur</h1>
+      <% if current_user.photo.attached? %>
+        <%= image_tag current_user.photo.url %>
+      <% else %>
+        <%= image_tag "default_user_photo.png", alt: "Default User Photo" %>
+      <% end %>
       <% if @user && @user.admin? %>
         <p><%= @user.email %> <%= @user.first_name %> <%= @user.last_name %> <span class="user-status">|| Administrateur</span></p>
       <% else %>

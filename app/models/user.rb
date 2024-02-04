@@ -18,6 +18,8 @@ class User < ApplicationRecord
   validates :first_name, presence: true
   validates :last_name, presence: true
 
+  has_one_attached :photo
+
   def admin?
     # Ajoutez ici la logique pour déterminer si l'utilisateur est un admin
     # Par exemple, si vous avez un champ boolean admin dans votre table users :
