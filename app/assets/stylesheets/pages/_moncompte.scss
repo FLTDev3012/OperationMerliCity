@@ -41,11 +41,11 @@
 }
 
 .moncompte-all-user-info {
-  background: rgba( 255, 255, 255, 0.3 );
-  box-shadow: 0 8px 20px 0px rgba(102, 154, 46, 0.33);
+  background: #ffffff4d;
+  box-shadow: 0 8px 20px 0px  #df28a98a;
   backdrop-filter: blur( 5px );-webkit-backdrop-filter: blur( 5px );
   border-radius: 10px;
-  border: 3px solid rgba(102, 154, 46, 0.34);
+  border: 3px solid rgba(102, 154, 46, 0.7);
   display: flex;
   align-items: center;
   padding: 10px;
@@ -57,7 +57,7 @@
   margin-right: 30px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid rgba(102, 154, 46, 0.34);
+  border: 3px solid rgba(102, 154, 46, 0.7);
 }
 
 .moncompte-user-info p {
@@ -111,4 +111,10 @@
   font-size: 3rem;
   margin-left: 1rem;
   color: #fff;
+}
+
+.moncompte-aucune-recherche {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

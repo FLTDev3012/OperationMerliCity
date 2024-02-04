@@ -1,6 +1,20 @@
-
-
 <div class="faune-home-container">
+
+  <% if user_signed_in? %>
+    <%= link_to moncompte_path do %>
+      <div class="moncompte-link-sticky-container">
+        <div class="moncompte-link-sticky">
+          <% if current_user.photo.attached? %>
+            <%= image_tag current_user.photo.url %>
+          <% else %>
+            <%= image_tag "default_user_photo.png", alt: "Default User Photo" %>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+
+
   <div id="top-of-page" class="faune-main-div">
 
     <%= image_tag "faune/faune_main.jpg", class:"faune-main-background" %>
@@ -187,8 +201,6 @@
 
 
   </div>
-
-
 
 </div>
 
