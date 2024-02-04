@@ -74,10 +74,16 @@
 
   </div>
 
-  <div class="biotop-herbe">
+  <% if @user_recherche.present? %>
+    <div class="biotop-herbe">
+      <div class="biotop-herbe-espece">
+        <%= image_tag('faune/hauteherbe.png') %>
+      </div>
+    </div>
+  <% else %>
     <div class="biotop-herbe-espece">
       <%= image_tag('faune/hauteherbe.png') %>
     </div>
-  </div>
+  <% end %>
 
 </div>
