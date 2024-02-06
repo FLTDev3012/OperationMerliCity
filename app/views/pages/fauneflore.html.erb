@@ -168,7 +168,6 @@
                 </div>
 
 
-
                 <div class="faune-flore-form-label-et-input">
                   <label for="user_password_confirmation">Confirmation du Mot de passe secret :</label>
                   <input type="password" id="user_password_confirmation" name="user[password_confirmation]" required="required" autocomplete="new-password" oninput="checkPasswordConfirmation()">
@@ -176,10 +175,14 @@
                 </div>
 
 
-
                 <div class="form-actions">
                   <input type="submit" value="C'est parti !">
                 </div>
+
+                <div class="faune-maitre-form-sign-in">
+                  <%= link_to "j'ai deja un compte",  new_user_session_path %>
+                </div>
+
               </form>
 
 
