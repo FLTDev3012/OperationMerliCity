@@ -5,6 +5,7 @@
 
     <div class="moncompte-title">
       <h1>Mon Compte</h1>
+      <%= link_to "Déconnexion", destroy_user_session_path, method: :delete, data: {turbo_method: :delete} %>
     </div>
 
     <div class="moncompte-all-user-info-container">
