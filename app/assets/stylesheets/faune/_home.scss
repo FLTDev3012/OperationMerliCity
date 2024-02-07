@@ -441,7 +441,13 @@
 .faune-maitre-form-title {
   display: flex;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+}
+
+.faune-maitre-form-title h2 {
+  font-family: 'Amatic SC', cursive !important;
+  color: $vertFaune;
+  font-size: 3.5rem;
 }
 
 .faune-maitre-form-sign-in {
