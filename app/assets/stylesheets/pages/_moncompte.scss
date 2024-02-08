@@ -139,17 +139,30 @@
 
 .moncompte-ajout-faune {
   margin-bottom: 3rem;
+  transition: all 0.5s ease;
 }
 
 .moncompte-ajout-faune a {
-  color: #fff;
+  color: #fffc;
   text-decoration: none;
-  background-color: $vertFaune;
   padding: 6px 12px;
-  border: 2px solid #fff;
+  border: 2px solid #669a2ea8;
+  background-color: $vertGlass;
   border-radius: 5px;
   font-weight: bold;
   font-size: 1.2rem;
+  transition: all 0.5s ease;
+}
+
+.moncompte-ajout-faune:hover {
+  transform: translateY(-3px);
+  transition: all 0.5s ease;
+}
+
+.moncompte-ajout-faune:hover a {
+  transform: translateY(-3px);
+  transition: all 0.5s ease;
+  background-color: rgba(102, 154, 46, 0.38);
 }
 
 
