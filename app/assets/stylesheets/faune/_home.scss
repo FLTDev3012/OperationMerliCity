@@ -527,16 +527,23 @@
 // if user connected ajax promise
 
 .faune-maitre-compte-connecter-ajax {
-  background-color: #669a2e26;
-  border: 2px solid #669A2E;
-  border-radius: 16px;
-  padding: 30px 20px;
-  display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 200px;
   flex-direction: column;
   display: none;
+
+  background-color: rgba(102, 154, 46, 0.149);
+  padding: 30px 20px;
+  position: relative;
+  z-index: 1000;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(102, 154, 46, 0.25);
+  border-right: 1px solid rgba(102, 154, 46, 0.1);
+  border-bottom: 1px solid rgba(102, 154, 46, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  backdrop-filter: blur(25px);
 }
 
 .faune-maitre-compte-connecter-ajax p {
@@ -567,15 +574,22 @@
 // if user connected
 
 .faune-maitre-compte-connecter {
-  background-color: #669a2e26;
-  border: 2px solid #669A2E;
-  border-radius: 16px;
-  padding: 30px 20px;
-  display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 200px;
   flex-direction: column;
+  display: flex;
+  background-color: rgba(102, 154, 46, 0.149);
+  padding: 30px 20px;
+  position: relative;
+  z-index: 1000;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(102, 154, 46, 0.25);
+  border-right: 1px solid rgba(102, 154, 46, 0.1);
+  border-bottom: 1px solid rgba(102, 154, 46, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  backdrop-filter: blur(25px);
 }
 
 

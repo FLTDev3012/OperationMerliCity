@@ -72,8 +72,9 @@ justify-content: center;
     margin: 10px;
     // border: 10px solid #fefae0;
     -webkit-filter: sepia(100%);
-    filter: sepia(100%);
+    filter: sepia(0%);
     transition-duration: 1s;
+    object-fit: cover;
 }
 
 .galerie-container .galerie-one-pic img:hover {
