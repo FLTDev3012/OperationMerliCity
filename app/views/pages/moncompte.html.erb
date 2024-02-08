@@ -8,31 +8,33 @@
       <%= link_to "Déconnexion", destroy_user_session_path, method: :delete, data: {turbo_method: :delete} %>
     </div>
 
-    <div class="moncompte-all-user-info-container">
+    <div class="moncompte-all-user-info-container-flex">
+      <div class="moncompte-all-user-info-container">
 
-      <div class="moncompte-all-user-info">
+        <div class="moncompte-all-user-info">
 
-        <%= link_to edit_user_registration_path do  %>
-          <div class="moncompte-user-picture">
-            <% if current_user.photo.attached? %>
-              <%= image_tag current_user.photo.url %>
+          <%= link_to edit_user_registration_path do  %>
+            <div class="moncompte-user-picture">
+              <% if current_user.photo.attached? %>
+                <%= image_tag current_user.photo.url %>
+              <% else %>
+                <%= image_tag "default_user_photo.png", alt: "Default User Photo" %>
+              <% end %>
+            </div>
+          <% end %>
+
+
+          <div class="moncompte-user-info">
+            <% if @user && @user.admin? %>
+            <div><%= @user.last_name %> <%= @user.first_name %></div>
+            <div><span class="user-status">Administrateur</span></div>
             <% else %>
-              <%= image_tag "default_user_photo.png", alt: "Default User Photo" %>
+            <div><%= @user.last_name %> <%= @user.first_name %></div>
+            <div><span class="user-status">Jeune pousse</span></div>
             <% end %>
           </div>
-        <% end %>
 
-
-        <div class="moncompte-user-info">
-          <% if @user && @user.admin? %>
-          <div><%= @user.last_name %> <%= @user.first_name %></div>
-          <div><span class="user-status">Administrateur</span></div>
-          <% else %>
-          <div><%= @user.last_name %> <%= @user.first_name %></div>
-          <div><span class="user-status">Jeune pousse</span></div>
-          <% end %>
         </div>
-
       </div>
     </div>
 
