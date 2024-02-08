@@ -533,7 +533,7 @@
   flex-direction: column;
   display: none;
 
-  background-color: rgba(102, 154, 46, 0.149);
+  background-color: rgba(102, 154, 46, 0);
   padding: 30px 20px;
   position: relative;
   z-index: 1000;
@@ -579,7 +579,7 @@
   min-height: 200px;
   flex-direction: column;
   display: flex;
-  background-color: rgba(102, 154, 46, 0.149);
+  background-color: rgba(102, 154, 46, 0);
   padding: 30px 20px;
   position: relative;
   z-index: 1000;
@@ -590,6 +590,19 @@
   border-radius: 10px;
   overflow: hidden;
   backdrop-filter: blur(25px);
+}
+
+.faune-maitre-compte-connecter .moncompte-all-user-info {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+
+.faune-maitre-compte-connecter .moncompte-all-user-info img {
+  margin-right: 30px;
+  height: 70px;
+  width: 70px;
 }
 
 
@@ -605,7 +618,7 @@
 }
 
 .faune-maitre-compte-connecter a {
-  color: $vertFaune;
+  color: #fff;
   font-size: 1.3rem;
   transition: 0.3s;
 }

@@ -20,6 +20,8 @@ class PagesController < ApplicationController
   end
 
   def fauneflore
+    @user = current_user
+
     @resource = User.new
     @resource_name = :user
     render 'pages/fauneflore'
