@@ -18,4 +18,11 @@
   object-fit: cover;
   border: 3px solid rgba(102, 154, 46, 0.34);
   opacity: .8;
+  transition: all 0.4s ease-in-out;
+}
+
+.moncompte-link-sticky-container img:hover {
+  opacity: 1;
+  box-shadow: 0 1px 20px 0px #67b99d;
+  border: 3px solid $vertFaune;
 }
