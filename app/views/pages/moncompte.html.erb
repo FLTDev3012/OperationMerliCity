@@ -56,7 +56,7 @@
           <% @user_recherche.each do |animal| %>
 
               <%= link_to espece_path(animal) do %>
-                <div class="card-espece-one-pic-name">
+                <div class="card-espece-one-pic-name ">
                   <% if animal.photo.attached? %>
                     <%= image_tag animal.photo, class: "card-espece-img" %>
                   <% else %>

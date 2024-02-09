@@ -10,27 +10,42 @@
 .card-espece-one-pic-name {
   z-index: 10;
   position: relative;
-  color: #ffffff;
+  color: #ffffff9e;
   margin-bottom: 2rem;
   display: flex;
-  border: 3px solid $vertFaune;
-  border-radius: 5px;
   height: 150px;
   align-items: center;
   background-color: #669a2e14;
   transition: 0.4s ease-out;
-  background: rgba( 255, 255, 255, 0.3 );
-  box-shadow: 0 8px 20px 0px rgba(102, 154, 46, 0.33);
-  backdrop-filter: blur( 5px );-webkit-backdrop-filter: blur( 5px );
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(102, 154, 46, 0.25);
+  border-right: 1px solid rgba(102, 154, 46, 0.1);
+  border-bottom: 1px solid rgba(102, 154, 46, 0.1);
   border-radius: 10px;
-  border: 3px solid rgba( 255, 255, 255, 0.18 );
+  overflow: hidden;
+  backdrop-filter: blur(25px);
+}
+
+.card-espece-one-pic-name::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -40%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+    transform: skewX(-15deg);
 }
 
 .card-espece-one-pic-name:hover {
-  background-color: rgba(102, 154, 46, 0.3);
+  background-color: rgba(102, 154, 46, 0.2);
   box-shadow: 0 8px 20px 0px rgba(102, 154, 46, 0.7);
+  box-shadow: 0 8px 20px 0px #67b99d;
   scale: 1.03;
   transform: translateY(-8px);
+  color: #fff;
 }
 
 .card-espece-circle-color {
@@ -53,7 +68,12 @@
   object-fit: cover;
   border-radius: 50%;
   margin-left: 10px;
-  border: 2px solid #fff;
+  border: 2px solid #ffffff9e;
+  transition: 0.4s ease-out;
+}
+
+.card-espece-one-pic-name:hover .card-espece-img   {
+  border: 2px solid $vertFaune;
 }
 
 
