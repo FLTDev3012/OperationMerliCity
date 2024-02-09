@@ -2,12 +2,12 @@
 
   <div class="espece-show-back">
     <%= link_to "< Retour", request.referer || type_espece_categories_path %>
+  </div>
+
+  <div class="espece-show-update-delte-btn">
+    <%= link_to "Modifier", edit_espece_path(@espece), class: "espece-show-modif" if policy(@espece).update? || current_user&.admin? %>
     <br>
-    <br>
-    <br>
-    <%= link_to "Modifier", edit_espece_path(@espece), class: "btn-noir" if policy(@espece).update? || current_user&.admin? %>
-    <br>
-    <%= link_to "Supprimer", espece_path(@espece), class: "btn-noir", data: { turbo_method: :delete, turbo_confirm: "Êtes-vous sûr de vouloir supprimer ?" } if policy(@espece).destroy? || current_user&.admin? %>
+    <%= link_to "Supprimer", espece_path(@espece), class: "espece-show-supp", data: { turbo_method: :delete, turbo_confirm: "Êtes-vous sûr de vouloir supprimer ?" } if policy(@espece).destroy? || current_user&.admin? %>
   </div>
 
   <div class="espece-show-title">

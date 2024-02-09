@@ -17,6 +17,35 @@
   font-size: 1.5rem;
 }
 
+.espece-show-update-delte-btn {
+  position: absolute;
+  right: 1rem;
+  z-index: 2;
+  display: flex;
+}
+
+.espece-show-update-delte-btn a {
+  padding: 8px 16px;
+  border-radius: 0 0 10px 10px;
+}
+
+.espece-show-update-delte-btn a:first-child{
+  margin-right: 1rem;
+}
+
+.espece-show-modif {
+  background-color: orange;
+  transition: all 0.4s ease-in-out;
+}
+
+.espece-show-modif:hover {
+  background-color: blueviolet;
+}
+
+.espece-show-supp {
+  background-color: red;
+}
+
 .espece-show-container a {
   color: #fff;
   font-family: 'Amatic SC', cursive;
