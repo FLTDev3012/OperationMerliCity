@@ -1,36 +1,80 @@
-<h2>Edit <%= resource_name.to_s.humanize %></h2>
+<div class="biotop-form-container">
 
-<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
-  <%= f.error_notification %>
-
-  <div class="form-inputs">
-    <%= f.input :email, required: true, autofocus: true %>
-
-    <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-      <p>Currently waiting confirmation for: <%= resource.unconfirmed_email %></p>
-    <% end %>
-
-    <%= f.input :password,
-                hint: "leave it blank if you don't want to change it",
-                required: false,
-                input_html: { autocomplete: "new-password" } %>
-    <%= f.input :password_confirmation,
-                required: false,
-                input_html: { autocomplete: "new-password" } %>
-    <!-- <%= f.input :current_password,
-                hint: "we need your current password to confirm your changes",
-                required: true,
-                input_html: { autocomplete: "current-password" } %> -->
-    <%= f.input :photo, as: :file, label: "Votre photo" %>
+  <div class="biotop-return-btn">
+    <%= link_to "< mon compte", moncompte_path %>
   </div>
 
-  <div class="form-actions">
-    <%= f.button :submit, "Update" %>
+  <div class="sign-in-form-container">
+    <div class="sign-in-form-content-container modif-user-padding">
+      <div class="sign-in-form-content">
+
+        <div class="biotop-form-titre">
+          <h2>Modifiez votre profil</h2>
+        </div>
+
+        <div class="biotop-form-formulaire-container">
+          <div class="biotop-form-formulaire">
+            <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+              <%= f.error_notification %>
+
+              <div class="form-inputs">
+                <div class="biotop-form-input-input">
+
+
+                  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+                    <p>Currently waiting confirmation for: <%= resource.unconfirmed_email %></p>
+                  <% end %>
+
+                  <%= f.input :last_name,
+                              required: false,
+                              input_html: { autocomplete: "Nom" },
+                              label: "Nom" %>
+
+                  <%= f.input :first_name,
+                              required: false,
+                              input_html: { autocomplete: "Prenom" },
+                              label: "Prenom" %>
+
+                  <%= f.input :email, required: false, autofocus: true %>
+
+                  <%= f.input :password,
+                              hint: "Laissez-le vide si vous ne souhaitez pas le changer",
+                              required: false,
+                              input_html: { autocomplete: "new-password" },
+                              label: "Mot de passe" %>
+
+                  <%= f.input :password_confirmation,
+                              required: false,
+                              input_html: { autocomplete: "new-password" },
+                              label: "Confirmation du Mot de passe" %>
+                  <!-- <%= f.input :current_password,
+                              hint: "we need your current password to confirm your changes",
+                              required: true,
+                              input_html: { autocomplete: "current-password" } %> -->
+                  <%= f.input :photo,
+                              as: :file,
+                              hint: "Laissez-le vide si vous ne souhaitez pas la changer",
+                              label: "Votre photo" %>
+                </div>
+              </div>
+
+              <div class="biotop-form-input">
+                <%= f.button :submit, "Modifier" %>
+              </div>
+            <% end %>
+
+            <div class="biotop-form-supp-account">
+              <%= button_to "Suppimer mon compte", registration_path(resource_name), data: { confirm: "Are you sure?", turbo_confirm: "Are you sure?" }, method: :delete %>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-<% end %>
 
-<h3>Cancel my account</h3>
+  <div class="biotop-herbe-espece">
+    <%= image_tag('faune/hauteherbe.png') %>
+  </div>
 
-<div>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?", turbo_confirm: "Are you sure?" }, method: :delete %></div>
-
-<%= link_to "Back", :back %>
+</div>

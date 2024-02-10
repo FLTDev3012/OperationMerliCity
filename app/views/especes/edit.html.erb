@@ -5,7 +5,7 @@
   </div>
 
   <div class="biotop-form-titre">
-    <h1>Ajoutez votre découverte</h1>
+    <h1>Modifiez votre découverte</h1>
   </div>
 
   <div class="biotop-form-formulaire-container">
@@ -16,7 +16,7 @@
           <p>Si l'éspéce n'as pas encore été repertorié clic <%= link_to "ici", new_espece_category_path %> ?</p>
         </div>
         <div class="biotop-form-input-input">
-          <%= f.input :photo, as: :file, label: "Votre photo *" %>
+          <%= f.input :photo, as: :file, label: "Votre photo *", hint: "Laissez vide si vous ne souhaitez pas la changer" %>
           <%= f.input :nom, placeholder: "Nom de l'éspéce", label: "Nom de l'éspéce *" %>
           <%= f.label :description, "Votre description *" %>
           <%= f.text_area :description, placeholder: ' Votre description', rows: 5 %>

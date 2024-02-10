@@ -16,7 +16,7 @@
         </div>
         <div class="biotop-form-input-input">
           <%= f.input :categorie, placeholder: 'Nom', label: "Nom de l'éspéce *" %>
-          <%= f.input :photo, as: :file %>
+          <%= f.input :photo, as: :file, hint: "Laissez vide si vous ne souhaitez pas la changer" %>
         </div>
         <div class="biotop-form-input">
           <%= f.button :submit, value: 'Validation' %>

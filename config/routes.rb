@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   get "galerie", to: "pages#galerie"
   get "merlimontdavant", to: "pages#merlimontdavant"
   get "about", to: "pages#about"
-  get "dashboard", to: "pages#dashboard"
+  get "dashboard", to: "pages#dashboard", constraints: ->(request) { request.env['warden'].authenticate? && request.env['warden'].user.admin? }
   get "faunecat", to: "pages#faunecat"
   get "univers", to: "pages#univers"
   get "moncompte", to: "pages#moncompte"

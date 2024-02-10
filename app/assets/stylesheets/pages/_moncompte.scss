@@ -15,6 +15,26 @@
   left: 100px;
 }
 
+.moncompte-delete-session-btn {
+  color: #fff;
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.3rem;
+  position: absolute;
+  top: 30px;
+  right: 100px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.moncompte-delete-session-btn:hover {
+  color: $vertFaune;
+}
+
+.moncompte-delete-session-btn p {
+  margin: 0;
+}
+
 .moncompte-content {
   padding: 60px 60px 0 60px;
 }
@@ -90,6 +110,10 @@
   transition: all 1.3s ease;
 }
 
+.moncompte-all-user-info {
+  color: #fff;
+}
+
 .moncompte-all-user-info::before
 {
     content: '';
@@ -119,6 +143,10 @@
 .moncompte-user-info p {
   display: flex;
   flex-direction: column;
+}
+
+.moncompte-user-nom {
+  font-size: 1.2rem;
 }
 
 .moncompte-title p {
