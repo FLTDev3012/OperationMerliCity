@@ -32,7 +32,7 @@
 
 
   <div class="biotop-herbe-espece">
-    <% if ['Poissons', 'Crustacés', 'Mammifères marins'].include?(@espece) %>
+    <% if ['Poissons', 'Crustacés', 'Mammifères marins'].include?(@espece.espece_categorie.type_espece_categorie.categorie) %>
       <%= image_tag('emplacements/algues.svg') %>
     <% else %>
       <%= image_tag('faune/hauteherbe.png') %>
