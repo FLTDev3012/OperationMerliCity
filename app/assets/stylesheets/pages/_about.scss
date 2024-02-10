@@ -36,19 +36,14 @@
 }
 
 .about-text-sable {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
 }
 
-.about-text-sable p {
-  margin-bottom: 0;
-  margin-top: 0;
-  font-family: 'Akaya Telivigala', cursive;
-  font-size: 3rem;
-  padding: 0rem 7rem 0rem 7rem;
-  text-align: center;
-  color: $sableHumide;
-  -webkit-text-stroke: 0.4rem $sableSemiHumide;
-  paint-order: stroke fill;
+.about-text-sable img {
+  width: 80%;
+  height: auto;
 }
 
 .about-trait-sable-container {
@@ -59,6 +54,55 @@
 .about-trait-sable-container img {
   width: 50%;
   height: auto;
+}
+
+.about-presentation-container {
+  content: "";
+  height: 80vh;
+  width: 100%;
+  background-color: $sableHumide;
+  display: flex;
+  justify-content: center;
+}
+
+.about-presentation-content {
+  width: 90%;
+  height: 100%;
+  content: "";
+  background-color: $sable;
+  display: flex;
+
+}
+.about-presentation-left {
+  width: 50%;
+  height: 100%;
+  background-color: red;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.about-presentation-left-image {
+  height: 90%;
+  width: 80%;
+  background-color: green;
+  position: relative;
+  z-index: 100;
+}
+
+.about-presentation-left-background {
+  background-color: purple;
+  position: absolute;
+  bottom: 0;
+  height: 60%;
+  width: 100%;
+
+}
+
+.about-presentation-right {
+  width: 50%;
+  height: 100%;
+  background-color: rgb(242, 255, 0);
 }
 
 .about-mer-container img {
