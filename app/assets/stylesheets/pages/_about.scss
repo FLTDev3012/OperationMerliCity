@@ -38,11 +38,11 @@
 .about-text-sable {
   display: flex;
   justify-content: center;
-  padding: 2rem 0;
+  padding: 4rem 0;
 }
 
 .about-text-sable img {
-  width: 80%;
+  width: 70%;
   height: auto;
 }
 
@@ -52,7 +52,7 @@
 }
 
 .about-trait-sable-container img {
-  width: 50%;
+  width: 35%;
   height: auto;
 }
 
@@ -60,9 +60,9 @@
   content: "";
   height: 80vh;
   width: 100%;
-  background-color: $sableHumide;
   display: flex;
   justify-content: center;
+  margin: 40vh 0;
 }
 
 .about-presentation-content {
@@ -71,12 +71,14 @@
   content: "";
   background-color: $sable;
   display: flex;
+  box-shadow: 17px 40px 13px rgba(0, 0, 0, 0.13);
+
 
 }
 .about-presentation-left {
   width: 50%;
   height: 100%;
-  background-color: red;
+  // background-color: red;
   position: relative;
   display: flex;
   justify-content: center;
@@ -90,19 +92,65 @@
   z-index: 100;
 }
 
+.about-presentation-left-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: right center;
+
+}
+
 .about-presentation-left-background {
-  background-color: purple;
+  background-color: $sableHumide;
   position: absolute;
   bottom: 0;
-  height: 60%;
+  height: 65%;
   width: 100%;
 
 }
 
-.about-presentation-right {
+.about-presentation-right-container {
   width: 50%;
   height: 100%;
-  background-color: rgb(242, 255, 0);
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Akaya Telivigala', cursive;
+  background-color: rgba(255, 255, 255, 0.69);
+  overflow: hidden;
+  backdrop-filter: blur(25px);
+}
+
+.about-presentation-right-content {
+  height: 70%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.role {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.name {
+  font-size: 3rem;
+  color: $sableHumide;
+  margin: 0;
+}
+
+.description {
+  font-size: 1.2rem;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+.about-presentation-right-content a {
+  background-color: $sableHumide;
+  padding: 1rem 2rem;
+  color: #fff;
 }
 
 .about-mer-container img {
