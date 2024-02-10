@@ -3,6 +3,11 @@
   background-color: $bleuFaune;
   color: #fff;
   font-family: 'ABeeZee', sans-serif;
+  position: relative;
+}
+
+.biotop-form-container .form-text {
+  color: #ffffffab;
 }
 
 .biotop-form-titre {
@@ -112,4 +117,28 @@
   padding: 8px 16px;
   color: #eaeaea;
   border-radius: 5px;
+}
+
+.biotop-form-supp-account {
+  display: flex;
+  justify-content: flex-end;
+  padding: 2rem 0 1rem 0;
+}
+
+.biotop-form-supp-account button {
+  border: none;
+  background-color: $vertFaune;
+  padding: 8px 16px;
+  color: #fff;
+  border-radius: 10px;
+  transition: all 0.3s ease-out;
+}
+
+.biotop-form-supp-account button:hover {
+  background-color: #111;
+
+}
+
+.modif-user-padding {
+  padding: 4rem 0;
 }
