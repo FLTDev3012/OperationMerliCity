@@ -38,11 +38,22 @@
 .about-text-sable {
   display: flex;
   justify-content: center;
-  padding: 4rem 0;
+  padding: 15vh 0 5vh 0;
 }
 
 .about-text-sable img {
   width: 70%;
+  height: auto;
+}
+
+.about-text-sable-role {
+  display: flex;
+  justify-content: center;
+  padding: 20vh 0 10vh 0;
+}
+
+.about-text-sable-role img {
+  width: 30%;
   height: auto;
 }
 
@@ -62,18 +73,25 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 40vh 0;
+  margin: 30vh 0;
+}
+
+.about-presentation-container-first {
+  content: "";
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0;
 }
 
 .about-presentation-content {
   width: 90%;
-  height: 100%;
+  min-height: 100%;
   content: "";
   background-color: $sable;
   display: flex;
   box-shadow: 17px 40px 13px rgba(0, 0, 0, 0.13);
-
-
 }
 .about-presentation-left {
   width: 50%;
@@ -87,7 +105,6 @@
 .about-presentation-left-image {
   height: 90%;
   width: 80%;
-  background-color: green;
   position: relative;
   z-index: 100;
 }
