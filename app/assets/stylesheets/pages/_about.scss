@@ -1,17 +1,14 @@
 .about-container {
   background-color: $sable;
+  height: fit-content;
 }
 
 .about-main-container {
   min-height: 100vh;
-  background-color: #fffac8;
   position: relative;
 }
 
-.about-second {
-  min-height: 300vh;
-  background-color: #fffac8;
-}
+
 .about-main-container section
 {
     position: relative;
@@ -36,15 +33,32 @@
 
 .about-text-sable-main {
   position: absolute;
-  top: 70vh;
+  top: 60vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.about-text-sable-main img {
+.about-text-sable-main img:first-child {
+  z-index: 100;
+  position: relative;
+  height: auto;
+}
 
+.about-text-sable-main img:second-child {
+  padding: 4rem 0;
+  z-index: 10;
+  position: relative;
+  height: auto;
+
+}
+
+
+
+.about-text-sable-main img {
+  width: 50%;
+  height: auto;
 }
 
 .about-retour {
@@ -71,6 +85,13 @@
   width: auto;
 }
 
+.about-seconde-container {
+  position: absolute;
+  top: 100vh;
+  background-color: $sable;
+}
+
+
 .about-text-sable {
   display: flex;
   justify-content: center;
@@ -86,6 +107,12 @@
   display: flex;
   justify-content: center;
   padding: 20vh 0 10vh 0;
+}
+
+.about-text-sable-role:first-child {
+  display: flex;
+  justify-content: center;
+  padding: 0 0 10vh 0;
 }
 
 .about-text-sable-role img {
