@@ -11,8 +11,7 @@ class PagesController < ApplicationController
   def merlimontdavant
   end
 
-  def about
-  end
+
 
   # attention enlever le skip authenticate pour dashboard avant production
   def dashboard
@@ -25,6 +24,9 @@ class PagesController < ApplicationController
     @resource = User.new
     @resource_name = :user
     render 'pages/fauneflore'
+  end
+
+  def about
   end
 
   def univers
