@@ -1,14 +1,140 @@
 <div class="univers-container">
-  <div class="univers-content">
-    <form action="" id="form">
 
-      <input type="email" id="user_email" name="user[email]">
-      <input type="password" id="user_password" name="user[password]">
-      <input type="password" id="user_password_confirmation" name="user[password_confirmation]">
-
-      <input type="submit">
-    </form>
+  <div class="old-return-btn">
+    <%= link_to root_path do %>
+      <%= image_tag('home/MerlimontB.png') %>
+    <% end %>
   </div>
+
+  <section>
+      <%= image_tag('about/aboutbg.png', id: "bga") %>
+      <%= image_tag('about/aboutsun.png', id: "suna") %>
+      <%= image_tag('about/aboutmoon.png', id: "moona") %>
+      <%= image_tag('about/aboutmer.png', id: "mera") %>
+      <%= image_tag('about/aboutroad.png', id: "roada") %>
+      <%= image_tag('about/aboutdunes.png', id: "dunesa") %>
+
+      <div id="texta" class="about-main-text">
+        <div class="about-text-sable-main">
+          <%= image_tag('about/artisans.svg') %>
+        </div>
+      </div>
+  </section>
+  <script type="text/javascript">
+      let bg = document.getElementById("bga");
+      let moon = document.getElementById("moona");
+      let dunesa = document.getElementById("dunesa");
+      let road = document.getElementById("roada");
+      let texta = document.getElementById("texta");
+      let suna = document.getElementById("suna");
+      let mera = document.getElementById("mera");
+
+
+      window.addEventListener('scroll', function(){
+          var value = window.scrollY;
+
+          bga.style.top = value * 0.5 + 'px';
+          moona.style.left = -value * 0.5 + 'px';
+          dunesa.style.top = -value * 0.15 + 'px';
+          suna.style.top = value * 2 + 'px';
+          mera.style.top = value * 0.7 + 'px';
+          roada.style.top = value * 0.15 + 'px';
+          texta.style.top = value * 0.5 + 'px';
+
+
+      })
+  </script>
+
+  <div class="about-text-sable-role">
+    <%= image_tag('about/createur.svg') %>
+  </div>
+
+  <div class="about-presentation-container-first">
+    <div class="about-presentation-content">
+      <div class="about-presentation-left">
+        <div class="about-presentation-left-image">
+          <%= image_tag('about/dev.jpg') %>
+        </div>
+        <div class="about-presentation-left-background"></div>
+      </div>
+      <div class="about-presentation-right-container">
+        <div class="about-presentation-right-content">
+          <div>
+            <p class="role">Développeur Web</p>
+            <p class="name">Fiolet Dorian</p>
+          </div>
+          <p class="description">Le développeur derrière ce site. Originaire de Merlimont et diplômé de l'école du Wagon de Lille, j'ai créé cette plateforme pour offrir à la communauté locale et à ses visiteurs une expérience en ligne immersive et informative. Mon objectif est de mettre en valeur les richesses de Merlimont et de faciliter l'accès aux informations essentielles pour ses habitants et ses visiteurs.</p>
+          <div>
+            <a href="https://fltdev.net" target="_blank">VOIR PLUS</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-text-sable-role">
+    <%= image_tag('about/collab.svg') %>
+  </div>
+
+
+
+  <div class="about-presentation-container-first">
+    <div class="about-presentation-content">
+      <div class="about-presentation-left">
+        <div class="about-presentation-left-image">
+          <%= image_tag('about/yves.jpg') %>
+        </div>
+        <div class="about-presentation-left-background"></div>
+      </div>
+      <div class="about-presentation-right-container">
+        <div class="about-presentation-right-content">
+          <div>
+            <p class="role">Photographe</p>
+            <p class="name">Yves Lefevre</p>
+          </div>
+          <p class="description">Je suis Yves Lefevre, le photographe dont les œuvres sont présentées sur ce site. À travers mes photographies, je cherche à capturer la beauté et l'essence de Merlimont. J'ai eu le privilège d'immortaliser des moments uniques et de les partager avec vous à travers cette plateforme en ligne. Mon objectif est de vous emmener dans un voyage visuel et de vous permettre de ressentir l'émotion et la magie présentes dans chaque image.</p>
+          <div>
+            <a href="#">VOIR PLUS</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="about-presentation-container">
+    <div class="about-presentation-content">
+      <div class="about-presentation-left">
+        <div class="about-presentation-left-image">
+          <%= image_tag('about/julienvalentin.png') %>
+        </div>
+        <div class="about-presentation-left-background"></div>
+      </div>
+      <div class="about-presentation-right-container">
+        <div class="about-presentation-right-content">
+          <div>
+            <p class="role">Maitre Chercheur</p>
+            <p class="name">Valentin Julien</p>
+          </div>
+          <p class="description">Personnage clé de ce site en tant que maître chercheur. En tant que membre de l'ONF de Merlimont, mon rôle est de mener des recherches approfondies sur la faune et la flore de notre région. Inspiré par ma passion pour la nature et mon désir de découvrir de nouveaux horizons, j'ai entrepris un long voyage d'exploration pour étudier de près les merveilles de notre environnement naturel.</p>
+          <div>
+            <a href="#">VOIR PLUS</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-mer-container">
+    <%= image_tag('about/about_mer.svg') %>
+  </div>
+
+
+
+  <div class="about-contact">
+    <br><br><br><br><br><br>
+  </div>
+
+
 </div>
 
 <div id="error-container" class="error-container"></div>
