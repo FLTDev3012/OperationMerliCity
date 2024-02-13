@@ -30,6 +30,7 @@ class PagesController < ApplicationController
   end
 
   def univers
+    @activites = Activite.all.first(5)
   end
 
 
