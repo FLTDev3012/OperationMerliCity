@@ -1,4 +1,4 @@
 <h1><%= @activite.title %></h1>
-<% if activite.photo.attached? %>
+<% if @activite.photo.attached? %>
   <%= cl_image_tag @activite.photo.key, height: 300, width: 400, crop: :fill %>
 <% end %>
