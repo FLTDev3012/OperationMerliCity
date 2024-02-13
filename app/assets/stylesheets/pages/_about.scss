@@ -2,16 +2,10 @@
   background-color: $sable;
   width: 100vw;
   min-height: 100vh;
-  min-height: 1500px;
 }
 
-.about-main-container {
-  min-height: 100vh;
-  position: relative;
-}
-
-
-.about-main-container section
+// main div
+section
 {
     position: relative;
     width: 100%;
@@ -21,17 +15,63 @@
     justify-content: center;
     align-items: center;
 }
+section:before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, $sable, transparent);
+    z-index: 10000;
+}
 
-.about-main-container section img
+section img
 {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
     pointer-events: none;
 }
+
+.about-main-text {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.about-main-text .about-text-sable-main
+{
+    position: absolute;
+    color: #fff;
+    font-size: 10em;
+    z-index: 1;
+    top: 80vh;
+}
+
+
+
+#mera {
+  filter: hue-rotate(20deg);
+  transform: translateY(20px);
+}
+
+#suna {
+  filter: hue-rotate(-9deg);
+}
+
+#road
+{
+    z-index: 2;
+}
+
+
+
 
 .about-text-sable-main {
   position: absolute;
@@ -76,22 +116,9 @@
   letter-spacing: .1rem;
 }
 
-.about-moon-container {
-  position: absolute;
-  top: 10%;
-  right: 40%;
-}
+// main end
 
-.about-moon-container img{
-  height: 30px;
-  width: auto;
-}
 
-.about-seconde-container {
-  position: absolute;
-  top: 100vh;
-  background-color: $sable;
-}
 
 
 .about-text-sable {
@@ -264,4 +291,8 @@
 .about-contact p {
   color: #fff;
   padding: 1rem 3rem;
+}
+
+.about-contact {
+  height: 10vh;
 }

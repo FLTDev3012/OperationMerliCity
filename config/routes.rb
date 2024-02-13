@@ -14,6 +14,8 @@ Rails.application.routes.draw do
   get "univers", to: "pages#univers"
   get "moncompte", to: "pages#moncompte"
   get "about", to: "pages#about"
+  get "azerty", to: "pages#azerty"
+
 
 
 
