@@ -1,26 +1,49 @@
 <div class="about-container">
 
-  <div class="about-dunes-mer">
-
-    <div class="old-return-btn">
-      <%= link_to root_path do %>
-        <%= image_tag('home/MerlimontB.png') %>
-      <% end %>
-    </div>
-
-    <!-- <div class="about-retour">
-      <%= link_to "< Retour a l'accueil", root_path %>
-    </div> -->
-
-    <%= image_tag('about/dunesciel.svg') %>
-
-    <div class="about-moon-container">
-      <%= image_tag('about/moon.svg') %>
-    </div>
-
+  <div class="old-return-btn">
+    <%= link_to root_path do %>
+      <%= image_tag('home/MerlimontB.png') %>
+    <% end %>
   </div>
 
+  <section>
+      <%= image_tag('about/aboutbg.png', id: "bga") %>
+      <%= image_tag('about/aboutsun.png', id: "suna") %>
+      <%= image_tag('about/aboutmoon.png', id: "moona") %>
+      <%= image_tag('about/aboutmer.png', id: "mera") %>
+      <%= image_tag('about/aboutroad.png', id: "roada") %>
+      <%= image_tag('about/aboutdunes.png', id: "dunesa") %>
 
+      <div id="texta" class="about-main-text">
+        <div class="about-text-sable-main">
+          <%= image_tag('about/artisans.svg') %>
+        </div>
+      </div>
+  </section>
+  <script type="text/javascript">
+      let bg = document.getElementById("bga");
+      let moon = document.getElementById("moona");
+      let dunesa = document.getElementById("dunesa");
+      let road = document.getElementById("roada");
+      let texta = document.getElementById("texta");
+      let suna = document.getElementById("suna");
+      let mera = document.getElementById("mera");
+
+
+      window.addEventListener('scroll', function(){
+          var value = window.scrollY;
+
+          bga.style.top = value * 0.5 + 'px';
+          moona.style.left = -value * 0.5 + 'px';
+          dunesa.style.top = -value * 0.15 + 'px';
+          suna.style.top = value * 2 + 'px';
+          mera.style.top = value * 0.7 + 'px';
+          roada.style.top = value * 0.15 + 'px';
+          texta.style.top = value * 0.5 + 'px';
+
+
+      })
+  </script>
 
   <div class="about-text-sable-role">
     <%= image_tag('about/createur.svg') %>
@@ -111,4 +134,7 @@
     <br><br><br><br><br><br>
   </div>
 
+
 </div>
+
+<div id="error-container" class="error-container"></div>

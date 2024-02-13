@@ -2,13 +2,12 @@
   width: 100vw;
   min-height: 100vh;
   background-color: #262520;
-  color: #fff;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.univers-content {
-  width: 100%;
-  height: 100%;
-  padding: 60px;
 
+.univers-container
+{
+    background: $sable;
+    min-height: 1500px;
 }

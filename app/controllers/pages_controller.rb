@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :home, :merlimontdavant, :about, :dashboard, :fauneflore, :faunecat, :univers, :galerie ]
+  skip_before_action :authenticate_user!, only: [ :home, :merlimontdavant, :about, :dashboard, :fauneflore, :faunecat, :univers, :galerie, :azerty ]
 
   def home
     @activites = Activite.first(5)
@@ -11,8 +11,7 @@ class PagesController < ApplicationController
   def merlimontdavant
   end
 
-  def about
-  end
+
 
   # attention enlever le skip authenticate pour dashboard avant production
   def dashboard
@@ -27,8 +26,12 @@ class PagesController < ApplicationController
     render 'pages/fauneflore'
   end
 
+  def about
+  end
+
   def univers
   end
+
 
   def moncompte
     @user = current_user
