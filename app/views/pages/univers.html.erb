@@ -1,140 +1,357 @@
 <div class="univers-container">
+  <h1>Nos activites</h1>
 
-  <div class="old-return-btn">
-    <%= link_to root_path do %>
-      <%= image_tag('home/MerlimontB.png') %>
-    <% end %>
-  </div>
-
-  <section>
-      <%= image_tag('about/aboutbg.png', id: "bga") %>
-      <%= image_tag('about/aboutsun.png', id: "suna") %>
-      <%= image_tag('about/aboutmoon.png', id: "moona") %>
-      <%= image_tag('about/aboutmer.png', id: "mera") %>
-      <%= image_tag('about/aboutroad.png', id: "roada") %>
-      <%= image_tag('about/aboutdunes.png', id: "dunesa") %>
-
-      <div id="texta" class="about-main-text">
-        <div class="about-text-sable-main">
-          <%= image_tag('about/artisans.svg') %>
-        </div>
+  <div class="unicontainer">
+    <div class="card-carousel">
+      <div class="card" id="1">
+        <div class="image-container"></div>
+        <p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
       </div>
-  </section>
-  <script type="text/javascript">
-      let bg = document.getElementById("bga");
-      let moon = document.getElementById("moona");
-      let dunesa = document.getElementById("dunesa");
-      let road = document.getElementById("roada");
-      let texta = document.getElementById("texta");
-      let suna = document.getElementById("suna");
-      let mera = document.getElementById("mera");
-
-
-      window.addEventListener('scroll', function(){
-          var value = window.scrollY;
-
-          bga.style.top = value * 0.5 + 'px';
-          moona.style.left = -value * 0.5 + 'px';
-          dunesa.style.top = -value * 0.15 + 'px';
-          suna.style.top = value * 2 + 'px';
-          mera.style.top = value * 0.7 + 'px';
-          roada.style.top = value * 0.15 + 'px';
-          texta.style.top = value * 0.5 + 'px';
-
-
-      })
-  </script>
-
-  <div class="about-text-sable-role">
-    <%= image_tag('about/createur.svg') %>
-  </div>
-
-  <div class="about-presentation-container-first">
-    <div class="about-presentation-content">
-      <div class="about-presentation-left">
-        <div class="about-presentation-left-image">
-          <%= image_tag('about/dev.jpg') %>
-        </div>
-        <div class="about-presentation-left-background"></div>
+      <div class="card" id="2">
+        <div class="image-container"></div>
+        <p>2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
       </div>
-      <div class="about-presentation-right-container">
-        <div class="about-presentation-right-content">
-          <div>
-            <p class="role">Développeur Web</p>
-            <p class="name">Fiolet Dorian</p>
-          </div>
-          <p class="description">Le développeur derrière ce site. Originaire de Merlimont et diplômé de l'école du Wagon de Lille, j'ai créé cette plateforme pour offrir à la communauté locale et à ses visiteurs une expérience en ligne immersive et informative. Mon objectif est de mettre en valeur les richesses de Merlimont et de faciliter l'accès aux informations essentielles pour ses habitants et ses visiteurs.</p>
-          <div>
-            <a href="https://fltdev.net" target="_blank">VOIR PLUS</a>
-          </div>
-        </div>
+      <div class="card" id="3">
+        <div class="image-container"></div>
+        <p>3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
+      </div>
+      <div class="card" id="4">
+        <div class="image-container"></div>
+        <p>4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
+      </div>
+      <div class="card" id="5">
+        <div class="image-container"></div>
+        <p>5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
       </div>
     </div>
+    <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
   </div>
-
-  <div class="about-text-sable-role">
-    <%= image_tag('about/collab.svg') %>
+  <!--
+  <h2>Check out <a target="_blank" href="https://codepen.io/WillyW/pen/RwRrvjv">Circle Carousel</a></h2> -->
   </div>
-
-
-
-  <div class="about-presentation-container-first">
-    <div class="about-presentation-content">
-      <div class="about-presentation-left">
-        <div class="about-presentation-left-image">
-          <%= image_tag('about/yves.jpg') %>
-        </div>
-        <div class="about-presentation-left-background"></div>
-      </div>
-      <div class="about-presentation-right-container">
-        <div class="about-presentation-right-content">
-          <div>
-            <p class="role">Photographe</p>
-            <p class="name">Yves Lefevre</p>
-          </div>
-          <p class="description">Je suis Yves Lefevre, le photographe dont les œuvres sont présentées sur ce site. À travers mes photographies, je cherche à capturer la beauté et l'essence de Merlimont. J'ai eu le privilège d'immortaliser des moments uniques et de les partager avec vous à travers cette plateforme en ligne. Mon objectif est de vous emmener dans un voyage visuel et de vous permettre de ressentir l'émotion et la magie présentes dans chaque image.</p>
-          <div>
-            <a href="#">VOIR PLUS</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-    <div class="about-presentation-container">
-    <div class="about-presentation-content">
-      <div class="about-presentation-left">
-        <div class="about-presentation-left-image">
-          <%= image_tag('about/julienvalentin.png') %>
-        </div>
-        <div class="about-presentation-left-background"></div>
-      </div>
-      <div class="about-presentation-right-container">
-        <div class="about-presentation-right-content">
-          <div>
-            <p class="role">Maitre Chercheur</p>
-            <p class="name">Valentin Julien</p>
-          </div>
-          <p class="description">Personnage clé de ce site en tant que maître chercheur. En tant que membre de l'ONF de Merlimont, mon rôle est de mener des recherches approfondies sur la faune et la flore de notre région. Inspiré par ma passion pour la nature et mon désir de découvrir de nouveaux horizons, j'ai entrepris un long voyage d'exploration pour étudier de près les merveilles de notre environnement naturel.</p>
-          <div>
-            <a href="#">VOIR PLUS</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="about-mer-container">
-    <%= image_tag('about/about_mer.svg') %>
-  </div>
-
-
-
-  <div class="about-contact">
-    <br><br><br><br><br><br>
-  </div>
-
 
 </div>
 
-<div id="error-container" class="error-container"></div>
+<script>
+const cardsContainer = document.querySelector(".card-carousel");
+const cardsController = document.querySelector(".card-carousel + .card-controller")
+
+class DraggingEvent {
+  constructor(target = undefined) {
+    this.target = target;
+  }
+
+  event(callback) {
+    let handler;
+
+    this.target.addEventListener("mousedown", e => {
+      e.preventDefault()
+
+      handler = callback(e)
+
+      window.addEventListener("mousemove", handler)
+
+      document.addEventListener("mouseleave", clearDraggingEvent)
+
+      window.addEventListener("mouseup", clearDraggingEvent)
+
+      function clearDraggingEvent() {
+        window.removeEventListener("mousemove", handler)
+        window.removeEventListener("mouseup", clearDraggingEvent)
+
+        document.removeEventListener("mouseleave", clearDraggingEvent)
+
+        handler(null)
+      }
+    })
+
+    this.target.addEventListener("touchstart", e => {
+      handler = callback(e)
+
+      window.addEventListener("touchmove", handler)
+
+      window.addEventListener("touchend", clearDraggingEvent)
+
+      document.body.addEventListener("mouseleave", clearDraggingEvent)
+
+      function clearDraggingEvent() {
+        window.removeEventListener("touchmove", handler)
+        window.removeEventListener("touchend", clearDraggingEvent)
+
+        handler(null)
+      }
+    })
+  }
+
+  // Get the distance that the user has dragged
+  getDistance(callback) {
+    function distanceInit(e1) {
+      let startingX, startingY;
+
+      if ("touches" in e1) {
+        startingX = e1.touches[0].clientX
+        startingY = e1.touches[0].clientY
+      } else {
+        startingX = e1.clientX
+        startingY = e1.clientY
+      }
+
+
+      return function(e2) {
+        if (e2 === null) {
+          return callback(null)
+        } else {
+
+          if ("touches" in e2) {
+            return callback({
+              x: e2.touches[0].clientX - startingX,
+              y: e2.touches[0].clientY - startingY
+            })
+          } else {
+            return callback({
+              x: e2.clientX - startingX,
+              y: e2.clientY - startingY
+            })
+          }
+        }
+      }
+    }
+
+    this.event(distanceInit)
+  }
+}
+
+
+class CardCarousel extends DraggingEvent {
+  constructor(container, controller = undefined) {
+    super(container)
+
+    // DOM elements
+    this.container = container
+    this.controllerElement = controller
+    this.cards = container.querySelectorAll(".card")
+
+    // Carousel data
+    this.centerIndex = (this.cards.length - 1) / 2;
+    this.cardWidth = this.cards[0].offsetWidth / this.container.offsetWidth * 100
+    this.xScale = {};
+
+    // Resizing
+    window.addEventListener("resize", this.updateCardWidth.bind(this))
+
+    if (this.controllerElement) {
+      this.controllerElement.addEventListener("keydown", this.controller.bind(this))
+    }
+
+
+    // Initializers
+    this.build()
+
+    // Bind dragging event
+    super.getDistance(this.moveCards.bind(this))
+  }
+
+  updateCardWidth() {
+    this.cardWidth = this.cards[0].offsetWidth / this.container.offsetWidth * 100
+
+    this.build()
+  }
+
+  build(fix = 0) {
+    for (let i = 0; i < this.cards.length; i++) {
+      const x = i - this.centerIndex;
+      const scale = this.calcScale(x)
+      const scale2 = this.calcScale2(x)
+      const zIndex = -(Math.abs(i - this.centerIndex))
+
+      const leftPos = this.calcPos(x, scale2)
+
+
+      this.xScale[x] = this.cards[i]
+
+      this.updateCards(this.cards[i], {
+        x: x,
+        scale: scale,
+        leftPos: leftPos,
+        zIndex: zIndex
+      })
+    }
+  }
+
+
+  controller(e) {
+    const temp = {...this.xScale};
+
+      if (e.keyCode === 39) {
+        // Left arrow
+        for (let x in this.xScale) {
+          const newX = (parseInt(x) - 1 < -this.centerIndex) ? this.centerIndex : parseInt(x) - 1;
+
+          temp[newX] = this.xScale[x]
+        }
+      }
+
+      if (e.keyCode == 37) {
+        // Right arrow
+        for (let x in this.xScale) {
+          const newX = (parseInt(x) + 1 > this.centerIndex) ? -this.centerIndex : parseInt(x) + 1;
+
+          temp[newX] = this.xScale[x]
+        }
+      }
+
+      this.xScale = temp;
+
+      for (let x in temp) {
+        const scale = this.calcScale(x),
+              scale2 = this.calcScale2(x),
+              leftPos = this.calcPos(x, scale2),
+              zIndex = -Math.abs(x)
+
+        this.updateCards(this.xScale[x], {
+          x: x,
+          scale: scale,
+          leftPos: leftPos,
+          zIndex: zIndex
+        })
+      }
+  }
+
+  calcPos(x, scale) {
+    let formula;
+
+    if (x < 0) {
+      formula = (scale * 100 - this.cardWidth) / 2
+
+      return formula
+
+    } else if (x > 0) {
+      formula = 100 - (scale * 100 + this.cardWidth) / 2
+
+      return formula
+    } else {
+      formula = 100 - (scale * 100 + this.cardWidth) / 2
+
+      return formula
+    }
+  }
+
+  updateCards(card, data) {
+    if (data.x || data.x == 0) {
+      card.setAttribute("data-x", data.x)
+    }
+
+    if (data.scale || data.scale == 0) {
+      card.style.transform = `scale(${data.scale})`
+
+      if (data.scale == 0) {
+        card.style.opacity = data.scale
+      } else {
+        card.style.opacity = 1;
+      }
+    }
+
+    if (data.leftPos) {
+      card.style.left = `${data.leftPos}%`
+    }
+
+    if (data.zIndex || data.zIndex == 0) {
+      if (data.zIndex == 0) {
+        card.classList.add("highlight")
+      } else {
+        card.classList.remove("highlight")
+      }
+
+      card.style.zIndex = data.zIndex
+    }
+  }
+
+  calcScale2(x) {
+    let formula;
+
+    if (x <= 0) {
+      formula = 1 - -1 / 5 * x
+
+      return formula
+    } else if (x > 0) {
+      formula = 1 - 1 / 5 * x
+
+      return formula
+    }
+  }
+
+  calcScale(x) {
+    const formula = 1 - 1 / 5 * Math.pow(x, 2)
+
+    if (formula <= 0) {
+      return 0
+    } else {
+      return formula
+    }
+  }
+
+  checkOrdering(card, x, xDist) {
+    const original = parseInt(card.dataset.x)
+    const rounded = Math.round(xDist)
+    let newX = x
+
+    if (x !== x + rounded) {
+      if (x + rounded > original) {
+        if (x + rounded > this.centerIndex) {
+
+          newX = ((x + rounded - 1) - this.centerIndex) - rounded + -this.centerIndex
+        }
+      } else if (x + rounded < original) {
+        if (x + rounded < -this.centerIndex) {
+
+          newX = ((x + rounded + 1) + this.centerIndex) - rounded + this.centerIndex
+        }
+      }
+
+      this.xScale[newX + rounded] = card;
+    }
+
+    const temp = -Math.abs(newX + rounded)
+
+    this.updateCards(card, {zIndex: temp})
+
+    return newX;
+  }
+
+  moveCards(data) {
+    let xDist;
+
+    if (data != null) {
+      this.container.classList.remove("smooth-return")
+      xDist = data.x / 250;
+    } else {
+
+
+      this.container.classList.add("smooth-return")
+      xDist = 0;
+
+      for (let x in this.xScale) {
+        this.updateCards(this.xScale[x], {
+          x: x,
+          zIndex: Math.abs(Math.abs(x) - this.centerIndex)
+        })
+      }
+    }
+
+    for (let i = 0; i < this.cards.length; i++) {
+      const x = this.checkOrdering(this.cards[i], parseInt(this.cards[i].dataset.x), xDist),
+            scale = this.calcScale(x + xDist),
+            scale2 = this.calcScale2(x + xDist),
+            leftPos = this.calcPos(x + xDist, scale2)
+
+
+      this.updateCards(this.cards[i], {
+        scale: scale,
+        leftPos: leftPos
+      })
+    }
+  }
+}
+
+const carousel = new CardCarousel(cardsContainer)
+</script>
