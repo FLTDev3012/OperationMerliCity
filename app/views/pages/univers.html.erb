@@ -8,25 +8,28 @@
         </div>
         <p><%= @activites[0].title %></p>
         <p><%= @activites[0].description %></p>
+        <%= link_to "voir plus", activite_path(@activites[4]) %>
       </div>
       <div class="card" id="2">
         <div class="image-container" style="background-image: url('<%= cl_image_path(@activites[1].photo.key) %>');">
         </div>
         <p><%= @activites[1].title %></p>
         <p><%= @activites[1].description %></p>
+        <%= link_to "voir plus", activite_path(@activites[4]) %>
       </div>
       <div class="card" id="3">
         <div class="image-container" style="background-image: url('<%= cl_image_path(@activites[2].photo.key) %>');">
         </div>
         <p><%= @activites[2].title %></p>
         <p><%= @activites[2].description %></p>
+        <%= link_to "voir plus", activite_path(@activites[4]) %>
       </div>
       <div class="card" id="4">
         <div class="image-container" style="background-image: url('<%= cl_image_path(@activites[3].photo.key) %>');">
         </div>
         <p><%= @activites[3].title %></p>
         <p><%= @activites[3].description %></p>
-        <p>vnjf <br> fnsjn <br>fnjdnsfjbrq <br> fnjfj <br> fnrjwnf <br> fnjv</p>
+        <%= link_to "voir plus", activite_path(@activites[4]) %>
       </div>
       <div class="card" id="5">
         <div class="image-container" style="background-image: url('<%= cl_image_path(@activites[4].photo.key) %>');">

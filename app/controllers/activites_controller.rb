@@ -2,19 +2,22 @@ class ActivitesController < ApplicationController
   skip_before_action :authenticate_user!, only: %i[index show new create edit update destroy]
 
   def index
-    @activites = Activite.all
+    @activites = policy_scope(Activite)
   end
 
   def show
     @activite = Activite.find(params[:id])
+    authorize @activite
   end
 
   def new
     @activite = Activite.new
+    authorize @activite
   end
 
   def create
     @activite = Activite.new(activite_params)
+    authorize @activite
     if @activite.save
       redirect_to dashboard_path, notice: 'Activité créée avec succès!'
     else
@@ -25,17 +28,22 @@ class ActivitesController < ApplicationController
 
   def edit
     @activite = Activite.find(params[:id])
+    authorize @activite
   end
 
   def update
-      @activite = Activite.find(params[:id])
-      @activite.update(activite_params)
-      @activite.save
+    @activite = Activite.find(params[:id])
+    authorize @activite
+    if @activite.update(activite_params)
       redirect_to dashboard_path, notice: 'Activité mise à jour avec succès!'
+    else
+      render :edit, status: :unprocessable_entity
+    end
   end
 
   def destroy
     @activite = Activite.find(params[:id])
+    authorize @activite
     @activite.destroy
     redirect_to dashboard_path, status: :see_other
   end
