@@ -60,7 +60,7 @@
 
 .home-activites-title-and-title-shadow {
   padding-top: 15vh;
-  padding-bottom: 10vh;
+  padding-bottom: 7vh;
 }
 
 .home-activites-title-shadow {
@@ -97,6 +97,10 @@
   position: relative;
   transform: translateY(50px);
   color: #fff;
+  font-family: 'ABeeZee', sans-serif;
+  font-size: 2rem;
+  color: $sable;
+  margin-bottom: 0;
 }
 
 // top five
@@ -167,6 +171,7 @@
   backdrop-filter: blur(25px);
   overflow: hidden;
   color: #fff;
+  font-family: 'ABeeZee', sans-serif;
 }
 
 .activite-title {
@@ -238,6 +243,8 @@
   z-index: 2;
 }
 
+
+
 .home-activites-button-img-container {
   display: flex;
   justify-content: center;
@@ -245,4 +252,9 @@
 
 .home-activites-button img {
   width: 20vh;
+  transition: all 0.3s ease-in-out;
+}
+
+.home-activites-button img:hover {
+  transform: translateY(-10px);
 }
