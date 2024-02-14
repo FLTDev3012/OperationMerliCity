@@ -3,6 +3,8 @@ import "@hotwired/turbo-rails"
 import "./controllers"
 import "bootstrap"
 
+
+
 const signUp = (event) => {
   event.preventDefault();
   const nom = document.getElementById("user_nom").value;
