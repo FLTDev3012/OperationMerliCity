@@ -11,10 +11,15 @@
   opacity: 0.66;
 }
 
+.vague-emplacement-top > img {
+  position: absolute;
+  bottom: 0;
+}
+
 
 .home-emplacement-surfer {
   position: absolute;
-  top: 30%;
+  top: -180%;
   left: 40%;
   z-index: 2;
 }
