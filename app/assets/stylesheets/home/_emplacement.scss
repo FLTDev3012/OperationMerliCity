@@ -1,24 +1,17 @@
 // ==================== Grosse vague (div unique) ================
 
 .vague-emplacement-top {
-  background-color: $sable;
   position: relative;
-  padding-top: 5vh;
 }
 
 .vague-emplacement-top img {
   width: 100vw;
   height: auto;
+  opacity: 0.66;
 }
 
-.vague-emplacement-trait-anti-bug {
-  position: absolute;
-  bottom: 0;
-  content: "";
-  width: 100%;
-  height: 2px;
-  background-color: $bleu;
-}
+
+
 
 .home-emplacement-surfer {
   position: absolute;
@@ -31,6 +24,7 @@
 .home-emplacement-surfer img {
   width: 56px;
   height: auto;
+  opacity: 1;
 }
 
 // ======================== Emplacement div =================
@@ -38,7 +32,7 @@
 .home-emplacement-div {
   min-height: 100vh;
   position: relative;
-  background-color: $bleu;
+  background-color: $bgbleu;
 }
 
 .home-emplacement-title-shadow {

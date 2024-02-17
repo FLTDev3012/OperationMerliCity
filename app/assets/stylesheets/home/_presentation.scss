@@ -4,12 +4,13 @@
   position: relative;
   // min-height: 100vh;
 
-  background-color: $sable;
+
 }
 
 .home-traces {
   position: absolute;
   top: 0;
+  background: linear-gradient(0deg, rgba(38, 35, 30, 0) 0%, #f0ecbe 100%);
 }
 
 .home-traces img {
