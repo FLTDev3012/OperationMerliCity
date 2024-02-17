@@ -83,7 +83,7 @@
 .home-presentation-text-picture {
   display: flex;
   height: 100%;
-  padding: 3rem 0;
+  padding: 3rem 0 7rem 0;
 }
 
 .home-presentation-text {
@@ -132,4 +132,15 @@
 .home-presentation-photo img {
   width: 80%;
   height: auto;
+}
+
+.home-activites-vague-haut {
+  position: absolute;
+  bottom: 0;
+}
+
+.home-activites-vague-haut img {
+  width: 100vw;
+  height: auto;
+  opacity: 0.66;
 }

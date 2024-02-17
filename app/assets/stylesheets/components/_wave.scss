@@ -9,7 +9,7 @@
     height: 0; /* Retour à zéro */
   }
   40% {
-    height: 40px; /* Petite hauteur */
+    height: 20px; /* Petite hauteur */
   }
   50% {
     height: 0; /* Retour à zéro */
@@ -28,6 +28,6 @@
 .wave {
   width: 100%;
   height: 0;
-  background-color: $bleu; /* Couleur de la vague */
-  animation: waveAnimation 6s infinite; /* Durée de l'animation et répétition infinie */
+  background-color: $bgbleu; /* Couleur de la vague */
+  animation: waveAnimation 20s infinite; /* Durée de l'animation et répétition infinie */
 }
