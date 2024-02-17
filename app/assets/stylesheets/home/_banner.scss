@@ -340,8 +340,7 @@ svg {
   bottom: 0;
   width: 100%;
   height: 10%;
-  background-image: url("/assets/sablebg.png");
-  background-color: $sable;
+  background: linear-gradient(180deg,#fffacd 0%,#f0ecbe 100%);
 }
 
 .home-bas-dunes img {

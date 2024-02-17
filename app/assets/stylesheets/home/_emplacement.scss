@@ -2,7 +2,6 @@
 
 .vague-emplacement-top {
   position: relative;
-  padding-top: 5vh;
 }
 
 .vague-emplacement-top img {
@@ -11,15 +10,12 @@
   opacity: 0.66;
 }
 
-.vague-emplacement-top > img {
-  position: absolute;
-  bottom: 0;
-}
+
 
 
 .home-emplacement-surfer {
   position: absolute;
-  top: -180%;
+  top: 30%;
   left: 40%;
   z-index: 2;
 }

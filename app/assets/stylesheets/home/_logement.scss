@@ -96,4 +96,12 @@
 
 .home-btn-logement-boue-container img {
   width: 20vh;
+  filter: drop-shadow(12px 6px 12px rgba(0, 0, 0, 0.4));
+  transition: all 0.5s;
+}
+
+.home-btn-logement-boue-container img:hover {
+  transform: translateY(-10px);
+  filter: drop-shadow(12px 6px 12px rgba(0, 0, 0, 0.53));
+
 }
