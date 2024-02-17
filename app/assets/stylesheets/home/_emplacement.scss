@@ -32,7 +32,7 @@
 .home-emplacement-div {
   min-height: 100vh;
   position: relative;
-  background-color: $bgbleu;
+  background: linear-gradient(180deg, $bgbleu 0%, $bleu 100%);
 }
 
 .home-emplacement-title-shadow {
