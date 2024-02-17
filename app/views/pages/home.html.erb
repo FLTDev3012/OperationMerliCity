@@ -1,195 +1,348 @@
-<!-- ================== div video ===================== -->
 
-<div class="hero-video">
+<div class="activite-page-container">
+  <!-- ================== div video ===================== -->
 
-  <div class="home-fondu-haut"></div>
+  <div class="hero-video">
 
-
-  <!-- ============= NAVBAR ============== -->
-  <div class="home-nav">
-    <div class="home-nav-left">
-      <!-- <%= link_to "Merlimont", "#" %> -->
-
-      <%= link_to root_path do %>
-        <%= image_tag('home/MerlimontB.png') %>
-      <% end %>
-
-    </div>
-
-    <div class="home-nav-right-new">
-
-        <svg class="svg-pfff galn">
-          <g
-            fill="black"
-            stroke="white"
-            stroke-width="6"
-            stroke-linejoin="round"
-            text-anchor="middle">
-            <text x="50%" y="70%" paint-order="stroke" id="stroke-under">
-              <%= link_to "Galerie", galerie_path %>
-            </text>
-          </g>
-        </svg>
+    <div class="home-fondu-haut"></div>
 
 
-        <!--
-        <svg class="svg-pfff webn">
-          <g
-            fill="black"
-            stroke="white"
-            stroke-width="6"
-            stroke-linejoin="round"
-            text-anchor="middle">
-            <text x="50%" y="70%" paint-order="stroke" id="stroke-under">
-              <%= link_to "Webcam", "https://www.viewsurf.com/univers/surf/vue/16762-france-nord-pas-de-calais-merlimont-live", target: "_blank" %>
-            </text>
-          </g>
-        </svg>
-        -->
+    <!-- ============= NAVBAR ============== -->
+    <div class="home-nav">
+      <div class="home-nav-left">
+        <!-- <%= link_to "Merlimont", "#" %> -->
 
+        <%= link_to root_path do %>
+          <%= image_tag('home/MerlimontB.png') %>
+        <% end %>
 
-
-        <svg class="svg-pfff faunen">
-          <g
-            fill="black"
-            stroke="white"
-            stroke-width="6"
-            stroke-linejoin="round"
-            text-anchor="middle">
-            <text x="50%" y="70%" paint-order="stroke" id="stroke-under">
-              <%= link_to "Faune & Flore", fauneflore_path(anchor: 'top-of-page'), data: { turbo: false } %>
-            </text>
-          </g>
-        </svg>
-
-
-
-        <svg class="svg-pfff foisn">
-          <g
-            fill="black"
-            stroke="white"
-            stroke-width="6"
-            stroke-linejoin="round"
-            text-anchor="middle">
-            <text x="50%" y="70%" paint-order="stroke" id="stroke-under">
-              <%= link_to "Il etait une fois", merlimontdavant_path %>
-            </text>
-          </g>
-        </svg>
-
-
-
-        <svg class="svg-pfff aboutn">
-          <g
-            fill="black"
-            stroke="white"
-            stroke-width="6"
-            stroke-linejoin="round"
-            text-anchor="middle">
-            <text x="50%" y="70%" paint-order="stroke" id="stroke-under">
-              <%= link_to "A propos", about_path, data: { turbo: false } %>
-            </text>
-          </g>
-        </svg>
-
-    </div>
-
-  </div>
-
-  <!-- ============= FIN NAVBAR ============== -->
-
-
-  <!-- ============= AVION CERF-VOLANT ============== -->
-
-  <!-- <div class="avion">
-    <%= image_tag('home/aviond.png') %>
-  </div> -->
-
-  <div class="home-video-circle-container">
-    <div class="home-video-circle">
-      <div class="kite">
-        <%= image_tag('home/kite.png') %>
       </div>
-    </div>
-  </div>
 
-  <div class="home-video-circle-container-deux">
-    <div class="home-video-circle-deux">
-      <div class="kite-deux">
-        <%= image_tag('home/kite_deux.png') %>
+      <div class="home-nav-right-new">
+
+          <svg class="svg-pfff galn">
+            <g
+              fill="black"
+              stroke="white"
+              stroke-width="6"
+              stroke-linejoin="round"
+              text-anchor="middle">
+              <text x="50%" y="70%" paint-order="stroke" id="stroke-under">
+                <%= link_to "Galerie", galerie_path %>
+              </text>
+            </g>
+          </svg>
+
+
+          <!--
+          <svg class="svg-pfff webn">
+            <g
+              fill="black"
+              stroke="white"
+              stroke-width="6"
+              stroke-linejoin="round"
+              text-anchor="middle">
+              <text x="50%" y="70%" paint-order="stroke" id="stroke-under">
+                <%= link_to "Webcam", "https://www.viewsurf.com/univers/surf/vue/16762-france-nord-pas-de-calais-merlimont-live", target: "_blank" %>
+              </text>
+            </g>
+          </svg>
+          -->
+
+
+
+          <svg class="svg-pfff faunen">
+            <g
+              fill="black"
+              stroke="white"
+              stroke-width="6"
+              stroke-linejoin="round"
+              text-anchor="middle">
+              <text x="50%" y="70%" paint-order="stroke" id="stroke-under">
+                <%= link_to "Faune & Flore", fauneflore_path(anchor: 'top-of-page'), data: { turbo: false } %>
+              </text>
+            </g>
+          </svg>
+
+
+
+          <svg class="svg-pfff foisn">
+            <g
+              fill="black"
+              stroke="white"
+              stroke-width="6"
+              stroke-linejoin="round"
+              text-anchor="middle">
+              <text x="50%" y="70%" paint-order="stroke" id="stroke-under">
+                <%= link_to "Il etait une fois", merlimontdavant_path %>
+              </text>
+            </g>
+          </svg>
+
+
+
+          <svg class="svg-pfff aboutn">
+            <g
+              fill="black"
+              stroke="white"
+              stroke-width="6"
+              stroke-linejoin="round"
+              text-anchor="middle">
+              <text x="50%" y="70%" paint-order="stroke" id="stroke-under">
+                <%= link_to "A propos", about_path, data: { turbo: false } %>
+              </text>
+            </g>
+          </svg>
+
       </div>
+
     </div>
-  </div>
 
-  <div class="home-video-circle-container-trois-un">
-    <div class="home-video-circle-trois-un">
-      <div class="kite-trois-un">
-        <%= image_tag('home/kite_trois_un.png') %>
-      </div>
-    </div>
-  </div>
-
-  <div class="home-video-circle-container-trois-deux">
-    <div class="home-video-circle-trois-deux">
-      <div class="kite-trois-deux">
-        <%= image_tag('home/kite_trois_deux.png') %>
-      </div>
-    </div>
-  </div>
-
-  <div class="home-video-circle-container-trois-trois">
-    <div class="home-video-circle-trois-trois">
-      <div class="kite-trois-trois">
-        <%= image_tag('home/kite_trois_trois.png') %>
-      </div>
-    </div>
-  </div>
-
-  <!-- ============= AVION CERF-VOLANT ============== -->
+    <!-- ============= FIN NAVBAR ============== -->
 
 
-  <!-- ============= VIDEO et DUNES ============== -->
+    <!-- ============= AVION CERF-VOLANT ============== -->
 
-  <%= video_tag "home/mainvideo.mp4", type: "video/mp4", autoplay: true, loop: true, muted: true, id: "home-videoo", preload: "auto", playsinline: true %>
+    <!-- <div class="avion">
+      <%= image_tag('home/aviond.png') %>
+    </div> -->
 
-  <div class="home-dunes">
-    <%= image_tag('home/home_dunes.svg') %>
-  </div>
-
-  <div class="home-bas-dunes">
-    <div class="home-petite-trace-container">
-      <%= image_tag('home/home_petite_trace.svg') %>
-    </div>
-  </div>
-
-  <!-- ============= FIN VIDEO et DUNES ============== -->
-
-
-</div>
-
-
-
-<!-- ================== div presentation ===================== -->
-
-
-<div class="home-presentation-div">
-
-  <div class="home-traces">
-    <%= image_tag('home/home_trace.svg') %>
-  </div>
-
-  <div class="home-presentation-title-and-title-shadow">
-
-    <div class="home-presentation-title-shadow">
-      <div class="home-presentation-parasol-container">
-        <h1>Merlimont</h1>
-        <div class="home-presentation-parasol">
-          <%= image_tag('home/parasol.svg') %>
+    <div class="home-video-circle-container">
+      <div class="home-video-circle">
+        <div class="kite">
+          <%= image_tag('home/kite.png') %>
         </div>
       </div>
     </div>
 
-    <div class="home-presentation-title">
+    <div class="home-video-circle-container-deux">
+      <div class="home-video-circle-deux">
+        <div class="kite-deux">
+          <%= image_tag('home/kite_deux.png') %>
+        </div>
+      </div>
+    </div>
+
+    <div class="home-video-circle-container-trois-un">
+      <div class="home-video-circle-trois-un">
+        <div class="kite-trois-un">
+          <%= image_tag('home/kite_trois_un.png') %>
+        </div>
+      </div>
+    </div>
+
+    <div class="home-video-circle-container-trois-deux">
+      <div class="home-video-circle-trois-deux">
+        <div class="kite-trois-deux">
+          <%= image_tag('home/kite_trois_deux.png') %>
+        </div>
+      </div>
+    </div>
+
+    <div class="home-video-circle-container-trois-trois">
+      <div class="home-video-circle-trois-trois">
+        <div class="kite-trois-trois">
+          <%= image_tag('home/kite_trois_trois.png') %>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============= AVION CERF-VOLANT ============== -->
+
+
+    <!-- ============= VIDEO et DUNES ============== -->
+
+    <%= video_tag "home/mainvideo.mp4", type: "video/mp4", autoplay: true, loop: true, muted: true, id: "home-videoo", preload: "auto", playsinline: true %>
+
+    <div class="home-dunes">
+      <%= image_tag('home/home_dunes.svg') %>
+    </div>
+
+    <div class="home-bas-dunes">
+      <div class="home-petite-trace-container">
+        <%= image_tag('home/home_petite_trace.svg') %>
+      </div>
+    </div>
+
+    <!-- ============= FIN VIDEO et DUNES ============== -->
+
+
+  </div>
+
+
+
+  <!-- ================== div presentation ===================== -->
+
+
+  <div class="home-presentation-div">
+
+    <div class="home-traces">
+      <%= image_tag('home/home_trace.svg') %>
+    </div>
+
+    <div class="home-presentation-title-and-title-shadow">
+
+      <div class="home-presentation-title-shadow">
+        <div class="home-presentation-parasol-container">
+          <h1>Merlimont</h1>
+          <div class="home-presentation-parasol">
+            <%= image_tag('home/parasol.svg') %>
+          </div>
+        </div>
+      </div>
+
+      <div class="home-presentation-title">
+          <svg class="">
+            <g
+              fill="#007CD7"
+              stroke="white"
+              stroke-width="10"
+              stroke-linejoin="round"
+              text-anchor="middle">
+              <text x="50%" y="50%" paint-order="stroke" id="stroke-under">
+                Merlimont
+              </text>
+            </g>
+          </svg>
+      </div>
+    </div>
+
+    <div class="home-presentation-text-picture">
+
+      <div class="home-presentation-text">
+        <div class="home-presentaion-text-text">
+          <%= image_tag('home/text-presentation.svg', class: 'text-presentation') %>
+        </div>
+        <div class="home-presentation-trace-trait">
+          <%= image_tag('home/home_trace_trait.svg') %>
+        </div>
+      </div>
+
+      <div class="home-presentation-photo">
+        <%= image_tag('home/home_coeur.svg') %>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  <!-- ================== div activites ===================== -->
+
+
+  <div class="home-activites-div">
+
+    <div class="home-activites-trait-anti-bug">
+    </div>
+
+    <div class="home-activites-vague-haut">
+      <%= image_tag('home/home_vague_haut.svg') %>
+    </div>
+
+    <div class="home-activites-swim">
+      <%= image_tag('emojies/man_ball.svg') %>
+    </div>
+
+    <div class="home-activites-surf">
+      <%= image_tag('emojies/surfer_orange.svg') %>
+    </div>
+
+    <div class="home-activites-title-and-title-shadow">
+
+      <div class="home-activites-title-shadow">
+        <h1>Activités</h1>
+      </div>
+
+      <div class="home-activites-title">
+        <h1>Activités</h1>
+      </div>
+
+      <div class="home-activites-subtitle">
+        <p>Top 5</p>
+      </div>
+
+    </div>
+
+
+
+    <div class="home-activite-container">
+      <div class="home-activite-card-carousel">
+        <div class="card" id="1">
+          <div class="image-container" style="background-image: url('<%= cl_image_path(@activites[0].photo.key) %>');">
+          </div>
+          <p class="activite-title"><%= @activites[0].title %></p>
+          <p><%= @activites[0].description %></p>
+          <%= link_to "Voir plus", activite_path(@activites[0]) %>
+        </div>
+        <div class="card" id="2">
+          <div class="image-container" style="background-image: url('<%= cl_image_path(@activites[1].photo.key) %>');">
+          </div>
+          <p class="activite-title"><%= @activites[1].title %></p>
+          <p><%= @activites[1].description %></p>
+          <%= link_to "Voir plus", activite_path(@activites[1]) %>
+        </div>
+        <div class="card" id="3">
+          <div class="image-container" style="background-image: url('<%= cl_image_path(@activites[2].photo.key) %>');">
+          </div>
+          <p class="activite-title"><%= @activites[2].title %></p>
+          <p><%= @activites[2].description %></p>
+          <%= link_to "Voir plus", activite_path(@activites[2]) %>
+        </div>
+        <div class="card" id="4">
+          <div class="image-container" style="background-image: url('<%= cl_image_path(@activites[3].photo.key) %>');">
+          </div>
+          <p class="activite-title"><%= @activites[3].title %></p>
+          <p><%= @activites[3].description %></p>
+          <%= link_to "Voir plus", activite_path(@activites[3]) %>
+        </div>
+        <div class="card" id="5">
+          <div class="image-container" style="background-image: url('<%= cl_image_path(@activites[4].photo.key) %>');">
+          </div>
+          <p class="activite-title"><%= @activites[4].title %></p>
+          <p><%= @activites[4].description %></p>
+          <%= link_to "Voir plus", activite_path(@activites[4]) %>
+        </div>
+      </div>
+      <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
+    </div>
+
+
+
+      <div class="home-activites-button">
+        <div class="home-activites-button-img-container">
+          <%= link_to activites_path do%>
+            <%= image_tag('activites/boue_button.svg') %>
+          <% end %>
+        </div>
+      </div>
+
+  </div>
+
+
+
+
+  <!-- ================== div logements ===================== -->
+
+
+  <div class="home-logements-div">
+
+    <div class="home-emplacement-para">
+      <%= image_tag('logements/para.svg') %>
+    </div>
+
+
+    <div class="home-logement-vague-haut">
+      <%= image_tag('activites/activites_vague_bas.svg') %>
+    </div>
+
+
+    <div class="home-logement-title-and-title-shadow">
+      <div class="home-logement-title-shadow">
+        <h1>Nos logements</h1>
+      </div>
+
+      <div class="home-logement-title">
         <svg class="">
           <g
             fill="#007CD7"
@@ -198,275 +351,123 @@
             stroke-linejoin="round"
             text-anchor="middle">
             <text x="50%" y="50%" paint-order="stroke" id="stroke-under">
-              Merlimont
+              Nos logements
             </text>
           </g>
         </svg>
-    </div>
-  </div>
-
-  <div class="home-presentation-text-picture">
-
-    <div class="home-presentation-text">
-      <div class="home-presentaion-text-text">
-        <%= image_tag('home/text-presentation.svg', class: 'text-presentation') %>
-      </div>
-      <div class="home-presentation-trace-trait">
-        <%= image_tag('home/home_trace_trait.svg') %>
       </div>
     </div>
 
-    <div class="home-presentation-photo">
-      <%= image_tag('home/home_coeur.svg') %>
-    </div>
 
-  </div>
-</div>
+    <div class="home-logement-categories-container">
+
+      <div class="home-logement-grid-container">
 
 
+        <%= link_to logements_path(categorie: 'camping'), class: 'home-logement-categories-owner' do %>
+          <div class="cardtest">
+            <div class="wrapper">
+              <%= image_tag('activites/mobilehomes.jpg', class: 'cover-image') %>
+            </div>
+            <%= image_tag('logements/campingtext.png', class: 'title') %>
+            <%= image_tag('activites/tente1.png', class: 'character') %>
+          </div>
+        <% end %>
 
+        <%= link_to logements_path(categorie: 'location'), class: 'home-logement-categories-owner' do %>
+          <div class="cardtest">
+            <div class="wrapper">
+              <%= image_tag('logements/location1.jpg', class: 'cover-image') %>
+            </div>
+            <%= image_tag('logements/locationtext.png', class: 'title') %>
+            <%= image_tag('logements/locationnew1.png', class: 'character') %>
+          </div>
+        <% end %>
 
-<!-- ================== div activites ===================== -->
+        <%= link_to logements_path(categorie: 'hote'), class: 'home-logement-categories-owner' do %>
+          <div class="cardtest">
+            <div class="wrapper">
+              <%= image_tag('logements/hote.jpg', class: 'cover-image') %>
+            </div>
+            <%= image_tag('logements/hotetext.png', class: 'title') %>
+            <%= image_tag('logements/hote1.png', class: 'character') %>
+          </div>
+        <% end %>
 
+        <%= link_to logements_path(categorie: 'camping-car'), class: 'home-logement-categories-owner' do %>
+          <div class="cardtest">
+            <div class="wrapper">
+              <%= image_tag('logements/caravane.jpg', class: 'cover-image') %>
 
-<div class="home-activites-div">
-
-  <div class="home-activites-trait-anti-bug">
-  </div>
-
-  <div class="home-activites-vague-haut">
-    <%= image_tag('home/home_vague_haut.svg') %>
-  </div>
-
-  <div class="home-activites-swim">
-    <%= image_tag('emojies/man_ball.svg') %>
-  </div>
-
-  <div class="home-activites-surf">
-    <%= image_tag('emojies/surfer_orange.svg') %>
-  </div>
-
-  <div class="home-activites-title-and-title-shadow">
-
-    <div class="home-activites-title-shadow">
-      <h1>Activités</h1>
-    </div>
-
-    <div class="home-activites-title">
-      <h1>Activités</h1>
-    </div>
-
-    <div class="home-activites-subtitle">
-      <p>Top 5</p>
-    </div>
-
-  </div>
-
-
-
-  <div class="home-activite-container">
-    <div class="home-activite-card-carousel">
-      <div class="card" id="1">
-        <div class="image-container" style="background-image: url('<%= cl_image_path(@activites[0].photo.key) %>');">
-        </div>
-        <p class="activite-title"><%= @activites[0].title %></p>
-        <p><%= @activites[0].description %></p>
-        <%= link_to "Voir plus", activite_path(@activites[0]) %>
-      </div>
-      <div class="card" id="2">
-        <div class="image-container" style="background-image: url('<%= cl_image_path(@activites[1].photo.key) %>');">
-        </div>
-        <p class="activite-title"><%= @activites[1].title %></p>
-        <p><%= @activites[1].description %></p>
-        <%= link_to "Voir plus", activite_path(@activites[1]) %>
-      </div>
-      <div class="card" id="3">
-        <div class="image-container" style="background-image: url('<%= cl_image_path(@activites[2].photo.key) %>');">
-        </div>
-        <p class="activite-title"><%= @activites[2].title %></p>
-        <p><%= @activites[2].description %></p>
-        <%= link_to "Voir plus", activite_path(@activites[2]) %>
-      </div>
-      <div class="card" id="4">
-        <div class="image-container" style="background-image: url('<%= cl_image_path(@activites[3].photo.key) %>');">
-        </div>
-        <p class="activite-title"><%= @activites[3].title %></p>
-        <p><%= @activites[3].description %></p>
-        <%= link_to "Voir plus", activite_path(@activites[3]) %>
-      </div>
-      <div class="card" id="5">
-        <div class="image-container" style="background-image: url('<%= cl_image_path(@activites[4].photo.key) %>');">
-        </div>
-        <p class="activite-title"><%= @activites[4].title %></p>
-        <p><%= @activites[4].description %></p>
-        <%= link_to "Voir plus", activite_path(@activites[4]) %>
-      </div>
-    </div>
-    <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
-  </div>
-
-
-
-    <div class="home-activites-button">
-      <div class="home-activites-button-img-container">
-        <%= link_to activites_path do%>
-          <%= image_tag('activites/boue_button.svg') %>
+            </div>
+            <%= image_tag('logements/ccartext.png', class: 'title') %>
+            <%= image_tag('logements/ccar2.png', class: 'character') %>
+          </div>
         <% end %>
       </div>
+
+
+
     </div>
 
-</div>
-
-
-
-
-<!-- ================== div logements ===================== -->
-
-
-<div class="home-logements-div">
-
-  <div class="home-emplacement-para">
-    <%= image_tag('logements/para.svg') %>
-  </div>
-
-  <div class="home-logements-trait-anti-bug">
-  </div>
-
-  <div class="home-logement-vague-haut">
-    <%= image_tag('activites/activites_vague_bas.svg') %>
-  </div>
-
-  <div class="home-logement-title-and-title-shadow">
-    <div class="home-logement-title-shadow">
-      <h1>Nos logements</h1>
-    </div>
-
-    <div class="home-logement-title">
-      <svg class="">
-        <g
-          fill="#007CD7"
-          stroke="white"
-          stroke-width="10"
-          stroke-linejoin="round"
-          text-anchor="middle">
-          <text x="50%" y="50%" paint-order="stroke" id="stroke-under">
-            Nos logements
-          </text>
-        </g>
-      </svg>
-    </div>
-  </div>
-
-
-  <div class="home-logement-categories-container">
-
-    <div class="home-logement-grid-container">
-
-
-      <%= link_to logements_path(categorie: 'camping'), class: 'home-logement-categories-owner' do %>
-        <div class="cardtest">
-          <div class="wrapper">
-            <%= image_tag('activites/mobilehomes.jpg', class: 'cover-image') %>
-          </div>
-          <%= image_tag('logements/campingtext.png', class: 'title') %>
-          <%= image_tag('activites/tente1.png', class: 'character') %>
-        </div>
-      <% end %>
-
-      <%= link_to logements_path(categorie: 'location'), class: 'home-logement-categories-owner' do %>
-        <div class="cardtest">
-          <div class="wrapper">
-            <%= image_tag('logements/location1.jpg', class: 'cover-image') %>
-          </div>
-          <%= image_tag('logements/locationtext.png', class: 'title') %>
-          <%= image_tag('logements/locationnew1.png', class: 'character') %>
-        </div>
-      <% end %>
-
-      <%= link_to logements_path(categorie: 'hote'), class: 'home-logement-categories-owner' do %>
-        <div class="cardtest">
-          <div class="wrapper">
-            <%= image_tag('logements/hote.jpg', class: 'cover-image') %>
-          </div>
-          <%= image_tag('logements/hotetext.png', class: 'title') %>
-          <%= image_tag('logements/hote1.png', class: 'character') %>
-        </div>
-      <% end %>
-
-      <%= link_to logements_path(categorie: 'camping-car'), class: 'home-logement-categories-owner' do %>
-        <div class="cardtest">
-          <div class="wrapper">
-            <%= image_tag('logements/caravane.jpg', class: 'cover-image') %>
-
-          </div>
-          <%= image_tag('logements/ccartext.png', class: 'title') %>
-          <%= image_tag('logements/ccar2.png', class: 'character') %>
-        </div>
+    <div class="home-btn-logement-boue-container">
+      <%= link_to logements_path do%>
+        <%= image_tag('logements/tout_voir_button_vdeux.svg') %>
       <% end %>
     </div>
 
-
-
   </div>
 
-  <div class="home-btn-logement-boue-container">
-    <%= link_to logements_path do%>
-      <%= image_tag('logements/tout_voir_button_vdeux.svg') %>
-    <% end %>
-  </div>
+  <!-- ================== div vague au dessus de emplacement ===================== -->
 
-</div>
+  <div class="vague-emplacement-top">
+    <%= image_tag('emplacements/emplacement_vague.svg') %>
 
-<!-- ================== div vague au dessus de emplacement ===================== -->
-
-<div class="vague-emplacement-top">
-  <%= image_tag('emplacements/emplacement_vague.svg') %>
-
-  <div class="home-emplacement-surfer">
-    <%= image_tag('emojies/surfer_orange.svg') %>
-  </div>
-
-  <div class="vague-emplacement-trait-anti-bug"></div>
-</div>
-
-
-
-<!-- ================== div emplacements ===================== -->
-
-<div class="home-emplacement-div">
-
-  <div class="home-emplacement-title-and-title-shadow">
-    <div class="home-emplacement-title-shadow">
-      <h1>Emplacements</h1>
+    <div class="home-emplacement-surfer">
+      <%= image_tag('emojies/surfer_orange.svg') %>
     </div>
 
-    <div class="home-emplacement-title">
-      <h1>Emplacements</h1>
+  </div>
+
+
+
+  <!-- ================== div emplacements ===================== -->
+
+  <div class="home-emplacement-div">
+
+    <div class="home-emplacement-title-and-title-shadow">
+      <div class="home-emplacement-title-shadow">
+        <h1>Emplacements</h1>
+      </div>
+
+      <div class="home-emplacement-title">
+        <h1>Emplacements</h1>
+      </div>
     </div>
-  </div>
 
-  <div class="home-emplacement-map">
-    <%= image_tag('emplacements/emplacement_map.png') %>
-  </div>
+    <div class="home-emplacement-map">
+      <%= image_tag('emplacements/emplacement_map.png') %>
+    </div>
 
-  <div class="home-emplacement-btn">
-    <%= link_to activites_path do%>
-      <%= image_tag('activites/boue_button.svg') %>
-    <% end %>
-  </div>
+    <div class="home-emplacement-btn">
+      <%= link_to activites_path do%>
+        <%= image_tag('activites/boue_button.svg') %>
+      <% end %>
+    </div>
 
-  <div class="home-emplacement-bulle">
-    <%= image_tag('emplacements/bulle.svg') %>
-  </div>
+    <div class="home-emplacement-bulle">
+      <%= image_tag('emplacements/bulle.svg') %>
+    </div>
 
-  <div class="home-emplacement-algues">
-    <%= image_tag('emplacements/algues.svg') %>
-  </div>
+    <div class="home-emplacement-algues">
+      <%= image_tag('emplacements/algues.svg') %>
+    </div>
 
-  <div class="home-emplacement-boat">
-    <%= image_tag('emojies/boat.svg') %>
-  </div>
+    <div class="home-emplacement-boat">
+      <%= image_tag('emojies/boat.svg') %>
+    </div>
 
+  </div>
 </div>
 
 

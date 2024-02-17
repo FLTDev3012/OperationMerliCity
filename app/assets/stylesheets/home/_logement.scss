@@ -3,10 +3,7 @@
 .home-logements-div {
   min-height: 100vh;
   position: relative;
-  background-color: $sable;
   overflow: hidden;
-  background-color: $sable;
-  background-image: url("https://www.transparenttextures.com/patterns/grey-sandbag.png");
 }
 
 .home-emplacement-para {
@@ -31,20 +28,14 @@
 
 
 
-.home-logements-trait-anti-bug {
-  content: '';
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 1px;
-  background-color: $bleu;
-}
+
 
 .home-logement-vague-haut img {
   width: 100vw;
   height: auto;
   position: absolute;
   top: 0;
+  opacity: 0.66;
 }
 
 .home-logement-title-and-title-shadow {
