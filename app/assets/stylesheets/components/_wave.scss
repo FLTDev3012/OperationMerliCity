@@ -28,3 +28,28 @@
   background-color: $bgbleu; /* Couleur de la vague */
   animation: waveAnimation 20s infinite; /* Durée de l'animation et répétition infinie */
 }
+
+
+@keyframes wavetransAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  15% {
+    transform: translateY(-15px);
+  }
+  30% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
