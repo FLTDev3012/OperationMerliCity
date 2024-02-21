@@ -5,7 +5,9 @@
   margin: 0;
   background: gray;
   background-color: $sable;
-  background-image: url("https://www.transparenttextures.com/patterns/grey-sandbag.png");
+  background-color: #fffac257;
+  //background-image: url("https://www.transparenttextures.com/patterns/grey-sandbag.png");
+  background-color: #fff;
 }
 
 //
@@ -16,7 +18,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-image: url(https://design2seo.com/assets/blog/svg-clipping/home_intro_bg.jpg);
+  background-image: url(/assets/images/home/topun.png);
   background-position: center center;
   background-repeat: no-repeat;
   font-family: sans-serif;
@@ -32,6 +34,8 @@
   width: 100%;
   height: auto;
 }
+
+
 .body .clipped-video {
   -webkit-clip-path: url(#text-overlay);
   clip-path: url(#text-overlay);
@@ -42,7 +46,8 @@
   top: 0;
 }
 .body text {
-  font-family: sans-serif;
-  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
   font-size: 18vw;
+  text-transform: uppercase;
 }
