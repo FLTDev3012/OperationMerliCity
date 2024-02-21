@@ -3,11 +3,12 @@
   width: 100vw;
   margin: 0;
   background: gray;
-  // background-color: $sable;
-  // background-image: url("https://www.transparenttextures.com/patterns/grey-sandbag.png");
+  background-color: $sable;
+  background-image: url("https://www.transparenttextures.com/patterns/grey-sandbag.png");
 }
 
-.testcontainer section {
+
+.testcontainer .section {
   height: 100vh;
   position: relative;
 }
@@ -44,6 +45,6 @@
 }
 
 .testcontainer rect {
-  fill: white;
+  fill: rgb(255, 255, 255);
   mask: url(#mask);
 }
