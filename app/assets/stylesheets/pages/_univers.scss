@@ -1,5 +1,6 @@
 .testcontainer {
   box-sizing: border-box;
+  min-height: 100vh;
   width: 100vw;
   margin: 0;
   background: gray;
@@ -7,44 +8,41 @@
   background-image: url("https://www.transparenttextures.com/patterns/grey-sandbag.png");
 }
 
+//
 
-.testcontainer .section {
-  height: 100vh;
-  position: relative;
-}
-
-.testcontainer video {
-  width: 50vw;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.testcontainer svg {
+.body {
   width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-image: url(https://design2seo.com/assets/blog/svg-clipping/home_intro_bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+  color: white;
+}
+.body .wrapperr {
+  position: relative;
+  width: 65%;
+  height: 30%;
+  margin: 0 auto;
+}
+.body video {
+  width: 100%;
+  height: auto;
+}
+.body .clipped-video {
+  -webkit-clip-path: url(#text-overlay);
+  clip-path: url(#text-overlay);
+}
+.body svg {
+  display: block;
   position: absolute;
   top: 0;
-  left: 0;
-  height: 100%;
 }
-
-.testcontainer mask {
-  display: grid;
-  place-content: center;
-  height: 100vh;
-}
-
-.testcontainer text {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  text-transform: uppercase;
-  font-size: 1.6vw;
-  letter-spacing: -.2rem;
-  transform: translate(30%, 60%);
-}
-
-.testcontainer rect {
-  fill: rgb(255, 255, 255);
-  mask: url(#mask);
+.body text {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 18vw;
 }

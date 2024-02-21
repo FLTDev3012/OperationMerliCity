@@ -1,29 +1,17 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
 <div class="testcontainer">
-
-  <div class="section"></div>
-
-  <div class="section">
-
-
-    <video autoplay playsinline muted loop poster="https://images.unsplash.com/photo-1484291470158-b8f8d608850d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-      <source src="/assets/home/wavevideo.mp4" type="video/mp4">
-    </video>
-
-    <svg viewBox="0 0 285 80" preserveAspectRatio="xMidYMid slice">
-      <defs>
-        <mask id="mask" x="0" y="0" width="100%" height="100%">
-          <rect x="0" y="0" width="100%" height="100%" />
-          <text>Merlimont</text>
-        </mask>
-      </defs>
-
-      <rect x="0" y="0" width="100%" height="100%" />
-
-    </svg>
-
+  <div class="body">
+    <div class="wrapperr">
+      <video class="clipped-video" muted loop autoplay>
+        <source src="https://design2seo.com/assets/blog/svg-clipping/video_waves3.mp4">
+        </source>
+      </video>
+      <svg height="100%" width="100%">
+        <clipPath id="text-overlay" width="100%" height="100%">
+          <text id="title" x="0" y="0" dy="1.58em">Merlimont</text>
+        </clipPath>
+      </svg>
+    </div>
   </div>
 
 </div>
