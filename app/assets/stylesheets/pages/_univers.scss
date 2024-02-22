@@ -18,7 +18,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-image: url(/images/home/topun.png);
+  // background-image: url(/assets/home/topdeux.png);
   background-position: center center;
   background-repeat: no-repeat;
   font-family: sans-serif;
@@ -27,7 +27,7 @@
 .body .wrapperr {
   position: relative;
   width: 65%;
-  height: 30%;
+  height: 100%;
   margin: 0 auto;
 }
 .body video {
@@ -44,6 +44,7 @@
   display: block;
   position: absolute;
   top: 0;
+  height: 100%;
 }
 .body text {
   font-family: "Poppins", sans-serif;
