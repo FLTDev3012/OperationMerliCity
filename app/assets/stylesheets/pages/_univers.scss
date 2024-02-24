@@ -49,6 +49,15 @@
   transform-origin: center;
 }
 
+.body path {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(0, 70%) scale(0.3); /* Ajout de translate(-50%, -50%) */
+  transform-origin: center;
+}
+
+
 .body .videocontainer{
   position: absolute;
   width: 100%;
@@ -63,7 +72,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: red;
 
 }
 
