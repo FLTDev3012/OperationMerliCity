@@ -2,6 +2,23 @@
 <div class="testcontainer">
   <div class="body">
 
+    <div class="test-nav">
+      <div class="test-nav-left">
+        <!-- <%= link_to "Merlimont", "#" %> -->
+        <%= link_to root_path do %>
+          <%= image_tag('home/MerlimontB.png') %>
+        <% end %>
+      </div>
+
+      <div class="test-nav-right-new">
+        <%= link_to "Galerie", galerie_path %>
+        <%= link_to "Faune & Flore", fauneflore_path(anchor: 'top-of-page'), data: { turbo: false } %>
+        <%= link_to "Il etait une fois", merlimontdavant_path %>
+        <%= link_to "A propos", about_path, data: { turbo: false } %>
+      </div>
+
+    </div>
+
     <div class="svg-container">
       <svg>
         <clipPath id="text-overlay">
