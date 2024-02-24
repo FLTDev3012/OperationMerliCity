@@ -59,10 +59,12 @@ xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
 
   </div>
 
+  <div class="testonunedeuxieme">
+  </div>
+
 </div>
 
-<div class="testonunedeuxieme">
-</div>
+
 
 <script>
 
@@ -77,19 +79,32 @@ xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
       // circleSvg.style.top = event.clientY - 45;
       // circleSvg.style.left = event.clientX - 45;
 
-      mouseY = (event.clientY) - (45) + window.scrollY + 'px'
-      mouseX = (event.clientX) - (45) + 'px'
+      mouseY = (event.clientY) - (45)
+      mouseX = (event.clientX) - (45)
 
   })
+
+  let scrollY = 0
+
+  window.addEventListener('scroll', (event) => {
+      // circleSvg.style.top = event.clientY - 45;
+      // circleSvg.style.left = event.clientX - 45;
+
+      scrollY =  window.scrollY
+      console.log(scrollY)
+
+  })
+
+
 
 
 
   const mouseMove = () => {
       //intv += 1
 
-      circleSvg.style.top = mouseY
-      circleSvg.style.left = mouseX
-      console.log(window.scrollY);
+      circleSvg.style.top = mouseY + scrollY + 'px'
+      circleSvg.style.left = mouseX + 'px'
+
 
       //circleSvg.style.opacity = 1 + Math.sin(intv * .04)
       //console.log(Math.sin(intv * .04))
