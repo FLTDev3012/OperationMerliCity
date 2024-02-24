@@ -1,6 +1,6 @@
 .testcontainer {
   box-sizing: border-box;
-  min-height: 100vh;
+  height: 100vh;
   width: 100vw;
   margin: 0;
   background: gray;
@@ -14,7 +14,7 @@
 
 .body {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -23,32 +23,64 @@
   background-repeat: no-repeat;
   font-family: sans-serif;
   color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.svg-container {
+  height: 100%;
+  width:  100%;
+  position: absolute;
+}
+
+.body path {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.body path {
+  transform: scale(0.3);
+  transform-origin: center;
+}
+
+.body path {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(0, 70%) scale(0.3); /* Ajout de translate(-50%, -50%) */
+  transform-origin: center;
+}
+
+
+.body .videocontainer{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
 .body .wrapperr {
   position: relative;
   width: 65%;
   height: 100%;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
+
 .body video {
-  width: 100%;
-  height: auto;
+  position: absolute;
 }
 
 
 .body .clipped-video {
   -webkit-clip-path: url(#text-overlay);
   clip-path: url(#text-overlay);
-}
-.body svg {
-  display: block;
-  position: absolute;
-  top: 0;
-  height: 100%;
-}
-.body text {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-size: 18vw;
-  text-transform: uppercase;
 }
