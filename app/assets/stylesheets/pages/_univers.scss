@@ -5,7 +5,7 @@
   margin: 0;
   background: gray;
   background-color: $sable;
-  background-color: #fffac257;
+  background-color: #fffac230;
   background-image: url("https://www.transparenttextures.com/patterns/grey-sandbag.png");
   background-color: #fff;
 }
@@ -77,10 +77,46 @@
 
 .body video {
   position: absolute;
+  filter: hue-rotate(7deg);
 }
 
 
 .body .clipped-video {
   -webkit-clip-path: url(#text-overlay);
   clip-path: url(#text-overlay);
+}
+
+@media (max-width: 550px) {
+  .body path {
+    transform: translate(25%, 70%) scale(0.2);
+  }
+}
+
+// nav
+
+.test-nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 8vh;
+  // background-color: #023646;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  margin: 30px 20px;
+}
+
+.test-nav a {
+  padding: 0 20px;
+  color: #023646;
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 1.3rem;
+
+
+}
+
+.test-nav-left img {
+  height: 4rem;
+  width: auto;
 }
