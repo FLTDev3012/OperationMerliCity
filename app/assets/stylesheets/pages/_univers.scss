@@ -29,10 +29,14 @@
   width: 65%;
   height: 100%;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .body video {
   width: 100%;
   height: auto;
+  position: absolute;
 }
 
 
@@ -40,15 +44,13 @@
   -webkit-clip-path: url(#text-overlay);
   clip-path: url(#text-overlay);
 }
-.body svg {
-  display: block;
+
+
+
+.body path {
   position: absolute;
-  top: 0;
-  height: 100%;
-}
-.body text {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-size: 18vw;
-  text-transform: uppercase;
+  top: 50%;
+  left: 50%;
+  transform: translate(0%, 0%) scale(0.3);
+  // transform-origin: center;
 }
