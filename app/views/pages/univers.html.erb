@@ -28,7 +28,7 @@ xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
         <% end %>
       </div>
 
-      <div class="test-nav-right-new">
+      <div class="test-nav-right">
         <%= link_to "Galerie", galerie_path %>
         <%= link_to "Faune & Flore", fauneflore_path(anchor: 'top-of-page'), data: { turbo: false } %>
         <%= link_to "Il etait une fois", merlimontdavant_path %>
@@ -56,10 +56,24 @@ xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
     </div>
 
 
+  <div class="home-dunes">
+    <%= image_tag('home/home_dunes.svg') %>
+  </div>
+
+  <div class="home-bas-dunes">
+    <div class="home-petite-trace-container">
+      <%= image_tag('home/home_petite_trace.svg') %>
+    </div>
+  </div>
 
   </div>
 
   <div class="testonunedeuxieme">
+
+    <div class="home-traces">
+      <%= image_tag('home/home_trace.svg') %>
+    </div>
+
   </div>
 
 </div>

@@ -7,6 +7,7 @@
   pointer-events: none;
   transition: top 1s, left 1s;
   transition-timing-function: ease-out;
+  z-index: 1000;
 }
 
 text {
@@ -147,9 +148,25 @@ text {
 
 }
 
+.test-nav-left {
+  margin-left: 20px;
+}
+
 .test-nav-left img {
   height: 4rem;
   width: auto;
+}
+
+.test-nav-right {
+  margin-right: 20px;
+}
+
+.body .home-dunes {
+  filter: grayscale(.5);
+}
+
+.body .home-bas-dunes {
+  filter: grayscale(.5);
 }
 
 //
@@ -157,4 +174,9 @@ text {
 .testonunedeuxieme {
   min-height: 100vh;
   width: 100%;
+  position: relative;
+}
+
+.testonunedeuxieme .home-traces {
+  filter: grayscale(.5);
 }
