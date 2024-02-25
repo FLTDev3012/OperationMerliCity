@@ -162,11 +162,11 @@
 }
 
 .test-home-first-div .home-dunes {
-  filter: grayscale(.5);
+  filter: grayscale(1);
 }
 
 .test-home-first-div .home-bas-dunes {
-  filter: grayscale(.5);
+  filter: grayscale(1);
 }
 
 // deuxieme div home
@@ -176,12 +176,12 @@
   width: 100%;
   position: relative;
   overflow: hidden;
-  background: url("/assets/sablebg.png"),
-            linear-gradient(180deg, rgba(253,250,228,1) 0%, rgba(255,255,255,1) 100%);
+  background-image: url("/assets/sablebg.png");
+  background-color: #fff;
 }
 
 .test-home-seconde-div .home-traces {
-  filter: grayscale(.5);
+  filter: grayscale(1);
 }
 
 .test-home-title-container {
@@ -215,6 +215,9 @@
 .test-home-seconde-div-text-container p {
   font-family: "Poppins", sans-serif;
   color: #023646;
+  text-align: center;
+  width: 80%;
+  font-size: 1.3rem;
 }
 
 .test-home-seconde-div-img-container {
@@ -222,7 +225,12 @@
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
   // background-color: blueviolet;
-  content: "";
+}
+
+
+
+.test-home-seconde-div-img-container img {
+  width: 400px;
+  height: auto;
 }
