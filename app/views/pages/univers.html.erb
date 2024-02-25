@@ -50,7 +50,7 @@
 
 
       <div class="videocontainer">
-        <div class="wrapperr">
+        <div class="wrapperr" id="lem">
           <video class="clipped-video" muted loop autoplay>
             <source src="https://design2seo.com/assets/blog/svg-clipping/video_waves3.mp4"></source>
           </video>
@@ -113,6 +113,15 @@
 
   </div>
 </div>
+
+<script type="text/javascript">
+    let lem = document.getElementById("lem");
+
+    window.addEventListener('scroll', function(){
+        var value = window.scrollY;
+        lem.style.top = value * 0.5 + 'px';
+    })
+</script>
 
 
 
