@@ -162,11 +162,12 @@
 }
 
 .test-home-first-div .home-dunes {
-  filter: grayscale(1);
+  filter: grayscale(0.5);
 }
 
 .test-home-first-div .home-bas-dunes {
-  filter: grayscale(1);
+  filter: grayscale(0.5);
+  background: linear-gradient(180deg, #fffacd 0%, #eceaea 100%);
 }
 
 // deuxieme div home
@@ -193,7 +194,7 @@
 }
 
 .test-home-title-container h1 {
-  color: #023646;
+  color: #023646d6;;
   font-family: "Gloria Hallelujah", cursive;
   font-size: 5rem;
 }
@@ -214,16 +215,17 @@
 
 .test-home-seconde-div-text-container p {
   font-family: "Poppins", sans-serif;
-  color: #023646;
+  color: #023646e5;
   text-align: center;
   width: 80%;
-  font-size: 1.3rem;
-  margin: 4rem 0 3rem 0;
+  font-size: 1.5rem;
+  margin: 3.5rem 0 3rem 0;
 }
 
 .test-home-seconde-div-text-container img {
-  width: 50%;
+  width: 60%;
   height: auto;
+  opacity: 0.9;
 }
 
 .test-home-seconde-div-img-container {
