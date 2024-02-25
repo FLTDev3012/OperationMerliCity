@@ -38,7 +38,7 @@
   background: gray;
   background-color: $sable;
   background-color: #fffac230;
-  background-image: url("https://www.transparenttextures.com/patterns/grey-sandbag.png");
+  background-image: url("/assets/sablebg.png");
   background-color: #fff;
 }
 
@@ -176,7 +176,7 @@
   width: 100%;
   position: relative;
   overflow: hidden;
-  background: url("https://www.transparenttextures.com/patterns/grey-sandbag.png"),
+  background: url("/assets/sablebg.png"),
             linear-gradient(180deg, rgba(253,250,228,1) 0%, rgba(255,255,255,1) 100%);
 }
 
@@ -209,8 +209,12 @@
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
   // background-color: aqua;
+}
+
+.test-home-seconde-div-text-container p {
+  font-family: "Poppins", sans-serif;
+  color: #023646;
 }
 
 .test-home-seconde-div-img-container {
