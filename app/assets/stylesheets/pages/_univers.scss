@@ -199,6 +199,19 @@
   font-size: 5rem;
 }
 
+.home-presentation-title-shadow {
+  transform: translateY(-30px) translateX(-50%);
+}
+
+.home-presentation-title-shadow h1 {
+  font-size: 6rem;
+}
+
+.home-presentation-title-shadow img {
+  filter: grayscale(.5);
+}
+
+
 .test-home-seconde-div-text-img-container {
   width: 100%;
   display: flex;
