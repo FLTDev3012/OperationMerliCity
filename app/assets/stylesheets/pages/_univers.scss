@@ -1,6 +1,6 @@
 // cursor
 
-.textsvg {
+.test-home-page .textsvg {
   width: 100px;
   position: absolute;
   animation: rotation 4.5s infinite linear;
@@ -10,7 +10,7 @@
   z-index: 1000;
 }
 
-text {
+.test-home-page text {
   font-size: 4em;
   font-family: 'Poppins';
   font-weight: bold;
@@ -30,7 +30,7 @@ text {
 
 //
 
-.testcontainer {
+.test-home-container {
   box-sizing: border-box;
   min-height: 100vh;
   width: 100vw;
@@ -38,13 +38,13 @@ text {
   background: gray;
   background-color: $sable;
   background-color: #fffac230;
-  background-image: url("https://www.transparenttextures.com/patterns/grey-sandbag.png");
+  background-image: url("/assets/sablebg.png");
   background-color: #fff;
 }
 
 //
 
-.body {
+.test-home-first-div {
   width: 100%;
   height: 100vh;
   margin: 0;
@@ -67,7 +67,7 @@ text {
   position: absolute;
 }
 
-.body path {
+.test-home-first-div path {
   position: absolute;
   top: 0;
   left: 0;
@@ -76,12 +76,12 @@ text {
   z-index: 1;
 }
 
-.body path {
+.test-home-first-div path {
   transform: scale(0.3);
   transform-origin: center;
 }
 
-.body path {
+.test-home-first-div path {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -90,13 +90,13 @@ text {
 }
 
 
-.body .videocontainer{
+.test-home-first-div .videocontainer{
   position: absolute;
   width: 100%;
   height: 100%;
 }
 
-.body .wrapperr {
+.test-home-first-div .wrapperr {
   position: relative;
   width: 65%;
   height: 100%;
@@ -107,19 +107,19 @@ text {
 
 }
 
-.body video {
+.test-home-first-div video {
   position: absolute;
   filter: hue-rotate(7deg);
 }
 
 
-.body .clipped-video {
+.test-home-first-div .clipped-video {
   -webkit-clip-path: url(#text-overlay);
   clip-path: url(#text-overlay);
 }
 
 @media (max-width: 550px) {
-  .body path {
+  .test-home-first-div path {
     transform: translate(25%, 70%) scale(0.2);
   }
 }
@@ -161,22 +161,115 @@ text {
   margin-right: 20px;
 }
 
-.body .home-dunes {
-  filter: grayscale(.5);
+.test-home-first-div .home-dunes {
+  filter: grayscale(0.5);
 }
 
-.body .home-bas-dunes {
-  filter: grayscale(.5);
+.test-home-first-div .home-bas-dunes {
+  filter: grayscale(0.5);
+  background: linear-gradient(180deg, #fffacd 0%, #eceaea 100%);
 }
 
-//
 
-.testonunedeuxieme {
+
+// deuxieme div home
+
+.test-home-seconde-div {
   min-height: 100vh;
   width: 100%;
   position: relative;
+  overflow: hidden;
+  background-image: url("/assets/sablebg.png");
+  background-color: #fff;
 }
 
-.testonunedeuxieme .home-traces {
+.test-home-seconde-div .home-traces {
+  filter: grayscale(1);
+}
+
+.test-home-seconde-div .home-traces img {
+  filter: brightness(0.9);
+}
+
+
+
+.test-home-title-container {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.test-home-title-container h1 {
+  color: #023646d6;;
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 5rem;
+}
+
+.home-presentation-title-shadow {
+  transform: translateY(-30px) translateX(-50%);
+}
+
+.home-presentation-title-shadow h1 {
+  font-size: 6rem;
+}
+
+.home-presentation-title-shadow img {
   filter: grayscale(.5);
+}
+
+
+.test-home-seconde-div-text-img-container {
+  width: 100%;
+  display: flex;
+}
+
+.test-home-seconde-div-text-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // align-items: center;
+  // background-color: aqua;
+}
+
+.test-home-seconde-div-text-container p {
+  font-family: "Helvetica Neue", sans-serif;
+  color: #023646e5;
+  text-align: center;
+  width: 80%;
+  font-size: 1.5rem;
+  margin: 3.5rem 0 3rem 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.test-home-seconde-div-text-container img {
+  width: 60%;
+  height: auto;
+  opacity: 0.9;
+}
+
+.test-home-seconde-div-img-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  // background-color: blueviolet;
+}
+
+
+
+.test-home-seconde-div-img-container img {
+  width: 400px;
+  height: auto;
+  filter: drop-shadow(0px 4px 4px #023646);
+  transition: all 0.5s ease-in-out;
+}
+
+
+
+.test-home-seconde-div-img-container img:hover {
+  transform: perspective(1000px) translateY(0%) rotateX(-10deg) translateZ(0);
+  filter: drop-shadow(0px 1px 4px #023646);
 }
