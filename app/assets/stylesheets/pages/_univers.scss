@@ -242,6 +242,7 @@
   font-size: 1.5rem;
   margin: 3.5rem 0 3rem 0;
   font-family: "Montserrat", sans-serif;
+  font-weight: 600;
 }
 
 .test-home-seconde-div-text-container img {
@@ -265,6 +266,7 @@
   height: auto;
   filter: drop-shadow(0px 4px 4px #023646);
   transition: all 0.5s ease-in-out;
+  animation: waveRegularAnimation 5s infinite;
 }
 
 
