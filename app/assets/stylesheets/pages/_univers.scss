@@ -170,6 +170,8 @@
   background: linear-gradient(180deg, #fffacd 0%, #eceaea 100%);
 }
 
+
+
 // deuxieme div home
 
 .test-home-seconde-div {
@@ -184,6 +186,12 @@
 .test-home-seconde-div .home-traces {
   filter: grayscale(1);
 }
+
+.test-home-seconde-div .home-traces img {
+  filter: brightness(0.9);
+}
+
+
 
 .test-home-title-container {
   width: 100%;
@@ -227,12 +235,13 @@
 }
 
 .test-home-seconde-div-text-container p {
-  font-family: "Poppins", sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
   color: #023646e5;
   text-align: center;
   width: 80%;
   font-size: 1.5rem;
   margin: 3.5rem 0 3rem 0;
+  font-family: "Montserrat", sans-serif;
 }
 
 .test-home-seconde-div-text-container img {
