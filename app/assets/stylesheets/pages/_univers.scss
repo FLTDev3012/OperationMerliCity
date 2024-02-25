@@ -1,6 +1,6 @@
 // cursor
 
-.textsvg {
+.test-home-page .textsvg {
   width: 100px;
   position: absolute;
   animation: rotation 4.5s infinite linear;
@@ -10,7 +10,7 @@
   z-index: 1000;
 }
 
-text {
+.test-home-page text {
   font-size: 4em;
   font-family: 'Poppins';
   font-weight: bold;
@@ -30,7 +30,7 @@ text {
 
 //
 
-.testcontainer {
+.test-home-container {
   box-sizing: border-box;
   min-height: 100vh;
   width: 100vw;
@@ -44,7 +44,7 @@ text {
 
 //
 
-.body {
+.test-home-first-div {
   width: 100%;
   height: 100vh;
   margin: 0;
@@ -67,7 +67,7 @@ text {
   position: absolute;
 }
 
-.body path {
+.test-home-first-div path {
   position: absolute;
   top: 0;
   left: 0;
@@ -76,12 +76,12 @@ text {
   z-index: 1;
 }
 
-.body path {
+.test-home-first-div path {
   transform: scale(0.3);
   transform-origin: center;
 }
 
-.body path {
+.test-home-first-div path {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -90,13 +90,13 @@ text {
 }
 
 
-.body .videocontainer{
+.test-home-first-div .videocontainer{
   position: absolute;
   width: 100%;
   height: 100%;
 }
 
-.body .wrapperr {
+.test-home-first-div .wrapperr {
   position: relative;
   width: 65%;
   height: 100%;
@@ -107,19 +107,19 @@ text {
 
 }
 
-.body video {
+.test-home-first-div video {
   position: absolute;
   filter: hue-rotate(7deg);
 }
 
 
-.body .clipped-video {
+.test-home-first-div .clipped-video {
   -webkit-clip-path: url(#text-overlay);
   clip-path: url(#text-overlay);
 }
 
 @media (max-width: 550px) {
-  .body path {
+  .test-home-first-div path {
     transform: translate(25%, 70%) scale(0.2);
   }
 }
@@ -161,22 +161,64 @@ text {
   margin-right: 20px;
 }
 
-.body .home-dunes {
+.test-home-first-div .home-dunes {
   filter: grayscale(.5);
 }
 
-.body .home-bas-dunes {
+.test-home-first-div .home-bas-dunes {
   filter: grayscale(.5);
 }
 
-//
+// deuxieme div home
 
-.testonunedeuxieme {
+.test-home-seconde-div {
   min-height: 100vh;
   width: 100%;
   position: relative;
+  overflow: hidden;
+  background: url("https://www.transparenttextures.com/patterns/grey-sandbag.png"),
+            linear-gradient(180deg, rgba(253,250,228,1) 0%, rgba(255,255,255,1) 100%);
 }
 
-.testonunedeuxieme .home-traces {
+.test-home-seconde-div .home-traces {
   filter: grayscale(.5);
+}
+
+.test-home-title-container {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.test-home-title-container h1 {
+  color: #023646;
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 5rem;
+}
+
+.test-home-seconde-div-text-img-container {
+  width: 100%;
+  display: flex;
+  height: 70vh;
+}
+
+.test-home-seconde-div-text-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // background-color: aqua;
+}
+
+.test-home-seconde-div-img-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // background-color: blueviolet;
+  content: "";
 }
