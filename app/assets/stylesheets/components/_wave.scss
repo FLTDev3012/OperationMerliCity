@@ -126,3 +126,15 @@
     transform: translate(calc(var(--offset)), calc(var(--text))) rotate(0deg); /* Utilisez la variable avec la fonction calc() */
   }
 }
+
+@keyframes cerfvolantAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
