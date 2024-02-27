@@ -15,6 +15,7 @@
   font-family: 'Poppins';
   font-weight: bold;
   fill: #023646;
+  transition: all 0.5s ease-in-out;
 
 }
 
@@ -181,6 +182,10 @@
   overflow: hidden;
   background-image: url("/assets/sablebg.png");
   background-color: #fff;
+}
+
+.test-home-page .test-home-seconde-div:hover text {
+  fill: #fff;
 }
 
 .test-home-seconde-div .home-traces {
