@@ -277,10 +277,7 @@
       <div class="home-activite-card-carousel">
 
         <div class="card" id="1">
-          <div class="cardbgcontainer">
-            <div class="cardbg">
-            </div>
-          </div>
+
           <div class="image-container" style="background-image: url('<%= cl_image_path(@activites[0].photo.key) %>');">
           </div>
 
@@ -290,10 +287,7 @@
         </div>
 
         <div class="card" id="2">
-          <div class="cardbgcontainer">
-            <div class="cardbg">
-            </div>
-          </div>
+
           <div class="image-container" style="background-image: url('<%= cl_image_path(@activites[1].photo.key) %>');">
           </div>
           <p class="activite-title"><%= @activites[1].title %></p>
@@ -302,34 +296,27 @@
         </div>
 
         <div class="card" id="3">
-          <div class="cardbgcontainer">
-            <div class="cardbg">
-            </div>
-          </div>
+
           <div class="image-container" style="background-image: url('<%= cl_image_path(@activites[2].photo.key) %>');">
           </div>
-          <p class="activite-title"><%= @activites[2].title %></p>
-          <p class="activite-desc"><%= @activites[2].description %></p>
-          <%= link_to "Voir plus", activite_path(@activites[2]) %>
+
+          <div>
+            <p class="activite-title"><%= @activites[2].title %></p>
+            <%= link_to "Voir plus", activite_path(@activites[2]) %>
+          </div>
+
         </div>
 
         <div class="card" id="4">
-          <div class="cardbgcontainer">
-            <div class="cardbg">
-            </div>
-          </div>
+
           <div class="image-container" style="background-image: url('<%= cl_image_path(@activites[3].photo.key) %>');">
           </div>
           <p class="activite-title"><%= @activites[3].title %></p>
-          <p class="activite-desc"><%= @activites[3].description %></p>
           <%= link_to "Voir plus", activite_path(@activites[3]) %>
         </div>
 
         <div class="card" id="5">
-          <div class="cardbgcontainer">
-            <div class="cardbg">
-            </div>
-          </div>
+
           <div class="image-container" style="background-image: url('<%= cl_image_path(@activites[4].photo.key) %>');">
           </div>
           <p class="activite-title"><%= @activites[4].title %></p>
@@ -538,7 +525,6 @@
         function clearDraggingEvent() {
           window.removeEventListener("mousemove", handler)
           window.removeEventListener("mouseup", clearDraggingEvent)
-
           document.removeEventListener("mouseleave", clearDraggingEvent)
 
           handler(null)
