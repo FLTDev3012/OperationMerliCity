@@ -157,18 +157,19 @@
   -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
   -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
   box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
-  border-radius: 10px;
+  // border-radius: 10px;
   filter: brightness(.9);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgba(255, 250, 205, 0.3);
-  border: 1px solid rgba(102, 154, 46, 0.25);
-  border-right: 1px solid rgba(102, 154, 46, 0.1);
-  border-bottom: 1px solid rgba(102, 154, 46, 0.1);
-  border-radius: 10px;
-  backdrop-filter: blur(25px);
+  // background-color: rgba(255, 250, 205, 0.3);
+  // border: 1px solid rgba(102, 154, 46, 0.25);
+  // border-right: 1px solid rgba(102, 154, 46, 0.1);
+  // border-bottom: 1px solid rgba(102, 154, 46, 0.1);
+  // border-radius: 10px;
+  // backdrop-filter: blur(25px);
+  background-color: transparent;
   overflow: hidden;
   color: #fff;
   font-family: 'ABeeZee', sans-serif;
@@ -233,18 +234,18 @@
   transform: translateY(-5px);
 }
 
-.home-activite-card-carousel .card::before
-{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -40%;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.3);
-    pointer-events: none;
-    transform: skewX(-15deg);
-}
+// .home-activite-card-carousel .card::before
+// {
+//     content: '';
+//     position: absolute;
+//     top: 0;
+//     left: -40%;
+//     width: 100%;
+//     height: 100%;
+//     background: rgba(255, 255, 255, 0.3);
+//     pointer-events: none;
+//     transform: skewX(-15deg);
+// }
 
 .card.highlight {
   filter: brightness(1)
