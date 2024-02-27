@@ -224,6 +224,7 @@
   font-family: 'ABeeZee', sans-serif;
   border: 2px solid $sable;
   background-color: #fffac229;
+  position: relative;
 
 }
 
@@ -247,6 +248,8 @@
 .card.highlight {
   filter: brightness(1)
 }
+
+
 
 
 
