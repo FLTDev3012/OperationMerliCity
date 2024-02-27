@@ -209,9 +209,7 @@
   opacity: 0.3;
 }
 
-.activite-title {
-  font-size: 2.5rem;
-}
+
 
 .home-activite-card-carousel .card a {
   color: #827F64;
@@ -249,8 +247,27 @@
   filter: brightness(1)
 }
 
+.card-div-image {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: carrouPicAnimation 6s infinite;
+}
 
+.card-div-text {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: carrouTextAnimation 6s infinite;
+}
 
+.activite-title {
+  font-size: 2.5rem;
+  padding: 2rem;
+  margin: 0;
+}
 
 
 .image-container {

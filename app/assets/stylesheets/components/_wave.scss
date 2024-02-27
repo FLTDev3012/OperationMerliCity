@@ -94,3 +94,35 @@
   }
 
 }
+
+
+:root {
+  --offset: -50%; /* Définissez la variable et sa valeur par défaut */
+  --text: 10%;
+}
+
+/* Définissez votre animation en utilisant la variable */
+@keyframes carrouPicAnimation {
+  0% {
+    transform: translate(calc(var(--offset)), calc(var(--offset))) rotate(0deg); /* Utilisez la variable avec la fonction calc() */
+  }
+  50% {
+    transform: translate(calc(var(--offset)), calc(var(--offset) - 10px)) rotate(5deg); /* Utilisez la variable avec la fonction calc() */
+  }
+  100% {
+    transform: translate(calc(var(--offset)), calc(var(--offset))) rotate(0deg); /* Utilisez la variable avec la fonction calc() */
+  }
+}
+
+
+@keyframes carrouTextAnimation {
+  0% {
+    transform: translate(calc(var(--offset)), calc(var(--text))) rotate(0deg); /* Utilisez la variable avec la fonction calc() */
+  }
+  50% {
+    transform: translate(calc(var(--offset)), calc(var(--text) - 10px)) rotate(-5deg); /* Utilisez la variable avec la fonction calc() */
+  }
+  100% {
+    transform: translate(calc(var(--offset)), calc(var(--text))) rotate(0deg); /* Utilisez la variable avec la fonction calc() */
+  }
+}
