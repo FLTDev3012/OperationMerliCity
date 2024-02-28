@@ -111,6 +111,8 @@
 .test-home-first-div video {
   position: absolute;
   filter: hue-rotate(7deg);
+  animation: waveVideoAnimation 10s infinite;
+  transform-origin: center center;
 }
 
 

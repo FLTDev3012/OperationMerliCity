@@ -138,3 +138,22 @@
     transform: rotate(0deg);
   }
 }
+
+@keyframes waveVideoAnimation {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  20% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  60% {
+    transform: translateY(50px) rotate(5deg);
+  }
+
+
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
