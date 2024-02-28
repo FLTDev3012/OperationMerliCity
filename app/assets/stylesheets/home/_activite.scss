@@ -232,7 +232,8 @@
   position: absolute;
   top: 20%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) rotate(121deg);
+  filter: hue-rotate(-7deg);
 }
 
 
@@ -303,6 +304,7 @@
   z-index: 10;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
   font-size: 1.5rem;
+  display: block ruby;
   // background-color: #0260a4;
   // backdrop-filter: blur(25px);
   // border-radius: 10px;
@@ -329,16 +331,15 @@
 
 
 .home-activite-card-carousel .card a {
-  color: #827F64;
-  color: $sable;
+  color: #ffffff;
   z-index: 10;
   padding: 8px 16px;
   border-radius: 10px;
   transition: all 0.2s ease-in-out;
   font-size: 1.1rem;
   font-family: 'ABeeZee', sans-serif;
-  border: 2px solid $sable;
-  background-color: #fffac229;
+  border: 2px solid #fff;
+  background-color: #208ad9b0;
   position: relative;
 
 }
