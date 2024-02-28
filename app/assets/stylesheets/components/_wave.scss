@@ -146,7 +146,7 @@
     transform: translate(calc(var(--offset)), calc(var(--text))) rotate(0deg); /* Utilisez la variable avec la fonction calc() */
   }
   50% {
-    transform: translate(calc(var(--offset)), calc(var(--text) - 10px)) rotate(-5deg); /* Utilisez la variable avec la fonction calc() */
+    transform: translate(calc(var(--offset)), calc(var(--text) - 10px)) rotate(-2deg); /* Utilisez la variable avec la fonction calc() */
   }
   100% {
     transform: translate(calc(var(--offset)), calc(var(--text))) rotate(0deg); /* Utilisez la variable avec la fonction calc() */

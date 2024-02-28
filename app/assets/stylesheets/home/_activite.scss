@@ -231,6 +231,18 @@
   animation: carrouItemThreeAnimation 8s infinite;
 }
 
+.card-item-five {
+  content: '';
+  position: absolute;
+  top: 10%;
+  left: 0;
+  height: 90px;
+  width: 90px;
+  background-color: #38d4cc;
+  transform: translateX(-50%);
+  animation: carrouItemThreeAnimation 8s infinite;
+}
+
 .card p {
   z-index: 10;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
