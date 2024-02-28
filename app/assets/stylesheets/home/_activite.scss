@@ -115,7 +115,7 @@
 }
 
 .home-activite-container {
-  overflow: hidden;
+  // overflow: hidden;
   padding: 20px;
   margin-bottom: 2vh;
 }
@@ -154,9 +154,9 @@
   position: absolute;
   margin: 0 auto;
   transition: inherit;
-  -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
-  -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
-  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+  // -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+  // -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+  // box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
   // border-radius: 10px;
   filter: brightness(.9);
   display: flex;
@@ -170,7 +170,7 @@
   // border-radius: 10px;
   // backdrop-filter: blur(25px);
   background-color: transparent;
-  overflow: hidden;
+  // overflow: hidden;
   color: #fff;
   font-family: 'ABeeZee', sans-serif;
   background-color: rgba(95, 158, 160, 0);
@@ -180,6 +180,42 @@
   position: absolute;
   height: 100%;
   width: 100%;
+}
+
+.card-item-one {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 40%;
+  height: 80%;
+  width: 50%;
+  background-color: #c42f2f;
+  transform: translateX(-50%);
+  animation: carrouItemOneAnimation 8s infinite;
+}
+
+.card-item-two {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 80%;
+  height: 90px;
+  width: 90px;
+  background-color: #d48338;
+  transform: translateX(-50%);
+  animation: carrouItemOneAnimation 8s infinite;
+}
+
+.card-item-three {
+  content: '';
+  position: absolute;
+  top: 10%;
+  right: 0;
+  height: 90px;
+  width: 90px;
+  background-color: #d1d438;
+  transform: translateX(-50%);
+  animation: carrouItemThreeAnimation 8s infinite;
 }
 
 .card p {
@@ -249,7 +285,7 @@
 
 .card-div-image {
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   animation: carrouPicAnimation 6s infinite;
@@ -271,8 +307,10 @@
 
 
 .image-container {
-  width: 8em;
-  height: 8em;
+  // width: 8em;
+  // height: 8em;
+  width: 14em;
+  height: 14em;
   position: relative;
   background-size: cover;
   margin-bottom: 2em;

@@ -99,6 +99,8 @@
 :root {
   --offset: -50%; /* Définissez la variable et sa valeur par défaut */
   --text: 10%;
+  --itemfirst: -5%;
+  --itemthree: 0%;
 }
 
 /* Définissez votre animation en utilisant la variable */
@@ -111,6 +113,30 @@
   }
   100% {
     transform: translate(calc(var(--offset)), calc(var(--offset))) rotate(0deg); /* Utilisez la variable avec la fonction calc() */
+  }
+}
+
+@keyframes carrouItemOneAnimation {
+  0% {
+    transform: translate(calc(var(--offset)), calc(var(--itemfirst))) rotate(0deg); /* Utilisez la variable avec la fonction calc() */
+  }
+  50% {
+    transform: translate(calc(var(--offset)), calc(var(--itemfirst) - 10px)) rotate(-5deg); /* Utilisez la variable avec la fonction calc() */
+  }
+  100% {
+    transform: translate(calc(var(--offset)), calc(var(--itemfirst))) rotate(0deg); /* Utilisez la variable avec la fonction calc() */
+  }
+}
+
+@keyframes carrouItemThreeAnimation {
+  0% {
+    transform: translate(calc(var(--itemthree)), calc(var(--itemfirst))) rotate(0deg); /* Utilisez la variable avec la fonction calc() */
+  }
+  50% {
+    transform: translate(calc(var(--itemthree)), calc(var(--itemfirst) - 10px)) rotate(-5deg); /* Utilisez la variable avec la fonction calc() */
+  }
+  100% {
+    transform: translate(calc(var(--itemthree)), calc(var(--itemfirst))) rotate(0deg); /* Utilisez la variable avec la fonction calc() */
   }
 }
 
