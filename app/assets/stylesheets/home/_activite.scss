@@ -159,7 +159,7 @@
   // box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
   // border-radius: 10px;
   filter: brightness(.9);
-  filter: opacity(.5);
+  filter: opacity(.2);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -175,6 +175,7 @@
   color: #fff;
   font-family: 'ABeeZee', sans-serif;
   background-color: rgba(95, 158, 160, 0);
+  border: none;
 }
 
 .cardbgcontainer {
@@ -188,24 +189,52 @@
   position: absolute;
   top: 0;
   left: 40%;
-  height: 80%;
+  height: 100%;
   width: 50%;
-  background-color: #c42f2f;
+  // background-color: #c42f2f;
   transform: translateX(-50%);
   animation: carrouItemOneAnimation 8s infinite;
+}
+
+.card-item-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.card-item-one img {
+  height: 100%;
+  width: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-34deg);
 }
 
 .card-item-two {
   content: '';
   position: absolute;
-  bottom: 0;
-  left: 80%;
+  bottom: 20%;
+  left: 84%;
   height: 90px;
   width: 90px;
-  background-color: #d48338;
+  // background-color: #d48338;
   transform: translateX(-50%);
   animation: carrouItemTwoFiveAnimation 6s infinite;
 }
+
+.card-item-two img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 
 .card-item-three {
   content: '';
@@ -214,9 +243,18 @@
   right: 0;
   height: 90px;
   width: 90px;
-  background-color: #d1d438;
+  // background-color: #d1d438;
   transform: translateX(-50%);
   animation: carrouItemThreeAnimation 9s infinite;
+}
+
+.card-item-three img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .card-item-four {
@@ -226,9 +264,18 @@
   left: 0;
   height: 90px;
   width: 90px;
-  background-color: #48d438;
+  // background-color: #48d438;
   transform: translateX(-50%);
   animation: carrouItemThreeAnimation 5s infinite;
+}
+
+.card-item-four img {
+  width: 200%;
+  height: auto;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-50deg);
 }
 
 .card-item-five {
@@ -238,9 +285,18 @@
   left: 0;
   height: 90px;
   width: 90px;
-  background-color: #38d4cc;
+  // background-color: #38d4cc;
   transform: translateX(-50%);
   animation: carrouItemTwoFiveAnimation 10s infinite;
+}
+
+.card-item-five img {
+  width: 50%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .card p {
