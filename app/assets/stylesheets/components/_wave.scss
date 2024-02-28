@@ -128,12 +128,24 @@
   }
 }
 
+@keyframes carrouItemTwoFiveAnimation {
+  0% {
+    transform: translate(calc(var(--offset)), calc(var(--itemfirst))) rotate(-5deg); /* Utilisez la variable avec la fonction calc() */
+  }
+  50% {
+    transform: translate(calc(var(--offset)), calc(var(--itemfirst) + 10px)) rotate(5deg); /* Utilisez la variable avec la fonction calc() */
+  }
+  100% {
+    transform: translate(calc(var(--offset)), calc(var(--itemfirst))) rotate(-5deg); /* Utilisez la variable avec la fonction calc() */
+  }
+}
+
 @keyframes carrouItemThreeAnimation {
   0% {
     transform: translate(calc(var(--itemthree)), calc(var(--itemfirst))) rotate(0deg); /* Utilisez la variable avec la fonction calc() */
   }
   50% {
-    transform: translate(calc(var(--itemthree)), calc(var(--itemfirst) - 10px)) rotate(-5deg); /* Utilisez la variable avec la fonction calc() */
+    transform: translate(calc(var(--itemthree)), calc(var(--itemfirst) - 15px)) rotate(-5deg); /* Utilisez la variable avec la fonction calc() */
   }
   100% {
     transform: translate(calc(var(--itemthree)), calc(var(--itemfirst))) rotate(0deg); /* Utilisez la variable avec la fonction calc() */
