@@ -141,19 +141,19 @@
 
 @keyframes waveVideoAnimation {
   0% {
-    transform: translateY(0) rotate(0deg);
+    transform: translateY(0) rotate(-5deg);
   }
 
   20% {
-    transform: translateY(0) rotate(0deg);
+    transform: translateY(0) rotate(-5deg);
   }
 
   60% {
-    transform: translateY(50px) rotate(5deg);
+    transform: translateY(50px) rotate(0deg);
   }
 
 
   100% {
-    transform: translateY(0) rotate(0deg);
+    transform: translateY(0) rotate(-5deg);
   }
 }
