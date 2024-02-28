@@ -94,3 +94,104 @@
   }
 
 }
+
+
+:root {
+  --offset: -50%; /* Définissez la variable et sa valeur par défaut */
+  --text: 10%;
+  --itemfirst: -5%;
+  --itemthree: 0%;
+}
+
+/* Définissez votre animation en utilisant la variable */
+@keyframes carrouPicAnimation {
+  0% {
+    transform: translate(calc(var(--offset)), calc(var(--offset))) rotate(0deg); /* Utilisez la variable avec la fonction calc() */
+  }
+  50% {
+    transform: translate(calc(var(--offset)), calc(var(--offset) - 10px)) rotate(5deg); /* Utilisez la variable avec la fonction calc() */
+  }
+  100% {
+    transform: translate(calc(var(--offset)), calc(var(--offset))) rotate(0deg); /* Utilisez la variable avec la fonction calc() */
+  }
+}
+
+@keyframes carrouItemOneAnimation {
+  0% {
+    transform: translate(calc(var(--offset)), calc(var(--itemfirst))) rotate(0deg); /* Utilisez la variable avec la fonction calc() */
+  }
+  50% {
+    transform: translate(calc(var(--offset)), calc(var(--itemfirst) - 10px)) rotate(-5deg); /* Utilisez la variable avec la fonction calc() */
+  }
+  100% {
+    transform: translate(calc(var(--offset)), calc(var(--itemfirst))) rotate(0deg); /* Utilisez la variable avec la fonction calc() */
+  }
+}
+
+@keyframes carrouItemTwoFiveAnimation {
+  0% {
+    transform: translate(calc(var(--offset)), calc(var(--itemfirst))) rotate(-5deg); /* Utilisez la variable avec la fonction calc() */
+  }
+  50% {
+    transform: translate(calc(var(--offset)), calc(var(--itemfirst) + 10px)) rotate(5deg); /* Utilisez la variable avec la fonction calc() */
+  }
+  100% {
+    transform: translate(calc(var(--offset)), calc(var(--itemfirst))) rotate(-5deg); /* Utilisez la variable avec la fonction calc() */
+  }
+}
+
+@keyframes carrouItemThreeAnimation {
+  0% {
+    transform: translate(calc(var(--itemthree)), calc(var(--itemfirst))) rotate(0deg); /* Utilisez la variable avec la fonction calc() */
+  }
+  50% {
+    transform: translate(calc(var(--itemthree)), calc(var(--itemfirst) - 15px)) rotate(-5deg); /* Utilisez la variable avec la fonction calc() */
+  }
+  100% {
+    transform: translate(calc(var(--itemthree)), calc(var(--itemfirst))) rotate(0deg); /* Utilisez la variable avec la fonction calc() */
+  }
+}
+
+
+@keyframes carrouTextAnimation {
+  0% {
+    transform: translate(calc(var(--offset)), calc(var(--text))) rotate(0deg); /* Utilisez la variable avec la fonction calc() */
+  }
+  50% {
+    transform: translate(calc(var(--offset)), calc(var(--text) - 10px)) rotate(-2deg); /* Utilisez la variable avec la fonction calc() */
+  }
+  100% {
+    transform: translate(calc(var(--offset)), calc(var(--text))) rotate(0deg); /* Utilisez la variable avec la fonction calc() */
+  }
+}
+
+@keyframes cerfvolantAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes waveVideoAnimation {
+  0% {
+    transform: translateY(0) rotate(-5deg);
+  }
+
+  20% {
+    transform: translateY(0) rotate(-5deg);
+  }
+
+  60% {
+    transform: translateY(50px) rotate(0deg);
+  }
+
+
+  100% {
+    transform: translateY(0) rotate(-5deg);
+  }
+}

@@ -277,69 +277,71 @@
       <div class="home-activite-card-carousel">
 
         <div class="card" id="1">
-          <div class="cardbgcontainer">
-            <div class="cardbg">
-              <%= cl_image_tag @activites[0].photo.key %>
+
+          <div class="card-div-image">
+            <div class="image-container" style="background-image: url('<%= cl_image_path(@activites[0].photo.key) %>');">
             </div>
           </div>
-          <div class="image-container" style="background-image: url('<%= cl_image_path(@activites[0].photo.key) %>');">
+
+          <div class="card-div-text">
+            <p class="activite-title"><%= @activites[0].title %></p>
+            <%= link_to "Voir plus", activite_path(@activites[0]) %>
           </div>
 
-          <p class="activite-title"><%= @activites[0].title %></p>
-          <p class="activite-desc"><%= @activites[0].description %></p>
-          <%= link_to "Voir plus", activite_path(@activites[0]) %>
         </div>
 
         <div class="card" id="2">
-          <div class="cardbgcontainer">
-            <div class="cardbg">
-              <%= cl_image_tag @activites[1].photo.key %>
+
+          <div class="card-div-image">
+            <div class="image-container" style="background-image: url('<%= cl_image_path(@activites[1].photo.key) %>');">
             </div>
           </div>
-          <div class="image-container" style="background-image: url('<%= cl_image_path(@activites[1].photo.key) %>');">
+
+          <div class="card-div-text">
+            <p class="activite-title"><%= @activites[1].title %></p>
+            <%= link_to "Voir plus", activite_path(@activites[1]) %>
           </div>
-          <p class="activite-title"><%= @activites[1].title %></p>
-          <p class="activite-desc"><%= @activites[1].description %></p>
-          <%= link_to "Voir plus", activite_path(@activites[1]) %>
+
         </div>
 
         <div class="card" id="3">
-          <div class="cardbgcontainer">
-            <div class="cardbg">
-              <%= cl_image_tag @activites[2].photo.key %>
+
+          <div class="card-div-image">
+            <div class="image-container" style="background-image: url('<%= cl_image_path(@activites[2].photo.key) %>');">
             </div>
           </div>
-          <div class="image-container" style="background-image: url('<%= cl_image_path(@activites[2].photo.key) %>');">
+
+          <div class="card-div-text">
+            <p class="activite-title"><%= @activites[2].title %></p>
+            <%= link_to "Voir plus", activite_path(@activites[2]) %>
           </div>
-          <p class="activite-title"><%= @activites[2].title %></p>
-          <p class="activite-desc"><%= @activites[2].description %></p>
-          <%= link_to "Voir plus", activite_path(@activites[2]) %>
+
         </div>
 
         <div class="card" id="4">
-          <div class="cardbgcontainer">
-            <div class="cardbg">
-              <%= cl_image_tag @activites[3].photo.key %>
+
+          <div class="card-div-image">
+            <div class="image-container" style="background-image: url('<%= cl_image_path(@activites[3].photo.key) %>');">
             </div>
           </div>
-          <div class="image-container" style="background-image: url('<%= cl_image_path(@activites[3].photo.key) %>');">
+
+          <div class="card-div-text">
+            <p class="activite-title"><%= @activites[3].title %></p>
+            <%= link_to "Voir plus", activite_path(@activites[3]) %>
           </div>
-          <p class="activite-title"><%= @activites[3].title %></p>
-          <p class="activite-desc"><%= @activites[3].description %></p>
-          <%= link_to "Voir plus", activite_path(@activites[3]) %>
         </div>
 
         <div class="card" id="5">
-          <div class="cardbgcontainer">
-            <div class="cardbg">
-              <%= cl_image_tag @activites[4].photo.key %>
+
+          <div class="card-div-image">
+            <div class="image-container" style="background-image: url('<%= cl_image_path(@activites[4].photo.key) %>');">
             </div>
           </div>
-          <div class="image-container" style="background-image: url('<%= cl_image_path(@activites[4].photo.key) %>');">
+
+          <div class="card-div-text">
+            <p class="activite-title"><%= @activites[4].title %></p>
+            <%= link_to "Voir plus", activite_path(@activites[4]) %>
           </div>
-          <p class="activite-title"><%= @activites[4].title %></p>
-          <p class="activite-desc"><%= @activites[4].description %></p>
-          <%= link_to "Voir plus", activite_path(@activites[4]) %>
         </div>
 
       </div>
@@ -543,7 +545,6 @@
         function clearDraggingEvent() {
           window.removeEventListener("mousemove", handler)
           window.removeEventListener("mouseup", clearDraggingEvent)
-
           document.removeEventListener("mouseleave", clearDraggingEvent)
 
           handler(null)

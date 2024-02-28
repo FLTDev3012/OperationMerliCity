@@ -68,9 +68,25 @@
   z-index: 2;
 }
 
+
+
 .home-presentation-parasol img {
   width: 48px;
   height: 48px;
+}
+
+.home-presentation-cerfvolant {
+  position: absolute;
+  top: 0%;
+  right: -1%;
+  z-index: 2;
+}
+
+.home-presentation-cerfvolant img {
+  width: 48px;
+  height: 48px;
+  transform-origin: bottom left;
+  animation: cerfvolantAnimation 3s infinite;
 }
 
 .home-presentation-parasol p {
