@@ -410,11 +410,13 @@
   display: block;
   width: 120%;
   height: 120%;
-  border: solid 3px #FFFAC2B2;
+  border: solid 3px #FDFDFDB2;
   border-radius: 100%;
   position: absolute;
   top: calc(-10% - 0px);
   left: calc(-10% - 0px);
+  background-color: #ffffff7a;
+  z-index: -1;
 }
 
 // boue button
