@@ -1,0 +1,26 @@
+<script>
+  // Sélectionner l'élément .test-home-seconde-div
+  const secondeDiv = document.querySelector(".test-home-third-div");
+
+  // Ajouter un écouteur d'événements pour l'événement "mouseover"
+  secondeDiv.addEventListener("mouseover", function() {
+    // Sélectionner tous les éléments <text> à l'intérieur de .test-home-page
+    const textElements = document.querySelectorAll(".test-home-page text");
+
+    // Parcourir tous les éléments <text> et modifier leur style fill
+    textElements.forEach(function(textElement) {
+      textElement.style.fill = "#ffffffdc";
+    });
+  });
+
+  // Ajouter un écouteur d'événements pour l'événement "mouseout"
+  secondeDiv.addEventListener("mouseout", function() {
+    // Sélectionner tous les éléments <text> à l'intérieur de .test-home-page
+    const textElements = document.querySelectorAll(".test-home-page text");
+
+    // Parcourir tous les éléments <text> et modifier leur style fill
+    textElements.forEach(function(textElement) {
+      textElement.style.fill = "#023646dc";
+    });
+  });
+</script>
