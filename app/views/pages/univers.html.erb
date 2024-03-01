@@ -158,32 +158,32 @@
           <div class="card" id="3">
 
             <div class="card-item-one">
-              <div class="card-item-image-container">
+              <div class="card-item-image-container object" data-value="6">
                 <%= image_tag('testhome/golfmaindeux.png') %>
               </div>
             </div>
 
             <div class="card-item-two">
-              <div class="card-item-image-container">
+              <div class="card-item-image-container object" data-value="2">
                 <%= image_tag('testhome/golftee.png') %>
 
               </div>
             </div>
 
             <div class="card-item-three">
-              <div class="card-item-image-container">
+              <div class="card-item-image-container object" data-value="-4">
                 <%= image_tag('testhome/golf_item_cinq.png') %>
               </div>
             </div>
 
             <div class="card-item-four">
-              <div class="card-item-image-container">
+              <div class="card-item-image-container object" data-value="-3">
                 <%= image_tag('testhome/golf_item_club.png') %>
               </div>
             </div>
 
             <div class="card-item-five">
-              <div class="card-item-image-container">
+              <div class="card-item-image-container object" data-value="-6">
                 <%= image_tag('testhome/golf_item_cinq.png') %>
               </div>
             </div>
@@ -249,7 +249,7 @@
 </div>
 
 
-<!-- parallax -->
+<!-- parallax main -->
 
 <script type="text/javascript">
     let lem = document.getElementById("lem");
@@ -678,4 +678,20 @@
       textElement.style.fill = "#023646dc";
     });
   });
+</script>
+
+// parallax des items du carrou
+
+<script type="text/javascript">
+  document.addEventListener("mousemove", parallax);
+  function parallax(e){
+    document.querySelectorAll(".object").forEach(function(move){
+
+      var moving_value = move.getAttribute("data-value");
+      var x = (e.clientX * moving_value) / 250;
+      var y = (e.clientY * moving_value) / 250;
+
+      move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+    });
+  }
 </script>
