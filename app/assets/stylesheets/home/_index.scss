@@ -1,6 +1,10 @@
-@import "banner";
-@import "presentation";
+@import "main";
+@import "first_div";
 @import "activite";
 @import "logement";
 @import "emplacement";
-@import "activitepage";
+
+.home-page-container {
+  background-image: url("/assets/sablebg.png");
+  background-color: $sable;
+}
