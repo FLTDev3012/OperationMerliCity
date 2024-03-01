@@ -17,9 +17,6 @@
 }
 
 
-
-
-
 .home-activites-swim {
   position: absolute;
   top: 10%;
@@ -184,139 +181,7 @@
   width: 100%;
 }
 
-.card-item-one {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 40%;
-  height: 100%;
-  width: 50%;
-  // background-color: #c42f2f;
-  transform: translateX(-50%);
-  animation: carrouItemOneAnimation 8s infinite;
-}
-
-.card-item-image-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  height: 100%;
-  width: 100%;
-}
-
-.card-item-one img {
-  height: 100%;
-  width: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%)
-}
-
-.card-trois .card-item-one img {
-  transform: translate(-50%, -50%) rotate(-34deg);
-}
-
-.card-item-two {
-  content: '';
-  position: absolute;
-  bottom: 20%;
-  left: 84%;
-  height: 90px;
-  width: 90px;
-  // background-color: #d48338;
-  transform: translateX(-50%);
-  animation: carrouItemTwoFiveAnimation 6s infinite;
-}
-
-.card-item-two img {
-  width: 100%;
-  height: auto;
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(121deg);
-  filter: hue-rotate(-7deg);
-}
-
-
-.card-item-three {
-  content: '';
-  position: absolute;
-  top: 10%;
-  right: 0;
-  height: 90px;
-  width: 90px;
-  // background-color: #d1d438;
-  transform: translateX(-50%);
-  animation: carrouItemThreeAnimation 9s infinite;
-}
-
-.card-item-three img {
-  width: 100%;
-  height: auto;
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.card-item-four {
-  content: '';
-  position: absolute;
-  bottom: 10%;
-  left: 0;
-  height: 90px;
-  width: 90px;
-  // background-color: #48d438;
-  transform: translateX(-50%);
-  animation: carrouItemThreeAnimation 5s infinite;
-}
-
-.card-item-four img {
-  width: 200%;
-  height: auto;
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-50deg);
-}
-
-.card-item-five {
-  content: '';
-  position: absolute;
-  top: 10%;
-  left: 0;
-  height: 90px;
-  width: 90px;
-  // background-color: #38d4cc;
-  transform: translateX(-50%);
-  animation: carrouItemTwoFiveAnimation 10s infinite;
-}
-
-.card-item-five img {
-  width: 50%;
-  height: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.card p {
-  z-index: 10;
-  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
-  font-size: 1.5rem;
-  display: block ruby;
-  // background-color: #0260a4;
-  // backdrop-filter: blur(25px);
-  // border-radius: 10px;
-  // background-color: rgba(255, 250, 205, 0.3);
-  // background-color: rgba(172, 168, 133, 0.3);
-  // background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(172,168,133,0.3) 50%, rgba(0,0,0,0) 100%);
-}
-
+// one card activite
 
 .cardbg {
   position: relative;
@@ -331,67 +196,6 @@
   z-index: 0;
   opacity: 0.3;
 }
-
-
-
-.home-activite-card-carousel .card a {
-  color: #ffffff;
-  z-index: 10;
-  padding: 8px 16px;
-  border-radius: 10px;
-  transition: all 0.2s ease-in-out;
-  font-size: 1.1rem;
-  font-family: 'ABeeZee', sans-serif;
-  border: 2px solid #fff;
-  background-color: #208ad9b0;
-  position: relative;
-
-}
-
-.home-activite-card-carousel .card a:hover {
-  transform: translateY(-5px);
-}
-
-// .home-activite-card-carousel .card::before
-// {
-//     content: '';
-//     position: absolute;
-//     top: 0;
-//     left: -40%;
-//     width: 100%;
-//     height: 100%;
-//     background: rgba(255, 255, 255, 0.3);
-//     pointer-events: none;
-//     transform: skewX(-15deg);
-// }
-
-.card.highlight {
-  filter: brightness(1);
-  filter: opacity(1);
-}
-
-.card-div-image {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  animation: carrouPicAnimation 6s infinite;
-}
-
-.card-div-text {
-  position: absolute;
-  bottom: 10%;
-  left: 50%;
-  transform: translateX(-50%);
-  animation: carrouTextAnimation 6s infinite;
-}
-
-.activite-title {
-  font-size: 2.5rem;
-  padding: 2rem;
-  margin: 0;
-}
-
 
 .image-container {
   // width: 8em;
@@ -422,6 +226,201 @@
   background-color: #ffffff7a;
   z-index: -1;
 }
+
+.card-div-image {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: carrouPicAnimation 6s infinite;
+}
+
+.card-div-text {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: carrouTextAnimation 6s infinite;
+}
+
+.activite-title {
+  font-size: 2.5rem;
+  padding: 2rem;
+  margin: 0;
+}
+
+.card p {
+  z-index: 10;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+  display: block ruby;
+}
+
+.home-activite-card-carousel .card a {
+  color: #ffffff;
+  z-index: 10;
+  padding: 8px 16px;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+  font-size: 1.1rem;
+  font-family: 'ABeeZee', sans-serif;
+  border: 2px solid #fff;
+  background-color: #208ad9b0;
+  position: relative;
+
+}
+
+.home-activite-card-carousel .card a:hover {
+  transform: translateY(-5px);
+}
+
+
+
+// Item parallax autour de l activite
+
+// dans chaque card item / container de l image
+.card-item-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+//premier item (central)
+
+.card-item-one {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 40%;
+  height: 100%;
+  width: 50%;
+  // background-color: #c42f2f;
+  transform: translateX(-50%);
+  animation: carrouItemOneAnimation 8s infinite;
+}
+
+
+.card-item-one img {
+  height: 100%;
+  width: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+
+// modif de l angle de l image central acti 3
+.card-trois .card-item-one img {
+  transform: translate(-50%, -50%) rotate(-34deg);
+}
+
+
+//Deuxime item (bas droite)
+
+.card-item-two {
+  content: '';
+  position: absolute;
+  bottom: 20%;
+  left: 84%;
+  height: 90px;
+  width: 90px;
+  // background-color: #d48338;
+  transform: translateX(-50%);
+  animation: carrouItemTwoFiveAnimation 6s infinite;
+}
+
+.card-item-two img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(121deg);
+  filter: hue-rotate(-7deg);
+}
+
+
+//Troisieme item (haut droite)
+
+.card-item-three {
+  content: '';
+  position: absolute;
+  top: 10%;
+  right: 0;
+  height: 90px;
+  width: 90px;
+  // background-color: #d1d438;
+  transform: translateX(-50%);
+  animation: carrouItemThreeAnimation 9s infinite;
+}
+
+.card-item-three img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+//Quatrieme item (bas gauche)
+
+.card-item-four {
+  content: '';
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  height: 90px;
+  width: 90px;
+  // background-color: #48d438;
+  transform: translateX(-50%);
+  animation: carrouItemThreeAnimation 5s infinite;
+}
+
+.card-item-four img {
+  width: 200%;
+  height: auto;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-50deg);
+}
+
+//Cinquieme item (haut gauche)
+
+.card-item-five {
+  content: '';
+  position: absolute;
+  top: 10%;
+  left: 0;
+  height: 90px;
+  width: 90px;
+  // background-color: #38d4cc;
+  transform: translateX(-50%);
+  animation: carrouItemTwoFiveAnimation 10s infinite;
+}
+
+.card-item-five img {
+  width: 50%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+.card.highlight {
+  filter: brightness(1);
+  filter: opacity(1);
+}
+
+
 
 // boue button
 
