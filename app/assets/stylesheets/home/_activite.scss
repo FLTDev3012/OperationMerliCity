@@ -211,6 +211,10 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.card-trois .card-item-one img {
   transform: translate(-50%, -50%) rotate(-34deg);
 }
 
