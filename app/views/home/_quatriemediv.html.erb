@@ -1,6 +1,132 @@
 <div class="test-home-fourth-div">
+
+  <div class="home-emplacement-para">
+    <%= image_tag('logements/para.svg') %>
+  </div>
+
   <div class="home-logement-vague-haut">
     <div class="wave"></div>
     <%= image_tag('activites/activites_vague_bas.png') %>
   </div>
+
+  <div class="home-logement-title-and-title-shadow">
+    <div class="home-logement-title-shadow">
+      <h1>Nos logements</h1>
+    </div>
+
+    <div class="home-logement-title">
+      <h1>Nos logements</h1>
+    </div>
+  </div>
+
+
+  <div class="home-logement-categories-container">
+
+    <div class="home-logement-grid-container">
+
+
+      <%= link_to logements_path(categorie: 'camping'), class: 'home-logement-categories-owner' do %>
+        <div class="cardtest">
+          <div class="wrapper">
+            <%= image_tag('activites/mobilehomes.jpg', class: 'cover-image') %>
+          </div>
+          <%= image_tag('logements/campingtext.png', class: 'title') %>
+          <%= image_tag('activites/tente1.png', class: 'character') %>
+        </div>
+      <% end %>
+
+      <%= link_to logements_path(categorie: 'location'), class: 'home-logement-categories-owner' do %>
+        <div class="cardtest">
+          <div class="wrapper">
+            <%= image_tag('logements/location1.jpg', class: 'cover-image') %>
+          </div>
+          <%= image_tag('logements/locationtext.png', class: 'title') %>
+          <%= image_tag('logements/locationnew1.png', class: 'character') %>
+        </div>
+      <% end %>
+
+      <%= link_to logements_path(categorie: 'hote'), class: 'home-logement-categories-owner' do %>
+        <div class="cardtest">
+          <div class="wrapper">
+            <%= image_tag('logements/hote.jpg', class: 'cover-image') %>
+          </div>
+          <%= image_tag('logements/hotetext.png', class: 'title') %>
+          <%= image_tag('logements/hote1.png', class: 'character') %>
+        </div>
+      <% end %>
+
+      <%= link_to logements_path(categorie: 'camping-car'), class: 'home-logement-categories-owner' do %>
+        <div class="cardtest">
+          <div class="wrapper">
+            <%= image_tag('logements/caravane.jpg', class: 'cover-image') %>
+
+          </div>
+          <%= image_tag('logements/ccartext.png', class: 'title') %>
+          <%= image_tag('logements/ccar2.png', class: 'character') %>
+        </div>
+      <% end %>
+    </div>
+
+
+
+  </div>
+
+  <div class="home-btn-logement-boue-container">
+    <%= link_to logements_path do%>
+      <%= image_tag('activites/boue_button.svg') %>
+    <% end %>
+  </div>
+
+  <!-- ================== div vague au dessus de emplacement ===================== -->
+
+  <div class="vague-emplacement-top">
+
+    <%= image_tag('emplacements/emplacement_vague.png') %>
+
+    <div class="home-emplacement-surfer">
+      <%= image_tag('emojies/surfer_orange.svg') %>
+    </div>
+
+    <div class="wave"></div>
+
+
+  </div>
+
+</div>
+
+
+<!-- ================== div emplacements ===================== -->
+
+<div class="home-emplacement-div">
+
+  <div class="home-emplacement-title-and-title-shadow">
+    <div class="home-emplacement-title-shadow">
+      <h1>Emplacements</h1>
+    </div>
+
+    <div class="home-emplacement-title">
+      <h1>Emplacements</h1>
+    </div>
+  </div>
+
+  <div class="home-emplacement-map">
+    <%= image_tag('emplacements/emplacement_map.png') %>
+  </div>
+
+  <div class="home-emplacement-btn">
+    <%= link_to activites_path do%>
+      <%= image_tag('activites/boue_button.svg') %>
+    <% end %>
+  </div>
+
+  <div class="home-emplacement-bulle">
+    <%= image_tag('emplacements/bulle.svg') %>
+  </div>
+
+  <div class="home-emplacement-algues">
+    <%= image_tag('emplacements/algues.svg') %>
+  </div>
+
+
+
 </div>
