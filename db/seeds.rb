@@ -597,31 +597,31 @@ activite2.save
 puts "#{Activite.count} activites crée!"
 
 file = URI.open("https://cdt14.media.tourinsoft.eu/upload/135-3571-IMG.jpg")
-activite3 = Activite.create(title: "Char à voile", description: "Char à voile à merlimont plage")
+activite3 = Activite.create(title: "Club Nautique", description: "Char à voile à merlimont plage")
 activite3.photo.attach(io: file, filename: "v3.png", content_type: "image/png")
 activite3.save
 puts "#{Activite.count} activites crée!"
 
-file = URI.open("https://a.cdn-hotels.com/gdcs/production186/d559/a82dee28-b6fd-417c-b51b-a535ddeb2f85.jpg?impolicy=fcrop&w=800&h=533&q=medium")
-activite4 = Activite.create(title: "Activite 4", description: "Au surfer merlimont plage")
+file = URI.open("https://www.escapades-en-hautsdefrance.com/wp-content/uploads/2023/10/img-20220526-142830.jpg")
+activite4 = Activite.create(title: "Sentier", description: "Au surfer merlimont plage")
 activite4.photo.attach(io: file, filename: "v4.png", content_type: "image/png")
 activite4.save
 puts "#{Activite.count} activites crée!"
 
-file = URI.open("https://a.cdn-hotels.com/gdcs/production186/d559/a82dee28-b6fd-417c-b51b-a535ddeb2f85.jpg?impolicy=fcrop&w=800&h=533&q=medium")
-activite5 = Activite.create(title: "Activite 5", description: "Au surfer merlimont plage")
+file = URI.open("https://cdn.sortiraparis.com/images/80/40234/196532-ou-jouer-a-la-petanque-a-paris.jpg")
+activite5 = Activite.create(title: "Pétanque", description: "Au surfer merlimont plage")
 activite5.photo.attach(io: file, filename: "v5.png", content_type: "image/png")
 activite5.save
 puts "#{Activite.count} activites crée!"
 
-file = URI.open("https://a.cdn-hotels.com/gdcs/production186/d559/a82dee28-b6fd-417c-b51b-a535ddeb2f85.jpg?impolicy=fcrop&w=800&h=533&q=medium")
-activite6 = Activite.create(title: "Activite 6", description: "Au surfer merlimont plage")
+file = URI.open("https://www.bhf.org.uk/-/media/images/information-support/heart-matters/heart-matters/summer-2018/activity/tennis_racket_balls_ss_0618_noexp_620x400.jpg?rev=c18a71fbd05e4a91b4bbc40af01aafaa&hash=B6D9F53AC70899560495FC5D3205784D")
+activite6 = Activite.create(title: "Tennis", description: "Au surfer merlimont plage")
 activite6.photo.attach(io: file, filename: "v6.png", content_type: "image/png")
 activite6.save
 puts "#{Activite.count} activites crée!"
 
-file = URI.open("https://a.cdn-hotels.com/gdcs/production186/d559/a82dee28-b6fd-417c-b51b-a535ddeb2f85.jpg?impolicy=fcrop&w=800&h=533&q=medium")
-activite7 = Activite.create(title: "activite 7", description: "au surfer merlimont plage")
+file = URI.open("https://10619-2.s.cdn12.com/rests/original/110_188547209.jpg")
+activite7 = Activite.create(title: "L'imprevue", description: "au surfer merlimont plage")
 activite7.photo.attach(io: file, filename: "v7.png", content_type: "image/png")
 activite7.save
 puts "#{Activite.count} activites crée!"
