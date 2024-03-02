@@ -319,10 +319,21 @@
 
 // --- modif de l angle de l image 1 (central)
 
-// Acti 3
+// Acti 2 golf
 .card-deux .card-item-one img {
   transform: translate(-50%, -50%) rotate(-34deg);
 }
+
+// Acti 3 nautique
+.card-trois .card-item-one img {
+  transform: translate(-50%, -50%) rotate(-100deg);
+}
+
+
+
+
+
+
 
 
 // ----------- Deuxime item (bas droite) ----------------------
@@ -351,11 +362,15 @@
 
 // --- modif de l angle de l image 2 (Bas Droite)
 
-// Acti 3
+// Acti 2 golf
 .card-deux .card-item-two img {
   transform: translate(-50%, -50%) rotate(121deg);
 }
 
+// Acti 3 nautique
+.card-trois .card-item-two img {
+  width: 200%;
+}
 
 // ----------- Troisieme item (haut droite) ----------------------
 
@@ -382,10 +397,18 @@
 
 // --- modif de l angle de l image 3 (Haut Droite)
 
-// Acti 3
+// Acti 2 golf
 .card-deux .card-item-three img {
   // rien
 }
+
+// Acti 3 nautique
+.card-trois .card-item-three img {
+  transform: translate(-50%, -50%) rotate(-70deg);
+}
+
+
+
 
 // ----------- Quatrieme item (bas gauche) ----------------------
 
@@ -412,9 +435,14 @@
 
 // --- modif de l angle de l image 4 (Bas Gauche)
 
-// Acti 3
+// Acti 2 golf
 .card-deux .card-item-four img {
   transform: translate(-50%, -50%) rotate(-50deg);
+}
+
+// Acti 3 nautique
+.card-trois .card-item-four img {
+  transform: translate(-50%, -50%) rotate(110deg);
 }
 
 // ----------- Cinquieme item (haut gauche) ----------------------
@@ -442,9 +470,14 @@
 
 // --- modif de l angle de l image 5 (Haut gauche)
 
-// Acti 3
-.card-deux .card-item-three img {
+// Acti 2 golf
+.card-deux .card-item-five img {
   // rien
+}
+
+// Acti 3 nautique
+.card-trois .card-item-five img {
+  //rien
 }
 
 
