@@ -159,7 +159,7 @@
   // box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
   // border-radius: 10px;
   filter: brightness(.9);
-  filter: opacity(.2);
+  filter: opacity(.1);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -317,8 +317,10 @@
 }
 
 
-// modif de l angle de l image 1 (central) acti 3
-.card-trois .card-item-one img {
+// --- modif de l angle de l image 1 (central)
+
+// Acti 3
+.card-deux .card-item-one img {
   transform: translate(-50%, -50%) rotate(-34deg);
 }
 
@@ -343,8 +345,15 @@
   position: absolute;
   top: 20%;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(121deg);
+  transform: translate(-50%, -50%);
   filter: hue-rotate(-7deg);
+}
+
+// --- modif de l angle de l image 2 (Bas Droite)
+
+// Acti 3
+.card-deux .card-item-two img {
+  transform: translate(-50%, -50%) rotate(121deg);
 }
 
 
@@ -371,6 +380,13 @@
   transform: translate(-50%, -50%);
 }
 
+// --- modif de l angle de l image 3 (Haut Droite)
+
+// Acti 3
+.card-deux .card-item-three img {
+  // rien
+}
+
 // ----------- Quatrieme item (bas gauche) ----------------------
 
 .card-item-four {
@@ -391,6 +407,13 @@
   position: absolute;
   top: 20%;
   left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// --- modif de l angle de l image 4 (Bas Gauche)
+
+// Acti 3
+.card-deux .card-item-four img {
   transform: translate(-50%, -50%) rotate(-50deg);
 }
 
@@ -415,6 +438,13 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+// --- modif de l angle de l image 5 (Haut gauche)
+
+// Acti 3
+.card-deux .card-item-three img {
+  // rien
 }
 
 
