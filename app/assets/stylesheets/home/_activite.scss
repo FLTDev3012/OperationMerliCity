@@ -100,7 +100,7 @@
   margin-bottom: 0;
 }
 
-// top five
+// ================ Carrousel top 5 =============================
 
 
 .visuallyhidden {
@@ -140,6 +140,9 @@
 .home-activite-card-carousel.smooth-return {
   transition: all .2s ease;
 }
+
+
+// =========== All card =============================
 
 .home-activite-card-carousel .card {
   width: var(--card-width);
@@ -181,7 +184,7 @@
   width: 100%;
 }
 
-// one card activite
+// =========== One card activite =============================
 
 .cardbg {
   position: relative;
@@ -235,6 +238,7 @@
   animation: carrouPicAnimation 6s infinite;
 }
 
+
 .card-div-text {
   position: absolute;
   bottom: 10%;
@@ -256,6 +260,7 @@
   display: block ruby;
 }
 
+
 .home-activite-card-carousel .card a {
   color: #ffffff;
   z-index: 10;
@@ -276,9 +281,9 @@
 
 
 
-// Item parallax autour de l activite
+// =========== Item parallax autour de l activite ======================
 
-// dans chaque card item / container de l image
+// ----------- dans chaque card item / container de l image ----------------------
 .card-item-image-container {
   display: flex;
   align-items: center;
@@ -288,7 +293,7 @@
   width: 100%;
 }
 
-//premier item (central)
+// ----------- premier item (central) ----------------------
 
 .card-item-one {
   content: '';
@@ -297,7 +302,6 @@
   left: 40%;
   height: 100%;
   width: 50%;
-  // background-color: #c42f2f;
   transform: translateX(-50%);
   animation: carrouItemOneAnimation 8s infinite;
 }
@@ -313,13 +317,13 @@
 }
 
 
-// modif de l angle de l image central acti 3
+// modif de l angle de l image 1 (central) acti 3
 .card-trois .card-item-one img {
   transform: translate(-50%, -50%) rotate(-34deg);
 }
 
 
-//Deuxime item (bas droite)
+// ----------- Deuxime item (bas droite) ----------------------
 
 .card-item-two {
   content: '';
@@ -344,7 +348,7 @@
 }
 
 
-//Troisieme item (haut droite)
+// ----------- Troisieme item (haut droite) ----------------------
 
 .card-item-three {
   content: '';
@@ -367,7 +371,7 @@
   transform: translate(-50%, -50%);
 }
 
-//Quatrieme item (bas gauche)
+// ----------- Quatrieme item (bas gauche) ----------------------
 
 .card-item-four {
   content: '';
@@ -390,7 +394,7 @@
   transform: translate(-50%, -50%) rotate(-50deg);
 }
 
-//Cinquieme item (haut gauche)
+// ----------- Cinquieme item (haut gauche) ----------------------
 
 .card-item-five {
   content: '';
@@ -414,6 +418,7 @@
 }
 
 
+// ================ card cental position
 
 .card.highlight {
   filter: brightness(1);
@@ -422,7 +427,7 @@
 
 
 
-// boue button
+// boué button
 
 .home-activites-button {
   z-index: 2;
