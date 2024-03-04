@@ -319,6 +319,13 @@
 
 // --- modif de l angle de l image 1 (central)
 
+// Acti 1 baga
+.card-un .card-item-one img {
+  opacity: .9;
+  height: 90%;
+  left: 58%;
+}
+
 // Acti 2 golf
 .card-deux .card-item-one img {
   transform: translate(-50%, -50%) rotate(-34deg);
@@ -381,6 +388,7 @@
 
 // ----------- Troisieme item (haut droite) ----------------------
 
+
 .card-item-three {
   content: '';
   position: absolute;
@@ -404,6 +412,13 @@
 
 // --- modif de l angle de l image 3 (Haut Droite)
 
+// Acti 1 baga
+
+.card-un .card-item-three img {
+  transform: translate(-50%, -50%) rotate(13deg);
+  top: 44%;
+}
+
 // Acti 2 golf
 .card-deux .card-item-three img {
   // rien
@@ -412,6 +427,7 @@
 // Acti 3 nautique
 .card-trois .card-item-three img {
   transform: translate(-50%, -50%) rotate(-70deg);
+  width: 150%;
 }
 
 
@@ -451,6 +467,7 @@
 .card-trois .card-item-four img {
   transform: translate(-50%, -50%) rotate(110deg);
   filter: hue-rotate(220deg);
+  width: 260%;
 }
 
 // ----------- Cinquieme item (haut gauche) ----------------------
@@ -485,7 +502,7 @@
 
 // Acti 3 nautique
 .card-trois .card-item-five img {
-  //rien
+  width: 100%;
 }
 
 
