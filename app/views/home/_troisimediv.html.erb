@@ -14,55 +14,10 @@
   <div class="home-activite-container">
     <div class="home-activite-card-carousel">
 
-      <!-- Bagatelle le plus a gauche -->
+
+
+      <!-- golf  -->
       <div class="card card-un" id="1">
-
-        <div class="card-item-one">
-          <div class="card-item-image-container object" data-value="-2">
-            <%= image_tag('testhome/parkmain.png') %>
-          </div>
-        </div>
-
-        <div class="card-item-two">
-          <div class="card-item-image-container object" data-value="4">
-            <%= image_tag('testhome/parkscary.png') %>
-
-          </div>
-        </div>
-
-        <div class="card-item-three">
-          <div class="card-item-image-container object" data-value="-5">
-            <%= image_tag('testhome/parkcarrou.png') %>
-          </div>
-        </div>
-
-
-        <div class="card-item-four">
-          <div class="card-item-image-container object" data-value="-3">
-            <%= image_tag('testhome/parkpeople.png') %>
-          </div>
-        </div>
-
-        <div class="card-item-five">
-          <div class="card-item-image-container object" data-value="5">
-            <%= image_tag('testhome/parkscary.png') %>
-          </div>
-        </div>
-
-        <div class="card-div-image">
-          <div class="image-container" style="background-image: url('<%= cl_image_path(@activites[0].photo.key) %>');">
-          </div>
-        </div>
-
-        <div class="card-div-text">
-          <p class="activite-title"><%= @activites[0].title %></p>
-          <%= link_to "Voir plus", activite_path(@activites[0]) %>
-        </div>
-
-      </div>
-
-      <!-- golf gauche -->
-      <div class="card card-deux" id="2">
 
         <div class="card-item-one">
           <div class="card-item-image-container object" data-value="2">
@@ -109,8 +64,8 @@
       </div>
 
 
-      <!-- naut central acti -->
-      <div class="card card-trois" id="3">
+      <!-- naut -->
+      <div class="card card-deux" id="2">
 
         <div class="card-item-one">
           <div class="card-item-image-container object" data-value="-2">
@@ -157,8 +112,55 @@
 
       </div>
 
+      <!-- Bagatelle central -->
+      <div class="card card-trois" id="3">
 
-      <!-- activite droite sentier -->
+        <div class="card-item-one">
+          <div class="card-item-image-container object" data-value="-2">
+            <%= image_tag('testhome/parkmain.png') %>
+          </div>
+        </div>
+
+        <div class="card-item-two">
+          <div class="card-item-image-container object" data-value="4">
+            <%= image_tag('testhome/parkscary.png') %>
+
+          </div>
+        </div>
+
+        <div class="card-item-three">
+          <div class="card-item-image-container object" data-value="-5">
+            <%= image_tag('testhome/parkcarrou.png') %>
+          </div>
+        </div>
+
+
+        <div class="card-item-four">
+          <div class="card-item-image-container object" data-value="-3">
+            <%= image_tag('testhome/parkpeople.png') %>
+          </div>
+        </div>
+
+        <div class="card-item-five">
+          <div class="card-item-image-container object" data-value="5">
+            <%= image_tag('testhome/parkscary.png') %>
+          </div>
+        </div>
+
+        <div class="card-div-image">
+          <div class="image-container" style="background-image: url('<%= cl_image_path(@activites[0].photo.key) %>');">
+          </div>
+        </div>
+
+        <div class="card-div-text">
+          <p class="activite-title"><%= @activites[0].title %></p>
+          <%= link_to "Voir plus", activite_path(@activites[0]) %>
+        </div>
+
+      </div>
+
+
+      <!-- activite sentier -->
       <div class="card card-quatre" id="4">
 
         <div class="card-item-one">
@@ -205,7 +207,7 @@
 
       </div>
 
-      <!-- activite plus a droite petanque -->
+      <!-- petanque -->
       <div class="card card-cinq" id="5">
 
         <div class="card-item-one">
