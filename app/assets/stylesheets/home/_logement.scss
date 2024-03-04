@@ -48,12 +48,13 @@
 .home-logement-title-shadow {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  // transform: translateX(-50%);
+  transform: translateY(-40px) translateX(-50%);
   opacity: 0.25;
 }
 
 .home-logement-title-shadow h1 {
-  color: $bleu;
+  color: #023646d6;
   font-family: 'Gloria Hallelujah', cursive;
   font-size: 6rem;
 }
@@ -66,8 +67,8 @@
 }
 
 .home-logement-title h1 {
-  color: $bleu;
-  font-family: 'Gloria Hallelujah', cursive;
+  color: #023646d6;;
+  font-family: "Gloria Hallelujah", cursive;
   font-size: 5rem;
 }
 
