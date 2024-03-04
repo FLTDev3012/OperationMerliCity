@@ -129,12 +129,12 @@
 }
 
 .wrapper {
-  transition: all 0.5s;
+  transition: all 0.7s;
   position: absolute;
   width: 100%;
   z-index: -1;
   border-radius: 10px;
-  outline: 3px solid $sableHumide;
+  // outline: 3px solid $sableHumide;
   box-shadow: 6px 12px 12px 0px rgba(0, 0, 0, 0.53);
 
 }
