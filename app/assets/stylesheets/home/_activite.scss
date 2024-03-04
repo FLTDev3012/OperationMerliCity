@@ -319,21 +319,23 @@
 
 // --- modif de l angle de l image 1 (central)
 
-// Acti 1 baga
-.card-un .card-item-one img {
-  opacity: .9;
-  height: 90%;
-  left: 58%;
-}
 
-// Acti 2 golf
-.card-deux .card-item-one img {
+
+// Acti 1 golf
+.card-un .card-item-one img {
   transform: translate(-50%, -50%) rotate(-34deg);
 }
 
-// Acti 3 nautique
-.card-trois .card-item-one img {
+// Acti 2 nautique
+.card-deux .card-item-one img {
   transform: translate(-50%, -50%) rotate(-100deg);
+}
+
+// Acti 3 baga
+.card-trois .card-item-one img {
+  opacity: .9;
+  height: 80%;
+  left: 58%;
 }
 
 // Acti 5 petanque
@@ -376,13 +378,13 @@
 
 // --- modif de l angle de l image 2 (Bas Droite)
 
-// Acti 2 golf
-.card-deux .card-item-two img {
+// Acti 1 golf
+.card-un .card-item-two img {
   transform: translate(-50%, -50%) rotate(121deg);
 }
 
-// Acti 3 nautique
-.card-trois .card-item-two img {
+// Acti 2 nautique
+.card-deux .card-item-two img {
   width: 200%;
 }
 
@@ -412,22 +414,23 @@
 
 // --- modif de l angle de l image 3 (Haut Droite)
 
-// Acti 1 baga
 
+
+// Acti 1 golf
 .card-un .card-item-three img {
-  transform: translate(-50%, -50%) rotate(13deg);
-  top: 44%;
-}
-
-// Acti 2 golf
-.card-deux .card-item-three img {
   // rien
 }
 
-// Acti 3 nautique
-.card-trois .card-item-three img {
+// Acti 2 nautique
+.card-deux .card-item-three img {
   transform: translate(-50%, -50%) rotate(-70deg);
   width: 150%;
+}
+
+// Acti 3 baga
+.card-trois .card-item-three img {
+  transform: translate(-50%, -50%) rotate(13deg);
+  top: 44%;
 }
 
 
@@ -458,13 +461,13 @@
 
 // --- modif de l angle de l image 4 (Bas Gauche)
 
-// Acti 2 golf
-.card-deux .card-item-four img {
+// Acti 1 golf
+.card-un .card-item-four img {
   transform: translate(-50%, -50%) rotate(-50deg);
 }
 
-// Acti 3 nautique
-.card-trois .card-item-four img {
+// Acti 2 nautique
+.card-deux .card-item-four img {
   transform: translate(-50%, -50%) rotate(110deg);
   filter: hue-rotate(220deg);
   width: 260%;
@@ -495,13 +498,13 @@
 
 // --- modif de l angle de l image 5 (Haut gauche)
 
-// Acti 2 golf
-.card-deux .card-item-five img {
+// Acti 1 golf
+.card-un .card-item-five img {
   // rien
 }
 
-// Acti 3 nautique
-.card-trois .card-item-five img {
+// Acti 2 nautique
+.card-deux .card-item-five img {
   width: 100%;
 }
 
