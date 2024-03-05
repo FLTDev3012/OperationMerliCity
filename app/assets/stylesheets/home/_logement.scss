@@ -48,12 +48,13 @@
 .home-logement-title-shadow {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  // transform: translateX(-50%);
+  transform: translateY(-40px) translateX(-50%);
   opacity: 0.25;
 }
 
 .home-logement-title-shadow h1 {
-  color: $bleu;
+  color: #023646d6;
   font-family: 'Gloria Hallelujah', cursive;
   font-size: 6rem;
 }
@@ -63,6 +64,12 @@
   justify-content: center;
   z-index: 2;
   position: relative;
+}
+
+.home-logement-title h1 {
+  color: #023646d6;;
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 5rem;
 }
 
 .home-logement-title svg {
@@ -122,12 +129,12 @@
 }
 
 .wrapper {
-  transition: all 0.5s;
+  transition: all 0.8s;
   position: absolute;
   width: 100%;
   z-index: -1;
   border-radius: 10px;
-  outline: 3px solid $sableHumide;
+  // outline: 3px solid $sableHumide;
   box-shadow: 6px 12px 12px 0px rgba(0, 0, 0, 0.53);
 
 }
@@ -194,7 +201,7 @@
 }
 .title {
   width: 100%;
-  transition: transform 0.5s;
+  transition: transform 0.6s;
 }
 .cardtest:hover .title {
   transform: translate3d(0%, -50px, 100px);
@@ -203,9 +210,10 @@
 .character {
   width: 100%;
   opacity: 0;
-  transition: all 0.5s;
+  transition: all 0.7s;
   position: absolute;
   z-index: -1;
+  top: 0;
 }
 
 .cardtest:hover .character {
@@ -219,7 +227,7 @@
 .home-btn-logement-boue-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 8rem;
+  padding-bottom: 8rem;
 }
 
 .home-btn-logement-boue-container img {
