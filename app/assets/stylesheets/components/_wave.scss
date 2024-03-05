@@ -116,6 +116,18 @@
   }
 }
 
+@keyframes locationHoverPicAnimation {
+  0% {
+    transform: translate3d(0%, -30%, 100px); /* Utilisez la variable avec la fonction calc() */
+  }
+  50% {
+    transform: translate3d(0%, -20%, 100px); /* Utilisez la variable avec la fonction calc() */
+  }
+  100% {
+    transform: translate3d(0%, -30%, 100px);/* Utilisez la variable avec la fonction calc() */
+  }
+}
+
 @keyframes carrouItemOneAnimation {
   0% {
     transform: translate(calc(var(--offset)), calc(var(--itemfirst))) rotate(0deg); /* Utilisez la variable avec la fonction calc() */

@@ -131,11 +131,11 @@
   transition: filter .3s ease;
 }
 
-@media screen and (max-width: 640px) {
-  .home-activite-card-carousel {
-    margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2)
-  }
-}
+// @media screen and (max-width: 640px) {
+//   .home-activite-card-carousel {
+//     margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2)
+//   }
+// }
 
 .home-activite-card-carousel.smooth-return {
   transition: all .2s ease;
@@ -538,4 +538,17 @@
 
 .home-activites-button img:hover {
   transform: translateY(-10px);
+}
+
+// nouveau bouton
+
+.home-activite-button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-activite-button-container img {
+  width: 20vh;
 }
