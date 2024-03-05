@@ -539,3 +539,16 @@
 .home-activites-button img:hover {
   transform: translateY(-10px);
 }
+
+// nouveau bouton
+
+.home-activite-button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-activite-button-container img {
+  width: 20vh;
+}
