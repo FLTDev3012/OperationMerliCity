@@ -1,4 +1,34 @@
-<h1><%= @activite.title %></h1>
-<% if @activite.photo.attached? %>
-  <%= cl_image_tag @activite.photo.key, height: 300, width: 400, crop: :fill %>
-<% end %>
+<div class="activite-show-container">
+
+  <div class="activite-show-title">
+    <h1 class="activite-show-shadow-title"><%= @activite.title %></h1>
+    <h1 class="activite-show-block-title"><%= @activite.title %></h1>
+  </div>
+
+  <div class="activite-show-pic-text-container">
+
+    <div class="activite-show-pic-container">
+      <% if @activite.photo.attached? %>
+        <%= cl_image_tag @activite.photo.key %>
+      <% end %>
+    </div>
+
+    <div class="activite-show-text-container">
+      <div>
+        <p class="activite-show-text"><%= @activite.description %></p>
+        <p>Adultes : 5 euros</p>
+        <p>Enfants -10 ans : 4 euros</p>
+        <p>Rue de la poste 62155 MERLIMONT</p>
+        <p>03.21.84.13.94</p>
+        <p>lundi	10:00–12:00 - 14:00–20:00</p>
+        <p>mardi	10:00–12:00 - 14:00–20:00</p>
+        <p>mercredi	10:00–12:00 - 14:00–20:00</p>
+        <p>jeudi	10:00–12:00 - 14:00–20:00</p>
+        <p>vendredi	10:00–12:00 - 14:00–20:00</p>
+        <p>samedi	10:00–12:00 - 14:00–20:00</p>
+        <p>dimanche	10:00–12:00 - 14:00–20:00</p>
+      </div>
+    </div>
+  </div>
+
+</div>
