@@ -1,9 +1,38 @@
-  <h1>Pages des Activités</h1>
+<div class="activite-index-container">
 
-  <% @activites.each do |activite| %>
-      <strong><%= activite.title %></strong>
-      <p><%= activite.description %></p>
-      <% if activite.photo.attached? %>
-        <%= cl_image_tag activite.photo.key, height: 300, width: 400, crop: :fill %>
+  <div class="faune-return-btn">
+    <%= link_to root_path do %>
+      <%= image_tag('home/MerlimontB.png') %>
+    <% end %>
+  </div>
+
+  <div class="activite-index-title">
+    <h1 class="activite-index-shadow-title">Les Activités à Merlimont</h1>
+    <h1 class="activite-index-block-title">Les Activités à Merlimont</h1>
+  </div>
+
+  <div class="activite-index-all-acti-container">
+
+    <div class="activite-index-all-acti">
+      <% @activites.each do |activite| %>
+        <div class="activite-index-une-acti-container">
+
+          <%= link_to activite_path(activite), class: "activite-index-une-acti" do %>
+
+              <% if activite.photo.attached? %>
+                <div class="acti-ind-pic-container">
+                  <%= cl_image_tag activite.photo.key %>
+                </div>
+              <% end %>
+
+              <p class="acti-ind-title"><%= activite.title %></p>
+
+          <% end %>
+
+        </div>
       <% end %>
-  <% end %>
+    </div>
+
+  </div>
+
+</div>
