@@ -2,3 +2,58 @@
   background-image: url("/assets/sablebg.png");
   background-color: #fff;
 }
+
+.activite-index-title {
+  display: flex;
+  justify-content: center;
+  padding: 6rem 0 4rem 0;
+}
+
+.activite-index-title h1 {
+  color: $bleuMain;
+  font-family: "Gloria Hallelujah", cursive;
+}
+
+.activite-index-all-acti-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 20px;
+}
+
+.activite-index-all-acti {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 10px;
+}
+
+.activite-index-une-acti-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.activite-index-une-acti {
+  width: 350px;
+  height: auto;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.activite-index-une-acti img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.activite-index-title-para {
+  text-align: center;
+  margin-top: 10px;
+  font-family: "Gloria Hallelujah", cursive;
+  color: $bleuMain;
+}
