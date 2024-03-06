@@ -207,3 +207,23 @@
     transform: translateY(0) rotate(-5deg);
   }
 }
+
+@keyframes actiIndexAnimation {
+
+  0% {
+    transform: translateY(0rem);
+  }
+  20% {
+    transform: translateY(-1.5rem);
+  }
+  40% {
+    transform: translateY(-1rem);
+  }
+  60% {
+    transform: translateY(-1.5rem);
+  }
+
+  100% {
+    transform: translateY(0rem);
+  }
+}

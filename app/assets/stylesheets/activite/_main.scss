@@ -8,12 +8,37 @@
   display: flex;
   justify-content: center;
   padding: 6rem 0 4rem 0;
+  position: relative;
+  width: 100%;
 }
 
 .activite-index-title h1 {
-  color: #fff;
   font-family: "Gloria Hallelujah", cursive;
+  color: $bleuMain;
+}
+
+.activite-index-shadow-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-size: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.activite-index-block-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: #fff !important;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-shadow: $bleuMain -1px 6px 2px;
 }
 
 .activite-index-all-acti-container {
@@ -46,6 +71,11 @@
   color: #fff;
 }
 
+.acti-ind-pic-container {
+  position: relative;
+}
+
+
 .activite-index-une-acti img {
   width: 350px;
   height: 350px;
@@ -54,8 +84,20 @@
   outline: 3px solid #fff;
   background-color: #ffffff7a;
   padding: 20px;
+  transition: all 0.3s ease-out;
+  position: relative;
+  filter: drop-shadow(#023646 -1px 3px 4px);
 }
 
+
+
+
+
+.activite-index-une-acti-container:hover .activite-index-une-acti img {
+  animation: actiIndexAnimation 4s ease-out infinite;
+  // background-color: #fff9;
+  background-color: #ffffff36;
+}
 
 .acti-ind-title {
   font-size: 2rem;
@@ -63,4 +105,5 @@
   text-align: center;
   font-family: "Gloria Hallelujah", cursive;
   color: #fff;
+  text-shadow: #023646 -1px 6px 4px;
 }
