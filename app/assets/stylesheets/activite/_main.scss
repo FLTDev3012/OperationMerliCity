@@ -1,6 +1,7 @@
 .activite-index-container {
   background-image: url("/assets/sablebg.png");
   background-color: #fff;
+  background-color: $bleu;
 }
 
 .activite-index-title {
@@ -10,8 +11,9 @@
 }
 
 .activite-index-title h1 {
-  color: $bleuMain;
+  color: #fff;
   font-family: "Gloria Hallelujah", cursive;
+  font-size: 3rem;
 }
 
 .activite-index-all-acti-container {
@@ -49,11 +51,16 @@
   height: 350px;
   border-radius: 50%;
   object-fit: cover;
+  outline: 3px solid #fff;
+  background-color: #ffffff7a;
+  padding: 20px;
 }
 
-.activite-index-title-para {
+
+.acti-ind-title {
+  font-size: 2rem;
+  font-weight: bold;
   text-align: center;
-  margin-top: 10px;
   font-family: "Gloria Hallelujah", cursive;
-  color: $bleuMain;
+  color: #fff;
 }

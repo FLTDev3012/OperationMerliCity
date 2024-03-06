@@ -7,7 +7,7 @@
   </div>
 
   <div class="activite-index-title">
-    <h1>Pages des Activités</h1>
+    <h1>Les Activités à Merlimont</h1>
   </div>
 
   <div class="activite-index-all-acti-container">
@@ -17,13 +17,17 @@
 
         <div class="activite-index-une-acti-container">
           <%= link_to activite_path(activite), class: "activite-index-une-acti" do  %>
+
+
               <% if activite.photo.attached? %>
                 <%= cl_image_tag activite.photo.key %>
               <% end %>
-              <div class="activite-index-title-para">
-                <strong><%= activite.title %></strong>
-                <p><%= activite.description %></p>
-              </div>
+
+              <p class="acti-ind-title"><%= activite.title %></p>
+
+
+
+
           <% end %>
         </div>
 
