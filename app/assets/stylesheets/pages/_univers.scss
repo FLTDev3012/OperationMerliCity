@@ -265,10 +265,28 @@
   z-index: 100;
 }
 
+
+
 .test-home-title-container h1 {
-  color: #023646d6;;
+  color: #023646d6;
   font-family: "Gloria Hallelujah", cursive;
   font-size: 5rem;
+}
+
+.test-home-title-container > h1 {
+  color: #023646d6;
+  z-index: 10;
+  position: relative;
+  text-shadow: 2px 2px 2px aliceblue;
+  filter: drop-shadow(2px 2px 2px #3f647066);
+  // color: #4E93D6;
+}
+
+.home-presentation-parasol-container h1 {
+  color: #007CD7;
+  opacity: 0.25;
+  color: #023646d6;
+
 }
 
 .home-presentation-title-shadow {
@@ -308,12 +326,14 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   filter: drop-shadow(0px 4px 4px #02364673);
+  color: #023646b0;
 }
 
 .test-home-seconde-div-text-container img {
   width: 60%;
   height: auto;
   opacity: 0.9;
+  opacity: 0.6;
 }
 
 .test-home-seconde-div-img-container {
