@@ -68,7 +68,7 @@
   position: absolute;
 }
 
-.test-home-first-div path {
+.test-home-first-div .svg-container path {
   position: absolute;
   top: 0;
   left: 0;
@@ -77,12 +77,12 @@
   z-index: 1;
 }
 
-.test-home-first-div path {
+.test-home-first-div .svg-container path {
   transform: scale(0.3);
   transform-origin: center;
 }
 
-.test-home-first-div path {
+.test-home-first-div .svg-container path {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -92,6 +92,12 @@
 
 
 .test-home-first-div .videocontainer{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.block-du-m {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -108,7 +114,53 @@
 
 }
 
-.test-home-first-div video {
+.wrapper-du-m {
+  position: relative;
+  width: 65%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lems {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video-content-du-m {
+  position: relative;
+  content: "";
+  // background-color: rgba(255, 0, 0, 0.186);
+  animation: waveVideoAnimation 10s infinite;
+  transform-origin: center center;
+}
+
+
+.svg-du-m {
+  //width: 100%;
+  //height: 100%;
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.svg-du-m img {
+  transform: translate(0%, -21.7%) scale(0.3);
+  transform: translate(0%, 8.6%) scale(0.3);
+  filter: blur(10px);
+  opacity: 0.5;
+}
+
+.test-home-first-div .videocontainer video {
   position: absolute;
   filter: hue-rotate(7deg);
   animation: waveVideoAnimation 10s infinite;
@@ -148,6 +200,8 @@
   font-family: "Gloria Hallelujah", cursive;
   font-size: 1.3rem;
   text-shadow: 2px 2px 2px #02364621;
+  text-shadow: 2px 2px 2px aliceblue;
+  filter: drop-shadow(2px 2px 2px #3f647029);
 
 
 }
@@ -213,10 +267,28 @@
   z-index: 100;
 }
 
+
+
 .test-home-title-container h1 {
-  color: #023646d6;;
+  color: #023646d6;
   font-family: "Gloria Hallelujah", cursive;
   font-size: 5rem;
+}
+
+.test-home-title-container > h1 {
+  color: #023646d6;
+  z-index: 10;
+  position: relative;
+  text-shadow: 2px 2px 2px aliceblue;
+  filter: drop-shadow(2px 2px 2px #3f647066);
+  // color: #4E93D6;
+}
+
+.home-presentation-parasol-container h1 {
+  color: #007CD7;
+  opacity: 0.25;
+  color: #023646d6;
+
 }
 
 .home-presentation-title-shadow {
@@ -256,12 +328,14 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   filter: drop-shadow(0px 4px 4px #02364673);
+  color: #023646b0;
 }
 
 .test-home-seconde-div-text-container img {
   width: 60%;
   height: auto;
   opacity: 0.9;
+  opacity: 0.6;
 }
 
 .test-home-seconde-div-img-container {

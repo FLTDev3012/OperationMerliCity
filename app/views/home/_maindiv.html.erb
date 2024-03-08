@@ -17,6 +17,23 @@
 
   </div>
 
+  <!-- shadow du m -->
+
+  <div class="block-du-m">
+    <div class="wrapper-du-m">
+      <div class="video-content-du-m">
+        <div class="lems" id="lems">
+          <div class="svg-du-m">
+            <%= image_tag('testhome/msvg.png') %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- le m et video -->
+
   <div class="svg-container">
     <svg>
       <clipPath id="text-overlay">
@@ -47,3 +64,22 @@
   </div>
 
 </div>
+
+<script>
+    // Sélection de l'élément vidéo
+    const video = document.querySelector('.clipped-video');
+
+    // Sélection de l'élément auquel vous souhaitez appliquer les dimensions de la vidéo
+    const videoContent = document.querySelector('.video-content-du-m');
+
+    // Attente du chargement des métadonnées de la vidéo
+    video.addEventListener('loadedmetadata', function() {
+        // Récupération de la hauteur et de la largeur de la vidéo
+        const videoWidth = this.videoWidth; // Largeur de la vidéo
+        const videoHeight = this.videoHeight; // Hauteur de la vidéo
+
+        // Application de la hauteur et de la largeur de la vidéo à l'élément souhaité
+        videoContent.style.width = videoWidth + 'px';
+        videoContent.style.height = videoHeight + 'px';
+    });
+  </script>
