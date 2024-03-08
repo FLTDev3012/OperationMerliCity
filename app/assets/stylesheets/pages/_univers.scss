@@ -68,7 +68,7 @@
   position: absolute;
 }
 
-.test-home-first-div path {
+.test-home-first-div .svg-container path {
   position: absolute;
   top: 0;
   left: 0;
@@ -77,12 +77,12 @@
   z-index: 1;
 }
 
-.test-home-first-div path {
+.test-home-first-div .svg-container path {
   transform: scale(0.3);
   transform-origin: center;
 }
 
-.test-home-first-div path {
+.test-home-first-div .svg-container path {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -92,6 +92,12 @@
 
 
 .test-home-first-div .videocontainer{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.block-du-m {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -108,7 +114,42 @@
 
 }
 
-.test-home-first-div video {
+.wrapper-du-m {
+  position: relative;
+  width: 65%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-content-du-m {
+  position: relative;
+  content: "";
+  background-color: rgba(255, 0, 0, 0.186);
+  animation: waveVideoAnimation 10s infinite;
+  transform-origin: center center;
+}
+
+
+.svg-du-m {
+  //width: 100%;
+  //height: 100%;
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.svg-du-m img {
+  transform: translate(0%, -21%) scale(0.3);
+}
+
+.test-home-first-div .videocontainer video {
   position: absolute;
   filter: hue-rotate(7deg);
   animation: waveVideoAnimation 10s infinite;
