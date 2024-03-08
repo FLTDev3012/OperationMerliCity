@@ -147,6 +147,7 @@
   color: #023646;
   font-family: "Gloria Hallelujah", cursive;
   font-size: 1.3rem;
+  text-shadow: 2px 2px 2px #02364621;
 
 
 }
@@ -158,6 +159,7 @@
 .test-nav-left img {
   height: 4rem;
   width: auto;
+  filter: drop-shadow(2px 2px 2px #02364670);
 }
 
 .test-nav-right {
