@@ -413,7 +413,8 @@
 }
 
 .faune-maitre-form-container {
-  background-color: rgba(102, 154, 46, 0.149);
+  // background-color: rgba(102, 154, 46, 0.149);
+  background-color: rgba(255, 255, 255, 0.149);
   padding: 30px 20px;
   position: relative;
   z-index: 1000;
@@ -449,6 +450,7 @@
   font-family: 'Amatic SC', cursive !important;
   color: $vertFaune;
   font-size: 3.5rem;
+  filter: drop-shadow(2px 2px 1px #0006);
 }
 
 .faune-maitre-form-sign-in {
