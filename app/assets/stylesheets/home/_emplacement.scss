@@ -36,38 +36,37 @@
   background: linear-gradient(180deg, $bgbleu 0%, $bleu 100%);
 }
 
-.home-emplacement-title-shadow {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0.25;
+.home-emplacement-div  .test-home-title-container {
+  height: auto;
 }
 
-.home-emplacement-title-shadow h1 {
+
+.home-emplacement-div h1 {
   color: #fff;
-  font-family: 'Gloria Hallelujah', cursive;
-  font-size: 6rem;
 }
 
-.home-emplacement-title {
-  display: flex;
-  justify-content: center;
-  z-index: 2;
-  position: relative;
+
+.home-emplacement-div h1 {
+  color: #fff !important;
 }
 
-.home-emplacement-title h1 {
-  color: #fff;
-  font-family: 'Gloria Hallelujah', cursive;
-  font-size: 5rem;
-  transform: translateY(50px);
+.home-emplacement-div .home-presentation-cerfvolant {
+  z-index: -1;
+  bottom: -17%;
+  top: 77% !important;
+}
+
+
+.home-emplacement-div .home-presentation-cerfvolant img {
+  filter: grayscale(0.8) brightness(1.2);
+  opacity: 54%;
 }
 
 .home-emplacement-map {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 7rem;
+  margin-top: 3rem;
 }
 
 .home-emplacement-map img{
