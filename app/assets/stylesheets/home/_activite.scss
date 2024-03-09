@@ -100,6 +100,16 @@
   margin-bottom: 0;
 }
 
+.test-home-third-div .home-presentation-cerfvolant {
+  z-index: -1;
+}
+
+.test-home-third-div .home-presentation-cerfvolant img {
+  filter: grayscale(0.8) brightness(1.2);
+  opacity: 54%;
+}
+
+
 // ================ Carrousel top 5 =============================
 
 
@@ -551,4 +561,11 @@
 
 .home-activite-button-container img {
   width: 20vh;
+  opacity: .8;
+  transition: all 0.3s ease-in-out;
+}
+
+.home-activite-button-container img:hover {
+  width: 20vh;
+  opacity: 1;
 }
