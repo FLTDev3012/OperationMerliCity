@@ -45,6 +45,10 @@
   padding-top: 11rem;
 }
 
+.test-home-third-div .test-home-title-container {
+  height: 25vh;
+}
+
 .home-logement-title-shadow {
   position: absolute;
   left: 50%;
@@ -252,11 +256,11 @@
   border-radius: 10px;
   font-size: 1.4rem;
   border: 2px solid #fff;
-  background-color: #208ad9b0;
+  background-color: #295564;
   position: relative;
-  margin-bottom: 5rem;
+  margin-bottom: 5.2rem;
   filter: drop-shadow(12px 6px 12px rgba(0, 0, 0, 0.4));
-  transition: all 0.5s ease-in;
+  transition: all 0.5s ease-out;
   font-family: "Gloria Hallelujah", cursive;
 }
 
