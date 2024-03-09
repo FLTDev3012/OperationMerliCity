@@ -67,9 +67,13 @@
 }
 
 .home-logement-title h1 {
-  color: #023646d6;;
   font-family: "Gloria Hallelujah", cursive;
   font-size: 5rem;
+  color: #023646d6;
+  z-index: 10;
+  position: relative;
+  text-shadow: 2px 2px 2px aliceblue;
+  filter: drop-shadow(2px 2px 2px #3f647066);
 }
 
 .home-logement-title svg {
@@ -140,7 +144,7 @@
   width: 18em;
   border-radius: 50%;
   overflow: hidden;
-  outline: 2px solid #fff;
+  outline: 2px solid aliceblue;
 
 
 }
@@ -241,15 +245,22 @@
   padding-bottom: 8rem;
 }
 
-.home-btn-logement-boue-container img {
-  width: 20vh;
+.home-btn-logement-boue-container a {
+  color: #ffffff;
+  z-index: 10;
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  border: 2px solid #fff;
+  background-color: #208ad9b0;
+  position: relative;
+  margin-bottom: 5rem;
   filter: drop-shadow(12px 6px 12px rgba(0, 0, 0, 0.4));
-  transition: all 0.5s;
-  padding-bottom: 5rem;
+  transition: all 0.5s ease-in;
+  font-family: "Gloria Hallelujah", cursive;
 }
 
-.home-btn-logement-boue-container img:hover {
-  transform: translateY(-10px);
-  filter: drop-shadow(12px 6px 12px rgba(0, 0, 0, 0.53));
 
+.home-btn-logement-boue-container a:hover {
+  transform: translateY(-10px);
 }
