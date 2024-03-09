@@ -560,12 +560,15 @@
 }
 
 .home-activite-button-container img {
-  width: 20vh;
+  width: 130px;
   opacity: .8;
-  transition: all 0.3s ease-in-out;
+  transition: all .5s ease-in;
 }
 
 .home-activite-button-container img:hover {
-  width: 20vh;
+  // transform: scale(1.05);
   opacity: 1;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.4));
+  animation: blopBtnAnimation 1s linear;
+  transform: scale(1.1);
 }
