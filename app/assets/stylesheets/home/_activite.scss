@@ -100,6 +100,16 @@
   margin-bottom: 0;
 }
 
+.test-home-third-div .home-presentation-cerfvolant {
+  z-index: -1;
+}
+
+.test-home-third-div .home-presentation-cerfvolant img {
+  filter: grayscale(0.8) brightness(1.2);
+  opacity: 54%;
+}
+
+
 // ================ Carrousel top 5 =============================
 
 
@@ -550,5 +560,15 @@
 }
 
 .home-activite-button-container img {
-  width: 20vh;
+  width: 130px;
+  opacity: .8;
+  transition: all .5s ease-in;
+}
+
+.home-activite-button-container img:hover {
+  // transform: scale(1.05);
+  opacity: 1;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.4));
+  animation: blopBtnAnimation 1s linear;
+  transform: scale(1.1);
 }
