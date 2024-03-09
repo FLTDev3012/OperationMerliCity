@@ -66,7 +66,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 3rem;
+  margin: 3rem 0;
 }
 
 .home-emplacement-map img{
@@ -75,27 +75,8 @@
   z-index: 3;
 }
 
-.home-emplacement-btn {
-  display: flex;
-  justify-content: center;
-  padding: 3rem 0 7rem 0;
-}
-
-.home-emplacement-btn img {
-  width: 20vh;
-}
-
-.home-emplacement-btn a {
-  color: #fff;
-  font-family: 'Gloria Hallelujah', cursive;
-  font-size: 2rem;
-  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
-  z-index: 3;
-  transition: color 0.3s;
-}
-
-.home-emplacement-btn a:hover {
-  color: #33f2c6;
+.home-emplacement-div .home-activite-button-container {
+  padding-bottom: 3rem;
 }
 
 .home-emplacement-bulle {

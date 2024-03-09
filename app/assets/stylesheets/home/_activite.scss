@@ -565,6 +565,8 @@
   width: 130px;
   opacity: .8;
   transition: all .5s ease-in;
+  position: relative;
+  z-index: 2;
 }
 
 .home-activite-button-container img:hover {
