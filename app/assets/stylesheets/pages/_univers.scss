@@ -318,24 +318,29 @@
   // background-color: aqua;
 }
 
+//
+
+
+
 .test-home-seconde-div-text-container p {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Pacifico", cursive;
   color: #023646e5;
   text-align: center;
   width: 80%;
-  font-size: 1.5rem;
-  margin: 3.5rem 0 3rem 0;
-  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  margin: 2rem 0 3rem 0;
   font-weight: 600;
-  filter: drop-shadow(0px 4px 4px #02364673);
   color: #023646b0;
+  color: #2d5764;
+  text-shadow: 2px 2px 2px aliceblue;
+  filter: drop-shadow(0px 3px 4px #02364673);
 }
 
 .test-home-seconde-div-text-container img {
   width: 60%;
   height: auto;
-  opacity: 0.9;
   opacity: 0.6;
+  filter: drop-shadow(0px 3px 4px #02364673);
 }
 
 .test-home-seconde-div-img-container {
