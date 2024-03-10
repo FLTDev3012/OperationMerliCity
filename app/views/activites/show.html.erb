@@ -8,9 +8,23 @@
   <div class="activite-show-pic-text-container">
 
     <div class="activite-show-pic-container">
+
       <% if @activite.photo.attached? %>
         <%= cl_image_tag @activite.photo.key %>
       <% end %>
+
+      <div class="activite-show-pic-container-star-content">
+        <%= image_tag('testhome/starfish.png') %>
+      </div>
+
+      <div class="activite-show-pic-container-star-content-deux">
+        <%= image_tag('testhome/starfish.png') %>
+      </div>
+
+      <div class="activite-show-pic-container-star-content-trois">
+        <%= image_tag('testhome/starfish.png') %>
+      </div>
+
     </div>
 
     <div class="activite-show-text-container">
