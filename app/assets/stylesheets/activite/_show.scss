@@ -2,10 +2,12 @@
   background-image: url("/assets/sablebg.png");
   background-color: #fff;
   background-color: $bleu;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
 }
 
+
+// title
 
 .activite-show-title {
   display: flex;
@@ -45,6 +47,8 @@
   text-shadow: $bleuMain -1px 6px 2px;
 }
 
+// show pic
+
 
 .activite-show-pic-text-container {
   display: flex;
@@ -58,9 +62,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
-.activite-show-pic-container img {
+.activite-show-pic-container > img {
   border-radius: 50%;
   width: 450px;
   height: 450px;
@@ -69,6 +74,58 @@
   background-color: #ffffff7a;
   padding: 20px;
   filter: drop-shadow(#023646 -1px 3px 4px);
+  background-color: #ffffff3b;
+  position: relative;
+  z-index: 10;
+  animation: waveRegularAnimation 5s infinite;
+}
+// 1
+.activite-show-pic-container-star-content {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 64px;
+  z-index: 1;
+}
+
+.activite-show-pic-container-star-content img {
+  width: 100%;
+  height: auto;
+  transform: translate(-50%, 144%);
+  opacity: .5;
+}
+
+// 2
+.activite-show-pic-container-star-content-deux {
+  position: absolute;
+  top: 66%;
+  left: 26%;
+  width: 64px;
+  z-index: 1;
+}
+
+.activite-show-pic-container-star-content-deux img {
+  width: 100%;
+  height: auto;
+  transform: translate(-50%, 112%) rotate(-10deg);
+  opacity: .5;
+}
+
+// 3
+.activite-show-pic-container-star-content-trois {
+  position: absolute;
+  top: 60%;
+  left: 17%;
+  width: 64px;
+  z-index: 1;
+}
+
+.activite-show-pic-container-star-content-trois img {
+  width: 100%;
+  height: auto;
+  transform: translate(-50%, 112%) rotate(22deg);
+  filter: hue-rotate(317deg);
+  opacity: .5;
 }
 
 .activite-show-text-container {
@@ -80,14 +137,117 @@
   flex-direction: column;
   color: #fff;
   font-size: 1.3rem;
-  filter: drop-shadow(#023646 0px 4px 1px);
-
 
 }
+
+.activite-show-text-content {
+  background-color: rgba(255, 255, 255, 0.149);
+  padding: 0px 20px;
+  position: relative;
+  // box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-backdrop-filter: blur(25px);
+  backdrop-filter: blur(3px);
+  // filter: drop-shadow(#023646 0px 4px 1px);
+  height: fit-content;
+  filter: drop-shadow(#02364699 0px 3px 4px);
+  z-index: 10;
+  background-color: rgba(44, 159, 227, 0.59);
+  background-color: #023646;
+  background-color: #ffffff2b;
+  background-color: #fff0;
+
+}
+
+.activite-show-text-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -40%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  pointer-events: none;
+  transform: skewX(-15deg);
+}
+
+.activite-show-text-container-content {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+
+.activite-show-text-container-star-content-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110px;
+}
+
+.activite-show-text-container-star-content-top img {
+  width: 100%;
+  height: auto;
+  transform: translate(-50%, -50%);
+}
+
+.activite-show-text-container-star-content-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 110px;
+}
+
+.activite-show-text-container-star-content-bottom img {
+  width: 100%;
+  height: auto;
+  transform: translate(67%, -86%) rotate(50deg);
+  filter: hue-rotate(317deg);
+}
+
 
 .activite-show-text {
   font-family: "Gloria Hallelujah", cursive;
   color: #fff;
   font-size: 1.3rem;
   filter: drop-shadow(#023646 0px 4px 1px);
+}
+
+.show-div-text {
+  margin: 1rem 1rem 2rem 1rem;
+}
+
+.show-p-title {
+  display: inline-block;
+  border-bottom: 2px solid #ffffff5c;
+  margin-bottom: .7rem !important;
+  display: flex;
+  justify-content: center;
+  padding-bottom: .3rem !important;
+  font-size: 1.3rem !important;
+  font-family: "Gloria Hallelujah", cursive !important;
+}
+
+.show-div-text p {
+  padding: 0rem;
+  margin: 0rem;
+  font-family: 'ABeeZee', sans-serif;
+
+  color: #fff;
+  filter: drop-shadow(0px 3px 8px #02364673);
+
+  font-size: 1.1rem;
+  text-shadow: #023646 -2px 2px 5px;
+}
+
+.show-div-ligne {
+  display: flex;
+  justify-content: space-between;
+}
+
+.show-jour {
+  padding-right: 1rem !important;
 }
