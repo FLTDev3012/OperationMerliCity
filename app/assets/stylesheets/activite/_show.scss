@@ -2,7 +2,7 @@
   background-image: url("/assets/sablebg.png");
   background-color: #fff;
   background-color: $bleu;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
 }
 
@@ -98,7 +98,7 @@
   border-radius: 10px;
   overflow: hidden;
   -webkit-backdrop-filter: blur(25px);
-  backdrop-filter: blur(25px);
+  backdrop-filter: blur(3px);
   // filter: drop-shadow(#023646 0px 4px 1px);
   height: fit-content;
   filter: drop-shadow(#02364699 0px 3px 4px);
@@ -106,6 +106,7 @@
   background-color: rgba(44, 159, 227, 0.59);
   background-color: #023646;
   background-color: #ffffff2b;
+  background-color: #fff0;
 
 }
 
@@ -124,35 +125,36 @@
 .activite-show-text-container-content {
   width: fit-content;
   height: fit-content;
+  position: relative;
 }
 
-.activite-show-text-container-content::before {
-  content: '';
+.activite-show-text-container-star-content-top {
   position: absolute;
-  width: 200px;
-  height: 200px;
-  background: linear-gradient(#68bfaf, #669a2e);
-  border-radius: 50%;
-  transform: translate(-25%, -25%);
-  background: linear-gradient(#b8c4cc, #4faaee);
-  background: linear-gradient(#cccab8, #4faaee);
-  opacity: 0.75;
-  background: linear-gradient(#fff, #e35d29);
+  top: 0;
+  left: 0;
+  width: 110px;
 }
 
-.activite-show-text-container-content::after {
-  content: '';
+.activite-show-text-container-star-content-top img {
+  width: 100%;
+  height: auto;
+  transform: translate(-50%, -50%);
+}
+
+.activite-show-text-container-star-content-bottom {
   position: absolute;
-  right: 0%;
-  width: 150px;
-  height: 150px;
-  background: linear-gradient(#79cbe8, #007CD7);
-  border-radius: 50%;
-  transform: translate(-70%, -75%);
-  opacity: 0.75;
-  background: linear-gradient(#fff, #53b8ff);
-
+  bottom: 0;
+  right: 0;
+  width: 110px;
 }
+
+.activite-show-text-container-star-content-bottom img {
+  width: 100%;
+  height: auto;
+  transform: translate(67%, -86%) rotate(50deg);
+  filter: hue-rotate(317deg);
+}
+
 
 .activite-show-text {
   font-family: "Gloria Hallelujah", cursive;
