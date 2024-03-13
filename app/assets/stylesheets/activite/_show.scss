@@ -10,6 +10,13 @@
   z-index: 100;
 }
 
+.faune-return-btn i {
+  height: 4rem;
+  width: auto;
+  margin: 40px 40px;
+  font-size: 3rem;
+}
+
 
 // title
 
@@ -25,6 +32,7 @@
   font-family: "Gloria Hallelujah", cursive;
   color: $bleuMain;
   margin-top: 5rem;
+  font-size: 4rem;
 }
 
 .activite-show-shadow-title {
