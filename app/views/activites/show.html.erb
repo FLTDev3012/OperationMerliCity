@@ -1,7 +1,11 @@
 <div class="activite-show-container">
 
   <div class="faune-return-btn">
-    <a href="javascript:history.go(-1)"><i class="fa-solid fa-backward" style="color: #FFFFFFE3;"></i></a>
+
+    <%= link_to root_path(anchor: "home-acti"), data: { turbo: "false" } do %>
+      <i class="fa-solid fa-backward" style="color: #FFFFFFE3;"></i>
+    <% end %>
+
   </div>
 
 
