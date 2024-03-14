@@ -6,20 +6,23 @@ class LogementsController < ApplicationController
       @categorie = params[:categorie]
       @logements = Logement.where(categorie: params[:categorie])
     else
-      @logements = Logement.all
+      @logements = policy_scope(Logement)
     end
   end
 
   def show
     @logement = Logement.find(params[:id])
+    authorize @logement
   end
 
   def new
     @logement = Logement.new
+    authorize @logement
   end
 
   def create
     @logement = Logement.new(logement_params)
+    authorize @logement
 
     if @logement.save
       redirect_to dashboard_path, notice: 'Logement créé avec succès!'
@@ -30,10 +33,12 @@ class LogementsController < ApplicationController
 
   def edit
     @logement = Logement.find(params[:id])
+    authorize @logement
   end
 
   def update
     @logement = Logement.find(params[:id])
+    authorize @logement
     @logement.update(logement_params)
     @logement.save
     redirect_to dashboard_path, notice: 'Logement mis à jour avec succès!'
@@ -41,6 +46,7 @@ class LogementsController < ApplicationController
 
   def destroy
     @activite = Activite.find(params[:id])
+    authorize @logement
     @logement.destroy
     redirect_to dashboard_path, status: :see_other
   end
