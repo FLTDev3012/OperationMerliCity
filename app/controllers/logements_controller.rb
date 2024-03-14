@@ -4,7 +4,7 @@ class LogementsController < ApplicationController
   def index
     if params[:categorie].present?
       @categorie = params[:categorie]
-      @logements = Logement.where(categorie: params[:categorie])
+      @logements = policy_scope(Logement).where(categorie: params[:categorie])
     else
       @logements = policy_scope(Logement)
     end
