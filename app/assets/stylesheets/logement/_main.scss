@@ -1,0 +1,84 @@
+.logement-index-container {
+  background-image: url("/assets/sablebg.png");
+  background-color: #fff;
+  min-height: 100vh;
+  position: relative;
+}
+
+.logement-index-container .faune-return-btn {
+  z-index: 100;
+}
+
+// titre
+
+.logement-index-title {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0 0 0;
+  position: relative;
+  width: 100%;
+}
+
+.logement-index-title h1 {
+  font-family: "Gloria Hallelujah", cursive;
+  color: $bleuMain;
+  margin-top: 5rem;
+}
+
+.logement-index-shadow-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: #023646d6;
+  opacity: .25;
+}
+
+
+
+.logement-index-block-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-shadow: $bleuMain -1px 6px 2px;
+  color: #023646d6;
+  z-index: 10;
+  position: relative;
+  text-shadow: 2px 2px 2px aliceblue;
+  filter: drop-shadow(2px 2px 2px #3f647066);
+}
+
+
+
+//
+
+.logement-index-container .activite-index-all-acti-container {
+  margin-top: 3rem;
+}
+
+.logement-index-container .acti-ind-title {
+  color: #023646d6;
+  text-shadow: -1px 4px 1px aliceblue;
+  filter: drop-shadow(2px 2px 1px #3f647066);
+}
+
+.logement-index-container .activite-index-une-acti img {
+  background: #f0f0ef;
+  filter: drop-shadow(#0236468a -1px 3px 4px);
+}
+
+.logement-index-container .activite-index-une-acti:hover img {
+  filter: none;
+  background: #f0f0ef;
+  filter: drop-shadow(#02364643 -1px 3px 4px);
+
+}

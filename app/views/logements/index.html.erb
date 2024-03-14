@@ -1,22 +1,40 @@
+<div class="logement-index-container">
 
-
-<h1><%= @categorie.present? ? "Nos logements en #{@categorie}" : 'Tous nos logements' %></h1>
-
-<% @logements.each do |logement| %>
-  <div>
-    <p><%= logement.categorie %></p>
-    <strong><%= logement.title %></strong>
-    <br>
-    <% if logement.photo.attached? %>
-      <%= cl_image_tag logement.photo.key, height: 300, width: 400, crop: :fill %>
+  <div class="faune-return-btn">
+    <%= link_to root_path do %>
+      <%= image_tag('home/MerlimontB.png') %>
     <% end %>
-    <br>
-    <p><%= logement.description %></p>
-    <p><%= logement.price %></p>
-    <p><%= logement.email %></p>
-    <p><%= logement.phone %></p>
-    <%= link_to "voir plus", logement_path(logement) %>
-    <br>
-    <br>
   </div>
-<% end %>
+
+
+  <div class="logement-index-title">
+    <h1 class="logement-index-shadow-title"><%= @categorie.present? ? "Nos logements en #{@categorie}" : 'Tous nos logements' %></h1>
+    <h1 class="logement-index-block-title"><%= @categorie.present? ? "Nos logements en #{@categorie}" : 'Tous nos logements' %></h1>
+  </div>
+
+  <div class="activite-index-all-acti-container">
+
+    <div class="activite-index-all-acti">
+      <% @logements.each do |logement| %>
+        <div class="activite-index-une-acti-container">
+          <%= link_to logement_path(logement), class: "activite-index-une-acti" do %>
+
+            <% if logement.photo.attached? %>
+              <div class="acti-ind-pic-container">
+                <%= cl_image_tag logement.photo.key %>
+              </div>
+            <% end %>
+
+            <p class="acti-ind-title"><%= logement.title %></p>
+
+            <br>
+            <br>
+          <% end %>
+        </div>
+      <% end %>
+
+    </div>
+
+  </div>
+
+</div>
