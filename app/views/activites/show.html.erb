@@ -41,9 +41,9 @@
 
         <!-- les call to actions du stimulus -->
           <div class="activite-show-cta-container">
-            <p>Adresse</p>
-            <p>Prix</p>
-            <p>Horaires</p>
+            <p data-action="click->show-acti#openaddress">Adresse</p>
+            <p data-action="click->show-acti#openprice">Prix</p>
+            <p data-action="click->show-acti#openhours">Horaires</p>
             <p>description</p>
           </div>
         <!--  -->
@@ -58,14 +58,14 @@
         <div class="activite-show-text-content">
           <!-- <p class="activite-show-text"><%= @activite.description %></p> -->
 
-          <div class="show-div-text activite-show-div-adresse" data-show-acti-target="address">
+          <div class="show-div-text activite-show-div-adresse d-none" data-show-acti-target="address">
             <p class="show-p-title">Adresse</p>
             <div class="show-div-ligne"><p class="show-jour"><i class="fa-solid fa-location-dot" style="color: #FFFFFFB5;"></i></p><p>Rue de la poste 62155 MERLIMONT</p></div>
             <div class="show-div-ligne"><p class="show-jour"><i class="fa-solid fa-phone" style="color: #FFFFFFB5;"></i></p><p>03.21.84.13.94</p></div>
           </div>
 
 
-          <div class="show-div-text activite-show-div-prix" data-show-acti-target="price">
+          <div class="show-div-text activite-show-div-prix d-none" data-show-acti-target="price">
             <p class="show-p-title">Prix</p>
             <div class="show-div-ligne"><p class="show-jour">Adultes :</p><p>5 euros</p></div>
             <div class="show-div-ligne"><p class="show-jour">Enfants -10 ans :</p><p>4 euros</p></div>
@@ -73,7 +73,7 @@
 
 
 
-          <div class="show-div-text activite-show-div-horaires" data-show-acti-target="hours">
+          <div class="show-div-text activite-show-div-horaires d-none" data-show-acti-target="hours">
             <p class="show-p-title">Horaires</p>
             <div class="show-div-horaires">
               <div class="show-div-ligne"><p class="show-jour">Lundi</p>	<p>10:00–12:00 - 14:00–20:00</p></div>
