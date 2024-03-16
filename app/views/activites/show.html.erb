@@ -1,4 +1,4 @@
-<div class="activite-show-container">
+<div class="activite-show-container" data-controller="show-acti">
 
   <div class="faune-return-btn">
 
@@ -38,23 +38,54 @@
 
     <div class="activite-show-text-container">
       <div class="activite-show-text-container-content">
+
+        <!-- star fish -->
         <div class="activite-show-text-container-star-content-top">
           <%= image_tag('testhome/starfish.png') %>
         </div>
         <div class="activite-show-text-container-star-content-bottom">
           <%= image_tag('testhome/starfish.png') %>
         </div>
+
         <div class="activite-show-text-content">
+
+          <!-- les call to actions du stimulus -->
+          <div class="activite-show-cta-container">
+
+            <div class="activite-show-cta-content"  data-action="click->show-acti#opendescription">
+              <p><i class="fa-brands fa-readme" style="color: #FFF;"></i></p>
+            </div>
+
+            <div class="activite-show-cta-content" data-action="click->show-acti#openaddress">
+              <p><i class="fa-solid fa-location-dot" style="color: #fff;"></i></p>
+            </div>
+
+            <div class="activite-show-cta-content"  data-action="click->show-acti#openprice">
+              <p><i class="fa-solid fa-euro-sign" style="color: #ffffff;"></i></p>
+            </div>
+
+            <div class="activite-show-cta-content" data-action="click->show-acti#openhours">
+              <p><i class="fa-solid fa-clock" style="color: #ffffff;"></i></p>
+            </div>
+
+          </div>
+          <!--  -->
           <!-- <p class="activite-show-text"><%= @activite.description %></p> -->
 
-          <div class="show-div-text activite-show-div-adresse">
+          <div class="show-div-text activite-show-div-adresse" data-show-acti-target="description">
+            <p class="show-p-title">Description</p>
+            <div class="show-div-ligne"><p><%= @activite.description %> <%= @activite.description %></p></div>
+          </div>
+
+
+          <div class="show-div-text activite-show-div-adresse d-none" data-show-acti-target="address">
             <p class="show-p-title">Adresse</p>
             <div class="show-div-ligne"><p class="show-jour"><i class="fa-solid fa-location-dot" style="color: #FFFFFFB5;"></i></p><p>Rue de la poste 62155 MERLIMONT</p></div>
             <div class="show-div-ligne"><p class="show-jour"><i class="fa-solid fa-phone" style="color: #FFFFFFB5;"></i></p><p>03.21.84.13.94</p></div>
           </div>
 
 
-          <div class="show-div-text activite-show-div-prix">
+          <div class="show-div-text activite-show-div-prix d-none" data-show-acti-target="price">
             <p class="show-p-title">Prix</p>
             <div class="show-div-ligne"><p class="show-jour">Adultes :</p><p>5 euros</p></div>
             <div class="show-div-ligne"><p class="show-jour">Enfants -10 ans :</p><p>4 euros</p></div>
@@ -62,7 +93,7 @@
 
 
 
-          <div class="show-div-text activite-show-div-horaires">
+          <div class="show-div-text activite-show-div-horaires d-none" data-show-acti-target="hours">
             <p class="show-p-title">Horaires</p>
             <div class="show-div-horaires">
               <div class="show-div-ligne"><p class="show-jour">Lundi</p>	<p>10:00–12:00 - 14:00–20:00</p></div>
