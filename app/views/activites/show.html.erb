@@ -100,72 +100,100 @@
 
               <div class="show-div-ligne">
                 <p class="show-jour">Lundi</p>
-                <p>
-                  <%= @activite.luns.slice(0, 2) %>:<%= @activite.luns.slice(-2, 2) %> –
-                  <%= @activite.lunbs.slice(0, 2) %>:<%= @activite.lunbs.slice(-2, 2) %> -
-                  <%= @activite.lunbe.slice(0, 2) %>:<%= @activite.lunbe.slice(-2, 2) %> -
-                  <%= @activite.lune.slice(0, 2) %>:<%= @activite.lune.slice(-2, 2) %>
-                </p>
+                <% if @activite.luns.present? %>
+                  <p>
+                    <%= @activite.luns.slice(0, 2) %>:<%= @activite.luns.slice(-2, 2) %> –
+                    <%= @activite.lunbs.slice(0, 2) %>:<%= @activite.lunbs.slice(-2, 2) %> -
+                    <%= @activite.lunbe.slice(0, 2) %>:<%= @activite.lunbe.slice(-2, 2) %> -
+                    <%= @activite.lune.slice(0, 2) %>:<%= @activite.lune.slice(-2, 2) %>
+                  </p>
+                <% else %>
+                  <p>Ferme</p>
+                <% end %>
               </div>
 
               <div class="show-div-ligne">
                 <p class="show-jour">Mardi</p>
-                <p>
-                  <%= @activite.mars.slice(0, 2) %>:<%= @activite.mars.slice(-2, 2) %> –
-                  <%= @activite.marbs.slice(0, 2) %>:<%= @activite.marbs.slice(-2, 2) %> -
-                  <%= @activite.marbe.slice(0, 2) %>:<%= @activite.marbe.slice(-2, 2) %> -
-                  <%= @activite.mare.slice(0, 2) %>:<%= @activite.mare.slice(-2, 2) %>
-                </p>
+                <% if @activite.mars.present? %>
+                  <p>
+                    <%= @activite.mars.slice(0, 2) %>:<%= @activite.mars.slice(-2, 2) %> –
+                    <%= @activite.marbs.slice(0, 2) %>:<%= @activite.marbs.slice(-2, 2) %> -
+                    <%= @activite.marbe.slice(0, 2) %>:<%= @activite.marbe.slice(-2, 2) %> -
+                    <%= @activite.mare.slice(0, 2) %>:<%= @activite.mare.slice(-2, 2) %>
+                  </p>
+                <% else %>
+                  <p>Ferme</p>
+                <% end %>
               </div>
 
               <div class="show-div-ligne">
                 <p class="show-jour">Mercredi</p>
-                <p>
-                  <%= @activite.mers.slice(0, 2) %>:<%= @activite.mers.slice(-2, 2) %> –
-                  <%= @activite.merbs.slice(0, 2) %>:<%= @activite.merbs.slice(-2, 2) %> -
-                  <%= @activite.merbe.slice(0, 2) %>:<%= @activite.merbe.slice(-2, 2) %> -
-                  <%= @activite.mere.slice(0, 2) %>:<%= @activite.mere.slice(-2, 2) %>
-                </p>
+                <% if @activite.mers.present? %>
+                  <p>
+                    <%= @activite.mers.slice(0, 2) %>:<%= @activite.mers.slice(-2, 2) %> –
+                    <%= @activite.merbs.slice(0, 2) %>:<%= @activite.merbs.slice(-2, 2) %> -
+                    <%= @activite.merbe.slice(0, 2) %>:<%= @activite.merbe.slice(-2, 2) %> -
+                    <%= @activite.mere.slice(0, 2) %>:<%= @activite.mere.slice(-2, 2) %>
+                  </p>
+                <% else %>
+                  <p>Ferme</p>
+                <% end %>
               </div>
 
               <div class="show-div-ligne">
                 <p class="show-jour">Jeudi</p>
-                <p>
-                  <%= @activite.jeus.slice(0, 2) %>:<%= @activite.jeus.slice(-2, 2) %> –
-                  <%= @activite.jeubs.slice(0, 2) %>:<%= @activite.jeubs.slice(-2, 2) %> -
-                  <%= @activite.jeube.slice(0, 2) %>:<%= @activite.jeube.slice(-2, 2) %> -
-                  <%= @activite.jeue.slice(0, 2) %>:<%= @activite.jeue.slice(-2, 2) %>
-                </p>
+                <% if @activite.jeus.present? %>
+                  <p>
+                    <%= @activite.jeus.slice(0, 2) %>:<%= @activite.jeus.slice(-2, 2) %> –
+                    <%= @activite.jeubs.slice(0, 2) %>:<%= @activite.jeubs.slice(-2, 2) %> -
+                    <%= @activite.jeube.slice(0, 2) %>:<%= @activite.jeube.slice(-2, 2) %> -
+                    <%= @activite.jeue.slice(0, 2) %>:<%= @activite.jeue.slice(-2, 2) %>
+                  </p>
+                <% else %>
+                  <p>Ferme</p>
+                <% end %>
               </div>
 
               <div class="show-div-ligne">
                 <p class="show-jour">Vendredi</p>
-                <p>
-                  <%= @activite.vens.slice(0, 2) %>:<%= @activite.vens.slice(-2, 2) %> –
-                  <%= @activite.venbs.slice(0, 2) %>:<%= @activite.venbs.slice(-2, 2) %> -
-                  <%= @activite.venbe.slice(0, 2) %>:<%= @activite.venbe.slice(-2, 2) %> -
-                  <%= @activite.vene.slice(0, 2) %>:<%= @activite.vene.slice(-2, 2) %>
-                </p>
+                <% if @activite.vens.present? %>
+                  <p>
+                    <%= @activite.vens.slice(0, 2) %>:<%= @activite.vens.slice(-2, 2) %> –
+                    <%= @activite.venbs.slice(0, 2) %>:<%= @activite.venbs.slice(-2, 2) %> -
+                    <%= @activite.venbe.slice(0, 2) %>:<%= @activite.venbe.slice(-2, 2) %> -
+                    <%= @activite.vene.slice(0, 2) %>:<%= @activite.vene.slice(-2, 2) %>
+                  </p>
+                <% else %>
+                  <p>Ferme</p>
+                <% end %>
               </div>
 
               <div class="show-div-ligne">
                 <p class="show-jour">Samedi</p>
-                <p>
-                  <%= @activite.sams.slice(0, 2) %>:<%= @activite.sams.slice(-2, 2) %> –
-                  <%= @activite.sambs.slice(0, 2) %>:<%= @activite.sambs.slice(-2, 2) %> -
-                  <%= @activite.sambe.slice(0, 2) %>:<%= @activite.sambe.slice(-2, 2) %> -
-                  <%= @activite.same.slice(0, 2) %>:<%= @activite.same.slice(-2, 2) %>
-                </p>
+                <% if @activite.sams.present? %>
+                  <p>
+                    <%= @activite.sams.slice(0, 2) %>:<%= @activite.sams.slice(-2, 2) %> –
+                    <%= @activite.sambs.slice(0, 2) %>:<%= @activite.sambs.slice(-2, 2) %> -
+                    <%= @activite.sambe.slice(0, 2) %>:<%= @activite.sambe.slice(-2, 2) %> -
+                    <%= @activite.same.slice(0, 2) %>:<%= @activite.same.slice(-2, 2) %>
+                  </p>
+                <% else %>
+                  <p>Ferme</p>
+                <% end %>
               </div>
 
               <div class="show-div-ligne">
                 <p class="show-jour">Dimanche</p>
-                <p>
-                  <%= @activite.dims.slice(0, 2) %>:<%= @activite.dims.slice(-2, 2) %> –
-                  <%= @activite.dimbs.slice(0, 2) %>:<%= @activite.dimbs.slice(-2, 2) %> -
-                  <%= @activite.dimbe.slice(0, 2) %>:<%= @activite.dimbe.slice(-2, 2) %> -
-                  <%= @activite.dime.slice(0, 2) %>:<%= @activite.dime.slice(-2, 2) %>
-                </p>
+                <% if @activite.dims.present? %>
+                  <p>
+                    <%= @activite.dims.slice(0, 2) %>:<%= @activite.dims.slice(-2, 2) %> –
+                    <%= @activite.dimbs.slice(0, 2) %>:<%= @activite.dimbs.slice(-2, 2) %> -
+                    <%= @activite.dimbe.slice(0, 2) %>:<%= @activite.dimbe.slice(-2, 2) %> -
+                    <%= @activite.dime.slice(0, 2) %>:<%= @activite.dime.slice(-2, 2) %>
+                  </p>
+                <% else %>
+                  <p>Ferme</p>
+                <% end %>
               </div>
             </div>
 
