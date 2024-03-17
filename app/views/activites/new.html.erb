@@ -6,8 +6,48 @@
 
   <div class="form-formulaire">
     <%= simple_form_for @activite do |f| %>
-      <%= f.input :title, placeholder: 'titre' %>
+      <%= f.input :title, placeholder: 'Titre' %>
       <%= f.input :description, placeholder: 'Description' %>
+      <%= f.input :address, placeholder: 'Adresse' %>
+      <%= f.input :phone, placeholder: 'Téléphone' %>
+      <%= f.input :price_a, placeholder: 'Prix A' %>
+      <%= f.input :price_b, placeholder: 'Prix B' %>
+
+      <%= f.input :luns, placeholder: 'Lundi - Heure de début' %>
+      <%= f.input :lunbs, placeholder: 'Lundi - Heure de pause (début)' %>
+      <%= f.input :lunbe, placeholder: 'Lundi - Heure de pause (fin)' %>
+      <%= f.input :lune, placeholder: 'Lundi - Heure de fin' %>
+
+      <%= f.input :mars, placeholder: 'Mardi - Heure de début' %>
+      <%= f.input :marbs, placeholder: 'Mardi - Heure de pause (début)' %>
+      <%= f.input :marbe, placeholder: 'Mardi - Heure de pause (fin)' %>
+      <%= f.input :mare, placeholder: 'Mardi - Heure de fin' %>
+
+      <%= f.input :mers, placeholder: 'Mercredi - Heure de début' %>
+      <%= f.input :merbs, placeholder: 'Mercredi - Heure de pause (début)' %>
+      <%= f.input :merbe, placeholder: 'Mercredi - Heure de pause (fin)' %>
+      <%= f.input :mere, placeholder: 'Mercredi - Heure de fin' %>
+
+      <%= f.input :jeus, placeholder: 'Jeudi - Heure de début' %>
+      <%= f.input :jeubs, placeholder: 'Jeudi - Heure de pause (début)' %>
+      <%= f.input :jeube, placeholder: 'Jeudi - Heure de pause (fin)' %>
+      <%= f.input :jeue, placeholder: 'Jeudi - Heure de fin' %>
+
+      <%= f.input :vens, placeholder: 'Vendredi - Heure de début' %>
+      <%= f.input :venbs, placeholder: 'Vendredi - Heure de pause (début)' %>
+      <%= f.input :venbe, placeholder: 'Vendredi - Heure de pause (fin)' %>
+      <%= f.input :vene, placeholder: 'Vendredi - Heure de fin' %>
+
+      <%= f.input :sams, placeholder: 'Samedi - Heure de début' %>
+      <%= f.input :sambs, placeholder: 'Samedi - Heure de pause (début)' %>
+      <%= f.input :sambe, placeholder: 'Samedi - Heure de pause (fin)' %>
+      <%= f.input :same, placeholder: 'Samedi - Heure de fin' %>
+
+      <%= f.input :dims, placeholder: 'Dimanche - Heure de début' %>
+      <%= f.input :dimbs, placeholder: 'Dimanche - Heure de pause (début)' %>
+      <%= f.input :dimbe, placeholder: 'Dimanche - Heure de pause (fin)' %>
+      <%= f.input :dime, placeholder: 'Dimanche - Heure de fin' %>
+
       <%= f.input :photo, as: :file %>
       <div class="form-input">
         <%= f.button :submit, value: 'Validation' %>
