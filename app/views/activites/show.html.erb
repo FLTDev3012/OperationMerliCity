@@ -64,9 +64,12 @@
               <p><i class="fa-solid fa-euro-sign" style="color: #ffffff;"></i></p>
             </div>
 
-            <div class="activite-show-cta-content" data-action="click->show-acti#openhours">
-              <p><i class="fa-solid fa-clock" style="color: #ffffff;"></i></p>
-            </div>
+
+            <% if @activite.luns.present? || @activite.mars.present? || @activite.mers.present? || @activite.jeus.present? || @activite.vens.present? || @activite.sams.present? || @activite.dims.present? %>
+              <div class="activite-show-cta-content" data-action="click->show-acti#openhours">
+                <p><i class="fa-solid fa-clock" style="color: #ffffff;"></i></p>
+              </div>
+            <% end %>
 
           </div>
           <!--  -->
