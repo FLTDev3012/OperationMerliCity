@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_02_04_073452) do
+ActiveRecord::Schema[7.0].define(version: 2024_03_17_113656) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -48,6 +48,38 @@ ActiveRecord::Schema[7.0].define(version: 2024_02_04_073452) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "image_url"
+    t.string "address"
+    t.string "phone"
+    t.string "price_a"
+    t.string "price_b"
+    t.string "luns"
+    t.string "lunbs"
+    t.string "lunbe"
+    t.string "lune"
+    t.string "mars"
+    t.string "marbs"
+    t.string "marbe"
+    t.string "mare"
+    t.string "mers"
+    t.string "merbs"
+    t.string "merbe"
+    t.string "mere"
+    t.string "jeus"
+    t.string "jeubs"
+    t.string "jeube"
+    t.string "jeue"
+    t.string "vens"
+    t.string "venbs"
+    t.string "venbe"
+    t.string "vene"
+    t.string "sams"
+    t.string "sambs"
+    t.string "sambe"
+    t.string "same"
+    t.string "dims"
+    t.string "dimbs"
+    t.string "dimbe"
+    t.string "dime"
   end
 
   create_table "biotops", force: :cascade do |t|
