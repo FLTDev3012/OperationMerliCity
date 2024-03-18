@@ -1,11 +1,22 @@
 .dash-container {
-  background-color: $bleu;
   color: #fff;
+  background-image: url("/assets/sablebg.png");
+  background-color: #fff;
   // font-family: 'Gloria Hallelujah', cursive;
 }
 
 .dash-container a {
-  color: #01e3fb;
+  color: #023646d6;
+  position: relative;
+  text-shadow: 2px 2px 2px aliceblue;
+  filter: drop-shadow(2px 2px 2px #3f647066);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+
+.dash-container i {
+  color: #023646d6;
 }
 
 
@@ -21,7 +32,12 @@
 
 .dash-title-container h2 {
   font-family: 'Gloria Hallelujah', cursive;
-  font-size: 4rem;
+  font-size: 5rem;
+  color: #023646d6;
+  z-index: 10;
+  position: relative;
+  text-shadow: 2px 2px 2px aliceblue;
+  filter: drop-shadow(2px 2px 2px #3f647066);
 }
 
 .dash-activite-title {
@@ -31,26 +47,70 @@
   margin-bottom: 3rem;
 }
 
-.dash-all-activities {
+.dash-activite-title h1 {
+  color: #023646d6;
+  position: relative;
+  text-shadow: 2px 2px 2px aliceblue;
+  filter: drop-shadow(2px 2px 2px #3f647066);
 
+}
+
+.dash-activite-title h3 {
+  color: #023646d6;
+  position: relative;
+  text-shadow: 2px 2px 2px aliceblue;
+  filter: drop-shadow(2px 2px 2px #3f647066);
+}
+
+.dash-one-activitie-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.dash-all-activities {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 80%;
+  backdrop-filter: blur(3px);
+  background-color: #fff0;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid #ffffff40;
+  border-right: 1px solid #ffffff1a;
+  border-bottom: 1px solid #ffffff1a;
+  filter: drop-shadow(#02364699 0px 3px 4px);
 }
 
 .dash-one-activitie {
   display: flex;
-}
-
-.dash-one-activitie {
-  background-color: #aa4e21;
+  width: 100%;
   margin: 10px 0;
   padding: 0.3rem 0;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.dash-one-activitie:nth-child(even) {
+  background-color: #132c33;
+}
+
+.dash-one-activitie:nth-child(odd) {
+  background-color: #023646d6;
+}
+
+.dash-one-activite-modif {
+  display: flex;
+  align-items: center;
 }
 
 
+.dash-one-activitie  > * {
+  margin: 0 30px;
+}
 
-.dash-one-activitie > * {
+.dash-one-activitie .dash-one-activite-modif  > * {
   margin: 0 30px;
 }
 

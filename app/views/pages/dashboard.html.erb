@@ -13,26 +13,34 @@
     <%= link_to "cree une activites", new_activite_path %>
   </div>
 
+  <div class="dash-one-activitie-container">
+    <div class="dash-all-activities">
+      <% @activites.each do |activite| %>
 
-  <div class="dash-all-activities">
-    <% @activites.each do |activite| %>
+        <div class="dash-one-activitie">
+          <div>
+            <%= activite.title %>
+          </div>
+          <div class="dash-one-activite-modif">
+            <% if activite.photo.attached? %>
+              <p>Avec image</p>
+            <% else %>
+              <p>sans image</p>
+            <% end %>
+            <%= link_to activite_path(activite) do %>
+              <i class="fa-solid fa-eye"></i>
+            <% end %>
+            <%= link_to edit_activite_path(activite) do %>
+              <i class="fa-solid fa-pen-to-square"></i>
+            <% end %>
+            <%= link_to activite_path(activite), data: { turbo_method: :delete, turbo_confirm: "Êtes-vous sûr de vouloir supprimer ?" }, class: "deco-none dash-corbeille" do %>
+              <i class="fa-solid fa-trash"></i>
+            <% end %>
+          </div>
+        </div>
 
-      <div class="dash-one-activitie">
-        <%= activite.title %>
-        <p><%= activite.description %></p>
-        <% if activite.photo.attached? %>
-          <p>Avec image</p>
-        <% else %>
-          <p>sans image</p>
-        <% end %>
-        <%= link_to "voir l activite", activite_path(activite) %>
-        <%= link_to "modifer l activite", edit_activite_path(activite) %>
-        <%= link_to activite_path(activite), data: { turbo_method: :delete, turbo_confirm: "Êtes-vous sûr de vouloir supprimer ?" }, class: "deco-none dash-corbeille" do %>
-          <i class="fa-solid fa-trash" style="color: #fff;"></i>
-        <% end %>
-      </div>
-
-    <% end %>
+      <% end %>
+    </div>
   </div>
 
   <div class="dash-logement-title">
