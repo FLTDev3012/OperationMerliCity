@@ -585,19 +585,121 @@ espece_poisson9.save
 puts "Activite en cours de creation ma couille... 🏄"
 
 file = URI.open("https://www.parcbagatelle.com/fileadmin/_processed_/6/8/csm_Banniere-BaggyPass-Bagatelle_fb50144a68.jpg")
-activite1 = Activite.create(title: "Bagatelle", description: "Parc d'attraction à merlimont village")
+activite1 = Activite.create(
+title: "bagatelle",
+description: "Venez vivre une journée de magie et d'aventure à Baguette Parc ! Situé à Merlimont, notre parc d'attractions propose des manèges sensationnels, des spectacles envoûtants et des stands de jeux pour toute la famille. Ne manquez pas l'occasion de créer des souvenirs inoubliables avec vos proches !",
+address: "123, Rue de la Montagne",
+phone: "01 23 45 67 89",
+price_a: "12",
+price_b: "8",
+luns: "07:00",
+lunbs: "11:00",
+lunbe: "12:00",
+lune: "17:00",
+mars: "09:00",
+marbs: "12:00",
+marbe: "13:00",
+mare: "18:00",
+mers: "09:00",
+merbs: "12:00",
+merbe: "13:00",
+mere: "18:00",
+jeus: "09:00",
+jeubs: "12:00",
+jeube: "13:00",
+jeue: "18:00",
+vens: "09:00",
+venbs: "12:00",
+venbe: "13:00",
+vene: "18:00",
+sams: "09:00",
+sambs: "12:00",
+sambe: "13:00",
+same: "18:00",
+dims: "09:00",
+dimbs: "12:00",
+dimbe: "13:00",
+dime: "18:00")
 activite1.photo.attach(io: file, filename: "v1.png", content_type: "image/png")
 activite1.save
 puts "#{Activite.count} activites crée!"
 
 file = URI.open("https://www.hillstonestlucia.com.au/wp-content/uploads/2020/09/0S1A5968.jpg")
-activite2 = Activite.create(title: "Mini golf", description: "Mini golf de merlimont plage")
+activite2 = Activite.create(
+title: "mini golf",
+description: "Mini-golf divertissant à Merlimont. Parcours de 18 trous pour tous niveaux. Idéal en famille ou entre amis. Réservez maintenant !",
+address: "123, Rue de la Montagne",
+phone: "01 23 45 67 89",
+price_a: "12",
+price_b: "8",
+luns: "07:00",
+lunbs: "11:00",
+lunbe: "12:00",
+lune: "17:00",
+mars: "09:00",
+marbs: "12:00",
+marbe: "13:00",
+mare: "18:00",
+mers: "09:00",
+merbs: "12:00",
+merbe: "13:00",
+mere: "18:00",
+jeus: "09:00",
+jeubs: "12:00",
+jeube: "13:00",
+jeue: "18:00",
+vens: "09:00",
+venbs: "12:00",
+venbe: "13:00",
+vene: "18:00",
+sams: "09:00",
+sambs: "12:00",
+sambe: "13:00",
+same: "18:00",
+dims: "09:00",
+dimbs: "12:00",
+dimbe: "13:00",
+dime: "18:00")
 activite2.photo.attach(io: file, filename: "v2.png", content_type: "image/png")
 activite2.save
 puts "#{Activite.count} activites crée!"
 
 file = URI.open("https://cdt14.media.tourinsoft.eu/upload/135-3571-IMG.jpg")
-activite3 = Activite.create(title: "Club Nautique", description: "Char à voile à merlimont plage")
+activite3 = Activite.create(
+title: "club nautique",
+description: "Découvrez une variété d'activités nautiques au club de Merlimont : kayak, jet ski, bateau, paddle. Des aventures aquatiques inoubliables vous attendent !",
+address: "123, Rue de la Montagne",
+phone: "01 23 45 67 89",
+price_a: "12",
+price_b: "8",
+luns: "07:00",
+lunbs: "11:00",
+lunbe: "12:00",
+lune: "17:00",
+mars: "09:00",
+marbs: "12:00",
+marbe: "13:00",
+mare: "18:00",
+mers: "09:00",
+merbs: "12:00",
+merbe: "13:00",
+mere: "18:00",
+jeus: "09:00",
+jeubs: "12:00",
+jeube: "13:00",
+jeue: "18:00",
+vens: "09:00",
+venbs: "12:00",
+venbe: "13:00",
+vene: "18:00",
+sams: "09:00",
+sambs: "12:00",
+sambe: "13:00",
+same: "18:00",
+dims: "09:00",
+dimbs: "12:00",
+dimbe: "13:00",
+dime: "18:00")
 activite3.photo.attach(io: file, filename: "v3.png", content_type: "image/png")
 activite3.save
 puts "#{Activite.count} activites crée!"

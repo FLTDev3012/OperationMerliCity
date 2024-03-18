@@ -180,6 +180,7 @@
   min-height: 450px;
   padding-top: 15px;
   width: 75%;
+  min-width: 450px;
 }
 
 .activite-show-text-content::before {
@@ -202,13 +203,20 @@
   display: flex;
   justify-content: center;
 }
+.activite-show-cta-container-flex {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+}
+
 
 .activite-show-cta-container {
   position: relative;
   display: flex;
   z-index: 100;
   // rotate: 90deg;
-  width: 100%;
+  width: 70%;
   transform: translate(0%, 8%);
   border-radius: 5px;
   justify-content: space-around;
