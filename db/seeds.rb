@@ -585,25 +585,129 @@ espece_poisson9.save
 puts "Activite en cours de creation ma couille... 🏄"
 
 file = URI.open("https://www.parcbagatelle.com/fileadmin/_processed_/6/8/csm_Banniere-BaggyPass-Bagatelle_fb50144a68.jpg")
-activite1 = Activite.create(title: "Bagatelle", description: "Parc d'attraction à merlimont village")
+activite1 = Activite.create(
+title: "bagatelle",
+description: "Venez vivre une journée de magie et d'aventure à Baguette Parc ! Situé à Merlimont, notre parc d'attractions propose des manèges sensationnels, des spectacles envoûtants et des stands de jeux pour toute la famille. Ne manquez pas l'occasion de créer des souvenirs inoubliables avec vos proches !",
+address: "123, Rue de la Montagne",
+phone: "01 23 45 67 89",
+price_a: "12",
+price_b: "8",
+luns: "0700",
+lunbs: "1100",
+lunbe: "1200",
+lune: "1700",
+mars: "0900",
+marbs: "1200",
+marbe: "1300",
+mare: "1800",
+mers: "0900",
+merbs: "1200",
+merbe: "1300",
+mere: "1800",
+jeus: "0900",
+jeubs: "1200",
+jeube: "1300",
+jeue: "1800",
+vens: "0900",
+venbs: "1200",
+venbe: "1300",
+vene: "1800",
+sams: "0900",
+sambs: "1200",
+sambe: "1300",
+same: "1800",
+dims: "0900",
+dimbs: "1200",
+dimbe: "1300",
+dime: "1800")
 activite1.photo.attach(io: file, filename: "v1.png", content_type: "image/png")
 activite1.save
 puts "#{Activite.count} activites crée!"
 
 file = URI.open("https://www.hillstonestlucia.com.au/wp-content/uploads/2020/09/0S1A5968.jpg")
-activite2 = Activite.create(title: "Mini golf", description: "Mini golf de merlimont plage")
+activite2 = Activite.create(
+title: "mini golf",
+description: "Mini-golf divertissant à Merlimont. Parcours de 18 trous pour tous niveaux. Idéal en famille ou entre amis. Réservez maintenant !",
+address: "123, Rue de la Montagne",
+phone: "01 23 45 67 89",
+price_a: "12",
+price_b: "8",
+luns: "0700",
+lunbs: "1100",
+lunbe: "1200",
+lune: "1700",
+mars: "0900",
+marbs: "1200",
+marbe: "1300",
+mare: "1800",
+mers: "0900",
+merbs: "1200",
+merbe: "1300",
+mere: "1800",
+jeus: "0900",
+jeubs: "1200",
+jeube: "1300",
+jeue: "1800",
+vens: "0900",
+venbs: "1200",
+venbe: "1300",
+vene: "1800",
+sams: "0900",
+sambs: "1200",
+sambe: "1300",
+same: "1800",
+dims: "0900",
+dimbs: "1200",
+dimbe: "1300",
+dime: "1800")
 activite2.photo.attach(io: file, filename: "v2.png", content_type: "image/png")
 activite2.save
 puts "#{Activite.count} activites crée!"
 
 file = URI.open("https://cdt14.media.tourinsoft.eu/upload/135-3571-IMG.jpg")
-activite3 = Activite.create(title: "Club Nautique", description: "Char à voile à merlimont plage")
+activite3 = Activite.create(
+title: "club nautique",
+description: "Découvrez une variété d'activités nautiques au club de Merlimont : kayak, jet ski, bateau, paddle. Des aventures aquatiques inoubliables vous attendent !",
+address: "123, Rue de la Montagne",
+phone: "01 23 45 67 89",
+price_a: "en fonction de l'activité",
+luns: "0700",
+lunbs: "1100",
+lunbe: "1200",
+lune: "1700",
+mars: "0900",
+marbs: "1200",
+marbe: "1300",
+mare: "1800",
+mers: "0900",
+merbs: "1200",
+merbe: "1300",
+mere: "1800",
+jeus: "0900",
+jeubs: "1200",
+jeube: "1300",
+jeue: "1800",
+vens: "0900",
+venbs: "1200",
+venbe: "1300",
+vene: "1800",
+sams: "0900",
+sambs: "1200",
+sambe: "1300",
+same: "1800",
+dims: "0900",
+dimbs: "1200",
+dimbe: "1300",
+dime: "1800")
 activite3.photo.attach(io: file, filename: "v3.png", content_type: "image/png")
 activite3.save
 puts "#{Activite.count} activites crée!"
 
 file = URI.open("https://www.escapades-en-hautsdefrance.com/wp-content/uploads/2023/10/img-20220526-142830.jpg")
-activite4 = Activite.create(title: "Sentier", description: "Au surfer merlimont plage")
+activite4 = Activite.create(
+title: "Ballade sentier dunaire",
+description: "Profitez d'une balade relaxante à travers les sentiers pittoresques de Merlimont. Découvrez la beauté naturelle de la région lors d'une randonnée inoubliable.",
+address: "123, Rue de la Montagne",)
 activite4.photo.attach(io: file, filename: "v4.png", content_type: "image/png")
 activite4.save
 puts "#{Activite.count} activites crée!"
@@ -626,10 +730,6 @@ activite7.photo.attach(io: file, filename: "v7.png", content_type: "image/png")
 activite7.save
 puts "#{Activite.count} activites crée!"
 
-file = URI.open("https://a.cdn-hotels.com/gdcs/production186/d559/a82dee28-b6fd-417c-b51b-a535ddeb2f85.jpg?impolicy=fcrop&w=800&h=533&q=medium")
-activite8 = Activite.create(title: "activite 8", description: "au surfer merlimont plage")
-activite8.photo.attach(io: file, filename: "v8.png", content_type: "image/png")
-activite8.save
 puts "#{Activite.count} All activites crée!!!!"
 
 puts "Toutes les #{Activite.count} activites ont etaient cree 🏆🏄!"
