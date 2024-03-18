@@ -87,8 +87,10 @@
 
           <div class="show-div-text activite-show-div-adresse d-none" data-show-acti-target="address">
             <p class="show-p-title">Adresse</p>
-            <div class="show-div-ligne"><p class="show-jour"><i class="fa-solid fa-location-dot" style="color: #FFFFFFB5;"></i></p><p><%= @activite.address %></p></div>
-            <div class="show-div-ligne"><p class="show-jour"><i class="fa-solid fa-phone" style="color: #FFFFFFB5;"></i></p><p><%= @activite.phone %></p></div>
+            <div class="show-div-ligne"><p class="show-jour"><i class="fa-solid fa-location-dot" style="color: #FFFFFFED;"></i></p><p><%= @activite.address %></p></div>
+            <% if @activite.luns.present? %>
+              <div class="show-div-ligne"><p class="show-jour"><i class="fa-solid fa-phone" style="color: #FFFFFFED;"></i></p><p><%= @activite.phone %></p></div>
+            <% end %>
           </div>
 
 
