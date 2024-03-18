@@ -13,7 +13,7 @@
     <%= link_to "cree une activites", new_activite_path %>
   </div>
 
-  <div class="dash-one-activitie-container">
+  <div class="dash-all-activitie-container">
     <div class="dash-all-activities">
       <% @activites.each do |activite| %>
 
@@ -43,10 +43,47 @@
     </div>
   </div>
 
-  <div class="dash-logement-title">
+  <div class="dash-activite-title">
     <h1>Liste des Logements</h1>
-    <h3>Voir la page des Logements</h3>
-    <p>cree une activites</p>
+    <h3><%= link_to "Voir la page des Logements", logements_path %></h3>
+    <%= link_to "cree un logement", new_logement_path %>
+  </div>
+
+  <div class="dash-all-activitie-container">
+    <div class="dash-all-activities">
+      <% @logements.each do |logement| %>
+
+        <div class="dash-one-activitie">
+          <div class="dash-one-activite-titre">
+            <p><%= logement.title %></p>
+          </div>
+          <div class="dash-one-activite-modif">
+            <p><%= logement.categorie %></p>
+            <% if logement.photo.attached? %>
+              <p>Avec image</p>
+            <% else %>
+              <p>sans image</p>
+            <% end %>
+            <%= link_to logement_path(logement) do %>
+              <i class="fa-solid fa-eye"></i>
+            <% end %>
+            <%= link_to edit_logement_path(logement) do %>
+              <i class="fa-solid fa-pen-to-square"></i>
+            <% end %>
+            <%= link_to logement_path(logement), data: { turbo_method: :delete, turbo_confirm: "Êtes-vous sûr de vouloir supprimer ?" }, class: "deco-none dash-corbeille" do %>
+              <i class="fa-solid fa-trash"></i>
+            <% end %>
+          </div>
+        </div>
+
+      <% end %>
+    </div>
+  </div>
+
+  <div class="dash-activite-title">
+    <h1>Liste faune & flore</h1>
+    <h3><%= link_to "Voir la page faune & flore", fauneflore_path %></h3>
+    <%= link_to "cree un logement", new_logement_path %>
   </div>
 
 

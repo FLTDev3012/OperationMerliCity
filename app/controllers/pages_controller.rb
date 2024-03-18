@@ -16,6 +16,7 @@ class PagesController < ApplicationController
   # attention enlever le skip authenticate pour dashboard avant production
   def dashboard
     @activites = Activite.order(created_at: :asc)
+    @logements = Logement.order(created_at: :asc)
   end
 
   def fauneflore
