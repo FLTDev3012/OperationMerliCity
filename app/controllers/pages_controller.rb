@@ -18,7 +18,9 @@ class PagesController < ApplicationController
     @activites = Activite.order(created_at: :asc)
     @logements = Logement.order(created_at: :asc)
     @biotopes = Biotop.order(created_at: :asc)
-    @typeEspeceCategories = TypeEspeceCategorie.order(created_at: :asc)
+    @typeEspeceCategories = TypeEspeceCategorie.order(categorie: :asc)
+    @especeCategories = EspeceCategorie.order(categorie: :asc)
+    @especes = Espece.order(nom: :asc)
 
 
   end

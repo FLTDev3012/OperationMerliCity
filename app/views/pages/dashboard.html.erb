@@ -154,31 +154,32 @@
 
 
   <div class="dash-activite-title">
+    <h3>Espece categorie</h3>
     <%= link_to "cree une categorie d espece", new_espece_category_path %>
   </div>
 
   <div class="dash-all-activitie-container">
     <div class="dash-all-activities">
-      <% @logements.each do |logement| %>
+      <% @especeCategories.each do |espece_categorie| %>
 
         <div class="dash-one-activitie">
           <div class="dash-one-activite-titre">
-            <p><%= logement.title %></p>
+            <p><%= espece_categorie.categorie %></p>
           </div>
           <div class="dash-one-activite-modif">
-            <p><%= logement.categorie %></p>
-            <% if logement.photo.attached? %>
+            <p><%= espece_categorie.user.first_name %></p>
+            <% if espece_categorie.photo.attached? %>
               <p>Avec image</p>
             <% else %>
               <p>sans image</p>
             <% end %>
-            <%= link_to logement_path(logement) do %>
+            <%= link_to espece_category_path(espece_categorie) do %>
               <i class="fa-solid fa-eye"></i>
             <% end %>
-            <%= link_to edit_logement_path(logement) do %>
+            <%= link_to edit_espece_category_path(espece_categorie) do %>
               <i class="fa-solid fa-pen-to-square"></i>
             <% end %>
-            <%= link_to logement_path(logement), data: { turbo_method: :delete, turbo_confirm: "Êtes-vous sûr de vouloir supprimer ?" }, class: "deco-none dash-corbeille" do %>
+            <%= link_to espece_category_path(espece_categorie), data: { turbo_method: :delete, turbo_confirm: "Êtes-vous sûr de vouloir supprimer ?" }, class: "deco-none dash-corbeille" do %>
               <i class="fa-solid fa-trash"></i>
             <% end %>
           </div>
@@ -190,31 +191,33 @@
 
 
   <div class="dash-activite-title">
+    <h3>Espece</h3>
     <%= link_to "cree une d'espece", new_espece_path %>
   </div>
 
   <div class="dash-all-activitie-container">
     <div class="dash-all-activities">
-      <% @logements.each do |logement| %>
+      <% @especes.each do |espece| %>
 
         <div class="dash-one-activitie">
           <div class="dash-one-activite-titre">
-            <p><%= logement.title %></p>
+            <p><%= espece.nom %></p>
           </div>
           <div class="dash-one-activite-modif">
-            <p><%= logement.categorie %></p>
-            <% if logement.photo.attached? %>
+            <p><%= espece.espece_categorie.categorie %></p>
+            <p><%= espece.user.first_name %></p>
+            <% if espece.photo.attached? %>
               <p>Avec image</p>
             <% else %>
               <p>sans image</p>
             <% end %>
-            <%= link_to logement_path(logement) do %>
+            <%= link_to espece_path(espece) do %>
               <i class="fa-solid fa-eye"></i>
             <% end %>
-            <%= link_to edit_logement_path(logement) do %>
+            <%= link_to edit_espece_path(espece) do %>
               <i class="fa-solid fa-pen-to-square"></i>
             <% end %>
-            <%= link_to logement_path(logement), data: { turbo_method: :delete, turbo_confirm: "Êtes-vous sûr de vouloir supprimer ?" }, class: "deco-none dash-corbeille" do %>
+            <%= link_to espece_path(espece), data: { turbo_method: :delete, turbo_confirm: "Êtes-vous sûr de vouloir supprimer ?" }, class: "deco-none dash-corbeille" do %>
               <i class="fa-solid fa-trash"></i>
             <% end %>
           </div>
@@ -223,6 +226,8 @@
       <% end %>
     </div>
   </div>
+
+  <div class="anti-marging"></div>
 
 
 
