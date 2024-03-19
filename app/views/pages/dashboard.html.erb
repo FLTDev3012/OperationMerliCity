@@ -82,9 +82,149 @@
 
   <div class="dash-activite-title">
     <h1>Liste faune & flore</h1>
-    <h3><%= link_to "Voir la page faune & flore", fauneflore_path %></h3>
-    <%= link_to "cree un logement", new_logement_path %>
+    <h3><%= link_to "page faune flore",  fauneflore_path %></h3>
   </div>
+
+  <div class="dash-activite-title">
+    <h3>Biotopes</h3>
+    <%= link_to "Cree un biotop", new_biotop_path %>
+  </div>
+
+  <div class="dash-all-activitie-container">
+    <div class="dash-all-activities">
+      <% @biotopes.each do |biotop| %>
+
+        <div class="dash-one-activitie">
+          <div class="dash-one-activite-titre">
+            <p><%= biotop.categorie %></p>
+          </div>
+          <div class="dash-one-activite-modif">
+
+            <%= link_to edit_biotop_path(biotop) do %>
+              <i class="fa-solid fa-pen-to-square"></i>
+            <% end %>
+            <%= link_to biotop_path(biotop), data: { turbo_method: :delete, turbo_confirm: "Êtes-vous sûr de vouloir supprimer ?" }, class: "deco-none dash-corbeille" do %>
+              <i class="fa-solid fa-trash"></i>
+            <% end %>
+          </div>
+        </div>
+
+      <% end %>
+    </div>
+  </div>
+
+
+  <div class="dash-activite-title">
+    <h3>Type espece categorie</h3>
+    <%= link_to "cree type espece categorie", new_type_espece_category_path %>
+  </div>
+
+  <div class="dash-all-activitie-container">
+    <div class="dash-all-activities">
+      <% @typeEspeceCategories.each do |type_espece_categories| %>
+
+        <div class="dash-one-activitie">
+          <div class="dash-one-activite-titre">
+            <p><%= type_espece_categories.categorie %></p>
+          </div>
+          <div class="dash-one-activite-modif">
+            <p><%= type_espece_categories.biotop.categorie %></p>
+            <p><%= type_espece_categories.user.first_name %></p>
+
+            <% if type_espece_categories.photo.attached? %>
+              <p>Avec image</p>
+            <% else %>
+              <p>sans image</p>
+            <% end %>
+            <%= link_to type_espece_category_path(type_espece_categories) do %>
+              <i class="fa-solid fa-eye"></i>
+            <% end %>
+            <%= link_to edit_type_espece_category_path(type_espece_categories) do %>
+              <i class="fa-solid fa-pen-to-square"></i>
+            <% end %>
+            <%= link_to type_espece_category_path(type_espece_categories), data: { turbo_method: :delete, turbo_confirm: "Êtes-vous sûr de vouloir supprimer ?" }, class: "deco-none dash-corbeille" do %>
+              <i class="fa-solid fa-trash"></i>
+            <% end %>
+          </div>
+        </div>
+
+      <% end %>
+    </div>
+  </div>
+
+
+  <div class="dash-activite-title">
+    <%= link_to "cree une categorie d espece", new_espece_category_path %>
+  </div>
+
+  <div class="dash-all-activitie-container">
+    <div class="dash-all-activities">
+      <% @logements.each do |logement| %>
+
+        <div class="dash-one-activitie">
+          <div class="dash-one-activite-titre">
+            <p><%= logement.title %></p>
+          </div>
+          <div class="dash-one-activite-modif">
+            <p><%= logement.categorie %></p>
+            <% if logement.photo.attached? %>
+              <p>Avec image</p>
+            <% else %>
+              <p>sans image</p>
+            <% end %>
+            <%= link_to logement_path(logement) do %>
+              <i class="fa-solid fa-eye"></i>
+            <% end %>
+            <%= link_to edit_logement_path(logement) do %>
+              <i class="fa-solid fa-pen-to-square"></i>
+            <% end %>
+            <%= link_to logement_path(logement), data: { turbo_method: :delete, turbo_confirm: "Êtes-vous sûr de vouloir supprimer ?" }, class: "deco-none dash-corbeille" do %>
+              <i class="fa-solid fa-trash"></i>
+            <% end %>
+          </div>
+        </div>
+
+      <% end %>
+    </div>
+  </div>
+
+
+  <div class="dash-activite-title">
+    <%= link_to "cree une d'espece", new_espece_path %>
+  </div>
+
+  <div class="dash-all-activitie-container">
+    <div class="dash-all-activities">
+      <% @logements.each do |logement| %>
+
+        <div class="dash-one-activitie">
+          <div class="dash-one-activite-titre">
+            <p><%= logement.title %></p>
+          </div>
+          <div class="dash-one-activite-modif">
+            <p><%= logement.categorie %></p>
+            <% if logement.photo.attached? %>
+              <p>Avec image</p>
+            <% else %>
+              <p>sans image</p>
+            <% end %>
+            <%= link_to logement_path(logement) do %>
+              <i class="fa-solid fa-eye"></i>
+            <% end %>
+            <%= link_to edit_logement_path(logement) do %>
+              <i class="fa-solid fa-pen-to-square"></i>
+            <% end %>
+            <%= link_to logement_path(logement), data: { turbo_method: :delete, turbo_confirm: "Êtes-vous sûr de vouloir supprimer ?" }, class: "deco-none dash-corbeille" do %>
+              <i class="fa-solid fa-trash"></i>
+            <% end %>
+          </div>
+        </div>
+
+      <% end %>
+    </div>
+  </div>
+
+
 
 
 </div>

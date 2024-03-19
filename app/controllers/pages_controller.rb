@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :home, :merlimontdavant, :about, :dashboard, :fauneflore, :faunecat, :univers, :galerie, :azerty ]
+  skip_before_action :authenticate_user!, only: [ :home, :merlimontdavant, :about, :fauneflore, :faunecat, :univers, :galerie, :azerty ]
 
   def home
     @activites = Activite.first(5)
@@ -17,6 +17,10 @@ class PagesController < ApplicationController
   def dashboard
     @activites = Activite.order(created_at: :asc)
     @logements = Logement.order(created_at: :asc)
+    @biotopes = Biotop.order(created_at: :asc)
+    @typeEspeceCategories = TypeEspeceCategorie.order(created_at: :asc)
+
+
   end
 
   def fauneflore

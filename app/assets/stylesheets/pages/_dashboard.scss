@@ -5,26 +5,7 @@
   // font-family: 'Gloria Hallelujah', cursive;
 }
 
-.dash-container a {
-  color: #023646d6;
-  position: relative;
-  text-shadow: 2px 2px 2px aliceblue;
-  filter: drop-shadow(2px 2px 2px #3f647066);
-  transition: all 0.3s ease-in-out;
-  display: flex;
-  align-items: center;
-}
-
-.dash-container i {
-  color: #023646d6;
-  transition: all 0.3s ease-in-out;
-
-}
-
-
-.dash-container a:hover {
-  color: #fff;
-}
+// titre Dashboard
 
 .dash-title-container {
   display: flex;
@@ -41,6 +22,8 @@
   text-shadow: 2px 2px 2px aliceblue;
   filter: drop-shadow(2px 2px 2px #3f647066);
 }
+
+// tout les titre
 
 .dash-activite-title {
   display: flex;
@@ -64,12 +47,16 @@
   filter: drop-shadow(2px 2px 2px #3f647066);
 }
 
+// container list
+
 .dash-all-activitie-container {
   width: 100%;
   display: flex;
   justify-content: center;
   margin-bottom: 3rem;
 }
+
+// content des titres
 
 .dash-all-activities {
   display: flex;
@@ -78,6 +65,7 @@
   width: 80%;
   backdrop-filter: blur(3px);
   background-color: #fff0;
+  background-color: #14445224;
   padding: 30px;
   border-radius: 10px;
   border: 1px solid #ffffff40;
@@ -85,6 +73,8 @@
   border-bottom: 1px solid #ffffff1a;
   filter: drop-shadow(#02364699 0px 3px 4px);
 }
+
+// une ligne
 
 .dash-one-activitie {
   display: flex;
@@ -115,6 +105,26 @@
 
 .dash-one-activitie:nth-child(odd) {
   background-color: #023646d6;
+}
+
+.dash-container a {
+  color: #023646d6;
+  position: relative;
+  text-shadow: 2px 2px 2px aliceblue;
+  filter: drop-shadow(2px 2px 2px #3f647066);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+
+.dash-container i {
+  color: #023646d6;
+  transition: all 0.3s ease-in-out;
+
+}
+
+.dash-container a:hover {
+  color: #fff;
 }
 
 .dash-one-activite-modif {
