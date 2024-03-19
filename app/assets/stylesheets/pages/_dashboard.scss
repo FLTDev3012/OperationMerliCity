@@ -23,6 +23,48 @@
   filter: drop-shadow(2px 2px 2px #3f647066);
 }
 
+// cta dashboard
+
+.dashboard-cta-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.dashboard-cta-container-content {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.dashboard-cta-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.dashboard-cta-content p {
+  backdrop-filter: blur(3px);
+  background-color: #fff0;
+  background-color: #14445224;
+  background-color: #10404f;
+  padding: 8px 20px;
+  border-radius: 10px;
+  border: 1px solid #ffffff40;
+  border-right: 1px solid #ffffff1a;
+  border-bottom: 1px solid #ffffff1a;
+  filter: drop-shadow(#02364699 0px 3px 4px);
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.dashboard-cta-content:hover p {
+  background-color: #144452b5;
+  transform: translateY(-3px);
+}
+
 // tout les titre
 
 .dash-activite-title {
