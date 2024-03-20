@@ -19,11 +19,13 @@
 
           <%= link_to activite_path(activite), class: "activite-index-une-acti" do %>
 
+            <div class="moovetoo">
               <% if activite.photo.attached? %>
                 <div class="acti-ind-pic-container">
                   <%= cl_image_tag activite.photo.key %>
                 </div>
               <% end %>
+            </div>
 
               <p class="acti-ind-title"><%= activite.title %></p>
 

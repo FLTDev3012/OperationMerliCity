@@ -98,10 +98,16 @@
 
 
 .activite-index-une-acti-container:hover .activite-index-une-acti img {
-  animation: actiIndexAnimation 4s ease-out infinite;
   // background-color: #fff9;
-  background-color: #ffffff36;
+  background-color: #ffffff36 !important;
 }
+
+.activite-index-une-acti-container:hover .activite-index-une-acti .moovetoo {
+  animation: actiIndexAnimation 4s ease-out infinite;
+}
+
+
+
 
 .acti-ind-title {
   font-size: 2rem;
