@@ -1,8 +1,8 @@
 <div class="logement-show-container">
 
   <div class="faune-return-btn">
-    <%= link_to root_path(anchor: "home-acti"), data: { turbo: "false" } do %>
-      <i class="fa-solid fa-backward" style="color: #FFFFFFE3;"></i>
+    <%= link_to logements_path do %>
+      <a href="javascript:history.back()"><i class="fa-solid fa-backward" style="color: #FFFFFFE3;"></i></a>
     <% end %>
   </div>
 
@@ -57,10 +57,20 @@
               <div class="show-div-ligne"><p><i class="fa-solid fa-tag"></i> <%= @logement.price %>€ par nuit</p></div>
             </div>
             <div class="show-log-email-phone">
-              <div class="show-div-ligne"><p><i class="fa-solid fa-envelope"></i> <%= @logement.email %></p></div>
-              <div class="show-div-ligne"><p><i class="fa-solid fa-phone"></i> <%= @logement.phone %></p></div>
+              <div class="show-div-ligne">
+                <p>
+                  <i class="fa-solid fa-envelope"></i>
+                  <a href="mailto:<%= @logement.email %>"><%= @logement.email %></a>
+                </p>
+              </div>
+              <div class="show-div-ligne">
+                <p>
+                  <i class="fa-solid fa-phone"></i>
+                  <a href="tel:<%= @logement.phone %>"><%= @logement.phone %></a>
+                </p>
+              </div>
             </div>
-            <div class="show-div-ligne"><p><%= @logement.description %></p></div>
+            <div class="show-div-ligne"><p><%= @logement.description %> <%= @logement.description %> <%= @logement.description %> <%= @logement.description %> <%= @logement.description %></p></div>
 
 
           </div>

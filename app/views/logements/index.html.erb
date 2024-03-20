@@ -1,7 +1,7 @@
 <div class="logement-index-container">
 
   <div class="faune-return-btn">
-    <%= link_to root_path do %>
+    <%= link_to root_path(anchor: "home-log"), data: { turbo: "false" } do %>
       <%= image_tag('home/MerlimontB.png') %>
     <% end %>
   </div>

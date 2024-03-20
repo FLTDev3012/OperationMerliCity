@@ -6,11 +6,32 @@
   position: relative;
 }
 
-.logement-show-container P {
+.logement-show-container .faune-return-btn {
+  z-index: 100;
+}
+
+.logement-show-container .logement-index-title h1 {
+  margin-top: 3rem;
+}
+
+.logement-show-container .faune-return-btn i {
+  color: #02364675 !important;
+}
+
+
+.logement-show-container p {
   color: #023646 !important;
   text-shadow: 2px 2px 2px aliceblue;
   filter: drop-shadow(2px 2px 2px #3f647066);
   font-family: "Pacifico", cursive;
+}
+
+.logement-show-container a {
+  color: #023646 !important;
+}
+
+.logement-show-container a:hover {
+  color: #ffffff !important;
 }
 
 .logement-show-container .activite-show-text-content::before {
@@ -40,4 +61,9 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 2rem;
+}
+
+
+.logement-show-container .activite-show-pic-container {
+  margin: 4rem 0 0 0;
 }
