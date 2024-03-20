@@ -1,0 +1,43 @@
+.logement-show-container {
+  background-image: url("/assets/sablebg.png");
+  background-color: #fff;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.logement-show-container P {
+  color: #023646 !important;
+  text-shadow: 2px 2px 2px aliceblue;
+  filter: drop-shadow(2px 2px 2px #3f647066);
+  font-family: "Pacifico", cursive;
+}
+
+.logement-show-container .activite-show-text-content::before {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+
+
+.logement-show-container .activite-show-title .activite-show-block-title {
+  font-family: "Gloria Hallelujah", cursive;
+  color: #023646 !important;
+  text-shadow: 2px 2px 2px aliceblue;
+  filter: drop-shadow(2px 2px 2px #3f647066);
+}
+
+.logement-show-container .show-p-title {
+  font-size: 2.6rem !important;
+}
+
+.show-log-cat-price {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.show-log-email-phone {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}

@@ -1,15 +1,74 @@
-<h1>un logement</h1>
-<div>
-  <p><%= @logement.categorie %></p>
-  <strong><%= @logement.title %></strong>
-  <br>
-  <% if @logement.photo.attached? %>
-    <%= cl_image_tag @logement.photo.key, height: 300, width: 400, crop: :fill %>
-  <% end %>
-  <br>
-  <p><%= @logement.description %></p>
-  <p><%= @logement.price %></p>
-  <p><%= @logement.email %></p>
-  <p><%= @logement.phone %></p>
-  <br>
-  <br>
+<div class="logement-show-container">
+
+  <div class="faune-return-btn">
+    <%= link_to root_path(anchor: "home-acti"), data: { turbo: "false" } do %>
+      <i class="fa-solid fa-backward" style="color: #FFFFFFE3;"></i>
+    <% end %>
+  </div>
+
+
+
+  <div class="activite-show-title">
+    <h1 class="activite-show-shadow-title"><%= @logement.title %></h1>
+    <h1 class="activite-show-block-title"><%= @logement.title %></h1>
+  </div>
+
+  <div class="activite-show-pic-text-container">
+
+    <div class="activite-show-pic-container">
+
+      <% if @logement.photo.attached? %>
+        <%= cl_image_tag @logement.photo.key %>
+      <% end %>
+
+      <div class="activite-show-pic-container-star-content">
+        <%= image_tag('testhome/starfish.png') %>
+      </div>
+
+      <div class="activite-show-pic-container-star-content-deux">
+        <%= image_tag('testhome/starfish.png') %>
+      </div>
+
+      <div class="activite-show-pic-container-star-content-trois">
+        <%= image_tag('testhome/starfish.png') %>
+      </div>
+
+    </div>
+
+    <div class="activite-show-text-container">
+      <div class="activite-show-text-container-content">
+
+        <!-- star fish -->
+        <div class="activite-show-text-container-star-content-top">
+          <%= image_tag('testhome/starfish.png') %>
+        </div>
+        <div class="activite-show-text-container-star-content-bottom">
+          <%= image_tag('testhome/starfish.png') %>
+        </div>
+
+        <div class="activite-show-text-content">
+
+
+
+          <div class="show-div-text activite-show-div-adresse">
+            <p class="show-p-title">Description</p>
+            <div class="show-log-cat-price">
+              <div class="show-div-ligne"><p><i class="fa-solid fa-key"></i> <%= @logement.categorie.capitalize %></p></div>
+              <div class="show-div-ligne"><p><i class="fa-solid fa-tag"></i> <%= @logement.price %>€ par nuit</p></div>
+            </div>
+            <div class="show-log-email-phone">
+              <div class="show-div-ligne"><p><i class="fa-solid fa-envelope"></i> <%= @logement.email %></p></div>
+              <div class="show-div-ligne"><p><i class="fa-solid fa-phone"></i> <%= @logement.phone %></p></div>
+            </div>
+            <div class="show-div-ligne"><p><%= @logement.description %></p></div>
+
+
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
