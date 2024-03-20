@@ -100,6 +100,10 @@
 .activite-index-une-acti-container:hover .activite-index-une-acti img {
   animation: actiIndexAnimation 4s ease-out infinite;
   // background-color: #fff9;
+  background-color: #ffffff36 !important;
+}
+
+.activite-index-une-acti-container .acti-ind-pic-container:hover img {
   background-color: #ffffff36;
 }
 
