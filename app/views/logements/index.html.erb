@@ -19,19 +19,23 @@
         <div class="activite-index-une-acti-container">
           <%= link_to logement_path(logement), class: "activite-index-une-acti" do %>
 
-            <p class="acti-ind-title moovetoo"><%= logement.title %></p>
+            <div class="moovetoo">
+              <p class="acti-ind-title"><%= logement.title %></p>
 
 
-            <% if logement.photo.attached? %>
-              <div class="acti-ind-pic-container">
-                <%= cl_image_tag logement.photo.key %>
+              <% if logement.photo.attached? %>
+                <div class="acti-ind-pic-container">
+                  <%= cl_image_tag logement.photo.key %>
+                </div>
+              <% end %>
+
+              <div class="acti-ind-cat-price-container">
+                <p class="acti-ind-title"><%= logement.categorie %></p>
+                <p class="acti-ind-title"><%= logement.price %>€ / nuit</p>
               </div>
-            <% end %>
 
-            <div class="acti-ind-cat-price-container">
-              <p class="acti-ind-title"><%= logement.categorie %></p>
-              <p class="acti-ind-title"><%= logement.price %>€ / nuit</p>
             </div>
+
 
             <br>
             <br>
