@@ -58,7 +58,7 @@ section img
 
 
 #mera {
-  filter: hue-rotate(20deg) grayscale(1);
+  filter: hue-rotate(20deg) grayscale(0.3);
   transform: translateY(20px);
   opacity: 0.6;
 }
@@ -67,8 +67,12 @@ section img
   filter: hue-rotate(-45deg) blur(5px) grayscale(1);
 }
 
+#bga{
+  filter: grayscale(0.3);
+}
+
 #dunesa{
-  filter: grayscale(0.8);
+  filter: grayscale(0.5);
 }
 
 #road
