@@ -35,6 +35,7 @@ section img
     height: 100%;
     object-fit: cover;
     pointer-events: none;
+    filter: grayscale(1)
 }
 
 .about-main-text {
@@ -57,12 +58,21 @@ section img
 
 
 #mera {
-  filter: hue-rotate(20deg);
+  filter: hue-rotate(20deg) grayscale(0.2);
   transform: translateY(20px);
+  opacity: 0.6;
 }
 
 #suna {
-  filter: hue-rotate(-9deg) blur(5px);
+  filter: hue-rotate(0deg) blur(3px) grayscale(0.2);
+}
+
+#bga{
+  filter: grayscale(0.3);
+}
+
+#dunesa{
+  filter: grayscale(0.5);
 }
 
 #road
