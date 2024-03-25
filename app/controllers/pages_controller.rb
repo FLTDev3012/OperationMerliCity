@@ -3,6 +3,7 @@ class PagesController < ApplicationController
 
   def home
     @activites = Activite.first(5)
+
     @touteactivites = Activite.all
     @markers = @touteactivites.geocoded.map do |flat|
       {
@@ -12,6 +13,17 @@ class PagesController < ApplicationController
         marker_html: render_to_string(partial: "activites/marker")
       }
     end
+
+    @toutslogements = Logement.all
+    @markerslog = @toutslogements.geocoded.map do |flat|
+      {
+        lat: flat.latitude,
+        lng: flat.longitude,
+        info_window_html: render_to_string(partial: "logements/infos_window", locals: {flat: flat}),
+        marker_html: render_to_string(partial: "logements/marker", locals: {flat: flat})
+      }
+    end
+
   end
 
   def galerie
