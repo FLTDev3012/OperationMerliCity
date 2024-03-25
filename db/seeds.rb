@@ -588,7 +588,7 @@ file = URI.open("https://www.parcbagatelle.com/fileadmin/_processed_/6/8/csm_Ban
 activite1 = Activite.create(
 title: "bagatelle",
 description: "Venez vivre une journée de magie et d'aventure à Baguette Parc ! Situé à Merlimont, notre parc d'attractions propose des manèges sensationnels, des spectacles envoûtants et des stands de jeux pour toute la famille. Ne manquez pas l'occasion de créer des souvenirs inoubliables avec vos proches !",
-address: "123, Rue de la Montagne",
+address: "561 Rue Joseph Daubrege, 62155 Merlimont, France",
 phone: "01 23 45 67 89",
 price_a: "12",
 price_b: "8",
@@ -628,7 +628,7 @@ file = URI.open("https://www.hillstonestlucia.com.au/wp-content/uploads/2020/09/
 activite2 = Activite.create(
 title: "mini golf",
 description: "Mini-golf divertissant à Merlimont. Parcours de 18 trous pour tous niveaux. Idéal en famille ou entre amis. Réservez maintenant !",
-address: "123, Rue de la Montagne",
+address: "972 Rue Joseph Daubrege, 62155 Merlimont, France",
 phone: "01 23 45 67 89",
 price_a: "12",
 price_b: "8",
@@ -668,7 +668,7 @@ file = URI.open("https://cdt14.media.tourinsoft.eu/upload/135-3571-IMG.jpg")
 activite3 = Activite.create(
 title: "club nautique",
 description: "Découvrez une variété d'activités nautiques au club de Merlimont : kayak, jet ski, bateau, paddle. Des aventures aquatiques inoubliables vous attendent !",
-address: "123, Rue de la Montagne",
+address: "Pl. de la Haye, 62155 Merlimont, France",
 phone: "01 23 45 67 89",
 price_a: "en fonction de l'activité",
 luns: "0700",
@@ -707,19 +707,21 @@ file = URI.open("https://www.escapades-en-hautsdefrance.com/wp-content/uploads/2
 activite4 = Activite.create(
 title: "Ballade sentier dunaire",
 description: "Profitez d'une balade relaxante à travers les sentiers pittoresques de Merlimont. Découvrez la beauté naturelle de la région lors d'une randonnée inoubliable.",
-address: "123, Rue de la Montagne",)
+address: "365 Rue Auguste Biblocq, 62155 Merlimont, France")
 activite4.photo.attach(io: file, filename: "v4.png", content_type: "image/png")
 activite4.save
 puts "#{Activite.count} activites crée!"
 
 file = URI.open("https://cdn.sortiraparis.com/images/80/40234/196532-ou-jouer-a-la-petanque-a-paris.jpg")
-activite5 = Activite.create(title: "Pétanque", description: "Au surfer merlimont plage")
+activite5 = Activite.create(title: "Pétanque", description: "Au surfer merlimont plage",
+address: "172 rue de la gare, 62155 Merlimont, France")
 activite5.photo.attach(io: file, filename: "v5.png", content_type: "image/png")
 activite5.save
 puts "#{Activite.count} activites crée!"
 
 file = URI.open("https://www.bhf.org.uk/-/media/images/information-support/heart-matters/heart-matters/summer-2018/activity/tennis_racket_balls_ss_0618_noexp_620x400.jpg?rev=c18a71fbd05e4a91b4bbc40af01aafaa&hash=B6D9F53AC70899560495FC5D3205784D")
-activite6 = Activite.create(title: "Tennis", description: "Au surfer merlimont plage")
+activite6 = Activite.create(title: "Tennis", description: "Au surfer merlimont plage",
+address: "105 Rue des Flaques, 62155 Merlimont, France")
 activite6.photo.attach(io: file, filename: "v6.png", content_type: "image/png")
 activite6.save
 puts "#{Activite.count} activites crée!"
