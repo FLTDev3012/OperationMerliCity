@@ -116,3 +116,27 @@
   width: 96px;
   height: auto;
 }
+
+// map
+.home-map {
+  width: 80%;
+  height: 500px;
+  position: relative;
+  z-index: 100;
+}
+
+.home-map i {
+  color: #50a2e3;
+  font-size: 2rem;
+}
+
+// pop up
+
+.mapboxgl-popup {
+  max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
