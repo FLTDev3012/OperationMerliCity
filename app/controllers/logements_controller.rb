@@ -54,6 +54,6 @@ class LogementsController < ApplicationController
   private
 
   def logement_params
-    params.require(:logement).permit(:categorie, :title, :description, :price, :email, :phone, :photo)
+    params.require(:logement).permit(:categorie, :title, :address, :description, :price, :email, :phone, :photo)
   end
 end

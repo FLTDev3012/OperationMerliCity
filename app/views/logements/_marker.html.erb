@@ -1,0 +1,16 @@
+
+<% if flat.categorie == "camping" %>
+  <i class="fa-solid fa-tree"></i> <!-- Utilisation de l'icône pour le camping -->
+
+<% elsif flat.categorie == "location"  %>
+  <i class="fa-solid fa-key"></i>
+
+<% elsif flat.categorie == "hote"  %>
+  <i class="fa-solid fa-person-shelter"></i>
+
+<% elsif flat.categorie == "camping-car"  %>
+  <i class="fa-solid fa-caravan"></i>
+
+<% else %>
+  <i class="fa-solid fa-house"></i>
+<% end %>
