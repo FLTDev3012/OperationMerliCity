@@ -66,7 +66,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 3rem 0;
+  margin: 3rem 0 1rem 0;
 }
 
 .home-emplacement-map img{
@@ -167,4 +167,37 @@
 
 .mapboxgl-popup-tip {
   border-top-color: #3977aa !important;
+}
+
+// legende
+
+.home-legende-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 100;
+}
+
+.home-legende {
+  width: 80%;
+  color: #fff;
+  display: flex;
+}
+
+.one-legend {
+  display: flex;
+  align-items: center;
+  background-color: antiquewhite;
+  padding: 6px 20px;
+}
+
+.home-legende i {
+  color: #50a2e3;
+  font-size: 2rem;
+  margin-right: .5rem;
+}
+
+.home-legende p {
+  margin-bottom: 0;
 }

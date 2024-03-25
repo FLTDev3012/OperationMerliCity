@@ -109,10 +109,21 @@
   </div>
 
   <div class="home-emplacement-map">
+
     <div class="home-map"
     data-controller="map"
     data-map-markers-value="<%= @markers.to_json %>"
     data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"></div>
+
+  </div>
+
+  <div class="home-legende-container">
+    <div class="home-legende">
+      <div class="one-legend">
+        <i class="fa-solid fa-location-dot"></i>
+        <p>activites</p>
+      </div>
+    </div>
   </div>
 
 
