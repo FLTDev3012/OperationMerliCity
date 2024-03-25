@@ -10,5 +10,8 @@ application.register("dashboard", DashboardController)
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
 
+import MapController from "./map_controller"
+application.register("map", MapController)
+
 import ShowActiController from "./show_acti_controller"
 application.register("show-acti", ShowActiController)
