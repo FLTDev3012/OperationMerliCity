@@ -10,7 +10,7 @@ class PagesController < ApplicationController
         lat: flat.latitude,
         lng: flat.longitude,
         info_window_html: render_to_string(partial: "activites/infos_window", locals: {flat: flat}),
-        marker_html: render_to_string(partial: "activites/marker")
+        marker_html: render_to_string(partial: "activites/marker", locals: {flat: flat})
       }
     end
 
