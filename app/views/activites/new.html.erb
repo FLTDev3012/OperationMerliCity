@@ -10,7 +10,11 @@
       <%= f.input :categorie, as: :select, collection: ["general", "bar", "restaurant", "rando"], prompt: 'Choisissez une catégorie' %>
       <%= f.input :title, placeholder: 'Titre' %>
       <%= f.input :description, placeholder: 'Description' %>
-      <%= f.input :address, placeholder: 'Adresse' %>
+
+      <%= f.input :address, placeholder: 'Lille, France', input_html: {data: {address_autocomplete_target: "address"}},
+          wrapper_html: {data: {controller: "address-autocomplete", address_autocomplete_api_key_value: ENV["MAPBOX_API_KEY"]}} %>
+
+
       <%= f.input :phone, placeholder: 'Téléphone' %>
       <%= f.input :price_a, placeholder: 'Prix A' %>
       <%= f.input :price_b, placeholder: 'Prix B' %>
