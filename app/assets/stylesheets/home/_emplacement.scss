@@ -123,11 +123,13 @@
   height: 500px;
   position: relative;
   z-index: 100;
+  border: 2px solid #fff;
 }
 
 .home-map i {
   color: #50a2e3;
-  font-size: 1rem;
+  font-size: 1.3rem;
+  color: #625542;
 }
 
 // pop up
@@ -183,12 +185,13 @@
   width: 80%;
   color: #fff;
   display: flex;
+  // border: 2px solid #fff;
 }
 
 .one-legend {
   display: flex;
   align-items: center;
-  background-color: antiquewhite;
+  background-color: #e9e6e0;
   padding: 6px 20px;
 }
 
@@ -196,10 +199,12 @@
   color: #50a2e3;
   font-size: 1.3rem;
   margin-right: .5rem;
+  color: #625542;
 }
 
 .home-legende p {
   margin-bottom: 0;
+  color: #625542;
 }
 
 
