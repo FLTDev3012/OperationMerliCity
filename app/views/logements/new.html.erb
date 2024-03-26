@@ -9,7 +9,9 @@
       <%= f.input :title, placeholder: 'Titre' %>
       <%= f.input :description, placeholder: 'Description' %>
       <%= f.input :price, placeholder: 'Prix' %>
-      <%= f.input :address, placeholder: 'adresse' %>
+
+      <%= f.input :address, placeholder: 'Lille, France', input_html: {data: {address_autocomplete_target: "address"}},
+          wrapper_html: {data: {controller: "address-autocomplete", address_autocomplete_api_key_value: ENV["MAPBOX_API_KEY"]}} %>
       <%= f.input :email, placeholder: 'Email' %>
       <%= f.input :phone, placeholder: 'Téléphone' %>
       <%= f.input :photo, as: :file %>

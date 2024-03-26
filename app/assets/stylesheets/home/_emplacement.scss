@@ -130,6 +130,8 @@
   color: #50a2e3;
   font-size: 1.3rem;
   color: #625542;
+  color: #00b593;
+  text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.7);
 }
 
 // pop up
@@ -187,6 +189,7 @@
   display: flex;
   // border: 2px solid #fff;
   background-color: #fbf6cf;
+  flex-wrap: wrap;
 }
 
 .one-legend {
@@ -200,6 +203,8 @@
   font-size: 1.3rem;
   margin-right: .5rem;
   color: #625542;
+  color: #00b593;
+  text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.7);
 }
 
 .home-legende p {
