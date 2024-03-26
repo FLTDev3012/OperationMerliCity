@@ -1,1 +1,16 @@
-<i class="fa-solid fa-location-dot"></i>
+
+<% if flat.categorie == "general" %>
+  <i class="fa-solid fa-tree"></i> <!-- Utilisation de l'icône pour le camping -->
+
+<% elsif flat.categorie == "bar"  %>
+  <i class="fa-solid fa-martini-glass"></i>
+
+<% elsif flat.categorie == "restaurant"  %>
+  <i class="fa-solid fa-utensils"></i>
+
+<% elsif flat.categorie == "rando"  %>
+  <i class="fa-solid fa-person-hiking"></i>
+
+<% else %>
+  <i class="fa-solid fa-location-dot"></i>
+<% end %>

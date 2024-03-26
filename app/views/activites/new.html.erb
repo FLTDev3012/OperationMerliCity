@@ -6,6 +6,8 @@
 
   <div class="form-formulaire">
     <%= simple_form_for @activite do |f| %>
+
+      <%= f.input :categorie, as: :select, collection: ["general", "bar", "restaurant", "rando"], prompt: 'Choisissez une catégorie' %>
       <%= f.input :title, placeholder: 'Titre' %>
       <%= f.input :description, placeholder: 'Description' %>
       <%= f.input :address, placeholder: 'Adresse' %>

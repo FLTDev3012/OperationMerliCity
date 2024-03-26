@@ -51,7 +51,7 @@ class ActivitesController < ApplicationController
   private
 
   def activite_params
-    params.require(:activite).permit(:title, :description, :photo, :address, :phone, :price_a, :price_b,
+    params.require(:activite).permit(:title, :description, :photo, :address, :categorie, :phone, :price_a, :price_b,
                                      :luns, :lunbs, :lunbe, :lune,
                                      :mars, :marbs, :marbe, :mare,
                                      :mers, :merbs, :merbe, :mere,
