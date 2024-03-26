@@ -51,6 +51,7 @@ gem "sassc-rails"
 gem 'cloudinary'
 
 gem "geocoder"
+gem "importmap-rails", "~> 1.2.3"
 #map
 
 # pundit
