@@ -127,7 +127,7 @@
 
 .home-map i {
   color: #50a2e3;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 // pop up
@@ -194,10 +194,25 @@
 
 .home-legende i {
   color: #50a2e3;
-  font-size: 2rem;
+  font-size: 1.3rem;
   margin-right: .5rem;
 }
 
 .home-legende p {
   margin-bottom: 0;
+}
+
+
+//
+
+.mapboxgl-ctrl-attrib-inner {
+  display: none;
+}
+
+.a.mapboxgl-ctrl-logo {
+  display: none !important;
+}
+
+.mapboxgl-ctrl {
+  display: none !important;
 }
