@@ -6,7 +6,7 @@
 // External libraries
 @import "bootstrap/scss/bootstrap";
 @import "font-awesome";
-@import url("https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.css");
+@import "@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder";
 
 
 // Your CSS partials
