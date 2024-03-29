@@ -31,6 +31,8 @@ class EspecesController < ApplicationController
     authorize @espece
 
     if @espece.save
+      current_user.level += 1
+      current_user.save
       redirect_to  espece_path(@espece), notice: 'Espece créé avec succès!'
     else
       render :new, status: :unprocessable_entity
