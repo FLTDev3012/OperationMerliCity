@@ -33,6 +33,7 @@ class EspecesController < ApplicationController
     if @espece.save
       current_user.level += 1
       current_user.save
+      EspeceMailer.creation_confirmation(@espece).deliver_now
       redirect_to  espece_path(@espece), notice: 'Espece créé avec succès!'
     else
       render :new, status: :unprocessable_entity
