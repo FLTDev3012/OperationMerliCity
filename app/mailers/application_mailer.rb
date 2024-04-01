@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: "merlimont.site@gmail.com"
+  default from: "merlimont.notif@protonmail.com"
   layout "mailer"
 end
