@@ -15,6 +15,7 @@ class EspecesController < ApplicationController
     end
   end
 
+
   def show
     @espece = Espece.find(params[:id])
     authorize @espece
