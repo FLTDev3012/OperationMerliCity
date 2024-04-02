@@ -4,6 +4,8 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
+  after_create :send_welcome_email
+
   def after_sign_up_path_for(resource)
     moncompte_path
   end
@@ -24,6 +26,12 @@ class User < ApplicationRecord
     # Ajoutez ici la logique pour déterminer si l'utilisateur est un admin
     # Par exemple, si vous avez un champ boolean admin dans votre table users :
     admin
+  end
+
+  private
+
+  def send_welcome_email
+    UserMailer.welcome(self).deliver_now
   end
 
 end
