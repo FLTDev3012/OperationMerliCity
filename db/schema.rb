@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_04_03_130647) do
+ActiveRecord::Schema[7.0].define(version: 2024_04_03_144621) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -116,17 +116,6 @@ ActiveRecord::Schema[7.0].define(version: 2024_04_03_130647) do
     t.index ["user_id"], name: "index_especes_on_user_id"
   end
 
-  create_table "faunes", force: :cascade do |t|
-    t.string "categorie"
-    t.string "nom"
-    t.text "description"
-    t.string "photo"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.bigint "user_id"
-    t.index ["user_id"], name: "index_faunes_on_user_id"
-  end
-
   create_table "galeries", force: :cascade do |t|
     t.string "title"
     t.datetime "created_at", null: false
@@ -182,7 +171,6 @@ ActiveRecord::Schema[7.0].define(version: 2024_04_03_130647) do
   add_foreign_key "espece_categories", "users"
   add_foreign_key "especes", "espece_categories", column: "espece_categorie_id"
   add_foreign_key "especes", "users"
-  add_foreign_key "faunes", "users"
   add_foreign_key "type_espece_categories", "biotops"
   add_foreign_key "type_espece_categories", "users"
 end
