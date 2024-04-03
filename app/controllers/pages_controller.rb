@@ -27,6 +27,7 @@ class PagesController < ApplicationController
   end
 
   def galerie
+    @galeries = Galerie.all
   end
 
   def merlimontdavant

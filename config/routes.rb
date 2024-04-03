@@ -30,6 +30,7 @@ Rails.application.routes.draw do
   resources :type_espece_categories, only: [:index, :new, :create, :edit, :update, :destroy]
   resources :espece_categories
   resources :especes
+  resources :galeries, only: [:new, :create, :edit, :update, :destroy]
 
 
 end

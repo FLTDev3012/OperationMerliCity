@@ -14,75 +14,11 @@
     <h1>Galerie de Merlimont</h1>
     <div class="container-grid">
 
-      <div class="galerie-one-pic" onclick="openImagePopup('/assets/galerie/galerie1.jpg')">
-        <%= image_tag("galerie/galerie1.jpg", alt: "Image de merlimont") %>
-      </div>
-
-      <div class="galerie-one-pic" onclick="openImagePopup('/assets/galerie/galerie2.jpg')">
-        <%= image_tag("galerie/galerie2.jpg", alt: "Image de merlimont") %>
-      </div>
-
-      <div class="galerie-one-pic" onclick="openImagePopup('/assets/galerie/galerie3.jpg')">
-        <%= image_tag("galerie/galerie3.jpg", alt: "Image de merlimont") %>
-      </div>
-
-      <div class="galerie-one-pic" onclick="openImagePopup('/assets/galerie/galerie4.jpg')">
-        <%= image_tag("galerie/galerie4.jpg", alt: "Image de merlimont") %>
-      </div>
-
-      <div class="galerie-one-pic" onclick="openImagePopup('/assets/galerie/galerie5.jpg')">
-        <%= image_tag("galerie/galerie5.jpg", alt: "Image de merlimont") %>
-      </div>
-
-      <div class="galerie-one-pic" onclick="openImagePopup('/assets/galerie/galerie6.jpg')">
-        <%= image_tag("galerie/galerie6.jpg", alt: "Image de merlimont") %>
-      </div>
-
-      <div class="galerie-one-pic" onclick="openImagePopup('/assets/galerie/galerie7.png')">
-        <%= image_tag("galerie/galerie7.png", alt: "Image de merlimont") %>
-      </div>
-
-      <div class="galerie-one-pic" onclick="openImagePopup('/assets/galerie/galerie8.jpg')">
-        <%= image_tag("galerie/galerie8.jpg", alt: "Image de merlimont") %>
-      </div>
-
-      <div class="galerie-one-pic" onclick="openImagePopup('/assets/galerie/galerie9.jpg')">
-        <%= image_tag("galerie/galerie9.jpg", alt: "Image de merlimont") %>
-      </div>
-
-      <div class="galerie-one-pic" onclick="openImagePopup('/assets/galerie/galerie10.jpg')">
-        <%= image_tag("galerie/galerie10.jpg", alt: "Image de merlimont") %>
-      </div>
-
-      <div class="galerie-one-pic" onclick="openImagePopup('/assets/galerie/galerie11.jpg')">
-        <%= image_tag("galerie/galerie11.jpg", alt: "Image de merlimont") %>
-      </div>
-
-      <div class="galerie-one-pic" onclick="openImagePopup('/assets/galerie/galerie12.jpg')">
-        <%= image_tag("galerie/galerie12.jpg", alt: "Image de merlimont") %>
-      </div>
-
-      <div class="galerie-one-pic" onclick="openImagePopup('/assets/galerie/galerie13.jpg')">
-        <%= image_tag("galerie/galerie13.jpg", alt: "Image de merlimont") %>
-      </div>
-
-      <div class="galerie-one-pic" onclick="openImagePopup('/assets/galerie/galerie14.jpg')">
-        <%= image_tag("galerie/galerie14.jpg", alt: "Image de merlimont") %>
-      </div>
-
-      <div class="galerie-one-pic" onclick="openImagePopup('/assets/galerie/galerie15.jpg')">
-        <%= image_tag("galerie/galerie15.jpg", alt: "Image de merlimont") %>
-      </div>
-
-      <div class="galerie-one-pic" onclick="openImagePopup('/assets/galerie/galerie16.jpg')">
-        <%= image_tag("galerie/galerie16.jpg", alt: "Image de merlimont") %>
-      </div>
-
-      <div class="galerie-one-pic" onclick="openImagePopup('/assets/galerie/galerie17.jpg')">
-        <%= image_tag("galerie/galerie17.jpg", alt: "Image de merlimont") %>
-      </div>
-
-
+      <% @galeries.each do |galerie| %>
+        <div class="galerie-one-pic" onclick="openImagePopup('<%= galerie.photo.url %>')">
+          <%= image_tag galerie.photo.url, alt: "Image de merlimont" %>
+        </div>
+      <% end %>
 
     </div>
   </div>
