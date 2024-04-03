@@ -25,7 +25,6 @@ Rails.application.routes.draw do
 
   resources :activites
   resources :logements
-  resources :faunes
   resources :biotops, only: [:new, :create, :edit, :update, :destroy]
   resources :type_espece_categories, only: [:index, :new, :create, :edit, :update, :destroy]
   resources :espece_categories
