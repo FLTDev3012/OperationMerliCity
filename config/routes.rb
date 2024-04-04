@@ -17,8 +17,6 @@ Rails.application.routes.draw do
   get "azerty", to: "pages#azerty"
 
 
-
-
   devise_scope :user do
     get "/fauneflore", to: "pages#fauneflore"
   end
