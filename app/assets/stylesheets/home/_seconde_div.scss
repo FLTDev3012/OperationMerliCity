@@ -78,24 +78,6 @@
 }
 
 
-
-
-
-.home-presentation-title svg {
-  width: 400px;
-  height: auto;
-}
-
-.home-presentation-title text {
-  color: $bleu;
-  font-family: 'Gloria Hallelujah', cursive;
-  font-size: 5rem;
-  -webkit-text-stroke: 0.6rem rgb(255, 255, 255);
-  paint-order: stroke fill;
-  transform: translateY(50px);
-
-}
-
 .home-presentation-parasol-container {
   position: relative;
 }
@@ -107,33 +89,31 @@
   z-index: 2;
 }
 
-
-
 .home-presentation-parasol img {
   width: 48px;
   height: 48px;
 }
 
-.home-presentation-cerfvolant {
-  position: absolute;
-  top: 0%;
-  right: -1%;
-  z-index: 2;
-}
 
-.home-presentation-cerfvolant img {
-  width: 48px;
-  height: 48px;
-  transform-origin: bottom left;
-  animation: cerfvolantAnimation 3s infinite;
-}
 
-.home-presentation-parasol p {
-  font-size: 3rem;
-  text-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
-}
+//
+
 
 // presentation text et photo
+
+.test-home-seconde-div-text-img-container {
+  width: 100%;
+  display: flex;
+}
+
+.test-home-seconde-div-text-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // align-items: center;
+  // background-color: aqua;
+}
 
 .home-presentation-text-picture {
   display: flex;
