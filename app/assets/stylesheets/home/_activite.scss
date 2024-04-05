@@ -11,10 +11,38 @@
   color: #fff;
 }
 
+.test-home-third-div .test-home-title-container {
+  height: 25vh;
+}
 
 
-// activites titre
 
+
+
+
+// activites etoile
+
+.test-home-third-div .home-presentation-cerfvolant {
+  z-index: -1;
+}
+
+.home-presentation-cerfvolant {
+  position: absolute;
+  top: 0%;
+  right: -1%;
+}
+
+.test-home-third-div .home-presentation-cerfvolant img {
+  filter: grayscale(0.8) brightness(1.2);
+  opacity: 54%;
+}
+
+.home-presentation-cerfvolant img {
+  width: 48px;
+  height: 48px;
+  transform-origin: bottom left;
+  animation: cerfvolantAnimation 3s infinite;
+}
 
 
 
