@@ -1,35 +1,62 @@
 // ====================== Home-presentaion-div =========================
-.home-page-container {
-  background-image: url("/assets/asablebg.png");
-  background-color: $sable;
-}
-
-.home-presentation-div {
+.test-home-seconde-div {
+  min-height: 100vh;
+  width: 100%;
   position: relative;
-  // min-height: 100vh;
-
-
+  overflow: hidden;
+  background-image: url("/assets/sablebg.png");
+  background-color: #fff;
 }
 
-.home-traces {
+.test-home-page .test-home-seconde-div:hover text {
+  fill: #fff;
+}
+
+// trace
+.test-home-seconde-div .home-traces {
   position: absolute;
   top: 0;
-  background: linear-gradient(0deg, rgba(38, 35, 30, 0) 0%, #f0ecbe 100%);
+  filter: grayscale(1);
+  background: linear-gradient(0deg, rgba(38, 35, 30, 0) 0%, #f0ecbe 70%);
 }
 
-.home-traces img {
+.test-home-seconde-div .home-traces img {
+  filter: brightness(0.9);
   width: 100%;
   height: auto;
 }
 
-.home-presentation-title-and-title-shadow {
-  padding: 5vh 0;
+// title
+
+.test-home-title-container {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+}
+
+.test-home-title-container h1 {
+  color: #023646d6;
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 5rem;
+}
+
+.test-home-title-container > h1 {
+  color: #023646d6;
+  z-index: 10;
+  position: relative;
+  text-shadow: 2px 2px 2px aliceblue;
+  filter: drop-shadow(2px 2px 2px #3f647066);
+  // color: #4E93D6;
 }
 
 .home-presentation-title-shadow {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateY(-30px) translateX(-50%);
 }
 
 .home-presentation-title-shadow h1 {
@@ -39,12 +66,20 @@
   opacity: 0.25;
 }
 
-.home-presentation-title {
-  display: flex;
-  justify-content: center;
-  z-index: 2;
-  position: relative;
+.home-presentation-parasol-container h1 {
+  color: #007CD7;
+  opacity: 0.25;
+  color: #023646d6;
+
 }
+
+.home-presentation-title-shadow img {
+  filter: grayscale(.5);
+}
+
+
+
+
 
 .home-presentation-title svg {
   width: 400px;

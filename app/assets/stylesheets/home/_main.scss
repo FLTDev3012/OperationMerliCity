@@ -1,378 +1,332 @@
-// ================= Home Permiere Div video =========================
+// cursor
 
+.test-home-page .textsvg {
+  width: 100px;
+  position: absolute;
+  animation: rotation 4.5s infinite linear;
+  pointer-events: none;
+  transition: top 1s, left 1s;
+  transition-timing-function: ease-out;
+  z-index: 1000;
+}
 
+.test-home-page text {
+  font-size: 4em;
+  font-family: 'Poppins';
+  font-weight: bold;
+  fill: #023646dc;
+  transition: all 1s ease-in-out;
 
-.hero-video {
-  position: relative;
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
 
 
-.hero-video video {
+//
+
+.test-home-container {
+  box-sizing: border-box;
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  background-image: url("/assets/home/sablebg.png");
+  background-color: #fff;
+}
+
+//
+
+.test-home-first-div {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  // background-image: url(/assets/home/topdeux.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.svg-container {
+  height: 100%;
+  width:  100%;
+  position: absolute;
+}
+
+.test-home-first-div .svg-container path {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.test-home-first-div .svg-container path {
+  transform: scale(0.3);
+  transform-origin: center;
+}
+
+.test-home-first-div .svg-container path {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
+  transform: translate(0, 70%) scale(0.3); /* Ajout de translate(-50%, -50%) */
+  transform-origin: center;
 }
 
-// --------- kite un
 
-.home-video-circle-container {
+.test-home-first-div .videocontainer{
   position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  // transform: rotate(-45deg) translate(-50%, -50%);
-  height: 150vh;
-  width: 150vh;
-  // border-radius: 50%;
-  // background-color: $bleu;
-  animation: rotateCircle 15s linear forwards; /* Animation de rotation infinie */
-}
-
-
-
-@keyframes rotateCircle {
-  from {
-    transform: translate(-50%, -50%) rotate(-180deg); /* Rotation de départ */
-  }
-  to {
-    transform: translate(-50%, -50%) rotate(180deg); /* Rotation complète (360 degrés) */
-  }
-}
-
-.home-video-circle {
-  position: relative;
   width: 100%;
   height: 100%;
 }
 
-.kite {
+.block-du-m {
   position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  height: 100px;
-  width: auto;
-  opacity: 0.9;
+  width: 100%;
+  height: 100%;
 }
 
-.kite img{
-  height: 70px;
-  width: auto;
-  transform: rotate(100deg);
+.test-home-first-div .wrapperr {
+  position: relative;
+  width: 65%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
-// --------- kite deux
+.wrapper-du-m {
+  position: relative;
+  width: 65%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-.home-video-circle-container-deux {
+.lems {
+  width: 100%;
+  height: 100%;
   position: absolute;
-  top: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
-  // transform: rotate(-45deg) translate(-50%, -50%);
-  height: 150vh;
-  width: 150vh;
-  // border-radius: 50%;
-  // background-color: $bleu;
-  animation: rotateCircleDeux 15s linear forwards; /* Animation de rotation infinie */
-  animation-delay: 10s;
 }
 
-@keyframes rotateCircleDeux {
-  from {
-    transform: translate(-50%, -50%) rotate(360deg); /* Rotation de départ */
-  }
-  to {
-    transform: translate(-50%, -50%) rotate(0deg); /* Rotation complète (360 degrés) */
-  }
-}
-
-.home-video-circle-deux {
+.video-content-du-m {
   position: relative;
-  width: 100%;
-  height: 100%;
+  content: "";
+  // background-color: rgba(255, 0, 0, 0.186);
+  animation: waveVideoAnimation 10s infinite;
+  transform-origin: center center;
 }
 
-.kite-deux {
+
+.svg-du-m {
+  //width: 100%;
+  //height: 100%;
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.svg-du-m img {
+  transform: translate(0%, -21.7%) scale(0.3);
+  transform: translate(0%, 8.6%) scale(0.3);
+  filter: blur(10px);
+  opacity: 0.5;
+}
+
+.test-home-first-div .videocontainer video {
   position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  height: 100px;
-  width: auto;
-  opacity: 0.9;
-}
-
-.kite-deux img{
-  height: 70px;
-  width: auto;
-  transform: rotate(60deg);
-}
-
-// --------- kite trois un ----------
-
-.home-video-circle-container-trois-un {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-90deg);
-  height: 150vh;
-  width: 150vh;
-  animation: rotateCircle 15s linear infinite;
-  animation-delay: 20s;
-}
-
-.home-video-circle-trois-un {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.kite-trois-un {
-  position: absolute;
-  top: 0%;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  height: 100px;
-  width: auto;
-  opacity: 0.9;
-}
-
-.kite-trois-un img{
-  height: 70px;
-  width: auto;
-  transform: rotate(100deg);
-}
-// --------- kite trois deux ----------
-.home-video-circle-container-trois-deux {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-90deg);
-  height: 150vh;
-  width: 150vh;
-  animation: rotateCircle 15s linear infinite;
-  animation-delay: 21s;
-}
-
-.home-video-circle-trois-deux {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.kite-trois-deux {
-  position: absolute;
-  top: 0%;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  height: 100px;
-  width: auto;
-  opacity: 0.9;
-}
-
-.kite-trois-deux img{
-  height: 70px;
-  width: auto;
-  transform: rotate(100deg);
-}
-// --------- kite trois trois ----------
-
-.home-video-circle-container-trois-trois {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-90deg);
-  height: 150vh;
-  width: 150vh;
-  animation: rotateCircle 15s linear infinite;
-  animation-delay: 22s;
-}
-
-.home-video-circle-trois-trois {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.kite-trois-trois {
-  position: absolute;
-  top: 0%;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  height: 100px;
-  width: auto;
-  opacity: 0.9;
-}
-
-.kite-trois-trois img{
-  height: 70px;
-  width: auto;
-  transform: rotate(100deg);
+  filter: hue-rotate(7deg);
+  animation: waveVideoAnimation 10s infinite;
+  transform-origin: center center;
 }
 
 
-
-.avion {
-  position: absolute;
-  right: -400px;
-  top: 20%;
-  animation: deplacement 10s linear forwards; /* Animation de déplacement */
-  animation-delay: 15s;
+.test-home-first-div .clipped-video {
+  -webkit-clip-path: url(#text-overlay);
+  clip-path: url(#text-overlay);
 }
 
-.avion img {
-  height: 50px;
-  width: auto;
-}
-
-@keyframes deplacement {
-  0% {
-    transform: translate(0vw, 0vw) rotate(0deg); /* Point de départ */
-  }
-  100% {
-    transform: translate(-100vw , 0vw) rotate(0deg); /* Point d'arrivée */
+@media (max-width: 550px) {
+  .test-home-first-div path {
+    transform: translate(25%, 70%) scale(0.2);
   }
 }
 
 // nav
-.home-nav {
-  display: flex;
-  justify-content: space-between;
-  margin: 30px 20px;
-  position: relative;
-  z-index: 2;
-}
 
-.home-nav a {
-  font-family: 'Akaya Telivigala', cursive;
-  font-size: 2rem;
-  -webkit-text-stroke: 5px rgba(255, 255, 255, 0);
-  paint-order: stroke fill;
-  color: #00559100;
-}
-
-.home-nav-right-new {
-  display: flex;
-  align-items: center;
-}
-
-.home-nav-right-new svg {
-  margin: 0 20px;
-  fill: #33f2c6;
-}
-
-
-.home-nav-right-new svg a{
-  font-family: 'Amatic SC', sans-serif !important;
-  letter-spacing: .1rem !important;
-  font-size: 2rem !important;
-  -webkit-text-stroke: 5px rgb(255, 255, 255) !important;
-  paint-order: stroke fill !important;
-  color: #005491 !important;
-}
-
-.home-nav-right-new svg {
-  height: 39px;
-}
-
-.galn {
-  width: 80px;
-}
-
-.webn {
-  width: 84px;
-}
-
-.faunen {
-  width: 152px;
-}
-
-.foisn {
-  width: 180px;
-}
-
-.aboutn {
-  width: 93px;
-}
-
-
-
-.home-nav-left a {
-  padding: 0 20px;
-  color: $bleu;
-}
-
-.home-nav-left img {
-  height: 4rem;
-  width: auto;
-}
-
-.home-nav-right {
-  position: absolute;
-  z-index: -2;
-}
-.home-nav-right a {
-  // padding: 0 20px;
-  font-family: 'Amatic SC', sans-serif;
-  letter-spacing: .1rem;
-}
-
-
-// img dunes
-.home-dunes {
-  position: absolute;
-  bottom: 10%;
-}
-
-.home-dunes img {
-  width: 100%;
-  height: auto;
-}
-
-.home-bas-dunes {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 10%;
-  background: linear-gradient(180deg,#fffacd 0%,#f0ecbe 100%);
-}
-
-.home-bas-dunes img {
-  width: 100%;
-  height: auto;
-  position: absolute;
-  bottom: 0;
-  transform: translateY(10%);
-  z-index: 3;
-}
-
-
-.home-fondu-haut {
+.test-nav {
   position: absolute;
   top: 0;
-  height: 15vh;
   width: 100%;
-  content: "";
-  background: linear-gradient(0deg, rgba(32, 33, 36, 0) 0%, rgba(104, 164, 216, 0.72) 100%);
+  height: 8vh;
+  // background-color: #023646;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  margin: 30px 20px;
 }
 
-.home-fondu-bas {
-  position: absolute;
-  bottom: 0;
-  height: 15vh;
-  width: 100%;
-  content: "";
-  background: linear-gradient(180deg, rgba(32,33,36,0) 0%, rgb(29, 230, 245) 100%);
+.test-nav a {
+  padding: 0 20px;
+  color: #023646;
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 1.4rem;
+  text-shadow: 2px 2px 2px #02364621;
+  text-shadow: 2px 2px 2px aliceblue;
+  filter: drop-shadow(2px 2px 2px #3f647029);
+
+
+}
+
+.test-nav-left {
+  margin-left: 20px;
+}
+
+.test-nav-left img {
+  height: 4rem;
+  width: auto;
+  filter: drop-shadow(2px 2px 2px #02364670);
+}
+
+.test-nav-right {
+  margin-right: 20px;
+}
+
+.test-home-first-div .home-dunes {
+  filter: grayscale(0.5);
+}
+
+.test-home-first-div .home-bas-dunes {
+  filter: grayscale(0.5);
+  background: linear-gradient(180deg, #fffacd 0%, #eceaea 100%);
 }
 
 
 
-// Fin Home Permiere Div
+// deuxieme div home
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.test-home-seconde-div-text-img-container {
+  width: 100%;
+  display: flex;
+}
+
+.test-home-seconde-div-text-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // align-items: center;
+  // background-color: aqua;
+}
+
+//
+
+
+
+.test-home-seconde-div-text-container p {
+  font-family: "Pacifico", cursive;
+  color: #023646e5;
+  text-align: center;
+  width: 80%;
+  font-size: 2rem;
+  margin: 2.5rem 0 3rem 0;
+  font-weight: 600;
+  color: #023646b0;
+  color: #2d5764;
+  text-shadow: 2px 2px 2px aliceblue;
+  filter: drop-shadow(0px 3px 4px #02364673);
+}
+
+.test-home-seconde-div-text-container img {
+  width: 60%;
+  height: auto;
+  opacity: 0.6;
+  filter: drop-shadow(0px 3px 4px #02364673);
+}
+
+.test-home-seconde-div-img-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  // background-color: blueviolet;
+}
+
+
+
+.test-home-seconde-div-img-container img {
+  width: 400px;
+  height: auto;
+  filter: drop-shadow(0px 4px 4px #023646);
+  transition: all 0.5s ease-in-out;
+  // animation: waveRegularAnimation 5s infinite;
+  animation: hearthAnimation 6s infinite;
+}
+
+
+
+.test-home-seconde-div-img-container img:hover {
+  transform: perspective(1000px) translateY(0%) rotateX(-10deg) translateZ(0);
+  filter: drop-shadow(0px 1px 4px #023646);
+}
+
+
+// troisieme div
+
+.test-home-third-div {
+  min-height: 100vh;
+  position: relative;
+  background: linear-gradient(0deg, rgba(0, 124, 215, 0.66) 0%, rgba(0, 124, 215, 0.86) 30%, rgba(0, 124, 215, 0.86) 70%, rgba(0, 124, 215, 0.66) 100%);
+}
+
+.test-home-third-div h1 {
+  color: #fff;
+}
+
+// quatrieme div
+
+.test-home-fourth-div {
+  min-height: 100vh;
+  position: relative;
+  background-image: url("/assets/sablebg.png");
+  background-color: #fff;
+}
