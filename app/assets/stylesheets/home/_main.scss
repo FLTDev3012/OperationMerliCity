@@ -36,6 +36,7 @@
   animation: rotateCircle 15s linear forwards; /* Animation de rotation infinie */
 }
 
+
 @keyframes rotateCircle {
   from {
     transform: translate(-50%, -50%) rotate(-180deg); /* Rotation de départ */
