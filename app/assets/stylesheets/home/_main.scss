@@ -223,13 +223,10 @@
   bottom: 10%;
 }
 
-.home-dunes img {
-  width: 100%;
-  height: auto;
-}
 
 .test-home-first-div .home-bas-dunes {
   filter: grayscale(0.5);
+  position: absolute;
   background: linear-gradient(180deg, #fffacd 0%, #eceaea 100%);
   bottom: 0;
   width: 100%;
