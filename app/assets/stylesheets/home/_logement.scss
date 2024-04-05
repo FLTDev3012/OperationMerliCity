@@ -1,30 +1,12 @@
 // ======================= Logement =====================
+// quatrieme div
 
-.home-logements-div {
+.test-home-fourth-div {
   min-height: 100vh;
   position: relative;
-  overflow: hidden;
+  background-image: url("/assets/sablebg.png");
+  background-color: #fff;
 }
-
-.home-emplacement-para {
-  position: absolute;
-  top: 10%;
-  left: 5%;
-  z-index: 2;
-}
-
-.home-emplacement-para img {
-  width: 89px;
-  height: auto;
-}
-
-
-
-.home-emplacement-para p {
-  font-size: 6rem;
-  text-shadow: 40px 90px 30px rgba(0, 0, 0, 0.35);
-}
-
 
 
 .home-logement-vague-haut {
@@ -80,20 +62,7 @@
   filter: drop-shadow(2px 2px 2px #3f647066);
 }
 
-.home-logement-title svg {
-  height: 205px;
-  width: 570px;
-}
 
-.home-logement-title text {
-  color: $bleu;
-  font-family: 'Gloria Hallelujah', cursive;
-  font-size: 5rem;
-  -webkit-text-stroke: 0.6rem rgb(255, 255, 255); /* contour du text */
-  paint-order: stroke fill; /* mettre le contour deriere le text */
-  transform: translateY(50px);
-
-}
 
 .home-logement-categories-container {
   display: flex;
