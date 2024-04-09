@@ -21,8 +21,7 @@ Activite.destroy_all
 puts "Toutes les Activites ont etaient supprimer ..."
 Logement.destroy_all
 puts "Touts les Logements ont etaient supprimer ..."
-Faune.destroy_all
-puts "Touts les Faune ont etaient supprimer ..."
+
 puts " "
 puts "User en cours de creation..."
 user1 = User.create(email: 'dorian@gmail.com', password: 'coucou', admin: true, first_name: 'Dorian', last_name: 'Fiolet')

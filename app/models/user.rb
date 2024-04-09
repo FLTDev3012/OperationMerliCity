@@ -15,7 +15,6 @@ class User < ApplicationRecord
   has_many :espece_categories, class_name: 'EspeceCategorie', dependent: :destroy
   has_many :especes, dependent: :destroy
 
-  has_many :faunes, dependent: :destroy
 
   validates :first_name, presence: true
   validates :last_name, presence: true
