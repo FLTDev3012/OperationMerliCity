@@ -17,7 +17,7 @@
       <% @activites.each do |activite| %>
         <div class="activite-index-une-acti-container">
 
-          <%= link_to activite_path(activite), class: "activite-index-une-acti" do %>
+          <%= link_to activite_path(activite), class: "activite-index-une-acti", data: { turbo: false } do %>
 
             <div class="moovetoo">
               <% if activite.photo.attached? %>

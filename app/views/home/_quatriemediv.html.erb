@@ -22,7 +22,7 @@
     <div class="home-logement-grid-container">
 
 
-      <%= link_to logements_path(categorie: 'camping'), class: 'home-logement-categories-owner' do %>
+      <%= link_to logements_path(categorie: 'camping'), class: 'home-logement-categories-owner', data: { turbo: false } do %>
         <div class="cardtest">
           <div class="wrapper">
             <%= image_tag('activites/mobilehomes.jpg', class: 'cover-image') %>
@@ -32,7 +32,7 @@
         </div>
       <% end %>
 
-      <%= link_to logements_path(categorie: 'location'), class: 'home-logement-categories-owner' do %>
+      <%= link_to logements_path(categorie: 'location'), class: 'home-logement-categories-owner', data: { turbo: false } do %>
         <div class="cardtest">
           <div class="wrapper">
             <%= image_tag('logements/location1.jpg', class: 'cover-image') %>
@@ -42,7 +42,7 @@
         </div>
       <% end %>
 
-      <%= link_to logements_path(categorie: 'hote'), class: 'home-logement-categories-owner' do %>
+      <%= link_to logements_path(categorie: 'hote'), class: 'home-logement-categories-owner', data: { turbo: false } do %>
         <div class="cardtest">
           <div class="wrapper">
             <%= image_tag('logements/hote.jpg', class: 'cover-image') %>
@@ -52,7 +52,7 @@
         </div>
       <% end %>
 
-      <%= link_to logements_path(categorie: 'camping-car'), class: 'home-logement-categories-owner' do %>
+      <%= link_to logements_path(categorie: 'camping-car'), class: 'home-logement-categories-owner', data: { turbo: false } do %>
         <div class="cardtest">
           <div class="wrapper">
             <%= image_tag('logements/caravane.jpg', class: 'cover-image') %>
@@ -71,7 +71,7 @@
 
 
   <div class="home-btn-logement-boue-container">
-    <%= link_to "Tout voir", logements_path%>
+    <%= link_to "Tout voir", logements_path, data: { turbo: false }%>
   </div>
 
   <!-- ================== div vague au dessus de emplacement ===================== -->
