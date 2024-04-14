@@ -880,3 +880,14 @@ puts "4 hote a etait cree 👩🏻‍🌾!"
 puts "Les chambre d hote ont fini d etre cree ma couille... 👩🏻‍🌾"
 
 puts "#{Logement.count} logements de toutes avec des categories differentes ont etaient cree! 🍻"
+
+puts "old pic en cours de creation!"
+imdex = 0
+30.times do |index|
+  file = URI.open("https://scontent-syd2-1.xx.fbcdn.net/v/t39.30808-6/374979454_1013015693372270_136668452628983097_n.jpg?stp=cp6_dst-jpg&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=4Ti2DxsX7n8Ab7epv8b&_nc_ht=scontent-syd2-1.xx&oh=00_AfBE_uT_X97mRXxpfwZimex0ZoIAoddThT4-WsXM_2gAiA&oe=6621A1C6")
+  old = Oldpic.create(title: "photo old #{index + 1}")
+  old.photo.attach(io: file, filename: "v4.png", content_type: "image/png")
+  old.save
+end
+
+puts "#{Oldpic.count} old pic created!"
