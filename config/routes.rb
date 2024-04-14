@@ -28,6 +28,7 @@ Rails.application.routes.draw do
   resources :espece_categories
   resources :especes
   resources :galeries, only: [:new, :create, :edit, :update, :destroy]
+  resources :oldpics
 
 
 end

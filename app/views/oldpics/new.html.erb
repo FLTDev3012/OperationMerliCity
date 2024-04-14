@@ -1,12 +1,12 @@
 <div class="biotop-form-container">
 
   <div class="biotop-form-titre">
-    <h1>Ajoutez votre image</h1>
+    <h1>Ajoutez votre image oldpic</h1>
   </div>
 
   <div class="biotop-form-formulaire-container">
     <div class="biotop-form-formulaire">
-      <%= simple_form_for @galerie do |f| %>
+      <%= simple_form_for @oldpic do |f| %>
         <div class="biotop-form-input-input">
           <%= f.input :title, placeholder: 'titre', label: "titre de l image" %>
           <%= f.input :photo, as: :file, label: "Votre photo *" %>
