@@ -69,25 +69,11 @@
 
           <div class="scroll-cards">
 
-            <article class="scroll-cards__item">
-              <%= image_tag('avant/typeone.jpg') %>
-            </article>
-            <article class="scroll-cards__item">
-              <%= image_tag('avant/typetwo.jpg') %>
-            </article>
-            <article class="scroll-cards__item">
-              <%= image_tag('avant/typeone.jpg') %>
-            </article>
-            <article class="scroll-cards__item">
-              <%= image_tag('avant/typeone.jpg') %>
-            </article>
-            <article class="scroll-cards__item">
-              <%= image_tag('avant/typeone.jpg') %>
-            </article>
-
-            <article class="scroll-cards__item">
-              <%= image_tag('faune/faune_main.jpg') %>
-            </article>
+            <% @oldpics.take(6).each do |oldpic| %>
+              <article class="scroll-cards__item">
+              <%= image_tag oldpic.photo.url, alt: "Image de merlimont il y a longtemps" %>
+              </article>
+            <% end %>
 
           </div>
 
@@ -109,27 +95,28 @@
 
         <div class="les-futur-photo">
 
+
           <div class="image-type-one-container">
             <div class="image-type-one">
-              <%= image_tag('avant/typeone.jpg') %>
+              <%= image_tag @oldpics[6].photo.url, alt: "Image de merlimont il y a longtemps" %>
             </div>
           </div>
 
           <div class="image-type-two-container">
             <div class="image-type-two">
-              <%= image_tag('avant/typetwo.jpg') %>
+              <%= image_tag @oldpics[7].photo.url, alt: "Image de merlimont il y a longtemps" %>
             </div>
           </div>
 
           <div class="image-type-one-container">
             <div class="image-type-one">
-              <%= image_tag('avant/typeone.jpg') %>
+              <%= image_tag @oldpics[8].photo.url, alt: "Image de merlimont il y a longtemps" %>
             </div>
           </div>
 
           <div class="image-type-two-container">
             <div class="image-type-two">
-              <%= image_tag('avant/typetwo.jpg') %>
+              <%= image_tag @oldpics[9].photo.url, alt: "Image de merlimont il y a longtemps" %>
             </div>
           </div>
 
@@ -153,25 +140,11 @@
 
           <div class="scroll-cards">
 
-            <article class="scroll-cards__item">
-              <%= image_tag('avant/typeone.jpg') %>
-            </article>
-            <article class="scroll-cards__item">
-              <%= image_tag('avant/typetwo.jpg') %>
-            </article>
-            <article class="scroll-cards__item">
-              <%= image_tag('avant/typeone.jpg') %>
-            </article>
-            <article class="scroll-cards__item">
-              <%= image_tag('avant/typeone.jpg') %>
-            </article>
-            <article class="scroll-cards__item">
-              <%= image_tag('avant/typeone.jpg') %>
-            </article>
-
-            <article class="scroll-cards__item">
-              <%= image_tag('faune/faune_main.jpg') %>
-            </article>
+            <% @oldpics.slice(9, 7).each do |oldpic| %>
+              <article class="scroll-cards__item">
+              <%= image_tag oldpic.photo.url, alt: "Image de merlimont il y a longtemps" %>
+              </article>
+            <% end %>
 
           </div>
 
@@ -193,25 +166,25 @@
 
           <div class="image-type-one-container">
             <div class="image-type-one">
-              <%= image_tag('avant/typeone.jpg') %>
+              <%= image_tag @oldpics[16].photo.url, alt: "Image de merlimont il y a longtemps" %>
             </div>
           </div>
 
           <div class="image-type-two-container">
             <div class="image-type-two">
-              <%= image_tag('avant/typetwo.jpg') %>
+              <%= image_tag @oldpics[17].photo.url, alt: "Image de merlimont il y a longtemps" %>
             </div>
           </div>
 
           <div class="image-type-one-container">
             <div class="image-type-one">
-              <%= image_tag('avant/typeone.jpg') %>
+              <%= image_tag @oldpics[18].photo.url, alt: "Image de merlimont il y a longtemps" %>
             </div>
           </div>
 
           <div class="image-type-two-container">
             <div class="image-type-two">
-              <%= image_tag('avant/typetwo.jpg') %>
+              <%= image_tag @oldpics[19].photo.url, alt: "Image de merlimont il y a longtemps" %>
             </div>
           </div>
 
@@ -234,25 +207,11 @@
 
           <div class="scroll-cards">
 
-            <article class="scroll-cards__item">
-              <%= image_tag('avant/typeone.jpg') %>
-            </article>
-            <article class="scroll-cards__item">
-              <%= image_tag('avant/typetwo.jpg') %>
-            </article>
-            <article class="scroll-cards__item">
-              <%= image_tag('avant/typeone.jpg') %>
-            </article>
-            <article class="scroll-cards__item">
-              <%= image_tag('avant/typeone.jpg') %>
-            </article>
-            <article class="scroll-cards__item">
-              <%= image_tag('avant/typeone.jpg') %>
-            </article>
-
-            <article class="scroll-cards__item">
-              <%= image_tag('faune/faune_main.jpg') %>
-            </article>
+            <% @oldpics.slice(20, 7).each do |oldpic| %>
+              <article class="scroll-cards__item">
+              <%= image_tag oldpic.photo.url, alt: "Image de merlimont il y a longtemps" %>
+              </article>
+            <% end %>
 
           </div>
 
@@ -275,25 +234,25 @@
 
           <div class="image-type-one-container">
             <div class="image-type-one">
-              <%= image_tag('avant/typeone.jpg') %>
+              <%= image_tag @oldpics[26].photo.url, alt: "Image de merlimont il y a longtemps" %>
             </div>
           </div>
 
           <div class="image-type-two-container">
             <div class="image-type-two">
-              <%= image_tag('avant/typetwo.jpg') %>
+              <%= image_tag @oldpics[27].photo.url, alt: "Image de merlimont il y a longtemps" %>
             </div>
           </div>
 
           <div class="image-type-one-container">
             <div class="image-type-one">
-              <%= image_tag('avant/typeone.jpg') %>
+              <%= image_tag @oldpics[28].photo.url, alt: "Image de merlimont il y a longtemps" %>
             </div>
           </div>
 
           <div class="image-type-two-container">
             <div class="image-type-two">
-              <%= image_tag('avant/typetwo.jpg') %>
+              <%= image_tag @oldpics[29].photo.url, alt: "Image de merlimont il y a longtemps" %>
             </div>
           </div>
 

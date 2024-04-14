@@ -31,6 +31,7 @@ class PagesController < ApplicationController
   end
 
   def merlimontdavant
+    @oldpics = Oldpic.all
   end
 
 
