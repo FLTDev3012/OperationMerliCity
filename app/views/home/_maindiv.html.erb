@@ -66,20 +66,33 @@
 </div>
 
 <script>
-    // Sélection de l'élément vidéo
-    const video = document.querySelector('.clipped-video');
+  // Sélection de l'élément vidéo
+  const video = document.querySelector('.clipped-video');
 
-    // Sélection de l'élément auquel vous souhaitez appliquer les dimensions de la vidéo
-    const videoContent = document.querySelector('.video-content-du-m');
+  // Sélection de l'élément auquel vous souhaitez appliquer les dimensions de la vidéo
+  const videoContent = document.querySelector('.video-content-du-m');
 
-    // Attente du chargement des métadonnées de la vidéo
-    video.addEventListener('loadedmetadata', function() {
-        // Récupération de la hauteur et de la largeur de la vidéo
-        const videoWidth = this.videoWidth; // Largeur de la vidéo
-        const videoHeight = this.videoHeight; // Hauteur de la vidéo
+  // Attente du chargement des métadonnées de la vidéo
+  video.addEventListener('loadedmetadata', function() {
+      // Récupération de la hauteur et de la largeur de la vidéo
+      const videoWidth = this.videoWidth; // Largeur de la vidéo
+      const videoHeight = this.videoHeight; // Hauteur de la vidéo
 
-        // Application de la hauteur et de la largeur de la vidéo à l'élément souhaité
-        videoContent.style.width = videoWidth + 'px';
-        videoContent.style.height = videoHeight + 'px';
-    });
-  </script>
+      // Application de la hauteur et de la largeur de la vidéo à l'élément souhaité
+      videoContent.style.width = videoWidth + 'px';
+      videoContent.style.height = videoHeight + 'px';
+  });
+</script>
+
+
+<script>
+  document.addEventListener("turbo:before-cache", function() {
+    // Récupérer l'élément vidéo
+    const video = document.querySelector(".clipped-video");
+
+    // Mettre en pause la vidéo si elle est en cours de lecture
+    if (!video.paused) {
+      video.pause();
+    }
+  });
+</script>
