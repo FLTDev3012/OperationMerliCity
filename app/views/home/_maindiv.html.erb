@@ -83,16 +83,3 @@
       videoContent.style.height = videoHeight + 'px';
   });
 </script>
-
-
-<script>
-  document.addEventListener("turbo:before-cache", function() {
-    // Récupérer l'élément vidéo
-    const video = document.querySelector(".clipped-video");
-
-    // Mettre en pause la vidéo si elle est en cours de lecture
-    if (!video.paused) {
-      video.pause();
-    }
-  });
-</script>
