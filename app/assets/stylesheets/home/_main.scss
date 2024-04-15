@@ -233,10 +233,12 @@
 }
 
 
+
 .test-home-first-div .clipped-video {
-  -webkit-clip-path: url(#text-overlay);
-  clip-path: url(#text-overlay);
+  -webkit-clip-path: url(#textoverlay);
+  clip-path: url(#textoverlay);
 }
+
 
 @media (max-width: 550px) {
   .test-home-first-div path {
