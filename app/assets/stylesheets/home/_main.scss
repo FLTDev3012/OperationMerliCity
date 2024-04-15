@@ -235,8 +235,10 @@
 
 
 .test-home-first-div .clipped-video {
+  transform: translateZ(0);
   -webkit-clip-path: url(#textoverlay);
   clip-path: url(#textoverlay);
+
 }
 
 
